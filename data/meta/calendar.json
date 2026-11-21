@@ -1,0 +1,66 @@
+{
+  "asOf": "2026-11-19",
+  "source": "原表 A51",
+  "items": [
+    {
+      "text": "12/9 AVGO财报",
+      "tickers": [
+        "AVGO"
+      ]
+    },
+    {
+      "text": "12月中 FOMC（加息幅度）",
+      "tickers": []
+    },
+    {
+      "text": "约12/16 MU财报",
+      "tickers": [
+        "MU"
+      ]
+    },
+    {
+      "text": "12月 SpaceX–Tesla合并是否公告",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ]
+    },
+    {
+      "text": "1月 RKLB Neutron贮箱鉴定",
+      "tickers": [
+        "RKLB"
+      ]
+    },
+    {
+      "text": "1月下旬 GEV／ETN财报",
+      "tickers": [
+        "GEV",
+        "ETN"
+      ]
+    },
+    {
+      "text": "2月初 GOOGL 2027资本开支指引",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "text": "2月 NVDA财报",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "text": "随时：NVDA独立调查结论与正式CEO人选、FCC对RKLB–IRDM的裁定",
+      "tickers": [
+        "NVDA",
+        "RKLB",
+        "IRDM"
+      ]
+    },
+    {
+      "text": "2027上半年：FERC数据中心共址规则",
+      "tickers": []
+    }
+  ]
+}

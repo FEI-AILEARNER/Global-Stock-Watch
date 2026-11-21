@@ -1,0 +1,44 @@
+{
+  "ticker": "AMAT",
+  "company": "Applied Materials",
+  "sector": "semi-cycle",
+  "strikePrice": 430,
+  "exitPrice": 780,
+  "exitLogic": "cyclical",
+  "stance": {
+    "label": "已进区·仅小批",
+    "group": "watch"
+  },
+  "strikeNote": "$430已到；但真正击球在$320-350（11/5低点$317）",
+  "events": "2月 财报",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 395,
+    "asOf": "2026-11-12",
+    "approx": false,
+    "quote": "财报前$395(11/12)",
+    "recordedOn": "2026-11-19",
+    "note": "原文为“财报前”的价格，其后两个交易日再跌"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "财报前$395(11/12)，其后两个交易日再跌；10/2高点$547，11/5低点$317。FQ4营收$104.1亿(+53%)、EPS $4.16；FQ1指引$111亿／EPS $4.35；公司预计2027年晶圆设备支出+30%。价格已在击球价下方，但我只给“小批”：存储周期见顶信号与WFE+30%的预测不能同时为真，设备订单滞后存储价格2-3个季度。中国占比降至25%。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "★已补齐（按倍数推导，现价以表内实时价为准）：处在周期的不同位置——营收增速目前仅+3.3%，但台积电资本开支上调至$600-640亿、英特尔上调至$200亿+，**这轮资本开支要12-18个月才流到设备商收入里**。MU在周期顶部，AMAT在它前面。7/27设备股集体回调（ASML/AMAT/LRCX/KLAC）AMAT跌5.24%。卖方在上调：HSBC $522→$683、Stifel $530→$650，均值约$594。★新增重大风险：The Information报道**中国正在研制EUV光刻机**，ASML应声下跌——若属实是对整个西方设备复合体的长期结构性威胁，直接动摇本标的的论题"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-12",
+      "title": "FQ4小幅超预期，指引继续上行",
+      "summary": "营收$104.1亿、非GAAP EPS $4.16；FQ1指引$111亿；预计2027年WFE增长30%+；中国占比29%→25%。",
+      "url": "https://finviz.com/news/422355/applied-materials-edges-past-consensus-but-misses-the-whisper-as-its-ai-driven-outlook-keeps-rising"
+    }
+  ]
+}

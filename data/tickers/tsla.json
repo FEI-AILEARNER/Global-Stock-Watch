@@ -1,0 +1,36 @@
+{
+  "ticker": "TSLA",
+  "company": "Tesla",
+  "sector": "other-themes",
+  "strikePrice": 260,
+  "exitPrice": 480,
+  "exitLogic": "other",
+  "stance": {
+    "label": "等待",
+    "group": "wait"
+  },
+  "strikeNote": "$230-260；<$200击球",
+  "events": "12月：合并公告？",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 390,
+    "asOf": "2026-11-13",
+    "approx": false,
+    "quote": "现价$390(11/13)",
+    "recordedOn": "2026-11-19"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "现价$390(11/13)，前瞻市盈率182倍。Cybertruck停产；Cybercab开放预订($29,990+$299/月)；与SpaceX合并谈判推进。距击球价$260仍高50%。合并若成，估值框架需整体重做。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "依据：常规业务分部估值仅$91-145/股，$260已含可观robotaxi期权。经营利润率塌至1.4%（低于传统车企）、FCF转负、资本开支+142%。空头仅3%＝真实持有人在卖"
+    }
+  ],
+  "news": []
+}

@@ -1,0 +1,31 @@
+{
+  "ticker": "DNA",
+  "company": "Ginkgo",
+  "sector": "other-themes",
+  "strikePrice": 6,
+  "exitPrice": 15,
+  "exitLogic": "other",
+  "stance": {
+    "label": "回避",
+    "group": "avoid"
+  },
+  "strikeNote": "$5-6现金价值区",
+  "events": "—",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": null,
+  "lastPriceNote": "原表【11/19更新】：本轮未检索到可靠的Q3数据与股价。",
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "本轮未检索到可靠的Q3数据与股价，判断沿用8月：回避。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "依据：$5-6≈账上现金价值，等于平台白送。收入-49%、平台经济学从未验证。主题会赢≠这家赢"
+    }
+  ],
+  "news": []
+}

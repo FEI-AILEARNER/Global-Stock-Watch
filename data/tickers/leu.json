@@ -1,0 +1,38 @@
+{
+  "ticker": "LEU",
+  "company": "Centrus",
+  "sector": "nuclear",
+  "strikePrice": 130,
+  "exitPrice": 300,
+  "exitLogic": "other",
+  "stance": {
+    "label": "等待·逻辑受损",
+    "group": "wait"
+  },
+  "strikeNote": "≤$130 小仓位",
+  "events": "2月 财报／DOE预算",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": null,
+  "lastPriceNote": "原表【11/19更新】：本轮未取得可靠股价。",
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "Q3营收$5,550万(-26%)，调整后每股亏损$0.46(多年来首次)，GAAP盈利全靠$4,640万权证重估。**DOE的FY2027预算未含新增HALEU级联资金，且不再行使HALEU运营合同后续选择权——约$8亿技术服务积压有风险**。HALEU是它的核心叙事，政府买单意愿下降是实质性利空。击球价$130暂不动，但在资金来源明朗前不动手。本轮未取得可靠股价。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "依据：$130≈FY26营收指引中值的3-4倍P/S（叙事启动前长期1-2倍）。已签$9亿HALEU确定合同，但盈利连降至2028。空头22%、流通盘极小"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-04",
+      "title": "Q3转亏，HALEU政府资金存疑",
+      "summary": "调整后EPS -$0.46 vs 预期-$0.13；积压$70亿；首台商业级离心机提前两个月运抵Piketon。",
+      "url": "https://247wallst.com/cards/centrus-energy-q3-2026-earnings-leu-01m6m7spt5xjjztyrtph8ya99a"
+    }
+  ]
+}

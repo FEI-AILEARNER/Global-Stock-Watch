@@ -1,0 +1,44 @@
+{
+  "ticker": "CEG",
+  "company": "Constellation Energy",
+  "sector": "power-grid",
+  "strikePrice": 230,
+  "exitPrice": 400,
+  "exitLogic": "other",
+  "stance": {
+    "label": "等待",
+    "group": "wait"
+  },
+  "strikeNote": "$230（现约18倍2026E EPS $12.65）；政治风险折价后不上调",
+  "events": "2月 财报／FERC共址规则(2027H1)",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": null,
+  "lastPriceNote": "原表【11/19更新】：本轮未取得可靠收盘价。",
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "Q3调整后EPS $5.06(预期$3.89)，2026指引上调至$12.50-12.80。新签：Google 20年协议(11台机组、增容约890MW、投资$43亿+)、Amazon 20年690MW PPA(Calvert Cliffs)。盈利上修本应上调击球价，但被两件事抵消：①中期选举后至少10个社区通过数据中心限制、德州新州长主张暂停新建；②FERC共址规则要到2027上半年。11/4单日-8%。本轮未取得可靠收盘价，以C列实时价为准。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "★已补锚点：2026调整后EPS指引**$11-12**（共识EPS增速+25.03%），Q2共识EPS $2.34；到2029基础EPS年增超20%。$50亿回购计划。UBS目标价$420。**AI电力主题里唯一有确定盈利路径的核能标的**——与XE/OKLO/SMR的对照就是「明年就赚钱」与「2028-2030才可能发电」的差别。$230≈20倍2026年EPS"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-09",
+      "title": "Q3大超预期，上调全年指引",
+      "summary": "调整后EPS $5.06 vs 预期$3.89；2026指引$12.50-12.80；与Google、Amazon各签20年核电协议；拟$7.15亿收购Shell的罗德岛燃气电厂。",
+      "url": "https://finviz.com/news/419132/constellation-energy-shares-rise-over-4-as-q3-earnings-beat-estimates-and-2026-outlook-improves"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "民主党横扫中期选举，电力股重挫",
+      "summary": "CEG -8%、VST -14%、GEV -7%。至少10个社区通过数据中心禁令或限制；德州新任州长曾呼吁暂停新建数据中心。",
+      "url": "https://www.tikr.com/blog/constellation-energy-sinks-8-vistra-down-14-as-democrats-midterm-sweep-hits-ai-power-stocks"
+    }
+  ]
+}

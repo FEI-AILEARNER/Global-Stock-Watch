@@ -1,0 +1,38 @@
+{
+  "ticker": "IRDM",
+  "company": "Iridium",
+  "sector": "space",
+  "strikePrice": 43,
+  "exitPrice": 54,
+  "exitLogic": "other",
+  "stance": {
+    "label": "条件观察",
+    "group": "watch"
+  },
+  "strikeNote": "≤$43（对应隐含对价约$49有14%毛价差）",
+  "events": "FCC审批／2027年中交割",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": null,
+  "lastPriceNote": "原表【11/19更新】没有记录 IRDM 的股价（以实时价对比隐含对价约$49）。",
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "股东已于9月以99.6%通过合并；FCC答辩11/9截止；目标2027年中交割。**套利重算**：对价=$27现金+RKLB股票(名义$27，带区间)。RKLB现价$55.2已低于我此前记录的区间下限$67.50，换股比例锁定在约0.40股→股票部分仅值约$22，**隐含总对价约$49而非$54**。Globalstar未反对但要求附条件，SpaceX不反对。以C列IRDM实时价对比$49判断价差；击球价$43不变。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "依据：$43≈并购公告前的未受扰价格。按RKLB $65.27：隐含对价$53.1、价差11.6%、盈亏平衡RKLB $51.6。★7/22财报后的重要修正：**7/2以$3.667亿收购Aireon剩余股权，债务权益比升至3.76**——「交易告吹时你持有一家稳健运营商」这个下行保护被削弱了。另EMSS政府合同($1.105亿/年)9月到期。交割时点确认为2027年中"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-03",
+      "title": "Globalstar就合并向FCC提出附条件要求",
+      "summary": "未反对交易；股东9月以99.6%赞成通过；目标2027年中交割。",
+      "url": "https://stocktwits.com/news-articles/markets/equity/rklb-iridium-deal-globalstar-spacex-concerns-rocketlab-fast-fcc-approval/cNGQHAcR957"
+    }
+  ]
+}

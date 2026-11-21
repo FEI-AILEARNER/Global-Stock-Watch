@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ai-core",
+    "name": "AI 算力核心 · 现金流机器"
+  },
+  {
+    "id": "power-grid",
+    "name": "AI 电力与电网 · 有 PPA／积压订单"
+  },
+  {
+    "id": "semi-cycle",
+    "name": "半导体周期 · 退出须机械执行"
+  },
+  {
+    "id": "nuclear",
+    "name": "核能 · 上半段有现金流，下半段是期权"
+  },
+  {
+    "id": "space",
+    "name": "空间 · 政府订单驱动"
+  },
+  {
+    "id": "other-themes",
+    "name": "其他主题 · 电动车／合成生物／加密"
+  }
+]

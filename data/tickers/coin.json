@@ -1,0 +1,43 @@
+{
+  "ticker": "COIN",
+  "company": "Coinbase",
+  "sector": "other-themes",
+  "strikePrice": 100,
+  "exitPrice": 280,
+  "exitLogic": "other",
+  "stance": {
+    "label": "先定信念",
+    "group": "wait"
+  },
+  "strikeNote": "加密寒冬<$100",
+  "events": "2月 财报",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 143.5,
+    "asOf": "2026-10-30",
+    "approx": false,
+    "quote": "$143.5(10/30，财报日-10.6%)",
+    "recordedOn": "2026-11-19"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "$143.5(10/30，财报日-10.6%)，年内-39%；比特币约$63,280(11/18)。Q3净营收同比-34%，交易收入$5.9亿(-44%)；$7.19亿净利中约$7.15亿是持币重估收益，调整后净利仅$7,800万。CEO等三名高管新设10b5-1计划，合计可售约1,360万股。寒冬正在兑现，击球价$100不变。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "依据：正常化分部估值——周期性交易收入给15-20倍、订阅服务收入给25-30倍。$100对应加密寒冬时的盈利谷底，那才是有安全边际的时点"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-10-30",
+      "title": "Q3营收-34%，股价-10.6%",
+      "summary": "调整后净利$7,800万；订阅与服务$5.7亿，占净营收约49%；高管设立约$22亿减持计划。",
+      "url": "https://bitcoinworld.co.in/coinbase-stock-falls-10-6-despite-719m-q3-profit/"
+    }
+  ]
+}

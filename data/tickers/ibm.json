@@ -1,0 +1,50 @@
+{
+  "ticker": "IBM",
+  "company": "IBM",
+  "sector": "ai-core",
+  "strikePrice": 175,
+  "exitPrice": 310,
+  "exitLogic": "other",
+  "stance": {
+    "label": "观察",
+    "group": "watch"
+  },
+  "strikeNote": "$175（约14倍前瞻）；退出$310",
+  "events": "1月 财报",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 253,
+    "asOf": "2026-10-26",
+    "approx": true,
+    "quote": "约$253(10/26，较旧)",
+    "recordedOn": "2026-11-19",
+    "note": "原文注明“较旧”"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "约$253(10/26，较旧)，前瞻市盈率19.4倍，股息率2.7%，Q3营收+6%。距击球价$175仍远——6%增长配19倍，在5%利率下没有安全边际。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "★已补齐·比我上轮以为的更有意思：现价约$206.65，年内-29.1%，从6月高点跌25%（蒸发$670亿市值）。**前瞻P/E仅16.07、股息率3.29%、beta 0.67**——全清单唯一的低波动标的。TTM自由现金流$137.9亿，价格/FCF约13-14倍。ROE 34.46%。量子：五年投入超$100亿，2026目标量子优势、2029交付容错Starling；向Anderon量子晶圆厂投$10亿（配$10亿CHIPS补贴），美国政府对量子取得$20亿股权。**Susquehanna单独给量子业务$65/股（约$610亿）**——若成立，现价里量子近乎白送。但熊的一面是真的：Q2营收$172亿 miss $6.6亿、大型机疲软、内存涨价推高成本、Confluent并购后总债务上升（净负债$571亿）、7/24有律所宣布调查。这不是无风险的便宜"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-07-27",
+      "title": "收购HRL Laboratories扩量子版图",
+      "summary": "收购波音与通用汽车共有的研究机构，引入硅自旋量子比特——意味着同时运行超导＋硅自旋两套架构。配合超$100亿量子投入与2029年容错Starling目标。",
+      "url": "https://simplywall.st/stocks/us/software/nyse-ibm/international-business-machines"
+    },
+    {
+      "date": "2026-07-24",
+      "title": "目标价被砍、律所宣布调查",
+      "summary": "Susquehanna将目标价从$303下调至$225（维持中性，其量子估值$65/股未变）；Citi从$255降至$245维持买入；Bleichmar Fonti & Auld宣布对IBM展开调查。",
+      "url": "https://stockanalysis.com/stocks/ibm/"
+    }
+  ]
+}

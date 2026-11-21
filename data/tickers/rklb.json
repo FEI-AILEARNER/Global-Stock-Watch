@@ -1,0 +1,55 @@
+{
+  "ticker": "RKLB",
+  "company": "Rocket Lab",
+  "sector": "space",
+  "strikePrice": 40,
+  "exitPrice": 110,
+  "exitLogic": "other",
+  "stance": {
+    "label": "观察",
+    "group": "watch"
+  },
+  "strikeNote": "$35-40（Neutron前）",
+  "events": "★1月 Neutron贮箱鉴定",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 55.2,
+    "asOf": "2026-11-17",
+    "approx": false,
+    "quote": "现价$55.2(11/17)",
+    "recordedOn": "2026-11-19"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "现价$55.2(11/17)。Q3营收$2.68亿(+73%)、积压$35.7亿、现金$44.5亿；但**Neutron首飞推迟至不早于2027年**(一级贮箱制造缺陷)，1月的贮箱水压／低温鉴定是下一个硬节点；未入选$9.85亿发射合同；ATM增发3,680万股，Q4加权股本6.81亿；非GAAP毛利率41.9%→38.4%。击球价$40不变——Neutron推迟正是当初把击球价设在“Neutron前”的原因。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "★新增依据：现价约44倍前瞻P/S（市值$399亿 vs FY26约$9亿营收）。$40≈27倍前瞻P/S，已计入$22亿积压订单与$13.4亿净现金。TTM仍亏$1.83亿。★新增利好：**入选国防部「金穹」计划的天基拦截器项目**，与雷神同列；Neutron仍定Q4首飞。风险：Q1已做$4.5亿ATM增发；首飞若滑期或硬件失败将重置情绪。**板块背景：美国FY2027太空预算$597亿、资助31次发射；商业航天积压订单已超$5,000亿**"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-17",
+      "title": "未入选$9.85亿发射合同，股价-4%",
+      "summary": "合同由SpaceX、Blue Origin、ULA分享；ARK与Appaloosa增持SpaceX。",
+      "url": "https://247wallst.com/investing/2026/11/17/rocket-lab-slides-4-as-spacex-shares-a-985-million-launch-award-are-cathie-wood-and-david-tepper-picking-spacex-over-rocket-lab/"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "Q3创纪录营收，Neutron推迟至2027",
+      "summary": "营收$2.68亿(+72.7%)、积压$35.7亿；GAAP EPS -$0.12；CFO称Neutron量产前现金流持续为负。",
+      "url": "https://247wallst.com/investing/2026/11/16/rocket-lab-investors-need-january-neutron-tank-test-success-to-move-toward-90-not-congressional-alignment/"
+    },
+    {
+      "date": "2026-07",
+      "title": "入选「金穹」天基拦截器项目",
+      "summary": "与雷神同列入选国防部Space Based Interceptor项目；Neutron仍定Q4首飞。板块背景：美国FY2027太空预算$597亿、资助31次发射，商业航天积压订单已超$5,000亿。风险：Q1做过$4.5亿ATM增发。",
+      "url": "https://www.foreignpolicyjournal.com/2026/07/10/three-space-economy-stocks-nasdaq-rklb-asts-lunr-face-sharp-pullbacks-but-expanding-pipelines-signal-long-term-opportunity/"
+    }
+  ]
+}

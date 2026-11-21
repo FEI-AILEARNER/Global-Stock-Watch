@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+/*
+  研究笔记本：暖纸色底、墨色字、藏青（原 Excel 表头的 #1F3864）作唯一的界面强调色。
+  态度的五种底色沿用原表的色标，另配文字和符号，不只靠颜色。不加载远程字体。
+*/
+@theme {
+  --color-page: #f5f2ea;
+  --color-paper: #fffdf8;
+  --color-ink: #1c1a15;
+  --color-ink-soft: #5a5548;
+  --color-rule: #d8d1bf;
+  --color-rule-soft: #e9e4d6;
+  --color-navy: #1f3864;
+  --color-edge: #7a7466;
+
+  --color-go: #2c5a1c;
+  --color-go-bg: #c6e0b4;
+  --color-amber: #6b4e00;
+  --color-amber-bg: #fff2cc;
+  --color-wait: #1f4e79;
+  --color-wait-bg: #deebf7;
+  --color-avoid: #8f3a10;
+  --color-avoid-bg: #fce4d6;
+  --color-spec: #3f3f3f;
+  --color-spec-bg: #ededed;
+  --color-up: #1e6b34;
+  --color-down: #a3261b;
+
+  --font-sans:
+    system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    'Noto Sans CJK SC', 'Source Han Sans SC', 'Noto Sans SC', sans-serif;
+  --font-serif:
+    'Iowan Old Style', 'Palatino Linotype', Palatino, 'Songti SC', 'STSong', 'Noto Serif CJK SC',
+    'Source Han Serif SC', 'Noto Serif SC', SimSun, Georgia, serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  body {
+    min-height: 100dvh;
+    line-height: 1.65;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-navy);
+    outline-offset: 2px;
+  }
+  strong {
+    font-weight: 650;
+  }
+  summary {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .link {
+    color: var(--color-navy);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--color-navy) 35%, transparent);
+    text-underline-offset: 3px;
+  }
+  .link:hover {
+    text-decoration-color: var(--color-navy);
+  }
+  .prose-note {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+  }
+  .eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-soft);
+  }
+  .card {
+    background: var(--color-paper);
+    border: 1px solid var(--color-rule);
+    border-radius: 6px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    border-radius: 3px;
+    padding: 0.05rem 0.45rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .btn {
+    border: 1px solid var(--color-edge);
+    border-radius: 4px;
+    background: var(--color-paper);
+    padding: 0.2rem 0.65rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+  .btn[aria-pressed='true'] {
+    background: var(--color-navy);
+    border-color: var(--color-navy);
+    color: #fff;
+  }
+}

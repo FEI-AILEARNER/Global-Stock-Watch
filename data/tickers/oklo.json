@@ -1,0 +1,43 @@
+{
+  "ticker": "OKLO",
+  "company": "Oklo",
+  "sector": "nuclear",
+  "strikePrice": 18,
+  "exitPrice": 70,
+  "exitLogic": "option",
+  "stance": {
+    "label": "事件交易",
+    "group": "speculative"
+  },
+  "strikeNote": "$14-18（期权费合理区）",
+  "events": "NRC审批进度",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 25.3,
+    "asOf": "2026-10-30",
+    "approx": true,
+    "quote": "约$25.3(10/30)",
+    "recordedOn": "2026-11-19"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "约$25.3(10/30)，市值$47亿，接近52周低点$24.5。Groves已于8/5首次临界——**之后股价下跌，印证“里程碑兑现日即情绪顶”**。目标价下调(Citi $33、Truist $31)。距击球价$18仍有约40%。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "★7/23重要进展：**已获DOE启动授权（startup authorization）**，可装料、启动测试并推进首次临界，公司称目标就在本月。Groves是15MWt池式水冷同位素试验堆（VIPR），建设仅用不到一年、全部商业采购、位于私有土地——是Reactor Pilot Program的样板。爱达荷放射化学实验室已获NRC材料许可、年内可产生首笔收入。但估值不变：现价$44、市值$76.6亿、近乎零营收，期权费约$74亿。$18对应市值约$33亿——与XE同级。52周区间已降至$39.53-$193.84"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11",
+      "title": "OKLO与NuScale一周跌15%",
+      "summary": "债券收益率上行惩罚长久期核能股；OKLO临界后未能提振股价。",
+      "url": "https://startupfortune.com/oklo-and-nuscale-sink-15-in-a-week-as-bond-yields-punish-nuclear-stocks/"
+    }
+  ]
+}

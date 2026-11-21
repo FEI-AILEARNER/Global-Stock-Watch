@@ -1,0 +1,38 @@
+{
+  "ticker": "CCJ",
+  "company": "Cameco",
+  "sector": "nuclear",
+  "strikePrice": 75,
+  "exitPrice": 145,
+  "exitLogic": "cyclical",
+  "stance": {
+    "label": "等待",
+    "group": "wait"
+  },
+  "strikeNote": "$70-75；<$68击球",
+  "events": "2月 财报",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": null,
+  "lastPriceNote": "原表【11/19更新】只有按一致目标价反推的“约$91(非报价)”，没有记录报价。",
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "Q3营收$6.15亿(低于预期18%)、EPS $0.05(预期$0.19)，11月首周约-10%；按一致目标价反推约$91(非报价)。市销率11.6倍。交付时点扰动不改长逻辑，但也说明$91的价格里没有容错。击球价$75不变。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "依据：2027E EPS $2.25 × 25-30倍＝$56-68，加西屋权益宽容至$75。风险：Key Lake延长检修、$5.59亿税务争议、哈萨克新矿产税"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-05",
+      "title": "Q3营收与EPS双双不及预期",
+      "summary": "营收$6.15亿 vs 预期$7.50亿；公司称系订单交付时点所致；支撑位$80／$73。",
+      "url": "https://www.barchart.com/story/news/36005634/cameco-stock-falls-after-earnings-why-the-dip-may-be-a-gift"
+    }
+  ]
+}

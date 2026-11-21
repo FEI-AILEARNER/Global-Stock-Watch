@@ -1,0 +1,37 @@
+{
+  "ticker": "XE",
+  "company": "X-energy",
+  "sector": "nuclear",
+  "strikePrice": 10,
+  "exitPrice": 40,
+  "exitLogic": "option",
+  "stance": {
+    "label": "里程碑驱动·接近",
+    "group": "speculative"
+  },
+  "strikeNote": "$8-10 白送区",
+  "events": "—",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 11.5,
+    "asOf": "2026-10-28",
+    "approx": true,
+    "quote": "约$11.5(10/28，较旧)",
+    "recordedOn": "2026-11-19",
+    "note": "原文注明“较旧”"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "约$11.5(10/28，较旧)，距击球价$10约15%；ARK持续买入。长久期资产，对利率最敏感。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "依据：市值≈现金$9.4亿＋DOE已承诺分摊时，等于平台白送。跑道4-5年，三张SMR彩票里赔率最好"
+    }
+  ],
+  "news": []
+}

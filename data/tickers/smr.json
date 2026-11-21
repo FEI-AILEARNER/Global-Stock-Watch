@@ -1,0 +1,43 @@
+{
+  "ticker": "SMR",
+  "company": "NuScale",
+  "sector": "nuclear",
+  "strikePrice": 6,
+  "exitPrice": 25,
+  "exitLogic": "option",
+  "stance": {
+    "label": "价格到位·事实未到",
+    "group": "avoid"
+  },
+  "strikeNote": "$5-6，且须先有事实催化",
+  "events": "调查进展",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 4.66,
+    "asOf": "2026-11-13",
+    "approx": false,
+    "quote": "现价$4.66(11/13)",
+    "recordedOn": "2026-11-19"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "现价$4.66(11/13)，已低于击球价$6。但我设的条件是“须先有事实催化”——证券欺诈调查仍在进行，目标价继续下调(Goldman $4、Citi $3.5)。**价格到了、条件没到，不动手。**"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "★新增依据：$6对应市值接近现金＋NRC设计认证的清算价值。但价格不是唯一条件——ENTRA1失实陈述调查须先澄清，否则再便宜也是接不确定性。较高点-85%，Fluor持续减持"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11",
+      "title": "一周-15%，调查未结",
+      "summary": "与OKLO同步下跌；券商目标价下调至$3.5-4。",
+      "url": "https://startupfortune.com/oklo-and-nuscale-sink-15-in-a-week-as-bond-yields-punish-nuclear-stocks/"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "ticker": "AVGO",
+  "company": "Broadcom",
+  "sector": "ai-core",
+  "strikePrice": 340,
+  "exitPrice": 700,
+  "exitLogic": "other",
+  "stance": {
+    "label": "接近击球区",
+    "group": "watch"
+  },
+  "strikeNote": "$340；12/9财报前不抢，财报后若仍≤$340可建首批",
+  "events": "★12/9 财报",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 347,
+    "asOf": "2026-11-13",
+    "approx": false,
+    "quote": "现价$347(11/13，盘后$340.2)",
+    "recordedOn": "2026-11-19"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "现价$347(11/13，盘后$340.2)，距击球价仅2%，前瞻市盈率约20倍。Redburn下调至中性、目标价$595→$398。定制ASIC是NVDA风波下的相对受益方，但客户集中度高。披露：Anthropic是AVGO的AI客户；Anthropic是我的开发方。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "★新增：$479、市值$2.27万亿、93倍P/E——不便宜。营收+32.3%，定制AI ASIC＋网络芯片＋VMware软件底盘，是超大厂去英伟达化的直接受益方。〔披露：AVGO的AI XPV平台（与黑石、阿波罗合建20GW算力）明确列Anthropic为客户〕"
+    }
+  ],
+  "news": []
+}

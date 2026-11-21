@@ -1,0 +1,78 @@
+{
+  "ticker": "NVDA",
+  "company": "NVIDIA",
+  "sector": "ai-core",
+  "strikePrice": 165,
+  "exitPrice": 300,
+  "exitLogic": "compounder",
+  "stance": {
+    "label": "价格已进区·治理待查",
+    "group": "watch"
+  },
+  "strikeNote": "$150-165可建首批（不超过计划仓位1/3）；余下等调查结论与正式CEO",
+  "events": "调查结论／正式CEO／2月财报",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 152.1,
+    "asOf": "2026-11-18",
+    "approx": false,
+    "quote": "现价$152.1(11/18)",
+    "recordedOn": "2026-11-19"
+  },
+  "priceChanges": [
+    {
+      "date": "2026-11-19",
+      "field": "strike",
+      "from": 180,
+      "to": 165,
+      "reason": "击球价$180→$165、退出价$360→$300，理由是治理折价而非业务：黄仁勋11/12辞职(董事会明确不复职)，CFO Kress兼任临时CEO；董事会已聘Wachtell做独立调查；财长Bessent质询芯片经东南亚转售中国。",
+      "source": "原表【11/19更新】与 A42"
+    },
+    {
+      "date": "2026-11-19",
+      "field": "exit",
+      "from": 360,
+      "to": 300,
+      "reason": "击球价$180→$165、退出价$360→$300，理由是治理折价而非业务：黄仁勋11/12辞职(董事会明确不复职)，CFO Kress兼任临时CEO；董事会已聘Wachtell做独立调查；财长Bessent质询芯片经东南亚转售中国。",
+      "source": "原表【11/19更新】与 A42"
+    }
+  ],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "现价$152.1(11/18)，一个月-27%。击球价$180→$165、退出价$360→$300，理由是治理折价而非业务：黄仁勋11/12辞职(董事会明确不复职)，CFO Kress兼任临时CEO；董事会已聘Wachtell做独立调查；财长Bessent质询芯片经东南亚转售中国。业务本身极强：Q3营收$1,158亿(+103%)、数据中心$1,076亿、调整后EPS $2.68；Q4指引$1,300亿。**但Q4毛利率指引71-72%，低于Q3的74.8%**——这是比CEO更值得盯的数字。按年化EPS约$11-12算仅13-14倍，价格已给足补偿，但“事实先行”：调查结论、出口管制处罚、继任者三件事未明前只建首批。披露：Anthropic是NVDA客户，NVDA投资了Anthropic；Anthropic是我的开发方。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "依据：$180≈前瞻20倍，52周低$164.07正在区内。ROE 114%全清单最强；现价前瞻22-24倍 vs 自身5年均值69倍。★7/29重大利好：**微软FY2027资本开支指引$2,550-2,600亿，较2026年的$1,900亿增35%，远超市场预期的约$2,200亿**——「营收＝别人的资本开支」这条现在指向上方。另英伟达与OpenAI达成$2,500亿融资案。风险不变：客户自研芯片（谷歌TPU、亚马逊Trainium、微软Maia）。〔Anthropic与NVDA互为客户/投资方〕"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-17",
+      "title": "Q3 FY27：营收+103%，Q4毛利率指引下行",
+      "summary": "营收$1,158亿(预期$1,091亿)，数据中心$1,076亿(+110%)，EPS $2.68；Q4指引$1,300亿、毛利率71-72%。盘后+3.6%。",
+      "url": "https://stockanalysis.com/news/nvda-q3-fy2027-earnings-beat/"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "黄仁勋辞职，Kress任临时CEO",
+      "summary": "公司未说明原因；此前董事会11/8宣布独立调查。股价开盘触及$159.91(2025年6月以来最低)，五日-15%、一个月-27%。",
+      "url": "https://www.financemagnates.com/trending/nvidia-shares-plummet-as-jensen-huang-resigns-after-33-years-at-the-helm-of-the-tech-giant/"
+    },
+    {
+      "date": "2026-07-30",
+      "title": "三大云厂资本开支全部确认加码",
+      "summary": "亚马逊将2026资本开支从$2,000亿上调至**$2,200亿**（Jassy明言上调部分源于内存涨价），AWS增长37%创18季新高、积压订单$4,960亿；微软FY2027指引$2,550-2,600亿(+35%)；Meta上调至$1,250-1,450亿。**「营收＝别人的资本开支」这条现已由三家同时确认指向上方。**",
+      "url": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html"
+    },
+    {
+      "date": "2026-07-28",
+      "title": "与OpenAI达成$2,500亿融资案",
+      "summary": "该交易引发存储与供应链重估。",
+      "url": "https://www.techtimes.com/articles/321909/20260728/record-earnings-record-low-sk-hynix-stock-falls-after-missing-q2-estimates.htm"
+    }
+  ]
+}

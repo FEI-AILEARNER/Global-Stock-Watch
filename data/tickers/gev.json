@@ -1,0 +1,43 @@
+{
+  "ticker": "GEV",
+  "company": "GE Vernova",
+  "sector": "power-grid",
+  "strikePrice": 800,
+  "exitPrice": 1600,
+  "exitLogic": "other",
+  "stance": {
+    "label": "已进击球区",
+    "group": "in-zone"
+  },
+  "strikeNote": "$800已到；分三批，<$700为真正击球",
+  "events": "1月下旬 财报",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 774,
+    "asOf": "2026-11-06",
+    "approx": false,
+    "quote": "现价$774(11/6)",
+    "recordedOn": "2026-11-19"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "现价$774(11/6)，已低于击球价。Q3订单$290亿(有机+96%)，10/28上调指引。但前瞻市盈率仍33倍——在5%利率下不算便宜，Barron's称其“下落的刀”，Argus目标价下调至$1,100。结论：按纪律可建首批，但不重仓；燃机订单的能见度(排到2029+)是它与VRT的本质区别。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "★7/22 Q2已更新：**订单同比+88%、积压订单升至$1,760亿**（原$1,630亿），连续第二季上调全年营收(+$10亿)与自由现金流指引。Power与Electrification营收利润率双升，Wind仍拖累。但EPS未达预期、股价当日跌约9%，**过去一个月累计-19.7%**，现价约$1,014。管理层警告全球关税压力。卖方在跌势中集体上调目标（均值$1,233.1），7/27看跌期权成交显著放大——分歧在扩大。$800≈较现价约21%折价"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-04",
+      "title": "中期选举后-7%，跌入击球区",
+      "summary": "数据中心监管担忧拖累全电力链；GEV 10/28刚上调指引。",
+      "url": "https://www.tikr.com/blog/constellation-energy-sinks-8-vistra-down-14-as-democrats-midterm-sweep-hits-ai-power-stocks"
+    }
+  ]
+}

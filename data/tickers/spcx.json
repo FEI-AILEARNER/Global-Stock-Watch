@@ -1,0 +1,43 @@
+{
+  "ticker": "SPCX",
+  "company": "SpaceX",
+  "sector": "space",
+  "strikePrice": 85,
+  "exitPrice": 190,
+  "exitLogic": "other",
+  "stance": {
+    "label": "不买",
+    "group": "avoid"
+  },
+  "strikeNote": "$60-85中性；<$70有边际",
+  "events": "12月：或宣布与TSLA合并",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": {
+    "value": 140,
+    "asOf": "2026-11-17",
+    "approx": false,
+    "quote": "现价$140(11/17)",
+    "recordedOn": "2026-11-19"
+  },
+  "priceChanges": [],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "现价$140(11/17)，中期选举后一度跌破$135发行价。11/16星舰助推器回收成功；与特斯拉合并谈判推进、或于12月宣布。距中性区上沿$85仍高65%，判断不变。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "依据：分部估值中性情景$60-85。空头28-31%但借券免费＝无逼空。8月首批解禁或超现有全部流通盘；$175.50触发条款让上涨自动召来供给"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-17",
+      "title": "分享$9.85亿发射合同；ARK、Appaloosa增持",
+      "summary": "股价约$140；11/16星舰助推器回收。",
+      "url": "https://247wallst.com/investing/2026/11/17/rocket-lab-slides-4-as-spacex-shares-a-985-million-launch-award-are-cathie-wood-and-david-tepper-picking-spacex-over-rocket-lab/"
+    }
+  ]
+}

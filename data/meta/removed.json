@@ -1,0 +1,50 @@
+[
+  {
+    "name": "DJT",
+    "removedOn": "2026-11-19",
+    "reason": "不可定价／已改主题",
+    "source": "原表 A44"
+  },
+  {
+    "name": "上海超导",
+    "removedOn": "2026-11-19",
+    "reason": "不可定价／已改主题",
+    "source": "原表 A44"
+  },
+  {
+    "name": "IonQ",
+    "removedOn": "2026-11-19",
+    "reason": "是同一注量子彩票且全部距击球价70-133%",
+    "source": "原表 A44"
+  },
+  {
+    "name": "D-Wave",
+    "removedOn": "2026-11-19",
+    "reason": "是同一注量子彩票且全部距击球价70-133%",
+    "source": "原表 A44"
+  },
+  {
+    "name": "Rigetti",
+    "removedOn": "2026-11-19",
+    "reason": "是同一注量子彩票且全部距击球价70-133%",
+    "source": "原表 A44"
+  },
+  {
+    "name": "Quantum Computing",
+    "removedOn": "2026-11-19",
+    "reason": "是同一注量子彩票且全部距击球价70-133%",
+    "source": "原表 A44"
+  },
+  {
+    "name": "AMSC",
+    "removedOn": null,
+    "reason": "两者均非真超导标的：AMSC实为电网+AI电力主线、COHR的HTS激光在财报里是零头，其角色已由GEV/VRT/ETN更好地覆盖",
+    "source": "原表 A44"
+  },
+  {
+    "name": "COHR",
+    "removedOn": null,
+    "reason": "两者均非真超导标的：AMSC实为电网+AI电力主线、COHR的HTS激光在财报里是零头，其角色已由GEV/VRT/ETN更好地覆盖",
+    "source": "原表 A44"
+  }
+]

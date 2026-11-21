@@ -1,0 +1,439 @@
+{
+  "source": "tracker.xlsx，表“监控清单”A1:M53，2026-11-21 导入",
+  "contentDate": "2026-11-19",
+  "sectors": [
+    {
+      "id": "ai-core",
+      "name": "AI 算力核心 · 现金流机器"
+    },
+    {
+      "id": "power-grid",
+      "name": "AI 电力与电网 · 有 PPA／积压订单"
+    },
+    {
+      "id": "semi-cycle",
+      "name": "半导体周期 · 退出须机械执行"
+    },
+    {
+      "id": "nuclear",
+      "name": "核能 · 上半段有现金流，下半段是期权"
+    },
+    {
+      "id": "space",
+      "name": "空间 · 政府订单驱动"
+    },
+    {
+      "id": "other-themes",
+      "name": "其他主题 · 电动车／合成生物／加密"
+    }
+  ],
+  "tickers": [
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet",
+      "sector": "ai-core",
+      "strikePrice": 300,
+      "exitPrice": 480,
+      "stanceLabel": "已进击球区",
+      "rationaleSha256": "a12f19b5ad87bed76008a6bbd321681a0c1e9b1c12fa66fa6cf7314150a82549",
+      "newsSha256": "91c710eb6e0ece0e0b74640041d99d3327b6f9ab90d28d1912bb7d003438958a",
+      "newsCount": 5
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "sector": "ai-core",
+      "strikePrice": 165,
+      "exitPrice": 300,
+      "stanceLabel": "价格已进区·治理待查",
+      "rationaleSha256": "6eddd336418f12bfd1eb78e78fdf4b753efd0693a6505ad0f76b86496e356f13",
+      "newsSha256": "6ed55a60c2c01f3e4bb0d3c882f019ad5af4bf4cd06fbb41c682643454d0a24c",
+      "newsCount": 4
+    },
+    {
+      "ticker": "TSM",
+      "company": "台积电",
+      "sector": "ai-core",
+      "strikePrice": 330,
+      "exitPrice": 700,
+      "stanceLabel": "等待",
+      "rationaleSha256": "b3a4b7ccccbcd5e5d900f090faba0b1a0c787fbc032e585d190165cb69bc635c",
+      "newsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newsCount": 0
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom",
+      "sector": "ai-core",
+      "strikePrice": 340,
+      "exitPrice": 700,
+      "stanceLabel": "接近击球区",
+      "rationaleSha256": "82815219b45f95601a83216a220e27262c5264f3d6b07367ff0093226db1b8a0",
+      "newsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newsCount": 0
+    },
+    {
+      "ticker": "IBM",
+      "company": "IBM",
+      "sector": "ai-core",
+      "strikePrice": 175,
+      "exitPrice": 310,
+      "stanceLabel": "观察",
+      "rationaleSha256": "2dee528c25838f44e85035013d28387da3275524728c39d866fc414fa7c6656e",
+      "newsSha256": "f8c92a3aa18315c257575dc6b1e9c3bbc3ee481217dcb35353a8204ea3e3a8fc",
+      "newsCount": 2
+    },
+    {
+      "ticker": "CEG",
+      "company": "Constellation Energy",
+      "sector": "power-grid",
+      "strikePrice": 230,
+      "exitPrice": 400,
+      "stanceLabel": "等待",
+      "rationaleSha256": "0298725a10c5bdc88f79b4bba076fa709c8c3acbad255627df059b1471f61be3",
+      "newsSha256": "903c61e6277a096d27d13ea27722ef16c6870f827bbbf209ebb97b226b1e6bca",
+      "newsCount": 2
+    },
+    {
+      "ticker": "VST",
+      "company": "Vistra",
+      "sector": "power-grid",
+      "strikePrice": 185,
+      "exitPrice": 340,
+      "stanceLabel": "等待",
+      "rationaleSha256": "94f910600b52994185b5eb706052bad84d273a2711da0474a744f46e764c2743",
+      "newsSha256": "813cca1e1bc8cae7bdbbad106e1e2421745165e85e77754e2787a8ec42034c15",
+      "newsCount": 4
+    },
+    {
+      "ticker": "TLN",
+      "company": "Talen Energy",
+      "sector": "power-grid",
+      "strikePrice": 280,
+      "exitPrice": 520,
+      "stanceLabel": "等待",
+      "rationaleSha256": "ed9e8a97686fbed833deacef9fb9f7c9ce5cfbe5e8752b80accfba653c7614dd",
+      "newsSha256": "9507a740f82394ba31eea2d18f2cb62aee4e1d2c909089bcb4d14364af1bf06f",
+      "newsCount": 1
+    },
+    {
+      "ticker": "GEV",
+      "company": "GE Vernova",
+      "sector": "power-grid",
+      "strikePrice": 800,
+      "exitPrice": 1600,
+      "stanceLabel": "已进击球区",
+      "rationaleSha256": "481341423deb62e02c2c114ca9def45f44731927814a8cb7b441e27f559efdab",
+      "newsSha256": "824082f49487081b87774269d4c76ef4350a68d6ce080a0fabd9a15c8584db20",
+      "newsCount": 1
+    },
+    {
+      "ticker": "VRT",
+      "company": "Vertiv",
+      "sector": "power-grid",
+      "strikePrice": 130,
+      "exitPrice": 300,
+      "stanceLabel": "等待",
+      "rationaleSha256": "45b4e124d0f19925d45f6c20295e37fc8c93c2b0cee2eb410b1bdf816e1b080e",
+      "newsSha256": "56e01d924745b2d720cce934fadd3cf4df49842f0da97fa2421ed4a19e648125",
+      "newsCount": 1
+    },
+    {
+      "ticker": "ETN",
+      "company": "Eaton",
+      "sector": "power-grid",
+      "strikePrice": 360,
+      "exitPrice": 620,
+      "stanceLabel": "已进击球区",
+      "rationaleSha256": "f6704952363bc347c610e662ffaa060ffafd78e099b8075ea318a927101da5af",
+      "newsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newsCount": 0
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron",
+      "sector": "semi-cycle",
+      "strikePrice": 450,
+      "exitPrice": 900,
+      "stanceLabel": "等待·顶部信号已现",
+      "rationaleSha256": "ec917032695257dec92de430fe6ead536879e1bd825d8f3906c113fe1aa42457",
+      "newsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newsCount": 0
+    },
+    {
+      "ticker": "SKHY",
+      "company": "SK Hynix",
+      "sector": "semi-cycle",
+      "strikePrice": 90,
+      "exitPrice": 190,
+      "stanceLabel": "观察",
+      "rationaleSha256": "c548d0addc7933e42d210efb84a86b2c39c7f4de673c9248bcb877bd4990667c",
+      "newsSha256": "3febdd46db3590f8eb96c9bbc7f2136213fb4805e97782fa7821969bdf80cced",
+      "newsCount": 1
+    },
+    {
+      "ticker": "AMAT",
+      "company": "Applied Materials",
+      "sector": "semi-cycle",
+      "strikePrice": 430,
+      "exitPrice": 780,
+      "stanceLabel": "已进区·仅小批",
+      "rationaleSha256": "96769b5f720938366a2d4d2dbb95f0ab74d12f53a208c405da4c272ec2b80256",
+      "newsSha256": "f406af256d47f207d6fa668bd7b595dd00900020a51f11a872b8110689ee49f7",
+      "newsCount": 1
+    },
+    {
+      "ticker": "CCJ",
+      "company": "Cameco",
+      "sector": "nuclear",
+      "strikePrice": 75,
+      "exitPrice": 145,
+      "stanceLabel": "等待",
+      "rationaleSha256": "2389b0c3c220dea8212ea88320b582b230b3bfb7d8848e8b2a072f9ac97ff9e2",
+      "newsSha256": "ff25b2c316316f4fb16bb438f9e15ec052fae1fa207895d51c503edc14c6b739",
+      "newsCount": 1
+    },
+    {
+      "ticker": "BWXT",
+      "company": "BWX Technologies",
+      "sector": "nuclear",
+      "strikePrice": 125,
+      "exitPrice": 220,
+      "stanceLabel": "接近击球区",
+      "rationaleSha256": "f3373ebc89d88e4b192493381e02856a5a6c82eb85da0fa58ceb68e251e9c7e8",
+      "newsSha256": "7aadcc591b77a8474e38c81320145e5417da7806eed70a8c135449a44fb05a80",
+      "newsCount": 1
+    },
+    {
+      "ticker": "LEU",
+      "company": "Centrus",
+      "sector": "nuclear",
+      "strikePrice": 130,
+      "exitPrice": 300,
+      "stanceLabel": "等待·逻辑受损",
+      "rationaleSha256": "5a109e61f42e636b12446ce043c64c22cee4d4dbe65c405c2f8c66e9bb95ccd5",
+      "newsSha256": "5625d2b402ceb60292984752e1dff7b54a0e51a9f8efd12c54264f271bdaa466",
+      "newsCount": 1
+    },
+    {
+      "ticker": "XE",
+      "company": "X-energy",
+      "sector": "nuclear",
+      "strikePrice": 10,
+      "exitPrice": 40,
+      "stanceLabel": "里程碑驱动·接近",
+      "rationaleSha256": "05872d8a560ea8fa8586e459c42890e158d57574b01e4cd6e867e16ca781e524",
+      "newsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newsCount": 0
+    },
+    {
+      "ticker": "OKLO",
+      "company": "Oklo",
+      "sector": "nuclear",
+      "strikePrice": 18,
+      "exitPrice": 70,
+      "stanceLabel": "事件交易",
+      "rationaleSha256": "8f8c5b46656d3290e9885d69d1804023c9a816bfc6194552c15ab73837debb48",
+      "newsSha256": "1cf668b8343d8ab2f1f6ea43af5d4dad26f7367d0a381c06efd0a04f707aace3",
+      "newsCount": 1
+    },
+    {
+      "ticker": "SMR",
+      "company": "NuScale",
+      "sector": "nuclear",
+      "strikePrice": 6,
+      "exitPrice": 25,
+      "stanceLabel": "价格到位·事实未到",
+      "rationaleSha256": "306c772ffd52034a7b871a77263482864fc36d7c3e4c3f7a501cb93eb6ff8bf8",
+      "newsSha256": "889f3411b5020fc812308ce9dc832d0cc3d3d8179960b0b6e280d145f7cb0c34",
+      "newsCount": 1
+    },
+    {
+      "ticker": "RKLB",
+      "company": "Rocket Lab",
+      "sector": "space",
+      "strikePrice": 40,
+      "exitPrice": 110,
+      "stanceLabel": "观察",
+      "rationaleSha256": "ad2221ab216f949c9570810c2143dfa7b987adf0b5c96019239ad940425fbcf2",
+      "newsSha256": "635b72517cd14a208921b5a858763260a54a267b2b947f25f7b465ce9d44795d",
+      "newsCount": 3
+    },
+    {
+      "ticker": "LUNR",
+      "company": "Intuitive Machines",
+      "sector": "space",
+      "strikePrice": 14,
+      "exitPrice": 40,
+      "stanceLabel": "★已进击球区",
+      "rationaleSha256": "797cfb018661c60e3f5e1e699a54ce5cd715b6c51bfd1231ba543b2af56aa005",
+      "newsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newsCount": 0
+    },
+    {
+      "ticker": "IRDM",
+      "company": "Iridium",
+      "sector": "space",
+      "strikePrice": 43,
+      "exitPrice": 54,
+      "stanceLabel": "条件观察",
+      "rationaleSha256": "965cffd7a69d1fdd983c73e0f6ca95a27f5cfb73c820c27d2a41124da0e50348",
+      "newsSha256": "7667941f2b605392cce8d4ca883e226a1f6064cf3c29de35b59bda00e68bedaa",
+      "newsCount": 1
+    },
+    {
+      "ticker": "ASTS",
+      "company": "AST SpaceMobile",
+      "sector": "space",
+      "strikePrice": 35,
+      "exitPrice": 130,
+      "stanceLabel": "已低于击球价·投机小仓",
+      "rationaleSha256": "a9de65020c4a027c2884f856037c5df94734fa2b312220749404477cb648f5e9",
+      "newsSha256": "ce28381d97a1c9e96800f6724344d1789c1d6ac65f4dffb280ae7568011137c3",
+      "newsCount": 1
+    },
+    {
+      "ticker": "KTOS",
+      "company": "Kratos Defense",
+      "sector": "space",
+      "strikePrice": 40,
+      "exitPrice": 80,
+      "stanceLabel": "观察",
+      "rationaleSha256": "4c098411e78bd1aa64110d864b8876cb7ac9fc0f2d9fff2c871eb240be6ad857",
+      "newsSha256": "2ece56a2df9df20ad59ed1b9e9ec14a0c919c4548c6d5964b96c40e24179e23c",
+      "newsCount": 1
+    },
+    {
+      "ticker": "SPCX",
+      "company": "SpaceX",
+      "sector": "space",
+      "strikePrice": 85,
+      "exitPrice": 190,
+      "stanceLabel": "不买",
+      "rationaleSha256": "b2de1aeaf97a9c377a6863278ab847509d1660194844ffda3843a4c25c559b06",
+      "newsSha256": "8a5a0d2756fae42c347de56b508c7b6229a6e50df282bef018e241f09335443b",
+      "newsCount": 1
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla",
+      "sector": "other-themes",
+      "strikePrice": 260,
+      "exitPrice": 480,
+      "stanceLabel": "等待",
+      "rationaleSha256": "81fed23ac3dc91766b82863f6d3b3a328ba77577dbded2a3c87998537a4a8004",
+      "newsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newsCount": 0
+    },
+    {
+      "ticker": "TWST",
+      "company": "Twist Bioscience",
+      "sector": "other-themes",
+      "strikePrice": 70,
+      "exitPrice": 200,
+      "stanceLabel": "错过·等回调",
+      "rationaleSha256": "db2260b1c0f89dd27482e9414f013eed3165f13bc07e05e95de0e7f718b5fb66",
+      "newsSha256": "ea8ef8fe2049daf70c66ae64715bdf14f27a7ec1a366171bcea07590879e772b",
+      "newsCount": 1
+    },
+    {
+      "ticker": "DNA",
+      "company": "Ginkgo",
+      "sector": "other-themes",
+      "strikePrice": 6,
+      "exitPrice": 15,
+      "stanceLabel": "回避",
+      "rationaleSha256": "d3c2204ca6ceac2ad8d11decd716baa310f63b4e0220cba1c4544fee6ea326e3",
+      "newsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newsCount": 0
+    },
+    {
+      "ticker": "COIN",
+      "company": "Coinbase",
+      "sector": "other-themes",
+      "strikePrice": 100,
+      "exitPrice": 280,
+      "stanceLabel": "先定信念",
+      "rationaleSha256": "fbff04470a6c4d3e3c7755d44a0400a42e6b421574f616ad2c38b29a55cf8b5d",
+      "newsSha256": "4b8e669a5a5777060f9c65068e51f4e663ed1c33f809d965f8c5b60bc4250620",
+      "newsCount": 1
+    }
+  ],
+  "notes": [
+    {
+      "id": "sheet-title",
+      "source": "A1",
+      "sha256": "f22451a956bedb182dbbe4869251f891a73523d2f446645b674c93d3a4f9f622"
+    },
+    {
+      "id": "sheet-howto",
+      "source": "A2",
+      "sha256": "7f66d82a0be5162743035ef652b3289d0e1b442d42684f890e2701198a296306"
+    },
+    {
+      "id": "news-format",
+      "source": "A41",
+      "sha256": "d8305ccd7e0803cab639d58737a81b3afd8f2031d63ff8ab807960cf0ec69db3"
+    },
+    {
+      "id": "strike-note",
+      "source": "A42",
+      "sha256": "a69904773760ce27ea5749ed480866762a715dabf726807dbca05717b50ac2af"
+    },
+    {
+      "id": "exit-logic",
+      "source": "A43",
+      "sha256": "01a9bbc27c30cf45d7fb74944a92e52ef08c15e589c38d50931b75e1d7de9d3f"
+    },
+    {
+      "id": "structure",
+      "source": "A44",
+      "sha256": "0ea0beaa734b4d314687416c75ce508a6308e7d1dc80a7ce2e805f671a302ced"
+    },
+    {
+      "id": "macro",
+      "source": "A45",
+      "sha256": "712021a8b08bc912fc4c6463d3b52a8b7d1c0b177646ebba7df0a2aef93314ad"
+    },
+    {
+      "id": "status-change",
+      "source": "A46",
+      "sha256": "08ed93c9a23229c40fbcc7b4e49d17256f3513aaaf0bdb384b75a62d19a30e9b"
+    },
+    {
+      "id": "self-correction",
+      "source": "A47",
+      "sha256": "de3b86468dc8950b4919fdb0221b0166b559d8f3cb48cf4dae346f1a0c06f663"
+    },
+    {
+      "id": "color-legend",
+      "source": "A48",
+      "sha256": "1dea679ddfe567c2d80035b93373855132d9ba9d93229c6eaa79295b2f7a46bc"
+    },
+    {
+      "id": "position-discipline",
+      "source": "A49",
+      "sha256": "94dccfba4d543bc0ca350fb124422362a1a85474340de029eaa5873bb9c2d503"
+    },
+    {
+      "id": "philosophy",
+      "source": "A50",
+      "sha256": "3ab70c8f467111fd0e387624971d798c853bad2a8204a0f1bbb40e491651f78c"
+    },
+    {
+      "id": "calendar",
+      "source": "A51",
+      "sha256": "3203a18c1c85a9092b7563a9a50806b7c7cf3f5da6f333fb5720bace71841664"
+    },
+    {
+      "id": "disclaimer",
+      "source": "A52",
+      "sha256": "337624523a3a9755fc29f80aa33438f587329e5bb8f0381038f4a92446d07000"
+    },
+    {
+      "id": "vst-correction",
+      "source": "A53",
+      "sha256": "6cb3dd43d67e25407399861df87eecd8dab26757755a9144568de9dd366fa954"
+    }
+  ]
+}

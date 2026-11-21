@@ -1,0 +1,75 @@
+{
+  "ticker": "VST",
+  "company": "Vistra",
+  "sector": "power-grid",
+  "strikePrice": 185,
+  "exitPrice": 340,
+  "exitLogic": "other",
+  "stance": {
+    "label": "等待",
+    "group": "wait"
+  },
+  "strikeNote": "$170-185击球；$185-200建仓",
+  "events": "2月 财报／德州立法会期",
+  "contentUpdatedOn": "2026-11-19",
+  "lastPrice": null,
+  "lastPriceNote": "原表【11/19更新】：本轮未取得可靠收盘价。",
+  "priceChanges": [
+    {
+      "date": "2026-08-05",
+      "field": "strike",
+      "from": 190,
+      "to": 185,
+      "reason": "★★8/5 VST判断修正：此前用市盈率口径判断其「72倍很贵」是错的——发电商应看EV/EBITDA，现为10.8倍。击球价由$190下修为$170-185、退出价上调至$340。理由：4GW未合约化核电产能，且2026/2027指引均未含Cogentrix与Meta/AWS的PPA贡献。",
+      "source": "原表 A53",
+      "note": "原文为“由$190下修为$170-185”，F列击球价取区间上沿$185"
+    },
+    {
+      "date": "2026-08-05",
+      "field": "exit",
+      "from": null,
+      "to": 340,
+      "reason": "★★8/5 VST判断修正：此前用市盈率口径判断其「72倍很贵」是错的——发电商应看EV/EBITDA，现为10.8倍。击球价由$190下修为$170-185、退出价上调至$340。理由：4GW未合约化核电产能，且2026/2027指引均未含Cogentrix与Meta/AWS的PPA贡献。",
+      "source": "原表 A53",
+      "note": "原表没有写明调整前的退出价"
+    }
+  ],
+  "rationale": [
+    {
+      "label": "11/19更新",
+      "date": "2026-11-19",
+      "text": "Q3调整后EBITDA $23.8亿(+50%)；2026指引上调至$71-75亿，首给2027指引$77-85亿(中值$81亿)；Cogentrix(5.5GW)已交割。按EV/EBITDA口径判断不变，击球$170-185／退出$340不变。新增风险：德州是其大本营，新州长的数据中心暂停主张对它比对CEG更直接。11/4 -14%，11/6财报后+10.6%。本轮未取得可靠收盘价，以C列为准。"
+    },
+    {
+      "label": "此前",
+      "date": null,
+      "text": "★★已深度修正——**此前用错了估值口径**：对重资产、高折旧、盈利受未实现对冲损益扭曲的发电商，市盈率无意义（我曾据此说「72倍很贵」）。正确尺子是EV/EBITDA，**现为10.8倍，不贵甚至偏便宜**。\n生意本质已从发电厂变为AI电力基础设施：与Meta签2,600MW、与AWS签PPA（均在PJM核电站、创纪录容量价），Comanche Peak另有20年1,200MW长约。**关键：还有4GW以上未合约化核电产能，每1GW新PPA（$100+/MWh）约带来$3.5亿年增量EBITDA**。以7.25倍2027E EBITDA收购Cogentrix（5,500MW燃气、$47亿）——用7.25倍买而市场给自己10.8倍，交易本身创造价值。\nQ1：营收$56.4亿、调整后EBITDA $14.94亿(+20%)、净利$10.3亿（去年同期净亏$2.68亿）、**ROE 43%**、EPS超预期53%。2026指引$68-76亿、FCF $39.25-47.25亿；2027中值$74-78亿——**且这两个指引完全不含Cogentrix与Meta/AWS的PPA贡献**。自2021年11月已回购约30%股本（$63亿），另有$15亿授权未用；两家机构上调至投资级。\n风险：气价波动（最大单一变量）、交割时净杠杆2.6倍、**核电计划外停机（保险赔运维不赔PPA收入）**、监管介入（纽约已对50MW+新数据中心发一年暂停令）。\n估值交叉验证：2027E EBITDA×12倍＝$200-222、Morgan Stanley目标$212。$185≈9-10倍2027E EV/EBITDA"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-06",
+      "title": "Q3 EBITDA +50%，给出2027指引",
+      "summary": "调整后EBITDA $23.8亿；2026指引$71-75亿，2027指引$77-85亿；营收$63.5亿不及预期。",
+      "url": "https://finviz.com/news/418349/vistra-shares-rise-5-as-q3-profit-surges-despite-revenue-miss-raises-2026-outlook"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "中期选举后单日-14%",
+      "summary": "德州新州长主张暂停新建数据中心；美银认为更大风险在州与地方层面。",
+      "url": "https://www.tikr.com/blog/constellation-energy-sinks-8-vistra-down-14-as-democrats-midterm-sweep-hits-ai-power-stocks"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Q2财报（美东10:00）",
+      "summary": "市场预期将创该季度新纪录，共识Q2 EBITDA约$17.9亿(+34%)。看点：Cogentrix交割进度、4GW未合约化核电是否有新PPA、气价对冲覆盖。",
+      "url": "https://simplywall.st/stocks/us/utilities/nyse-vst/vistra"
+    },
+    {
+      "date": "2026-07",
+      "title": "纽约对50MW+新建数据中心发一年期暂停令",
+      "summary": "凸显电力已成AI扩张的物理瓶颈，强化VST这类既有发电资产的稀缺性——但也说明监管开始干预这条链。",
+      "url": "https://simplywall.st/stocks/us/utilities/nyse-vst/vistra/future"
+    }
+  ]
+}
