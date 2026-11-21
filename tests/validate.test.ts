@@ -43,6 +43,8 @@ test('Anthropic 不能加进清单，披露不能删', () => {
 
 test('没有价格时必须写原因；新闻链接必须是 https；加粗标记要成对', () => {
   const raw = fresh();
+  // 11/21 更新后每个标的都有记录价，所以先把价格拿掉再检查“必须写原因”。
+  ticker(raw, 'CEG').lastPrice = null;
   delete ticker(raw, 'CEG').lastPriceNote;
   ticker(raw, 'GOOGL').news[0].url = 'http://example.com';
   ticker(raw, 'NVDA').rationale[0].text += '**';
