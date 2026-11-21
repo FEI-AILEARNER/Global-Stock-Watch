@@ -38,14 +38,25 @@ function priceAtImport(t: (typeof data.tickers)[number], field: 'strike' | 'exit
 test('导入：30 个标的、6 个板块，与原表一致', () => {
   assert.equal(snapshot.tickers.length, 30);
   assert.equal(snapshot.sectors.length, 6);
-  assert.deepEqual(data.sectors, snapshot.sectors);
   for (const s of imported) assert.ok(data.tickers.some((t) => t.ticker === s.ticker), `缺少 ${s.ticker}`);
   // 导入时的 30 个都在；以后新增标的不算错，但板块必须在 sectors.json 里（校验已保证）。
   if (data.site.contentUpdatedOn === baseline) {
+    assert.deepEqual(data.sectors, snapshot.sectors);
     assert.equal(data.tickers.length, 30);
     assert.deepEqual(data.tickers.map((t) => t.ticker), snapshot.tickers.map((t) => t.ticker), '顺序应与原表一致');
   }
   assert.equal(readdirSync(path.join(root, 'data/tickers')).length, data.tickers.length);
+});
+
+test('2026-11-21 更新后：25 个标的，移除的 5 家不在清单里、记在已移除里', () => {
+  if (data.site.contentUpdatedOn === baseline) return;
+  assert.equal(data.tickers.length, 25);
+  for (const code of ['ASTS', 'KTOS', 'TLN', 'VRT', 'ETN']) {
+    assert.ok(!data.tickers.some((t) => t.ticker === code), `${code} 应已移除`);
+    const r = data.removed.find((x) => x.name === code);
+    assert.ok(r && r.removedOn === '2026-11-21' && r.reason === 'Fei 决定移除', `${code} 的移除记录`);
+  }
+  assert.equal(imported.length, 25);
 });
 
 test('导入：每个标的的击球价、退出价、板块、公司名与原表一致', () => {
@@ -53,7 +64,8 @@ test('导入：每个标的的击球价、退出价、板块、公司名与原�
     const t = data.tickers.find((x) => x.ticker === s.ticker)!;
     assert.equal(priceAtImport(t, 'strike'), s.strikePrice, `${s.ticker} 击球价`);
     assert.equal(priceAtImport(t, 'exit'), s.exitPrice, `${s.ticker} 退出价`);
-    assert.equal(t.sector, s.sector, `${s.ticker} 板块`);
+    // 板块分组在内容更新时可以调整（调整写在更新记录里），所以只在导入那一版核对。
+    if (data.site.contentUpdatedOn === baseline) assert.equal(t.sector, s.sector, `${s.ticker} 板块`);
     assert.equal(t.company, s.company, `${s.ticker} 公司名`);
   }
 });
@@ -81,8 +93,9 @@ test('导入：表下方的说明逐字保留', (t) => {
 });
 
 test('导入：原表写明的历史调价都在改动记录里', () => {
+  // 已移除的标的档案不在了，跳过。
   const find = (code: string, field: string, from: number | null, to: number) =>
-    data.tickers.find((t) => t.ticker === code)!.priceChanges.some((c) => c.field === field && c.from === from && c.to === to);
+    !data.tickers.some((t) => t.ticker === code) || data.tickers.find((t) => t.ticker === code)!.priceChanges.some((c) => c.field === field && c.from === from && c.to === to);
   for (const [code, from, to] of [['GOOGL', 340, 300], ['NVDA', 180, 165], ['TLN', 250, 280], ['BWXT', 155, 125], ['ASTS', 45, 35], ['TWST', 45, 70]] as const)
     assert.ok(find(code, 'strike', from, to), `${code} ${from}→${to}`);
   for (const [code, from, to] of [['GOOGL', 540, 480], ['NVDA', 360, 300], ['BWXT', 260, 220], ['ASTS', 160, 130]] as const)

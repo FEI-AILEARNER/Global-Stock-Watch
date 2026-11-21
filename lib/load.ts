@@ -60,7 +60,7 @@ export function loadDataset(dir: string = dataDir()): Dataset {
       sectorOrder,
       readOrder(dir),
     ),
-    updates: data.updates.map((u) => u.data).sort((a, b) => b.date.localeCompare(a.date)),
+    updates: data.updates.map((u) => u.data).sort((a, b) => b.date.localeCompare(a.date) || (a.kind === 'content' ? -1 : 1)),
   };
 }
 

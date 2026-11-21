@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 import { StanceBadge } from '@/components/badges';
+import { KeyItems } from '@/components/key-items';
 import { QuotePanel } from '@/components/quote-panel';
 import { RichText } from '@/components/rich-text';
 import { getData, getTicker } from '@/lib/data';
@@ -46,6 +47,13 @@ export default async function TickerPage({ params }: Params) {
 
       <QuotePanel ticker={t.ticker} strikePrice={t.strikePrice} exitPrice={t.exitPrice} lastPrice={t.lastPrice} lastPriceNote={t.lastPriceNote} />
 
+      <section aria-labelledby="key-h" className="card mt-6 border-l-4 border-l-navy px-4 py-4 sm:px-6 sm:py-5">
+        <h2 id="key-h" className="font-serif text-xl font-semibold">
+          关键事项 <span className="ml-1 font-sans text-xs font-normal text-ink-soft">最重要的近期新闻和官方公告；总结是笔记自己的话，以原文为准</span>
+        </h2>
+        <KeyItems items={t.keyItems} />
+      </section>
+
       <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_22rem]">
         <div className="min-w-0 space-y-6">
           <section aria-labelledby="rationale-h" className="card px-4 py-4 sm:px-6 sm:py-5">
@@ -70,7 +78,7 @@ export default async function TickerPage({ params }: Params) {
           </section>
 
           <section aria-labelledby="news-h" className="card px-4 py-4 sm:px-6 sm:py-5">
-            <h2 id="news-h" className="font-serif text-xl font-semibold">重大新闻</h2>
+            <h2 id="news-h" className="font-serif text-xl font-semibold">新闻时间线 <span className="ml-1 font-sans text-xs font-normal text-ink-soft">此前各轮记录的原文</span></h2>
             {t.news.length === 0 ? (
               <p className="mt-2 text-sm text-ink-soft">本轮未检索到需记录的重大事件。</p>
             ) : (
@@ -101,8 +109,9 @@ export default async function TickerPage({ params }: Params) {
             {logic?.text ? (
               <p className="prose-note mt-1"><RichText text={logic.text} /></p>
             ) : (
-              <p className="prose-note mt-1 text-ink-soft">笔记的三种退出逻辑里没有点名这个标的。</p>
+              <p className="prose-note mt-1 text-ink-soft">没有归入三种退出逻辑。</p>
             )}
+            {t.exitLogicNote && <p className="prose-note mt-1 text-[0.88rem] text-ink-soft">归类理由：{t.exitLogicNote}</p>}
             <p className="mt-2 text-sm"><Link href="/discipline" className="link">看纪律页</Link></p>
           </section>
 

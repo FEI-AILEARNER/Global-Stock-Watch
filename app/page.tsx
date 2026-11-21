@@ -17,6 +17,8 @@ export default function HomePage() {
     stance: t.stance,
     events: t.events,
     lastPrice: t.lastPrice,
+    latestKey: t.keyItems[0] ? { date: t.keyItems[0].date, title: t.keyItems[0].title, url: t.keyItems[0].url, sourceType: t.keyItems[0].sourceType } : null,
+    keyCount: t.keyItems.length,
   }));
 
   return (
@@ -33,13 +35,13 @@ export default function HomePage() {
       <section aria-labelledby="macro-h" className="card mb-5 border-l-4 border-l-navy px-4 py-3 sm:px-5">
         <details open>
           <summary className="font-serif text-base font-semibold" id="macro-h">
-            宏观环境 <span className="ml-1 font-sans text-xs font-normal text-ink-soft">{zhDate(site.contentUpdatedOn)} 记录的原文</span>
+            宏观环境 <span className="ml-1 font-sans text-xs font-normal text-ink-soft">{zhDate(site.contentUpdatedOn)} 记录</span>
           </summary>
           <div className="mt-2"><NoteBody text={macro.text} /></div>
         </details>
         <details className="mt-3 border-t border-rule-soft pt-3">
           <summary className="font-serif text-base font-semibold">
-            状态变化 <span className="ml-1 font-sans text-xs font-normal text-ink-soft">{zhDate(site.contentUpdatedOn)} 记录的原文，其中的价格是当时的</span>
+            状态变化 <span className="ml-1 font-sans text-xs font-normal text-ink-soft">{zhDate(site.contentUpdatedOn)} 记录，其中的价格是所注日期的收盘价</span>
           </summary>
           <div className="mt-2"><NoteBody text={status.text} list={false} /></div>
         </details>

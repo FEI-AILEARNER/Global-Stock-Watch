@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { useMemo, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 
 import { StanceBadge, ZoneValue } from '@/components/badges';
+import { SourceTag } from '@/components/key-items';
 import { clock, useQuotes, viewPrice } from '@/components/use-quotes';
 import type { PriceView } from '@/components/use-quotes';
 import { marketCap, pct, shortDate, usd } from '@/lib/format';
@@ -21,6 +22,8 @@ export type Row = {
   stance: { label: string; group: StanceGroup };
   events: string;
   lastPrice: LastPrice | null;
+  latestKey: { date: string; title: string; url: string; sourceType: 'official' | 'media' } | null;
+  keyCount: number;
 };
 
 type Sort = 'sheet' | 'distance';
@@ -34,6 +37,19 @@ function PriceNote({ row, view }: { row: Row; view: PriceView }) {
     <span className="block whitespace-nowrap text-[0.7rem] leading-tight text-amber">
       非实时 · {when}
     </span>
+  );
+}
+
+function LatestKey({ row }: { row: Row }) {
+  if (!row.latestKey) return null;
+  return (
+    <p className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 text-[0.82rem] leading-snug">
+      <span className="text-xs text-ink-soft">最新</span>
+      <span className="num text-xs text-ink-soft">{shortDate(row.latestKey.date)}</span>
+      <SourceTag type={row.latestKey.sourceType} />
+      <a href={row.latestKey.url} target="_blank" rel="noopener noreferrer nofollow" className="link">{row.latestKey.title} ↗</a>
+      {row.keyCount > 1 && <Link href={`/t/${row.ticker}`} className="text-xs text-ink-soft underline underline-offset-2">共 {row.keyCount} 条</Link>}
+    </p>
   );
 }
 
@@ -172,6 +188,7 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
               <span className="font-sans text-xs font-normal text-ink-soft">{group.rows.length} 个</span>
             </h2>
           )}
+          {group.sector?.logic && <p className="-mt-1 mb-2 text-sm text-ink-soft">{group.sector.logic}</p>}
 
           {/* 768 像素以上：表格 */}
           <div className="card hidden overflow-x-auto md:block">
@@ -198,7 +215,8 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
                 {group.rows.map((r) => {
                   const v = view(r);
                   return (
-                    <tr key={r.ticker} className="border-b border-rule-soft align-top last:border-b-0 hover:bg-page/60" data-ticker={r.ticker}>
+                    <Fragment key={r.ticker}>
+                    <tr className={`align-top ${r.latestKey ? '' : 'border-b border-rule-soft'}`} data-ticker={r.ticker}>
                       <th scope="row" className="py-2.5 pl-3 pr-2 text-left">
                         <Link href={`/t/${r.ticker}`} className="link num text-[0.95rem] font-bold">{r.ticker}</Link>
                       </th>
@@ -218,6 +236,13 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
                       <td className="px-2 py-2.5"><StanceBadge label={r.stance.label} group={r.stance.group} /></td>
                       <td className="py-2.5 pl-2 pr-3 text-[0.85rem]">{r.events}</td>
                     </tr>
+                    {r.latestKey && (
+                      <tr className="border-b border-rule-soft">
+                        <td />
+                        <td colSpan={9} className="pb-2.5 pl-2 pr-3"><LatestKey row={r} /></td>
+                      </tr>
+                    )}
+                    </Fragment>
                   );
                 })}
               </tbody>
@@ -250,6 +275,7 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
                     {v.marketCap !== null && <span className="text-ink-soft">市值 <span className="num">{marketCap(v.marketCap)}</span></span>}
                   </div>
                   {r.events !== '—' && <p className="mt-1.5 text-sm"><span className="text-xs text-ink-soft">下一个事件　</span>{r.events}</p>}
+                  {r.latestKey && <div className="mt-2 border-t border-rule-soft pt-2"><LatestKey row={r} /></div>}
                 </li>
               );
             })}

@@ -1,5 +1,40 @@
 [
   {
+    "name": "ASTS",
+    "company": "AST SpaceMobile",
+    "removedOn": "2026-11-21",
+    "reason": "Fei 决定移除",
+    "source": "Fei 2026-11-21 的指示"
+  },
+  {
+    "name": "KTOS",
+    "company": "Kratos Defense",
+    "removedOn": "2026-11-21",
+    "reason": "Fei 决定移除",
+    "source": "Fei 2026-11-21 的指示"
+  },
+  {
+    "name": "TLN",
+    "company": "Talen Energy",
+    "removedOn": "2026-11-21",
+    "reason": "Fei 决定移除",
+    "source": "Fei 2026-11-21 的指示"
+  },
+  {
+    "name": "VRT",
+    "company": "Vertiv",
+    "removedOn": "2026-11-21",
+    "reason": "Fei 决定移除",
+    "source": "Fei 2026-11-21 的指示"
+  },
+  {
+    "name": "ETN",
+    "company": "Eaton",
+    "removedOn": "2026-11-21",
+    "reason": "Fei 决定移除",
+    "source": "Fei 2026-11-21 的指示"
+  },
+  {
     "name": "DJT",
     "removedOn": "2026-11-19",
     "reason": "不可定价／已改主题",

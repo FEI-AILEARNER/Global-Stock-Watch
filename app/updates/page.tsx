@@ -19,16 +19,18 @@ export default function UpdatesPage() {
       <p className="mt-2 text-sm text-ink-soft">内容只在“更新”时改。每次调整击球价或退出价，都在这里留下旧价、新价、日期和理由。</p>
 
       <div className="mt-6 space-y-6">
-        {updates.map((u) => {
-          const list = changes.filter((c) => c.date === u.date);
+        {updates.map((u, index) => {
+          // 同一天有两条记录时，调价只列在内容更新那一条下面。
+          const owner = updates.find((x) => x.date === u.date && x.kind === 'content') ?? updates.find((x) => x.date === u.date);
+          const list = owner === u ? changes.filter((c) => c.date === u.date) : [];
           return (
-            <section key={u.date} className="card px-4 py-4 sm:px-6" aria-labelledby={`u-${u.date}`}>
+            <section key={index} className="card px-4 py-4 sm:px-6" aria-labelledby={`u-${index}`}>
               <p className="flex flex-wrap items-center gap-x-3 text-xs text-ink-soft">
                 <span className="num">{u.date}</span>
                 <span className={`chip ${u.kind === 'content' ? 'bg-wait-bg text-wait' : 'bg-spec-bg text-spec'}`}>{u.kind === 'content' ? '内容更新' : '平台'}</span>
                 <span>出处：{u.origin}</span>
               </p>
-              <h2 id={`u-${u.date}`} className="mt-1 font-serif text-xl font-semibold">{u.title}</h2>
+              <h2 id={`u-${index}`} className="mt-1 font-serif text-xl font-semibold">{u.title}</h2>
               <div className="mt-2"><NoteBody text={u.text} list={false} /></div>
 
               {list.length > 0 && (

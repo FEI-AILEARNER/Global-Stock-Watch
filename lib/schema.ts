@@ -20,6 +20,16 @@ export const STANCE_META: Record<StanceGroup, { name: string; symbol: string }> 
 };
 
 export type RationaleEntry = { label: string; date: string | null; text: string };
+export type KeyItem = {
+  date: string;
+  title: string;
+  summary: string;
+  url: string;
+  /** official = 公司新闻稿、SEC 文件、监管机构公告；media = 媒体或第三方整理 */
+  sourceType: 'official' | 'media';
+  /** 来源的名字，如“NVIDIA 投资者关系新闻稿” */
+  source: string;
+};
 export type NewsItem = { date: string; title: string; summary: string; url: string };
 export type PriceChange = {
   date: string;
@@ -47,6 +57,8 @@ export type Ticker = {
   strikePrice: number;
   exitPrice: number;
   exitLogic: ExitLogicId;
+  /** 归入这一类退出逻辑的理由（一句话）；原表点名的可以不写 */
+  exitLogicNote?: string;
   stance: { label: string; group: StanceGroup };
   strikeNote: string;
   events: string;
@@ -54,14 +66,16 @@ export type Ticker = {
   lastPrice: LastPrice | null;
   lastPriceNote?: string;
   priceChanges: PriceChange[];
+  /** 关键事项：最重要的近期新闻／官方公告，最新在前，最多 6 条 */
+  keyItems: KeyItem[];
   rationale: RationaleEntry[];
   news: NewsItem[];
 };
 
-export type Sector = { id: string; name: string };
+export type Sector = { id: string; name: string; logic?: string };
 export type Note = { id: string; source: string; title: string; text: string };
 export type ExitLogic = { id: ExitLogicId; name: string; text: string | null };
-export type RemovedTicker = { name: string; removedOn: string | null; reason: string; source: string };
+export type RemovedTicker = { name: string; company?: string; removedOn: string | null; reason: string; source: string };
 export type CalendarData = { asOf: string; source: string; items: { text: string; tickers: string[] }[] };
 export type SiteMeta = {
   contentUpdatedOn: string;

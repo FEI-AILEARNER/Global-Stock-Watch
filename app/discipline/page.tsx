@@ -17,7 +17,7 @@ export default function DisciplinePage() {
     <div className="max-w-4xl">
       <p className="eyebrow">纪律</p>
       <h1 className="mt-1 font-serif text-3xl font-semibold tracking-tight">怎么出价，怎么退出</h1>
-      <p className="mt-2 text-sm text-ink-soft">以下都是笔记的原文，记录于 {zhDate(site.contentUpdatedOn)}。</p>
+      <p className="mt-2 text-sm text-ink-soft">以下是笔记的纪律部分；内容最近一次更新于 {zhDate(site.contentUpdatedOn)}。</p>
 
       <section className="mt-6 border-l-4 border-navy bg-paper px-5 py-4">
         <h2 className="eyebrow">核心哲学</h2>
@@ -45,8 +45,8 @@ export default function DisciplinePage() {
           ))}
         </div>
         <p className="mt-4 border-t border-rule-soft pt-3 text-sm text-ink-soft">
-          笔记没有点名归类的 {tickers.filter((t) => t.exitLogic === 'other').length} 个标的，平台里记为“其他”：
-          {tickers.filter((t) => t.exitLogic === 'other').map((t) => t.ticker).join('、')}。
+          没有归入这三类的 {tickers.filter((t) => t.exitLogic === 'other').length} 个标的记为“其他”：
+          {tickers.filter((t) => t.exitLogic === 'other').map((t) => t.ticker).join('、')}。各标的归类的理由见它的详情页。
         </p>
         <details className="mt-3 text-sm">
           <summary className="text-navy">这一段的原文</summary>
@@ -76,7 +76,7 @@ export default function DisciplinePage() {
         <ul className="mt-3 divide-y divide-rule-soft border-t border-rule text-sm">
           {removed.map((r) => (
             <li key={r.name} className="grid gap-x-4 gap-y-0.5 py-2.5 md:grid-cols-[10rem_9rem_minmax(0,1fr)]">
-              <span className="font-semibold">{r.name}</span>
+              <span className="font-semibold">{r.name}{r.company ? <span className="ml-1 font-normal text-ink-soft">{r.company}</span> : null}</span>
               <span className="num text-ink-soft">{r.removedOn ?? '此前（未记日期）'}</span>
               <span>{r.reason}</span>
             </li>

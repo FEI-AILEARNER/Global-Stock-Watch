@@ -33,7 +33,7 @@ export function validateDataset(raw: {
   if (!Array.isArray(raw.sectors) || raw.sectors.length === 0) err('meta/sectors.json', '必须是非空数组');
   else
     for (const s of raw.sectors) {
-      if (!obj(s) || !text(s.id) || !text(s.name)) err('meta/sectors.json', '每个板块都要有 id 和 name');
+      if (!obj(s) || !text(s.id) || !text(s.name) || (s.logic !== undefined && !text(s.logic))) err('meta/sectors.json', '每个板块都要有 id 和 name；logic 写了就不能为空');
       else if (sectorIds.has(s.id)) err('meta/sectors.json', `板块 id 重复：${s.id}`);
       else sectorIds.add(s.id);
     }
@@ -95,6 +95,20 @@ export function validateDataset(raw: {
       });
     }
 
+    if (t.exitLogicNote !== undefined && !text(t.exitLogicNote)) err(w, 'exitLogicNote 写了就不能为空');
+    if (!Array.isArray(t.keyItems)) err(w, 'keyItems 必须是数组（没有就写 []）');
+    else {
+      if (t.keyItems.length > 6) err(w, 'keyItems 最多 6 条');
+      const items: unknown[] = t.keyItems;
+      items.forEach((k: unknown, i: number) => {
+        if (!obj(k) || !text(k.title) || !text(k.summary) || !text(k.source)) return err(w, `keyItems[${i}] 要有 title、summary、source`);
+        if (typeof k.date !== 'string' || !NEWS_DATE.test(k.date)) err(w, `keyItems[${i}].date 要写 YYYY-MM-DD 或 YYYY-MM`);
+        if (typeof k.url !== 'string' || !/^https:\/\/\S+$/.test(k.url)) err(w, `keyItems[${i}].url 必须是 https 链接`);
+        if (k.sourceType !== 'official' && k.sourceType !== 'media') err(w, `keyItems[${i}].sourceType 只能是 official 或 media`);
+        const prev = items[i - 1];
+        if (i > 0 && obj(prev) && String(prev.date) < String(k.date)) err(w, 'keyItems 要按日期从新到旧排列');
+      });
+    }
     if (!Array.isArray(t.news)) err(w, 'news 必须是数组（没有就写 []）');
     else
       t.news.forEach((n: unknown, i: number) => {
@@ -166,6 +180,7 @@ export function validateDataset(raw: {
     if (!excluded.some((e) => obj(e) && e.ticker === 'ANT' && text(e.text))) err('meta/site.json', 'excluded 里必须保留 Anthropic（ANT）的利益冲突披露');
   }
 
+  const removedNames = new Set<string>(Array.isArray(raw.removed) ? raw.removed.filter(obj).map((r) => String(r.name)) : []);
   const updateDates = new Set<string>();
   for (const { file, data } of raw.updates) {
     const w = `updates/${file}`;
@@ -173,12 +188,14 @@ export function validateDataset(raw: {
       err(w, '不是对象');
       continue;
     }
-    if (!realDate(data.date) || file !== `${data.date}.json`) err(w, '文件名必须是 <date>.json，date 为真实日期');
+    if (!realDate(data.date) || !(file === `${data.date}.json` || (file.startsWith(`${data.date}-`) && file.endsWith('.json'))))
+      err(w, '文件名必须是 <date>.json 或 <date>-<简称>.json，date 为真实日期');
     else updateDates.add(data.date);
     if (data.kind !== 'content' && data.kind !== 'platform') err(w, 'kind 只能是 content 或 platform');
     if (!text(data.title) || !text(data.text) || !text(data.origin)) err(w, '要有 title、origin、text');
     if (!Array.isArray(data.tickers)) err(w, 'tickers 必须是数组');
-    else for (const c of data.tickers) if (!seen.has(String(c))) err(w, `引用了清单里没有的代码 ${String(c)}`);
+    // 旧的更新记录可以提到后来移除的标的（记在 meta/removed.json 里）。
+    else for (const c of data.tickers) if (!seen.has(String(c)) && !removedNames.has(String(c))) err(w, `引用了清单里没有、也不在已移除名单里的代码 ${String(c)}`);
   }
   // 每一次调价都要能在更新记录里找到同一天的一条。
   for (const { file, data } of raw.tickers) {
