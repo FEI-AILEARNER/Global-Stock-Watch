@@ -2,24 +2,32 @@
   "ticker": "NVDA",
   "company": "NVIDIA",
   "sector": "ai-core",
-  "strikePrice": 165,
+  "strikePrice": 145,
   "exitPrice": 300,
   "exitLogic": "compounder",
   "stance": {
-    "label": "价格已进区·治理待查",
+    "label": "价格已进区·调查未明只看不加",
     "group": "watch"
   },
-  "strikeNote": "$150-165可建首批（不超过计划仓位1/3）；余下等调查结论与正式CEO",
-  "events": "调查结论／正式CEO／2月财报",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "$125-145是击球区（约12-13.5倍年化Q3非GAAP EPS）；SEC调查、独立委员会结论、正式CEO三件事有一件落地前，不超过计划仓位1/3",
+  "events": "SEC调查／独立委员会结论／正式CEO／12月2日除息／2月财报",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 152.1,
-    "asOf": "2026-11-18",
+    "value": 125.53,
+    "asOf": "2026-11-20",
     "approx": false,
-    "quote": "现价$152.1(11/18)",
-    "recordedOn": "2026-11-19"
+    "quote": "11/20 收盘价 $125.53（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
   "priceChanges": [
+    {
+      "date": "2026-11-21",
+      "field": "strike",
+      "from": 165,
+      "to": 145,
+      "reason": "击球价$165→$145。11/19下修时只计入了CEO辞职和董事会独立调查；之后确认的新事实是监管层面升级：《华尔街日报》11/17报道SEC已展开民事调查，查的是公司披露是否误导投资者（涉及经东南亚转售），加州总检察长也表示在了解情况。调查对象从“前CEO个人”变成“公司披露”，直接关系到盈利数字能不能照单全收，所以再加一层折价：$145≈年化Q3非GAAP EPS（$2.68×4=$10.72）的13.5倍，原$165约15.4倍。退出价$300不动。",
+      "source": "Agent 4，2026-11-21 更新（见当天的定价依据）"
+    },
     {
       "date": "2026-11-19",
       "field": "strike",
@@ -37,8 +45,54 @@
       "source": "原表【11/19更新】与 A42"
     }
   ],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-20",
+      "title": "单日-14%收$125.53，标普七连跌进入回调",
+      "summary": "路透收盘稿：英伟达当天跌13.8%，标普500跌3.7%收6,910.42，纳指跌5.28%、年内转负，VIX为2025年4月以来最高收盘。稿子把抛售归因于Anthropic上市次日回落和对AI支出的担忧，**正文没有提到SEC**；另有市场通讯称路透当天报道SEC执法人员在查英伟达的会计问题，这一条本轮没有找到路透原文，未采用为事实。",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-slip-anthropic-104746137.html",
+      "sourceType": "media",
+      "source": "路透（Yahoo Finance 转载）"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "媒体：SEC对英伟达展开民事调查，查披露是否误导投资者",
+      "summary": "InvestmentNews转述《华尔街日报》：SEC的民事调查部分针对公司披露，背景是前CEO与新加坡Megaspeed一名高管的关系，以及芯片是否经东南亚转售到中国；司法部另有多项相关调查。加州总检察长称“已出现危险信号”，正在判断是否采取行动；财长Bessent要求董事会十天内答复。同文提到公司预计2028财年营收增长约75%（8月时是70%）。",
+      "url": "https://www.investmentnews.com/equities/embattled-nvidia-faces-sec-probe-as-california-attorney-general-mulls-action/269054",
+      "sourceType": "media",
+      "source": "InvestmentNews（转述《华尔街日报》）"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Q3 FY27财报：营收$1,158亿(+103%)，Q4毛利率指引降到71-72%",
+      "summary": "数据中心$1,076亿(+110%)，非GAAP毛利率74.9%，非GAAP EPS $2.68，单季自由现金流$438亿。Q4指引营收$1,300亿±3%（多一周，且不含中国数据中心算力收入），毛利率71%至72%。董事会把回购授权增加$1,500亿，剩余约$2,273亿；库存从1月的$214亿升到$397亿。新闻稿的风险提示里写明“独立委员会的调查仍在进行”和“正在物色新CEO”。",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+      "sourceType": "official",
+      "source": "NVIDIA 投资者关系：财报新闻稿"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "8-K：黄仁勋即日卸任总裁、CEO和董事，Kress任临时CEO",
+      "summary": "董事会公告没有给出原因。CFO Colette Kress兼任临时CEO直到正式人选确定；Harvey Jones出任公司历史上第一位董事会主席。董事会说会在内部和外部同时物色人选，没有给时间表，并称运营、客户承诺和产品路线图不受影响。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件）"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "国会三位委员会主席要求黄仁勋说明情况，股东提起集体诉讼",
+      "summary": "Decrypt报道：众议院外交委员会主席Mast表示若得不到回应将发传票；董事会11/8宣布独立调查CEO是否成为外国情报行动的目标，并称没有理由认为国家安全或公司机密受损；11/9有股东提起拟议的集体诉讼。报道同时说明，指控并未证实黄仁勋本人违反出口规定。",
+      "url": "https://decrypt.co/382974/nvidia-erases-2026-gains-republicans-threaten-ceo-subpoena",
+      "sourceType": "media",
+      "source": "Decrypt"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$125.53，单日-14%，较11/18的$152.1再跌17%。**击球价$165→$145，退出价$300维持。**下修的理由不是业务：Q3营收$1,158亿、自由现金流$438亿、回购授权新增$1,500亿，公司还把2028财年营收增速预期提到约75%。理由是11/19那次只计入了CEO辞职和董事会独立调查，而媒体报道SEC已就“披露是否误导投资者”展开民事调查、加州总检察长在评估——问题从个人变成了公司披露，盈利数字的可信度要打折。$145≈年化Q3非GAAP EPS $10.72的13.5倍；现价约11.7倍。靠什么赚钱：数据中心GPU和整机系统，占营收93%。逻辑成立的关键条件：调查不指向财务重述或大额出口管制处罚；毛利率在71-72%止住。最大的风险：SEC或司法部的结论涉及收入确认或对华转售，这会同时打掉盈利和估值倍数。下一个要看的：独立委员会结论、SEC进展、正式CEO人选。按“事实先行”，这三件事有一件落地前只保留首批，不因价格更低而加码。披露：Anthropic是NVDA客户，NVDA投资了Anthropic；Anthropic是我的开发方。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",

@@ -4,19 +4,54 @@
   "sector": "power-grid",
   "strikePrice": 230,
   "exitPrice": 400,
-  "exitLogic": "other",
+  "exitLogic": "compounder",
   "stance": {
-    "label": "等待",
-    "group": "wait"
+    "label": "接近击球区",
+    "group": "watch"
   },
-  "strikeNote": "$230（现约18倍2026E EPS $12.65）；政治风险折价后不上调",
-  "events": "2月 财报／FERC共址规则(2027H1)",
-  "contentUpdatedOn": "2026-11-19",
-  "lastPrice": null,
-  "lastPriceNote": "原表【11/19更新】：本轮未取得可靠收盘价。",
+  "strikeNote": "$230≈18倍2026指引中值EPS $12.65；11/20收$237.41，高约3%。政治风险折价后不上调",
+  "events": "2月 Q4财报与2027指引／FERC共址规则(2027H1)／Crane机组2027下半年重启",
+  "contentUpdatedOn": "2026-11-21",
+  "lastPrice": {
+    "value": 237.41,
+    "asOf": "2026-11-20",
+    "approx": false,
+    "quote": "11/20 收盘价 $237.41（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
+  },
   "priceChanges": [],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-12",
+      "title": "电话会：Crane（三哩岛1号）重启仍按2027下半年；管理层称选举后的下跌“有点反应过度”",
+      "summary": "美国核学会转述财报电话会：重启进度被称为早于计划，NRC已在9月给出无重大环境影响的结论。Q3与三家客户签的协议合计4,560MW，其中1,165MW是增容带来的新核电容量，对应投资$43亿（2026-27年约$13亿，其余在2028-32年）；能源部有条件贷款最高$50亿。CEO认为数据中心问题存在两党都能接受的方案。",
+      "url": "https://www.ans.org/news/article-8576/constellation-q3-updates-new-peak-uprates-restart-midterm-elections/",
+      "sourceType": "media",
+      "source": "美国核学会 Nuclear Newswire"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "新签三份长约：Google、Amazon各20年，另有一份270MW的Peak+",
+      "summary": "财报新闻稿披露：与Google的20年购电协议支持在伊利诺伊、宾州、新泽西11台机组上投资超过$43亿、新增约890MW，首个增容2028年完成，另有一份15年、2,700MW的金融性负荷跟随协议；与Amazon的20年690MW协议支持Calvert Cliffs超过$30亿投资。另以$7.15亿向Shell收购罗德岛609MW燃气电厂，待监管批准。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001868275/000186827526000116/ceg-20261109991.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件）：Q3 财报新闻稿"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Q3财报：调整后EPS $5.06（去年$3.04），全年指引上调并收窄至$12.50-12.80",
+      "summary": "GAAP EPS $5.19。这是今年第二次上调指引中值；Calpine并表是主要增量，部分被利息和核电税收抵免的变化抵消。核电机组容量因子97.2%。前三季回购$30亿（去年同期$4亿）。新闻稿没有给2027年展望。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001868275/000186827526000116/ceg-20261109991.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件）：Q3 财报新闻稿"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$237.41（单日-5.8%），比击球价$230高约3%。**击球价$230、退出价$400维持。**估值口径：2026调整后EPS指引中值$12.65，$230约18.2倍、现价约18.8倍。11/19已说明为什么盈利上修没有换来击球价上调（地方数据中心限制、FERC共址规则未定），这两天没有新事实改变这个权衡。靠什么赚钱：全美最大的核电机组群，把电以20年长约卖给Google、Amazon这类客户，Calpine并表后还有燃气机组。逻辑成立的关键条件：已签长约按期落地（首个增容2028年），FERC的共址规则不推翻“电厂旁直供”的模式。最大的风险：监管——FERC规则和各州对数据中心的限制；其次是$73亿以上的增容投资回报靠单一客户类型。下一个要看的：2月Q4财报首次给2027指引。离击球价只差3%，到价即可按纪律分批。退出逻辑归为优质复利机。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",
@@ -41,5 +76,6 @@
       "summary": "CEG -8%、VST -14%、GEV -7%。至少10个社区通过数据中心禁令或限制；德州新任州长曾呼吁暂停新建数据中心。",
       "url": "https://www.tikr.com/blog/constellation-energy-sinks-8-vistra-down-14-as-democrats-midterm-sweep-hits-ai-power-stocks"
     }
-  ]
+  ],
+  "exitLogicNote": "核电机组加20年期长约，盈利路径由合同锁定；退出看估值极端和逻辑破裂（合约被监管推翻、机组出事），不是电价周期。"
 }

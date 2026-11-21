@@ -4,25 +4,46 @@
   "sector": "ai-core",
   "strikePrice": 175,
   "exitPrice": 310,
-  "exitLogic": "other",
+  "exitLogic": "compounder",
   "stance": {
     "label": "观察",
     "group": "watch"
   },
-  "strikeNote": "$175（约14倍前瞻）；退出$310",
-  "events": "1月 财报",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "$175（约13-14倍前瞻）；11/20收$224.44，仍高约28%。回到$200以下再重新算",
+  "events": "1月下旬 Q4财报与2027指引",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 253,
-    "asOf": "2026-10-26",
-    "approx": true,
-    "quote": "约$253(10/26，较旧)",
-    "recordedOn": "2026-11-19",
-    "note": "原文注明“较旧”"
+    "value": 224.44,
+    "asOf": "2026-11-20",
+    "approx": false,
+    "quote": "11/20 收盘价 $224.44（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
   "priceChanges": [],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-16",
+      "title": "与费米实验室、NVIDIA宣布计划共建量子与经典计算协同设计平台",
+      "summary": "IBM新闻稿：三方“计划推出”一个把NVIDIA DGX系统和IBM量子计算机（含Nighthawk处理器）配在一起的平台，面向粒子物理等问题；没有金额、没有时间表，属于规划阶段。对估值没有可量化的影响，记下来是因为量子是市场给IBM额外估值的那一块。",
+      "url": "https://newsroom.ibm.com/2026-11-16-ibm,-fermilab,-and-nvidia-announce-plans-for-new-co-design-platform-to-accelerate-the-development-of-next-generation,-modular-quantum-computers",
+      "sourceType": "official",
+      "source": "IBM 新闻稿"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Q3财报：营收$171亿(+5%)，上调全年自由现金流预期",
+      "summary": "软件$78亿(+8%)、咨询$53亿(持平)、基础设施$37亿(+4%)；经营性EPS $2.95(+11%)。前三季自由现金流$78亿，全年预计同比增加超过$10亿（上调）；全年固定汇率营收增长4%至5%不变。期末总债务$638亿、现金$111亿；季度股息$1.69，12/10发放。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件）：Q3 财报新闻稿"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$224.44（当天+0.3%，是清单里唯一收涨的），距击球价$175仍高约28%。**击球价$175、退出价$310维持。**理由：Q3营收只增5%（固定汇率6%）、咨询零增长，全年指引4-5%；11/19笔记记的前瞻市盈率是$253对应19.4倍，按同一盈利预期推算现价约17倍、$175约13.4倍（推算，本轮未重新核实一致预期）。5%的营收增速配17倍，在10年期4.9%的环境里仍没有安全边际。靠什么赚钱：软件订阅和大型机的经常性现金流，全年自由现金流预计同比多$10亿以上，股息$1.69/季。逻辑成立的关键条件：软件保持高个位数增长、咨询不再下滑。最大的风险：$638亿总债务在加息环境里的再融资成本；量子估值被市场收回。下一个要看的：1月下旬Q4财报。这轮AI抛售里它跌得最少，印证了低波动的定位，但低波动不等于便宜。退出逻辑归为优质复利机。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",
@@ -47,5 +68,6 @@
       "summary": "Susquehanna将目标价从$303下调至$225（维持中性，其量子估值$65/股未变）；Citi从$255降至$245维持买入；Bleichmar Fonti & Auld宣布对IBM展开调查。",
       "url": "https://stockanalysis.com/stocks/ibm/"
     }
-  ]
+  ],
+  "exitLogicNote": "低波动、靠软件和大型机现金流加股息；退出看估值极端（$310）而不是周期或里程碑。量子部分是附带的期权，不单独定价。"
 }

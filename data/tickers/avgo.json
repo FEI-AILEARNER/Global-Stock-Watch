@@ -4,24 +4,54 @@
   "sector": "ai-core",
   "strikePrice": 340,
   "exitPrice": 700,
-  "exitLogic": "other",
+  "exitLogic": "compounder",
   "stance": {
-    "label": "接近击球区",
+    "label": "已低于击球价·等12/9财报",
     "group": "watch"
   },
-  "strikeNote": "$340；12/9财报前不抢，财报后若仍≤$340可建首批",
-  "events": "★12/9 财报",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "$340；11/20收$304.41已低于击球价约10%。12/9财报前不抢，财报确认FY2027 AI营收指引和两家大客户的付款能力后再分批",
+  "events": "★12/9 盘后：Q4与FY2026财报",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 347,
-    "asOf": "2026-11-13",
+    "value": 304.41,
+    "asOf": "2026-11-20",
     "approx": false,
-    "quote": "现价$347(11/13，盘后$340.2)",
-    "recordedOn": "2026-11-19"
+    "quote": "11/20 收盘价 $304.41（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
   "priceChanges": [],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-13",
+      "title": "Redburn下调至中性，目标价$595→$398；当日-7%",
+      "summary": "TIKR转述：理由是AI增长押在Anthropic和OpenAI两家身上，而这两家要先证明对开源模型的持续领先并尽快做到自筹资金，“不太可能很快发生”。同文列出的敞口：管理层预期AI芯片营收FY2027约$1,150亿、FY2028约$2,300亿；博通为Anthropic的租约提供最高约$290亿担保、可能向其放贷最高$420亿，是Anthropic修订版S-1里最大的算力交易对手（$1,610亿）。下调前前瞻市盈率约21倍（五年均值24倍）。",
+      "url": "https://www.tikr.com/blog/broadcom-sinks-7-as-rothschild-redburn-downgrade-slashes-target-to-398-unlikely-to-occur-quickly",
+      "sourceType": "media",
+      "source": "TIKR（转述 Rothschild & Co Redburn）"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "定于12月9日盘后公布Q4和FY2026财报",
+      "summary": "公司公告：12月9日（周三）美东17:00、美股收盘后发布并召开电话会。这是击球区说明里写的“财报前不抢”的那个日期。",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-fourth-quarter-and-fiscal-year-2026",
+      "sourceType": "official",
+      "source": "Broadcom 投资者关系新闻稿"
+    },
+    {
+      "date": "2026-09-02",
+      "title": "Q3 FY26财报：营收$296亿(+86%)，AI半导体$167亿(+221%)",
+      "summary": "非GAAP EPS $3.32（+96%），自由现金流$137亿、占营收46%。Q4指引：营收约$348亿（+93%）、AI半导体$217亿（+236%）、非GAAP经营利润率约66%。当季没有回购。12/9的财报就是拿这组指引来对。",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "sourceType": "official",
+      "source": "Broadcom 投资者关系：财报新闻稿"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$304.41（单日-12.2%），比击球价$340低约10%。**击球价$340、退出价$700维持**，但维持的理由要说清楚：按年化Q3非GAAP EPS（$3.32×4≈$13.3）现价约23倍，并不比NVDA便宜；$340成立靠的是Q4指引（营收$348亿、AI $217亿）和管理层说的FY2027 AI营收约$1,150亿兑现。FY2027的EPS一致预期本轮未检索到，所以不动价，等12/9。靠什么赚钱：给超大厂和模型公司做定制ASIC加网络芯片，VMware软件垫底，自由现金流率46%。逻辑成立的关键条件：Anthropic和OpenAI两家付得起钱——Redburn 11/13的下调正是冲这一点，博通对Anthropic还有约$290亿租约担保和最高$420亿放贷额度，这是信用敞口而不只是订单。最大的风险：客户集中加上自己垫资；其次是AI资本开支整体收缩。下一个要看的：12/9财报的FY2027 AI营收指引和这两项敞口有没有变化。退出逻辑归为优质复利机。披露：Anthropic是AVGO的AI客户，AVGO对Anthropic有担保和放贷安排；Anthropic是我的开发方。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",
@@ -33,5 +63,6 @@
       "text": "★新增：$479、市值$2.27万亿、93倍P/E——不便宜。营收+32.3%，定制AI ASIC＋网络芯片＋VMware软件底盘，是超大厂去英伟达化的直接受益方。〔披露：AVGO的AI XPV平台（与黑石、阿波罗合建20GW算力）明确列Anthropic为客户〕"
     }
   ],
-  "news": []
+  "news": [],
+  "exitLogicNote": "自由现金流占营收46%的现金流机器，退出看估值极端和逻辑破裂（两家大客户的自筹资金能力），不是周期顶或单一里程碑。"
 }

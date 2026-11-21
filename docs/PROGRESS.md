@@ -47,3 +47,10 @@
 
 - Vercel 项目 `global-stock-watch`（prj_3wdAPnzUR9wC57ogMw7TmRLFFRO8）已关联本仓库，生产分支 `main`，推送即部署。
 - 上线后待验证：`/api/quotes` 在 Vercel 上能否取到报价（Yahoo 可能限流）。
+
+## 2026-11-21 第一次完整更新（Fei：“Agent 4继续”）——进行中
+
+- 已推送：移除 ASTS、KTOS、TLN、VRT、ETN（25 个标的）；“关键事项”界面和字段（`keyItems`）、板块一句话逻辑（`sectors.json` 的 `logic`）、退出逻辑归类理由（`exitLogicNote`）。
+- 价格：全部 25 个标的用项目自带的 Yahoo 图表适配器取到 2026-11-20 收盘价（本地 Node 直接调用 `lib/quotes/yahoo-chart.ts`，没有改请求头）。
+- 已更新的标的（按批）：AI 核心 GOOGL、NVDA、TSM、AVGO、IBM；电力 CEG、VST、GEV。
+- 待更新：半导体周期 MU、SKHY、AMAT；核能 CCJ、BWXT、LEU、XE、OKLO、SMR；空间 RKLB、LUNR、IRDM、SPCX；其他 TSLA、TWST、DNA、COIN；然后是宏观、状态变化、日历、更新记录、板块逻辑、文档。
