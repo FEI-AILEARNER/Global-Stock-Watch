@@ -9,7 +9,8 @@ import { zhDate } from '@/lib/format';
 export const metadata: Metadata = { title: '纪律' };
 
 export default function DisciplinePage() {
-  const { exitLogic, tickers, removed, site } = getData();
+  const { exitLogic, tickers, removed, site, notes } = getData();
+  const latestCorrection = notes.find((n) => n.id === 'self-correction-latest');
   const note = (id: string) => getNote(id).text;
   const strip = (text: string, prefix: string) => (text.startsWith(prefix) ? text.slice(prefix.length) : text);
 
@@ -56,6 +57,7 @@ export default function DisciplinePage() {
 
       <section className="card mt-6 px-4 py-4 sm:px-6">
         <h2 className="font-serif text-xl font-semibold">自我校正与披露</h2>
+        {latestCorrection && <div className="mt-2 border-b border-rule-soft pb-3"><NoteBody text={latestCorrection.text} /></div>}
         <div className="mt-2"><NoteBody text={note('self-correction')} /></div>
         <div className="mt-4 border-t border-rule-soft pt-3">
           <h3 className="text-sm font-semibold">不纳入清单</h3>

@@ -8,6 +8,8 @@ export default function HomePage() {
   const { tickers, sectors, site } = getData();
   const macro = getNote('macro');
   const status = getNote('status-change');
+  const { notes } = getData();
+  const prev = ['macro-prev', 'status-change-prev'].map((id) => notes.find((n) => n.id === id)).filter((n) => n !== undefined);
   const rows: Row[] = tickers.map((t) => ({
     ticker: t.ticker,
     company: t.company,
@@ -45,6 +47,17 @@ export default function HomePage() {
           </summary>
           <div className="mt-2"><NoteBody text={status.text} list={false} /></div>
         </details>
+        {prev.length > 0 && (
+          <details className="mt-3 border-t border-rule-soft pt-3 text-sm">
+            <summary className="text-navy">上一轮的原文</summary>
+            {prev.map((n) => (
+              <div key={n.id} className="mt-2">
+                <p className="text-xs font-semibold text-ink-soft">{n.title}</p>
+                <NoteBody text={n.text} list={false} />
+              </div>
+            ))}
+          </details>
+        )}
       </section>
 
       <Watchlist rows={rows} sectors={sectors} />

@@ -9,19 +9,49 @@
     "label": "等待·顶部信号已现",
     "group": "wait"
   },
-  "strikeNote": "$350-450正常化",
-  "events": "★约12/16 财报",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "$350-450正常化（中周期EPS $25-35×12-15倍）；11/20收$594.51，仍高约32%",
+  "events": "★12月 FQ1财报（公司尚未公告具体日期，本轮未检索到）",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 719,
-    "asOf": "2026-11-16",
+    "value": 594.51,
+    "asOf": "2026-11-20",
     "approx": false,
-    "quote": "现价$719(11/16，单日-7.6%)",
-    "recordedOn": "2026-11-19"
+    "quote": "11/20 收盘价 $594.51（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
   "priceChanges": [],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-17",
+      "title": "11/16单日-7.6%收$719，公司当天没有任何公告",
+      "summary": "Trefis：34家市值$20亿以上的半导体公司里33家下跌，属于NVDA财报和Anthropic上市前的板块性抛售。过去一年最高收盘价$1,213.56（6/25）。管理层在9/30电话会上的说法是，2027财年其余季度的毛利率会高于FQ1，涨价延续但幅度放缓。之后11/20再跌到$594.51。",
+      "url": "https://www.trefis.com/stock/mu/articles/625793/why-did-micron-stock-fall-nearly-8/2026-11-17",
+      "sourceType": "media",
+      "source": "Trefis"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "现货价回落而合约价仍涨：DDR5一周-2.1%，NAND晶圆一个月-14%",
+      "summary": "FourWeekMBA整理TrendForce数据：11/3至11/11，DDR5 16Gb现货均价-2.1%、DDR4 16Gb -3.5%；512Gb TLC晶圆10/5至11/2累计-14.2%。合约端，Q4 DRAM合约价预计环比涨约20%（Q2约80%、Q3约40%），涨幅逐季收窄。这正是11/19写的“现货先掉头、合约还在涨”的拐点前夜形态。",
+      "url": "https://fourweekmba.com/ai-has-memory-peaked-spot-prices-slip-as-micron-rallies-24/",
+      "sourceType": "media",
+      "source": "FourWeekMBA（整理 TrendForce 数据）"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "FQ4财报：营收$542亿，毛利率87%，FQ1指引EPS $38.15",
+      "summary": "2026财年营收$1,332亿、非GAAP EPS $75.52；单季经营现金流$440亿。FQ1指引：营收$615亿±$15亿，非GAAP毛利率约86.25%，非GAAP EPS $38.15±$1.00。全年资本开支$274亿，新闻稿没有给2027财年资本开支数字。12月的财报就是对这组指引。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件）：FQ4 财报新闻稿"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$594.51（单日-13.9%），11/16以来再跌17%，仍比击球价$450高约32%。**击球价$450、退出价$900维持。**估值口径不变：中周期EPS $25-35×12-15倍＝$350-450。按FQ1指引EPS $38.15年化约$153，现价不到4倍——周期顶部的盈利不能用来定价，这条不因为又跌了一截而改。靠什么赚钱：DRAM和HBM，最近一季毛利率87%。逻辑成立的关键条件（指重新变得可买）：价格回到正常化盈利能解释的区间，或者长约证明这轮谷底比历史浅。最大的风险：现货价已连续回落、合约价涨幅逐季收窄（Q2约80%→Q3约40%→Q4约20%），一旦合约价转跌，盈利下修的速度会远快于股价已反映的。下一个要看的：12月FQ1财报的合约价和资本开支表述。$900退出价若已机械执行则无需动作。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",

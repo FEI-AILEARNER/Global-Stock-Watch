@@ -9,14 +9,49 @@
     "label": "回避",
     "group": "avoid"
   },
-  "strikeNote": "$5-6现金价值区",
-  "events": "—",
-  "contentUpdatedOn": "2026-11-19",
-  "lastPrice": null,
-  "lastPriceNote": "原表【11/19更新】：本轮未检索到可靠的Q3数据与股价。",
+  "strikeNote": "$5-6现金价值区：不受限现金及有价证券每股约$4.4，加上受限部分约$5.7。11/20收$7.46",
+  "events": "3月初 Q4财报（全年现金消耗指引$1.25-1.5亿）",
+  "contentUpdatedOn": "2026-11-21",
+  "lastPrice": {
+    "value": 7.46,
+    "asOf": "2026-11-20",
+    "approx": false,
+    "quote": "11/20 收盘价 $7.46（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
+  },
   "priceChanges": [],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-05",
+      "title": "Q3：营收$2,770万（同比约-6%），调整后EBITDA -$2,200万，重申全年现金消耗$1.25-1.5亿",
+      "summary": "Earnings Whispers（Finviz刊载）：营收高于预期部分来自一份合同修改的一次性追补。前九个月现金消耗约$1.2亿，Q3为$2,700万。公司没有给营收指引，也没有2027展望。财报前股价$11.65——11/20已到$7.46。",
+      "url": "https://finviz.com/news/418032/ginkgo-bioworks-misses-on-eps-but-a-revenue-beat-narrowing-losses-and-a-novo-lab-sale-advance-its-autonomous-lab-pivot",
+      "sourceType": "media",
+      "source": "Earnings Whispers（Finviz 刊载）"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "转向卖“自动化实验室”：首套卖给诺和诺德",
+      "summary": "同一篇报道：首套自动化实验室卖给Novo Nordisk的Waltham研发中心，硬件收入要到安装时才确认（通常下单后6至12个月）；另有ARPA-H分包合同（最高$1,750万）和NSF项目下的高校订单。商业模式从“细胞编程平台”改成卖设备和服务，原来的平台经济学仍未被验证。",
+      "url": "https://finviz.com/news/418032/ginkgo-bioworks-misses-on-eps-but-a-revenue-beat-narrowing-losses-and-a-novo-lab-sale-advance-its-autonomous-lab-pivot",
+      "sourceType": "media",
+      "source": "Earnings Whispers（Finviz 刊载）"
+    },
+    {
+      "date": "2026-11",
+      "title": "10-Q：现金及有价证券$2.854亿，股本约6,480万股",
+      "summary": "季度报告：不受限的现金和有价证券$2.854亿，另有受限现金及证券$8,420万；Q3净亏损$4,100万。10/30股本：A类5,394万、B类788万、C类300万。生物安全业务已在4月剥离，换得买方约20%股权。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001830214/000162828026072290/dna-20260930.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（10-Q）"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$7.46（单日-9.0%），比击球价$6高约24%。**击球价$6、退出价$15维持，态度仍是回避。**11/19没有取到Q3数据，这次补上并把“现金价值区”算了一遍：不受限现金及有价证券$2.854亿÷约6,480万股＝每股约$4.4；加上受限的$8,420万约$5.7。$5-6的击球区与此吻合，但现金每年要烧$1.25-1.5亿，一年后每股现金就只剩约$2.3（不含受限部分）——所以即使到价，也只是接近现金价值，不是“白送”。靠什么赚钱：目前靠细胞工程服务收入（季度$2,770万）；正在转向卖自动化实验室。逻辑成立的关键条件：自动化实验室的订单在安装后变成可重复的硬件和服务收入。最大的风险：现金消耗对现金余额的比例太高；新模式只有一个标杆客户。下一个要看的：Q4财报的现金余额和实验室订单数。主题会赢不等于这家赢，这条判断不变。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",
@@ -28,5 +63,6 @@
       "text": "依据：$5-6≈账上现金价值，等于平台白送。收入-49%、平台经济学从未验证。主题会赢≠这家赢"
     }
   ],
-  "news": []
+  "news": [],
+  "exitLogicNote": "态度是回避，没有持有前提下的退出逻辑；出价只认现金价值。留“其他”。"
 }

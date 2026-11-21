@@ -6,23 +6,52 @@
   "exitPrice": 40,
   "exitLogic": "option",
   "stance": {
-    "label": "里程碑驱动·接近",
+    "label": "已低于击球价·投机小仓",
     "group": "speculative"
   },
-  "strikeNote": "$8-10 白送区",
-  "events": "—",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "$8-10：（现金及投资$18.1亿＋DOE对Long Mott的分摊约$21.5亿）÷约4.07亿股≈$9.7。11/20收$8.79",
+  "events": "2027：Dow对Long Mott的初步投资决定／TX-1燃料厂设备安装",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 11.5,
-    "asOf": "2026-10-28",
-    "approx": true,
-    "quote": "约$11.5(10/28，较旧)",
-    "recordedOn": "2026-11-19",
-    "note": "原文注明“较旧”"
+    "value": 8.79,
+    "asOf": "2026-11-20",
+    "approx": false,
+    "quote": "11/20 收盘价 $8.79（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
   "priceChanges": [],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-12",
+      "title": "Q3财报：营收和补助$6,630万(+118%)，期末现金及投资$18.1亿、无债务",
+      "summary": "净亏损$8,370万（归属公司$5,940万）。A类2.975亿股、B类1.087亿股，完全摊薄约4.07亿股。TX-1燃料厂主体结构按期完工，转入内部安装；Xe-100进入英国通用设计评估（约三年）。已向Alleima和斗山下了蒸汽发生器管材的首个长周期订单。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002088896/000119312526456633/xe-ex99_1.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件）：Q3 财报新闻稿"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "项目管线：Amazon支持的Cascade和AEP印第安纳项目、Centrica英国最多6GW",
+      "summary": "同一份新闻稿：与AEP签联合开发协议，拟在印第安纳州建12台、960MW的Xe-100电站，Amazon提供开发资金；Energy Northwest的Cascade项目由Fluor做核岛工程设计。这些都还是开发协议和意向，不是确定的设备订单。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002088896/000119312526456633/xe-ex99_1.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件）：Q3 财报新闻稿"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "NRC向Dow的Long Mott项目发出建造许可（四台Xe-100，共320MWe）",
+      "summary": "美国核学会：许可比计划提前一个多月，是先进堆里程碑。但文章同时写明，许可不等于开工——Dow的初步投资决定要到2027年，商运预计在2030年代初；能源部在先进堆示范计划下分摊约$21.5亿。按“里程碑兑现即减持”的纪律，许可落地本身是兑现日而不是买入理由。",
+      "url": "https://www.ans.org/news/article-8573/nrc-issues-construction-permit-for-dowxenergy-long-mott-project/",
+      "sourceType": "media",
+      "source": "美国核学会 Nuclear Newswire"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$8.79（单日-9.4%），已低于击球价$10约12%。**击球价$10、退出价$40维持。**这次把“白送区”的算术用最新数字重做了一遍：现金及投资$18.1亿、无债务，加上能源部对Long Mott项目约$21.5亿的分摊，除以约4.07亿股（完全摊薄）约$9.7，与$10吻合；只算公司自己的现金是每股$4.4，现价约2倍——所以“白送”要打引号，DOE的钱是给项目的，不是给股东的。靠什么赚钱：现在靠工程服务收入和政府补助（Q3 $6,630万），远期靠卖Xe-100反应堆和TRISO燃料。逻辑成立的关键条件：Dow在2027年做出投资决定；TX-1燃料厂按期投产。最大的风险：每季净亏损$8,000万以上，商运要到2030年代初，中间任何一环推迟都要再融资；长久期资产对利率最敏感。下一个要看的：Dow的投资决定。11/9拿到建造许可后股价继续下跌，再次印证“兑现即顶”。XE+OKLO+SMR是同一注，合计不超过该栏约1/3。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",

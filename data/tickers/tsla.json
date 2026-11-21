@@ -9,19 +9,49 @@
     "label": "等待",
     "group": "wait"
   },
-  "strikeNote": "$230-260；<$200击球",
-  "events": "12月：合并公告？",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "$230-260；<$200击球。11/20收$345.82，仍比$260高约33%",
+  "events": "特别委员会对与SpaceX合并的结论（公司未给时间）／1月初 Q4交付量／1月下旬 Q4财报",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 390,
-    "asOf": "2026-11-13",
+    "value": 345.82,
+    "asOf": "2026-11-20",
     "approx": false,
-    "quote": "现价$390(11/13)",
-    "recordedOn": "2026-11-19"
+    "quote": "11/20 收盘价 $345.82（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
   "priceChanges": [],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-06",
+      "title": "马斯克：Cybertruck将在2027年年中前后停产，为Cybercab腾产能",
+      "summary": "美联社：马斯克在社交媒体上宣布得州工厂的Cybertruck生产“明年年中前后”逐步结束；该工厂是唯一生产地。Kelley Blue Book估计Cybertruck销量2025年比2024年降48%，2026年前九个月再降28%。11/19笔记写的“Cybertruck停产”，准确说是宣布了停产时间，尚未停产。",
+      "url": "https://www.wcax.com/2026/11/06/production-teslas-cybertruck-will-wind-down-heres-why/?outputType=amp",
+      "sourceType": "media",
+      "source": "美联社（WCAX 转载）"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "特斯拉和SpaceX在季报里确认成立特别委员会探讨合并；特斯拉持有约$29亿SpaceX股票",
+      "summary": "Stocktwits据两家公司的季度报告：委员会由独立董事组成，没有谈定任何条款，马斯克不参与。特斯拉3月投了约$20亿买SpaceX普通股（持股不到1%），9月底公允价值$29亿。Q3特斯拉对SpaceX的销售收入$2.21亿，应收SpaceX $7.29亿。合建的Terafab芯片项目初始投资约$168亿；Roadster推到2028年投产。",
+      "url": "https://stocktwits.com/news-articles/markets/equity/tsla-spcx-boards-confirm-special-committees-on-potential-combination-as-megapack-deals-and-terafab-plans-deepen-ties/cZxwF7cRBDj",
+      "sourceType": "media",
+      "source": "Stocktwits（据公司季度报告）"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Q3财报：营收$280.5亿（同比持平），经营利润率2.6%，自由现金流$15.3亿",
+      "summary": "Electrek：经营利润$7.18亿（-56%），非GAAP EPS $0.48；交付486,532辆（-2.1%）；储能营收$28.8亿（-16%）。前三季资本开支$130亿，全年指引“超过$250亿”未更新。FSD有效订阅174万（+67%）；无人监督FSD推到2027年二季度、且限于Robotaxi运营区。公司的股东信原文本轮没有打开成功，数字以Electrek转述为准。",
+      "url": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+      "sourceType": "media",
+      "source": "Electrek"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$345.82（单日-7.6%），比11/13的$390低11%，距击球价$260仍高约33%。**击球价$260、退出价$480维持。**估值口径：原依据是常规业务分部估值$91-145/股，$260已含可观的robotaxi期权；按Q3非GAAP EPS $0.48年化约$1.9，现价约180倍。靠什么赚钱：卖车（营收零增长、经营利润率2.6%）和储能（Q3 -16%）；市场付钱买的是robotaxi、FSD订阅和机器人。逻辑成立的关键条件：无人监督FSD在2027年二季度如期放开、Cybercab量产；或者合并条款对特斯拉股东有利。最大的风险：汽车主业利润率已低于传统车企，而全年资本开支超过$250亿，自由现金流$15亿撑不住；与SpaceX的合并由同一个控制人主导，条款未知；AI叙事退潮时180倍没有支撑。下一个要看的：特别委员会的结论、1月初交付量。合并若成，估值框架需整体重做，这也是暂时不动击球价的原因。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",
@@ -33,5 +63,6 @@
       "text": "依据：常规业务分部估值仅$91-145/股，$260已含可观robotaxi期权。经营利润率塌至1.4%（低于传统车企）、FCF转负、资本开支+142%。空头仅3%＝真实持有人在卖"
     }
   ],
-  "news": []
+  "news": [],
+  "exitLogicNote": "拿不准，留“其他”：汽车业务是周期，估值的大头是robotaxi和机器人的期权；与SpaceX合并若成，框架要整体重做。"
 }

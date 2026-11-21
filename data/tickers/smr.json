@@ -2,26 +2,65 @@
   "ticker": "SMR",
   "company": "NuScale",
   "sector": "nuclear",
-  "strikePrice": 6,
+  "strikePrice": 4.5,
   "exitPrice": 25,
   "exitLogic": "option",
   "stance": {
-    "label": "价格到位·事实未到",
+    "label": "低于每股现金·事实未到",
     "group": "avoid"
   },
-  "strikeNote": "$5-6，且须先有事实催化",
-  "events": "调查进展",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "≤$4.5（约等于每股现金及投资$4.33），且须先有事实催化（TVA购电协议或设备订单签约、集体诉讼有结论）",
+  "events": "ENTRA1–TVA购电协议是否签署／集体诉讼驳回动议的裁定",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 4.66,
-    "asOf": "2026-11-13",
+    "value": 3.36,
+    "asOf": "2026-11-20",
     "approx": false,
-    "quote": "现价$4.66(11/13)",
-    "recordedOn": "2026-11-19"
+    "quote": "11/20 收盘价 $3.36（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
-  "priceChanges": [],
-  "keyItems": [],
+  "priceChanges": [
+    {
+      "date": "2026-11-21",
+      "field": "strike",
+      "from": 6,
+      "to": 4.5,
+      "reason": "击球价$6→$4.5。原依据是“$6对应市值接近现金＋NRC设计认证的清算价值”。按Q3新闻稿：现金及投资约$18.6亿，A类4.105亿股＋B类0.193亿股合计约4.30亿股，每股现金约$4.33；$6对应市值约$25.8亿，比现金高出约$7亿，而公司Q3营收只有$28万、TVA购电协议公布14个月仍未签。把击球价压到每股现金附近（$4.5），不再为设计认证额外付钱。退出价$25本轮不动。",
+      "source": "Agent 4，2026-11-21 更新（见当天的定价依据）"
+    }
+  ],
+  "keyItems": [
+    {
+      "date": "2026-11-15",
+      "title": "10-Q梳理：证券集体诉讼的驳回动议待裁；Fluor已清仓",
+      "summary": "sec-api.io对10-Q的整理：Truedson集体诉讼（指控对ENTRA1资质的陈述有误导，集体期间为2025年3月至11月）中公司9/25提出驳回动议，对方11/16前答辩；另有两起派生诉讼。**整理里没有提到SEC或司法部的调查**——此前笔记写的“证券欺诈调查”，本轮能核实到的是民事集体诉讼。Fluor今年分批卖出共1.114亿股，已不再持股。前九个月经营现金流出$4.0亿，其中$2.6亿是付给ENTRA1的。",
+      "url": "https://sec-api.io/insights/nuscale-power-smr-q3-2026-earnings-revenue-0-28m-net-loss-45-7m-1-86bn-cash-sec-filing-analysis",
+      "sourceType": "media",
+      "source": "sec-api.io（整理 10-Q）"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Q3财报：营收$28万，净亏损$4,570万，现金及投资约$18.6亿",
+      "summary": "公司新闻稿：营收从去年同期的$824万降到$28万。与斗山签约制造反应堆模块的上部冷却剂系统。公司称“继续支持”ENTRA1与TVA的对话，没有报告已签署的协议。期末A类4.105亿股、B类0.193亿股。",
+      "url": "https://greenstocknews.com/news/nyse/smr/nuscale-power-reports-third-quarter-2026-results",
+      "sourceType": "official",
+      "source": "NuScale 新闻稿（Green Stock News 转载全文）"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "电话会：TVA购电协议公布14个月仍未签，管理层不再给时间表",
+      "summary": "Earnings Whispers（Finviz刊载）：管理层原先的目标是2025年底前签约，后来说2026年“很有可能”，这次只说过程“漫长”。CFO还说明购电协议不等于模块销售，之后还需要单独的设备协议。公司不再预期2026年底前经营现金流转正。",
+      "url": "https://finviz.com/news/418162/nuscale-matches-loss-estimate-as-doosan-build-begins-but-the-unsigned-tva-deal-leaves-revenue-near-zero",
+      "sourceType": "media",
+      "source": "Earnings Whispers（Finviz 刊载）"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$3.36（单日-11.8%），已跌到每股现金以下。**击球价$6→$4.5，退出价$25维持。**口径：现金及投资约$18.6亿÷约4.30亿股＝每股$4.33；现价是它的78%，市值约$14.4亿。原来的$6比每股现金高近四成，等于为NRC设计认证额外付了约$7亿，而公司的营收已接近零。靠什么赚钱：目前不赚钱；远期靠卖NuScale反应堆模块，唯一的大单是通过ENTRA1对TVA的项目。逻辑成立的关键条件：TVA购电协议和随后的设备协议签下来。最大的风险：这份协议拖了14个月，管理层不再给时间；集体诉讼未决；近两季经营现金流出约$2,900万至$5,800万，现金会被慢慢消耗。下一个要看的：TVA是否签约、驳回动议的裁定。更正一处措辞：此前写“证券欺诈调查”，本轮能核实到的是民事集体诉讼，没有检索到监管调查。**价格低于现金，但“事实先行”的条件仍没到，不动手**——低于现金的公司如果每年烧掉一成现金而没有订单，折价可以持续很久。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",

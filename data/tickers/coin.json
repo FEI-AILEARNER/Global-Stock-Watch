@@ -4,24 +4,54 @@
   "sector": "other-themes",
   "strikePrice": 100,
   "exitPrice": 280,
-  "exitLogic": "other",
+  "exitLogic": "cyclical",
   "stance": {
-    "label": "先定信念",
+    "label": "接近击球区·先定信念",
     "group": "wait"
   },
-  "strikeNote": "加密寒冬<$100",
-  "events": "2月 财报",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "加密寒冬<$100；11/20收$101.97，只差2%。出手前先回答：是否相信订阅与服务收入（占净营收约49%）能穿越寒冬",
+  "events": "高管减持窗口（11/16起、12/7起、1/4起）／2月 Q4财报",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 143.5,
-    "asOf": "2026-10-30",
+    "value": 101.97,
+    "asOf": "2026-11-20",
     "approx": false,
-    "quote": "$143.5(10/30，财报日-10.6%)",
-    "recordedOn": "2026-11-19"
+    "quote": "11/20 收盘价 $101.97（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
   "priceChanges": [],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-20",
+      "title": "比特币跌破$60,000，COIN单日-6.3%收$101.97",
+      "summary": "路透收盘稿：比特币跌破$6万后，Coinbase、Strategy、Robinhood当天跌6.3%至9.6%。COIN自10/30的$143.5以来累计-29%，距“加密寒冬<$100”的击球价只差2%。",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-slip-anthropic-104746137.html",
+      "sourceType": "media",
+      "source": "路透（Yahoo Finance 转载）"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "CEO等三名高管的10b5-1减持计划：合计约1,359万股，CEO的窗口11/16已开启",
+      "summary": "CoinGape据公司向SEC提交的季度报告：Armstrong最多817万股（行权所得），可在2026/11/16至2027/10/22之间按预设价格卖出；Ehrsam 387万股，窗口2026/12/7至2027/6/7；Choi约156万股，窗口2027/1/4起。按10/29收盘价$160.59计约$22亿。预设的卖出价没有披露，现价比当时低36%，是否触发未知。",
+      "url": "https://coingape.com/coinbase-executives-file-plans-to-sell-up-to-13-6-million-coin-shares-worth-2-2b/",
+      "sourceType": "media",
+      "source": "CoinGape（据公司 10-Q）"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Q3财报：净利$7.19亿，但调整后净利只有$7,800万；订阅与服务占净营收49%",
+      "summary": "公司新闻稿：调整后EBITDA $3.33亿（环比+60%，连续15个季度为正）。Coinbase产品内的USDC平均余额创纪录的$220亿（同比+49%）；预测市场业务年化营收超过$2亿。净利和调整后净利之间约$6.4亿的差额主要是持有加密资产的重估——这部分在比特币跌破$6万后会反过来。",
+      "url": "https://greenstocknews.com/news/nasdaq/coin/coinbase-q3-2026-earnings-show-all-time-high-coinbase-one-subscribers-and-prediction-markets-surpassing-200-million-in-annualized-revenue",
+      "sourceType": "official",
+      "source": "Coinbase 新闻稿（Green Stock News 转载全文）"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$101.97（单日-6.3%），离击球价$100只差2%；比特币已跌破$6万。**击球价$100、退出价$280维持。**估值口径不变：正常化分部估值——周期性的交易收入给15-20倍、订阅与服务收入给25-30倍，$100对应加密寒冬时的盈利谷底。本轮没有检索到足够数据把这个分部估值重新算一遍（Q3交易收入和订阅收入的美元数公司新闻稿转载里没有），所以不动价。靠什么赚钱：交易手续费（跟着币价和波动率走）加订阅与服务（USDC利息分成、质押、托管，现占净营收约49%）。逻辑成立的关键条件：订阅与服务收入在寒冬里守得住——USDC余额$220亿在增长，但利息收入会随利率和余额波动。最大的风险：寒冬才刚开始兑现，若币价停在现在的位置，Q4持币重估会由正转负；三名高管的减持计划已进入窗口期，是持续的供给。下一个要看的：比特币是否在$6万下方企稳、2月Q4财报。态度仍是“先定信念”：价格快到了，但这个价位出手的前提是相信它能活过整个寒冬并且订阅收入不塌，这一点要先想清楚，而不是因为到价就动手。退出逻辑归为周期股。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",
@@ -40,5 +70,6 @@
       "summary": "调整后净利$7,800万；订阅与服务$5.7亿，占净营收约49%；高管设立约$22亿减持计划。",
       "url": "https://bitcoinworld.co.in/coinbase-stock-falls-10-6-despite-719m-q3-profit/"
     }
-  ]
+  ],
+  "exitLogicNote": "交易收入跟着加密牛熊走，原依据就是把它当周期性收入定价（15-20倍）；牛市顶部须机械执行。"
 }

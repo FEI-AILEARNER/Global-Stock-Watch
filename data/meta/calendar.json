@@ -1,34 +1,47 @@
 {
-  "asOf": "2026-11-19",
-  "source": "原表 A51",
+  "asOf": "2026-11-21",
+  "source": "Agent 4，2026-11-21 更新（在原表 A51 的基础上增删）",
   "items": [
     {
-      "text": "12/9 AVGO财报",
+      "text": "12/8-9 FOMC（12/9公布；期货已完全计入加息25bp，Waller提过50bp）",
+      "tickers": []
+    },
+    {
+      "text": "12/9 盘后 AVGO Q4与FY2026财报",
       "tickers": [
         "AVGO"
       ]
     },
     {
-      "text": "12月中 FOMC（加息幅度）",
-      "tickers": []
-    },
-    {
-      "text": "约12/16 MU财报",
+      "text": "12月 MU FQ1财报（公司尚未公告具体日期）",
       "tickers": [
         "MU"
       ]
     },
     {
-      "text": "12月 SpaceX–Tesla合并是否公告",
+      "text": "12/31前 DOE是否与Centrus完成Piketon长期续租",
+      "tickers": [
+        "LEU"
+      ]
+    },
+    {
+      "text": "随时：SpaceX与特斯拉特别委员会对合并的结论（原笔记预期12月，公司未给时间）",
       "tickers": [
         "SPCX",
         "TSLA"
       ]
     },
     {
-      "text": "1月 RKLB Neutron贮箱鉴定",
+      "text": "1月 RKLB Neutron贮箱水压／低温鉴定",
       "tickers": [
-        "RKLB"
+        "RKLB",
+        "IRDM"
+      ]
+    },
+    {
+      "text": "1月中 TSM Q4季报与2027资本开支",
+      "tickers": [
+        "TSM"
       ]
     },
     {
@@ -38,7 +51,7 @@
       ]
     },
     {
-      "text": "2月初 GOOGL 2027资本开支指引",
+      "text": "2月初 GOOGL Q4财报与2027资本开支指引",
       "tickers": [
         "GOOGL"
       ]
@@ -50,16 +63,27 @@
       ]
     },
     {
-      "text": "随时：NVDA独立调查结论与正式CEO人选、FCC对RKLB–IRDM的裁定",
+      "text": "随时：NVDA的SEC调查、独立委员会结论与正式CEO人选；FCC对RKLB–IRDM的裁定；ENTRA1–TVA购电协议；德州立法会期的数据中心提案",
       "tickers": [
         "NVDA",
         "RKLB",
-        "IRDM"
+        "IRDM",
+        "SMR",
+        "VST"
       ]
     },
     {
-      "text": "2027上半年：FERC数据中心共址规则",
-      "tickers": []
+      "text": "2027年3-4月 LUNR Altus-1发射",
+      "tickers": [
+        "LUNR"
+      ]
+    },
+    {
+      "text": "2027上半年：FERC数据中心共址规则；BWXT首张美国新建核电设备订单（最迟）",
+      "tickers": [
+        "CEG",
+        "BWXT"
+      ]
     }
   ]
 }

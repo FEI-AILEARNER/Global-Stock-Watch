@@ -30,6 +30,14 @@
       "source": "IBM 新闻稿"
     },
     {
+      "date": "2026-11-16",
+      "title": "与AMD发布开源的量子纠错解码评测框架Pelagos",
+      "summary": "IBM博客：Pelagos用GPU加速评估纠错解码器，八块GPU时解码环节比单GPU快约7.5倍，已部署在橡树岭国家实验室的AMD系统上。属于研究工具，原文没有任何营收、客户或产品上市的表述。和上一条一样，记下来是为了跟踪“2029年容错量子计算机”这条路线有没有实际进展。",
+      "url": "https://newsroom.ibm.com/blog-pelagos-accelerates-quantum-error-correction-decoding-at-scale",
+      "sourceType": "official",
+      "source": "IBM 官方博客"
+    },
+    {
       "date": "2026-10-21",
       "title": "Q3财报：营收$171亿(+5%)，上调全年自由现金流预期",
       "summary": "软件$78亿(+8%)、咨询$53亿(持平)、基础设施$37亿(+4%)；经营性EPS $2.95(+11%)。前三季自由现金流$78亿，全年预计同比增加超过$10亿（上调）；全年固定汇率营收增长4%至5%不变。期末总债务$638亿、现金$111亿；季度股息$1.69，12/10发放。",

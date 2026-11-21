@@ -2,27 +2,73 @@
   "ticker": "AMAT",
   "company": "Applied Materials",
   "sector": "semi-cycle",
-  "strikePrice": 430,
-  "exitPrice": 780,
+  "strikePrice": 340,
+  "exitPrice": 560,
   "exitLogic": "cyclical",
   "stance": {
-    "label": "已进区·仅小批",
+    "label": "已进击球区·仅小批",
     "group": "watch"
   },
-  "strikeNote": "$430已到；但真正击球在$320-350（11/5低点$317）",
-  "events": "2月 财报",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "$340≈18倍FY27E EPS $18.75；11/20收$302.63约16倍。存储见顶信号和“2027年设备支出+30%”不能同时为真，只给小批",
+  "events": "2月 FQ1财报（本季14周）",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 395,
-    "asOf": "2026-11-12",
+    "value": 302.63,
+    "asOf": "2026-11-20",
     "approx": false,
-    "quote": "财报前$395(11/12)",
-    "recordedOn": "2026-11-19",
-    "note": "原文为“财报前”的价格，其后两个交易日再跌"
+    "quote": "11/20 收盘价 $302.63（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
-  "priceChanges": [],
-  "keyItems": [],
+  "priceChanges": [
+    {
+      "date": "2026-11-21",
+      "field": "strike",
+      "from": 430,
+      "to": 340,
+      "reason": "击球价$430→$340，退出价$780→$560。口径：FY2027一致预期EPS $18.75（TIKR 11/13）和FQ1指引EPS $4.35。$430相当于FY27E的23倍，而11/19的击球区说明自己就写着“真正击球在$320-350”——写在说明里的才是真实出价，这次把数字改成一致：$340≈18倍FY27E。退出价$780约42倍FY27E、比本轮高点$547还高四成，对一只“须机械执行”的周期股等于永远不执行，改为$560≈30倍FY27E、略高于10/2高点。背景是存储现货价已回落：设备订单滞后存储价格2-3个季度，FY27的盈利预期本身有下修风险。",
+      "source": "Agent 4，2026-11-21 更新（见当天的定价依据）"
+    },
+    {
+      "date": "2026-11-21",
+      "field": "exit",
+      "from": 780,
+      "to": 560,
+      "reason": "击球价$430→$340，退出价$780→$560。口径：FY2027一致预期EPS $18.75（TIKR 11/13）和FQ1指引EPS $4.35。$430相当于FY27E的23倍，而11/19的击球区说明自己就写着“真正击球在$320-350”——写在说明里的才是真实出价，这次把数字改成一致：$340≈18倍FY27E。退出价$780约42倍FY27E、比本轮高点$547还高四成，对一只“须机械执行”的周期股等于永远不执行，改为$560≈30倍FY27E、略高于10/2高点。背景是存储现货价已回落：设备订单滞后存储价格2-3个季度，FY27的盈利预期本身有下修风险。",
+      "source": "Agent 4，2026-11-21 更新（见当天的定价依据）"
+    }
+  ],
+  "keyItems": [
+    {
+      "date": "2026-11-13",
+      "title": "财报次日-6%，至少10家机构下调目标价；CEO称2027年晶圆设备支出增长超过30%",
+      "summary": "TIKR：Jefferies把目标价从$770降到$580（维持买入），Summit降级为持有；Morningstar反而把公允价值从$520上调到$570。FQ1营收指引中值$111亿低于预期的$114.1亿，管理层说是供应受限。FY2027一致预期EPS $18.75（+45%）。公司计划到2028年把系统产出翻倍——在周期高位扩产，是需要记住的一条。",
+      "url": "https://www.tikr.com/blog/applied-materials-sinks-6-after-record-quarter-as-10-analysts-cut-targets-morningstar-calls-ai-worries-overblown",
+      "sourceType": "media",
+      "source": "TIKR"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "FQ4财报：营收$104.1亿(+53%)，非GAAP EPS $4.16；FQ1指引$111亿／$4.35",
+      "summary": "2026财年营收$344.5亿(+21%)、非GAAP EPS $12.89、自由现金流$62亿；全年回购$31.8亿、分红$15.7亿。FQ4毛利率50.6%。中国占营收比例从29%降到25%。新闻稿说半导体系统业务2026自然年增长超过40%；“2027年设备支出+30%”出自电话会，不在新闻稿里。",
+      "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2026",
+      "sourceType": "official",
+      "source": "Applied Materials 投资者关系：财报新闻稿"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "上游信号：存储现货价回落，合约价涨幅逐季收窄",
+      "summary": "与MU同一条数据（TrendForce）：DDR5现货一周-2.1%，NAND晶圆一个月-14%，Q4 DRAM合约价预计环比+20%（Q3约+40%）。设备订单通常滞后存储价格2至3个季度，这是对“2027年设备支出+30%”最直接的反向证据。",
+      "url": "https://fourweekmba.com/ai-has-memory-peaked-spot-prices-slip-as-micron-rallies-24/",
+      "sourceType": "media",
+      "source": "FourWeekMBA（整理 TrendForce 数据）"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$302.63（单日-10.7%），已低于11/5的低点$317。**击球价$430→$340，退出价$780→$560。**这次调价主要是把数字和自己写过的话对齐：11/19的说明里“真正击球在$320-350”，表上却挂着$430。口径：FY2027一致预期EPS $18.75，$340约18倍、$560约30倍，现价约16倍；按FQ1指引EPS $4.35年化$17.4算，现价约17倍。靠什么赚钱：沉积、刻蚀等晶圆制造设备，客户是台积电、存储三家和英特尔。逻辑成立的关键条件：台积电资本开支（刚批了$409亿预算）和先进封装的设备需求，能抵消存储厂在价格回落后的推迟。最大的风险：公司预测2027年设备支出+30%并计划到2028年产能翻倍，而存储现货价已经回落——两者不能同时为真，若存储厂砍单，FY27 EPS $18.75会被下修。下一个要看的：2月FQ1财报的订单和存储客户占比。价格已在新击球价下方约11%，按纪律只给小批：MU+SKHY+AMAT是同一注。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",

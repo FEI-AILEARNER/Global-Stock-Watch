@@ -2,21 +2,65 @@
   "ticker": "LEU",
   "company": "Centrus",
   "sector": "nuclear",
-  "strikePrice": 130,
+  "strikePrice": 85,
   "exitPrice": 300,
-  "exitLogic": "other",
+  "exitLogic": "option",
   "stance": {
-    "label": "等待·逻辑受损",
-    "group": "wait"
+    "label": "价格到位·事实未到",
+    "group": "avoid"
   },
-  "strikeNote": "≤$130 小仓位",
-  "events": "2月 财报／DOE预算",
-  "contentUpdatedOn": "2026-11-19",
-  "lastPrice": null,
-  "lastPriceNote": "原表【11/19更新】：本轮未取得可靠股价。",
-  "priceChanges": [],
-  "keyItems": [],
+  "strikeNote": "≤$85（约3.7倍2026营收指引中值的市销率）小仓位；且须先看到Piketon长期租约和HALEU资金来源",
+  "events": "12/31前：DOE是否签Piketon长期租约／2月 Q4财报／FY2027预算",
+  "contentUpdatedOn": "2026-11-21",
+  "lastPrice": {
+    "value": 81.43,
+    "asOf": "2026-11-20",
+    "approx": false,
+    "quote": "11/20 收盘价 $81.43（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
+  },
+  "priceChanges": [
+    {
+      "date": "2026-11-21",
+      "field": "strike",
+      "from": 130,
+      "to": 85,
+      "reason": "击球价$130→$85。原依据写的是“$130≈FY26营收指引中值的3-4倍市销率”，但按最新10-Q的股本（A类1,990万股＋B类72万股，合计约2,062万股）和2026营收指引$4.5-5.0亿重算，每股营收约$23，3-4倍只有$69-92，$130其实是5.6倍——原来的换算对不上。按原依据的口径取$85（约3.7倍）。同时逻辑比定$130时更差：DOE的FY2027预算没有HALEU级联的后续资金，DOE表示目前不打算再行使生产选择权，Piketon租约只延到2027年10月1日。退出价$300本轮不动（约13倍市销率，是扩产完全兑现的价格），等租约和资金明朗后重估。",
+      "source": "Agent 4，2026-11-21 更新（见当天的定价依据）"
+    }
+  ],
+  "keyItems": [
+    {
+      "date": "2026-11-16",
+      "title": "Oklo与Centrus签多年期HALEU供应合同并预付款，2029年起交付",
+      "summary": "美国核学会报道：合同把6月的意向书变成正式协议，Oklo预付款用于支持俄亥俄州美国离心机工厂的新增浓缩产能，2029年开始交付。金额没有披露。这是商业客户出钱的第一个实例——对“政府不买单之后谁来出资”是正面信号，但规模未知。",
+      "url": "https://www.ans.org/news/article-8581/oklo-roundup-groves1-plans-centrus-contract-aurora-concrete/",
+      "sourceType": "media",
+      "source": "美国核学会 Nuclear Newswire"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "10-Q：DOE不打算再行使HALEU生产选择权；Piketon租约仅延到2027年10月",
+      "summary": "季度报告原文：DOE已告知目前不打算行使后续生产选择权（剩余的21个月生产期）。Piketon场地租约经10/19修订后于2027年10月1日到期，DOE表示会争取在2026年12月31日前完成长期续租，但没有义务。11/1股本：A类1,989.9万股、B类71.9万股。期末现金$22.4亿，长期债务$11.8亿（可转债）。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001065059/000162828026070557/leu-20260930.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（10-Q）"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Q3财报：营收$5,550万(-26%)，调整后净亏损$940万",
+      "summary": "GAAP净利$3,160万全靠$4,640万权证重估收益；毛亏损$1,060万。积压约$70亿，其中$54亿是取决于Piketon产能的或有承诺，技术服务约$8亿（含未获资金和未行使的选择权）。2026指引：营收$4.5-5.0亿，资本投放$3.5-5.0亿。首台离心机已从Oak Ridge下线发运。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001065059/000162828026070229/ex991-10q2026_11x04.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件）：Q3 财报新闻稿"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$81.43（单日-9.2%）；11/19没有取到股价，这次补上。**击球价$130→$85，退出价$300维持。**下修首先是把换算做对：按最新股本约2,062万股和2026营收指引中值$4.75亿，原依据说的“3-4倍市销率”对应$69-92，$130实际是5.6倍；取$85约3.7倍，现价约3.5倍。按现价市值约$16.8亿，账上现金$22.4亿、可转债$11.8亿，净现金约$10.6亿。靠什么赚钱：目前主要是转售低浓铀（SWU），自己的浓缩产能还在建。逻辑成立的关键条件：Piketon拿到长期租约；HALEU扩产有人出钱（政府或像Oklo这样的客户预付）。最大的风险：DOE已表示不再行使生产选择权、FY2027预算没有后续资金，$70亿积压里$54亿是或有的；租约只到2027年10月。下一个要看的：12/31前DOE是否完成长期续租。价格已经到了新击球价下方，但和SMR一样，“事实先行”的条件没到：续租和资金来源有一件落地前不动手。退出逻辑归为期权型。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",
@@ -35,5 +79,6 @@
       "summary": "调整后EPS -$0.46 vs 预期-$0.13；积压$70亿；首台商业级离心机提前两个月运抵Piketon。",
       "url": "https://247wallst.com/cards/centrus-energy-q3-2026-earnings-leu-01m6m7spt5xjjztyrtph8ya99a"
     }
-  ]
+  ],
+  "exitLogicNote": "估值建立在HALEU扩产这个尚未兑现的里程碑上（Piketon租约、政府或客户出资）；里程碑兑现即减持。"
 }

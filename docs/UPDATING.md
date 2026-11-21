@@ -7,7 +7,8 @@
 1. **每个新增的事实和数字都要来自当天实际打开过的来源，并附链接。** 新闻条目的 `url` 就是来源；定价依据里引用的财报数字，至少有一条当天的新闻条目或来源链接支持。
 2. **查不到的写“本轮未检索到”，不凭印象填。** 没取到可靠股价就写“本轮未取得可靠收盘价”，`lastPrice` 保持上一次的记录或写 `null` 加 `lastPriceNote`。来源打不开的不绕过。
 3. **旧判断逐字保留。** 新的一条定价依据加在 `rationale` 最前面，`label` 写成 `M/D更新`，`date` 写当天。旧的不改、不删。
-4. **新闻加在 `news` 最前面**，格式：日期、主题、摘要、链接。没有需要记录的重大事件就不加。
+4. **关键事项（`keyItems`）每次整组重写**：3 至 6 条最重要的近期新闻和官方公告，优先官方来源（公司新闻稿、SEC 文件、监管公告），每条有日期、一句话标题、用自己的话写的总结、当天打开过的原文链接和官方／媒体标记。只看到标题或搜索摘要的链接不能用；媒体转述和官方原文不一致时以官方为准并注明。
+4a. **新闻加在 `news` 最前面**，格式：日期、主题、摘要、链接。没有需要记录的重大事件就不加。
 5. **调价要写理由并留记录。** 改 `strikePrice` 或 `exitPrice` 时，同时在 `priceChanges` 加一条（日期、字段、旧价、新价、理由、出处），并在当天的定价依据里写明。校验会拦住没有记录或没有理由的调价。Fei 事后看更新记录页。
 6. **Anthropic 的披露规则不变**：ANT 不纳入清单、不给击球价、不发表买卖观点；涉及 Anthropic 的标的（目前 GOOGL、NVDA、AVGO）在新的定价依据里继续带披露句。
 7. **这是 Fei 的研究笔记**：不写针对读者的买卖建议，不记录真实持仓、金额或账户，不执行或模拟交易。
@@ -16,9 +17,10 @@
 ## 步骤
 
 1. 读 `CLAUDE.md`、`docs/PROGRESS.md` 和上一次的 `data/updates/` 记录。
-2. 逐个标的检索（财报、指引、重大新闻、股价），按上面的规则改 `data/tickers/<代码>.json`：加定价依据、加新闻、更新 `lastPrice`（写明日期和出处原文）、`events`、`contentUpdatedOn`，需要时调价。
-3. 更新 `data/meta/`：`notes.json` 里的 `macro`、`status-change`（需要时还有 `self-correction`、`strike-note`）换成本轮的文字——**旧文字先移进当天更新记录的 `text` 或保留在上一条更新记录里，不要丢**；`calendar.json` 去掉已过去的事件、加新的；`site.json` 的 `contentUpdatedOn` 改成当天。
+2. 先取价格：用项目自带的适配器取最近收盘价（`node` 直接调用 `lib/quotes/yahoo-chart.ts` 的 `fetchQuote`，不改请求头），**每个标的都要有价格再谈判断**——2026-11-19 那轮有 3 个标的没取到股价就维持了原判断，结果击球价和现价脱节。
+2a. 逐个标的检索（财报、指引、重大新闻、股价），按上面的规则改 `data/tickers/<代码>.json`：加定价依据、加新闻、更新 `lastPrice`（写明日期和出处原文）、`events`、`contentUpdatedOn`，需要时调价。
+3. 更新 `data/meta/`：`notes.json` 里的 `macro`、`status-change`、`strike-note` 换成本轮的文字——**被替换的旧文字移到 `macro-prev`、`status-change-prev`、`strike-note-prev`（再上一轮的留在 git 历史里），不要丢**；本轮的自我校正写进 `self-correction-latest`，原来的 `self-correction`（含 Anthropic 披露）不动；`calendar.json` 去掉已过去的事件、加新的；`site.json` 的 `contentUpdatedOn` 改成当天。
 4. 新建 `data/updates/<当天>.json`：`kind` 写 `content`，`text` 写这次改了什么、调了哪些价及原因、哪些标的“本轮未检索到”。
 5. 新增或移除标的：新增见 `README.md`；移除时删掉档案文件、在 `meta/removed.json` 加一条（名称、日期、原因），并从 `order.json`、`calendar.json` 里去掉。
-6. `npm run check` 通过后提交并推送 `main`。结果写进 `docs/PROGRESS.md`。
+6. `npm run check` 通过后提交并推送 `main`。**检查和推送之间用 `&&` 连接**（2026-11-21 有一次用了 `;`，带着一条失败的测试推了上去）。结果写进 `docs/PROGRESS.md`。
 7. 向 Supervisor 汇报：更新了哪些、调了哪些价（旧价、新价、理由）、哪些没查到。

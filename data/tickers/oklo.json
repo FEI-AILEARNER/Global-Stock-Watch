@@ -6,22 +6,52 @@
   "exitPrice": 70,
   "exitLogic": "option",
   "stance": {
-    "label": "事件交易",
+    "label": "接近击球区·期权仓位",
     "group": "speculative"
   },
-  "strikeNote": "$14-18（期权费合理区）",
-  "events": "NRC审批进度",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "$14-18（期权费合理区）：每股现金及有价证券约$16.0；$18≈现金的1.12倍。11/20收$19.85",
+  "events": "未来12个月：Aurora-INL主设备安装／2027：首批同位素交付",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 25.3,
-    "asOf": "2026-10-30",
-    "approx": true,
-    "quote": "约$25.3(10/30)",
-    "recordedOn": "2026-11-19"
+    "value": 19.85,
+    "asOf": "2026-11-20",
+    "approx": false,
+    "quote": "11/20 收盘价 $19.85（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
   "priceChanges": [],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-16",
+      "title": "Groves-1获DOE放行转入常规运行；Aurora-INL结构混凝土和钢结构就位",
+      "summary": "美国核学会综述：Groves-1（8/5首次临界的池式试验堆）获准作为研究、测试和培训平台“不受限制地运行”。Aurora-INL（75MWe快堆）的初步安全分析文件已获DOE批准，是五个审批节点里的第三个；公司计划未来12个月内安装主要反应堆部件。文章没有给出启动日期。另与Centrus签了2029年起交付的HALEU合同。",
+      "url": "https://www.ans.org/news/article-8581/oklo-roundup-groves1-plans-centrus-contract-aurora-concrete/",
+      "sourceType": "media",
+      "source": "美国核学会 Nuclear Newswire"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "10-Q：现金及有价证券$31.3亿，前九个月通过ATM净融资$22.5亿",
+      "summary": "季度报告：期末现金$15.5亿加有价证券$15.8亿；Q3净亏损$4,170万，前九个月$1.23亿；11/4股本约1.953亿股；账上没有借款。也就是每股现金约$16——股价的大部分现在是现金，而这些现金是靠增发换来的。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001849056/000162828026071319/oklo-20260930.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（10-Q）"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Q3电话会：Aurora-INL启动时间从“2028年”改口为“2028-2029年”，PJM并网申请被撤回",
+      "summary": "Earnings Whispers（Finviz刊载）：此前三个季度管理层一直说2028年。PJM撤回了它在弗吉尼亚的并网申请，FERC驳回了公司的申诉；与Meta在俄亥俄的协议对建堆不具约束力，当地PJM流程约需24个月。首批同位素交付推到2027年。全年经营现金支出指引$1.2-1.5亿、资本开支$4-5亿。",
+      "url": "https://finviz.com/news/418461/oklo-narrows-its-loss-against-expectations-but-an-aurora-slip-and-pjm-setback-overshadow-construction-progress",
+      "sourceType": "media",
+      "source": "Earnings Whispers（Finviz 刊载）"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$19.85（单日-4.8%），比击球价$18高约10%。**击球价$18、退出价$70维持。**估值口径更新：10-Q显示现金及有价证券$31.3亿、股本约1.953亿股，每股现金约$16.0；现价市值约$38.8亿，扣掉现金后为平台付的“期权费”约$7.5亿，$18时约$3.9亿——7月时期权费是约$74亿，现在便宜了一个数量级，但那是靠$22.5亿增发稀释换来的。靠什么赚钱：目前几乎没有营收（Q3 $186万）；远期靠Aurora快堆卖电和同位素。逻辑成立的关键条件：Aurora-INL在2028-2029年启动；俄亥俄项目拿到并网。最大的风险：时间表已经开始滑（2028→2028-2029），PJM并网受挫，Meta协议不具约束力；每年现金支出加资本开支约$5-6.5亿，现金够烧但不产生回报。下一个要看的：未来12个月主设备安装进度。临界之后股价从$44跌到$20，“里程碑兑现即情绪顶”已验证。现在距击球价不到一成，到价后也只算期权仓位。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",

@@ -9,19 +9,49 @@
     "label": "不买",
     "group": "avoid"
   },
-  "strikeNote": "$60-85中性；<$70有边际",
-  "events": "12月：或宣布与TSLA合并",
-  "contentUpdatedOn": "2026-11-19",
+  "strikeNote": "$60-85中性；<$70有边际。11/20收$127.79，已低于$135发行价，仍比$85高约50%",
+  "events": "特别委员会对与特斯拉合并的结论（原笔记预期12月，公司未给时间）／1月下旬 Q4财报",
+  "contentUpdatedOn": "2026-11-21",
   "lastPrice": {
-    "value": 140,
-    "asOf": "2026-11-17",
+    "value": 127.79,
+    "asOf": "2026-11-20",
     "approx": false,
-    "quote": "现价$140(11/17)",
-    "recordedOn": "2026-11-19"
+    "quote": "11/20 收盘价 $127.79（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
   },
   "priceChanges": [],
-  "keyItems": [],
+  "keyItems": [
+    {
+      "date": "2026-11-20",
+      "title": "收$127.79（单日-7.7%），重新跌破$135发行价",
+      "summary": "价格来自报价接口。当天是全市场AI抛售（路透：标普-3.7%，七连跌）。Q3起AI算力租赁已是SpaceX营收最大的一块，所以它现在跟着AI资本开支的预期一起波动，而不只是航天股。本轮没有检索到公司层面的新公告。",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-slip-anthropic-104746137.html",
+      "sourceType": "media",
+      "source": "路透（Yahoo Finance 转载）"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "SpaceX和特斯拉在季报里确认：各自成立独立董事特别委员会，探讨“深化关系”",
+      "summary": "Stocktwits据两家公司的季度报告：交易可能采取业务合并的形式，但不保证完成；马斯克称自己有利益冲突、不参与委员会讨论，没有谈定任何条款。两家之间已有的往来：SpaceX今年前三季向特斯拉买了$4.8亿储能设备；合建的Terafab芯片项目初始投资约$168亿，目标2027上半年出首颗测试芯片。",
+      "url": "https://stocktwits.com/news-articles/markets/equity/tsla-spcx-boards-confirm-special-committees-on-potential-combination-as-megapack-deals-and-terafab-plans-deepen-ties/cZxwF7cRBDj",
+      "sourceType": "media",
+      "source": "Stocktwits（据公司季度报告）"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Q3财报：营收$146亿(+161%)，净利$44亿；单季资本开支$196亿，Q4预计$350-400亿",
+      "summary": "美联社：每股盈利$0.35，扭亏。AI业务成为营收最大的板块，Starlink仍是利润最大的来源。资本开支接近去年同期的三倍，且公司预计Q4还要再翻一倍左右——单季资本开支已超过单季营收。马斯克说合并“可能在酝酿”，但认为把它当成确定的事“言过其实”。",
+      "url": "https://www.clickorlando.com/business/2026/10/20/spacex-turns-a-profit-after-a-string-of-losses-as-its-satellite-and-computer-leasing-businesses-soar/",
+      "sourceType": "media",
+      "source": "美联社（ClickOrlando 转载）"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$127.79（单日-7.7%），重新跌破$135发行价，但比中性区上沿$85仍高约50%。**击球价$85、退出价$190维持，态度仍是不买。**估值口径：原依据是分部估值的中性情景$60-85；用Q3每股盈利$0.35年化约$1.4粗看，现价约91倍。靠什么赚钱：Starlink是利润来源，AI算力租赁是Q3起最大的营收来源，发射是底座。逻辑成立的关键条件（指值得出价）：价格回到分部估值区间；资本开支有回报的证据。最大的风险：Q3资本开支$196亿已超过营收$146亿，Q4预计$350-400亿——它正在把自己变成一家重资产的AI算力公司，这轮AI抛售直接打到它；与特斯拉合并的条款未知，马斯克有利益冲突；解禁带来的供给（原笔记记录的$175.50触发条款）。下一个要看的：两家特别委员会的结论。本轮没有打开公司自己的财报原文，三条关键事项都来自媒体，判断不变。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",
@@ -40,5 +70,6 @@
       "summary": "股价约$140；11/16星舰助推器回收。",
       "url": "https://247wallst.com/investing/2026/11/17/rocket-lab-slides-4-as-spacex-shares-a-985-million-launch-award-are-cathie-wood-and-david-tepper-picking-spacex-over-rocket-lab/"
     }
-  ]
+  ],
+  "exitLogicNote": "态度是不买，没有持有前提下的退出逻辑；若与特斯拉合并，估值框架要整体重做。留“其他”。"
 }

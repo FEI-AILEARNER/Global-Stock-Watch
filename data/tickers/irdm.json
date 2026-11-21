@@ -2,21 +2,73 @@
   "ticker": "IRDM",
   "company": "Iridium",
   "sector": "space",
-  "strikePrice": 43,
-  "exitPrice": 54,
+  "strikePrice": 40,
+  "exitPrice": 45,
   "exitLogic": "other",
   "stance": {
     "label": "条件观察",
     "group": "watch"
   },
-  "strikeNote": "≤$43（对应隐含对价约$49有14%毛价差）",
-  "events": "FCC审批／2027年中交割",
-  "contentUpdatedOn": "2026-11-19",
-  "lastPrice": null,
-  "lastPriceNote": "原表【11/19更新】没有记录 IRDM 的股价（以实时价对比隐含对价约$49）。",
-  "priceChanges": [],
-  "keyItems": [],
+  "strikeNote": "≤$40（对隐含对价约$45.2有约13%毛价差）；隐含对价＝$27＋0.40×RKLB股价，随RKLB浮动。11/20收$42.08，价差约7%",
+  "events": "FCC裁定（答辩期11/9已结束）／2027年中交割／2027年3月EMSS合同到期续签",
+  "contentUpdatedOn": "2026-11-21",
+  "lastPrice": {
+    "value": 42.08,
+    "asOf": "2026-11-20",
+    "approx": false,
+    "quote": "11/20 收盘价 $42.08（Yahoo Finance 图表接口，2026-11-21 读取）",
+    "recordedOn": "2026-11-21"
+  },
+  "priceChanges": [
+    {
+      "date": "2026-11-21",
+      "field": "strike",
+      "from": 43,
+      "to": 40,
+      "reason": "击球价$43→$40，退出价$54→$45。这是并购套利，两个价都跟着对价走：对价＝$27现金＋RKLB股票，RKLB低于区间下限$67.50后换股比例锁定在约0.40股。RKLB 11/20收$45.42，股票部分只值约$18.2，隐含总对价约$45.2（11/19按RKLB $55.2算是约$49）。原击球区说明要求约14%的毛价差：对$45.2要14%就得在$39.6以下，取$40（价差约13%）。退出价原来的$54是“$27＋$27”的名义对价，只有RKLB回到$67.50以上才成立，改为当前隐含对价$45；RKLB每变动$1，隐含对价变动约$0.40。",
+      "source": "Agent 4，2026-11-21 更新（见当天的定价依据）"
+    },
+    {
+      "date": "2026-11-21",
+      "field": "exit",
+      "from": 54,
+      "to": 45,
+      "reason": "击球价$43→$40，退出价$54→$45。这是并购套利，两个价都跟着对价走：对价＝$27现金＋RKLB股票，RKLB低于区间下限$67.50后换股比例锁定在约0.40股。RKLB 11/20收$45.42，股票部分只值约$18.2，隐含总对价约$45.2（11/19按RKLB $55.2算是约$49）。原击球区说明要求约14%的毛价差：对$45.2要14%就得在$39.6以下，取$40（价差约13%）。退出价原来的$54是“$27＋$27”的名义对价，只有RKLB回到$67.50以上才成立，改为当前隐含对价$45；RKLB每变动$1，隐含对价变动约$0.40。",
+      "source": "Agent 4，2026-11-21 更新（见当天的定价依据）"
+    }
+  ],
+  "keyItems": [
+    {
+      "date": "2026-11-09",
+      "title": "收购方Rocket Lab：收购资金已通过ATM备齐，Iridium贷款方同意保留信贷安排",
+      "summary": "Rocket Lab的Q3新闻稿：收购Iridium的资金来自已完成的ATM增发；Iridium的贷款方批准交易后保留其信贷安排；Iridium股东已高票通过。对套利来说，融资风险基本排除，剩下的是监管（FCC）和RKLB股价对对价的影响。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001819994/000181999426000073/rklb-11092026ex991.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件）：Rocket Lab Q3 新闻稿"
+    },
+    {
+      "date": "2026-10",
+      "title": "Q3财报：营收$2.457亿(+8%)，净杠杆4.2倍；合并预计“2027年中前”完成",
+      "summary": "Iridium新闻稿（10月发布，具体日期本轮未核对）：服务收入$1.875亿(+13%)，运营EBITDA $1.356亿(-1%)。净债务$20.6亿。9/24股东以99.6%赞成票通过合并。美国太空军9/11行使选择权把EMSS合同按原价延到2027年3月。季度股息拟从Q4起升到$0.16。新闻稿没有写对价条款，也没有给2026全年展望。",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001418819/000141881926000053/pressreleaseq32026.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件）：Iridium Q3 新闻稿"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "FCC公告：牌照控制权转让征求意见，再答复期11/9截止",
+      "summary": "FCC公告DA 26-985（GN Docket 26-257）：合并协议签于6/28；如果股票占对价的比例不低于40%，交易会有第二步合并。Team Telecom未被正式转介。答辩期已结束，FCC的裁定没有法定期限。",
+      "url": "https://docs.fcc.gov/public/attachments/DA-26-985A1.txt",
+      "sourceType": "official",
+      "source": "FCC 公告 DA 26-985"
+    }
+  ],
   "rationale": [
+    {
+      "label": "11/21更新",
+      "date": "2026-11-21",
+      "text": "11/20收$42.08（单日-3.6%）。**击球价$43→$40，退出价$54→$45。**套利重算：对价＝$27现金＋约0.40股RKLB；RKLB 11/20收$45.42，隐含总对价约$45.2，现价对应毛价差约7%。原先要求约14%的价差才出手，对应$40以下。靠什么赚钱（这笔交易）：拿到交割时的现金加RKLB股票，赚现价和对价之间的差。逻辑成立的关键条件：FCC批准、2027年中前交割；RKLB股价不再大跌（每跌$1对价少$0.40）。最大的风险：对价里40%是RKLB股票，而RKLB自己还有1月贮箱鉴定这个二元事件；交易告吹的话，手里是一家净杠杆4.2倍的卫星运营商，下行保护有限。下一个要看的：FCC裁定、RKLB 1月的贮箱鉴定。融资和股东投票两关已过，监管这一关没有时间表；7%的毛价差对应约7个月和上述风险，不够，继续等$40以下。"
+    },
     {
       "label": "11/19更新",
       "date": "2026-11-19",
@@ -35,5 +87,6 @@
       "summary": "未反对交易；股东9月以99.6%赞成通过；目标2027年中交割。",
       "url": "https://stocktwits.com/news-articles/markets/equity/rklb-iridium-deal-globalstar-spacex-concerns-rocketlab-fast-fcc-approval/cNGQHAcR957"
     }
-  ]
+  ],
+  "exitLogicNote": "并购套利：退出是交割（拿到对价）或价差收敛，不属于三种逻辑；交易告吹则按独立公司重估。"
 }
