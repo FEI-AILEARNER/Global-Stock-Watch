@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import test from 'node:test';
 
-import { homeInputs, money, ttm, valuation } from '../lib/fundamentals.ts';
+import { homeInputs, money, ttm, usdReportedPe, valuation } from '../lib/fundamentals.ts';
 import type { Fundamentals } from '../lib/fundamentals.ts';
 import { readRaw } from '../lib/load.ts';
 import { validateDataset } from '../lib/validate.ts';
@@ -98,4 +98,10 @@ test('金额的写法', () => {
   assert.equal(money(115_844_000_000), '$1,158亿');
   assert.equal(money(3_025_300_000_000), '$3.03万亿');
   assert.equal(money(-66_300_000), '−$66.3百万');
+});
+
+test('非美元公司：只用公司自报的单季每 ADR 美元收益，× 4 年化', () => {
+  const twd: Fundamentals = { ...sample, currency: 'TWD', usdReported: { quarterEpsPerAdr: { value: 4.6, unit: 'USD/ADR', src: 's', period: 'Q3' } } };
+  assert.equal(usdReportedPe(twd, 330)!.value, 330 / 18.4);
+  assert.equal(usdReportedPe(sample, 330), null);
 });
