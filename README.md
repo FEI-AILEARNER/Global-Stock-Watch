@@ -24,7 +24,7 @@ npm run build && npm start -- -p 3467    # 本地看正式构建
 | 地址 | 内容 |
 | --- | --- |
 | `/` | 监控清单：按板块分组，可按距击球区排序，可按态度和价位筛选；顶部是宏观环境和“现价在击球价下方的有哪些” |
-| `/t/<代码>` | 标的详情：价格、击球区说明、退出逻辑、定价依据（最新在上，旧的可展开）、新闻、事件、调价记录 |
+| `/t/<代码>` | 标的详情：价格、关键事项；估值口径（按现价、记录价、击球价）、财务快照、公司指引、业务结构和订单、股本和负债、治理、风险因素、招股书研读、“什么情况下判断会变”、来源；然后是投资逻辑（最新在上，旧的可展开）、新闻、事件、调价记录 |
 | `/calendar` | 日历 |
 | `/discipline` | 核心哲学、仓位纪律、退出三种逻辑、自我校正与披露、已移除标的 |
 | `/updates` | 更新记录和调价记录 |
@@ -40,6 +40,15 @@ npm run build && npm start -- -p 3467    # 本地看正式构建
 4. 调价：改 `strikePrice`／`exitPrice`，并在 `priceChanges` 加一条 `{ "date", "field", "from", "to", "reason", "source" }`。
 5. 新建当天的 `data/updates/<日期>.json`，把 `data/meta/site.json` 的 `contentUpdatedOn` 改成当天。
 6. `npm run check`，通过后提交、推送。
+
+## 怎么补估值相关信息
+
+为什么补、补什么：`docs/research/2026-11-22-valuation-info.md`。格式：`docs/DATA_MODEL.md` 的“估值相关信息”一节。
+
+1. 提交 10-K／10-Q 的公司：`data/fundamentals/<代码小写>.json` 里写 `{ "ticker", "xbrl": { "cik": … } }`，运行 `SEC_CACHE_DIR=/tmp/sec node scripts/fundamentals/sec-xbrl.ts <代码>`，脚本从 `data.sec.gov` 填财务快照、现金、负债、股本。看一眼输出：债务、现金的标签各公司不同，不对就在 `xbrl.debtTags`／`cashTags` 里指定再跑。
+2. 最近一季只有新闻稿（10-Q 还没出）、外国公司（20-F、40-F、6-K）、新上市公司：打开原文，人工录入，数字带 `"manual": true`（脚本不会覆盖），期间写进 `xbrl.manualPeriods`。
+3. 业务结构、订单、指引、治理、风险、招股书、检查点都是人工从原文写，每条带来源；没读到的写进 `gaps`。
+4. `npm run check`。
 
 ## 怎么加一个标的
 
@@ -70,7 +79,7 @@ app/            页面和报价接口
 components/     界面组件
 lib/            数据类型、校验、读取、报价适配器、计算和格式化
 data/           内容（JSON）
-scripts/        校验脚本、页面检查脚本、一次性导入脚本（scripts/import/）
+scripts/        校验脚本、页面检查脚本、SEC XBRL 取数脚本（scripts/fundamentals/）、一次性导入脚本（scripts/import/）
 tests/          测试；tests/fixtures/import-snapshot.json 是导入时的核对快照
-docs/           PROGRESS、DATA_MODEL、UPDATING
+docs/           PROGRESS、DATA_MODEL、UPDATING；research/ 是设计说明
 ```

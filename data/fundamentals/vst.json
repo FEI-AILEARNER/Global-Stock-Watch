@@ -635,7 +635,7 @@
           "manual": true
         },
         "profit": {
-          "value": 1227000000.0,
+          "value": 1227000000,
           "unit": "USD",
           "manual": true,
           "src": "vst-pr-q3-2026"
@@ -650,7 +650,7 @@
           "manual": true
         },
         "profit": {
-          "value": 979000000.0,
+          "value": 979000000,
           "unit": "USD",
           "manual": true,
           "src": "vst-pr-q3-2026"
@@ -665,7 +665,7 @@
           "manual": true
         },
         "profit": {
-          "value": 98000000.0,
+          "value": 98000000,
           "unit": "USD",
           "manual": true,
           "src": "vst-pr-q3-2026"
@@ -680,7 +680,7 @@
           "manual": true
         },
         "profit": {
-          "value": 76000000.0,
+          "value": 76000000,
           "unit": "USD",
           "manual": true,
           "src": "vst-pr-q3-2026"
@@ -695,7 +695,7 @@
           "manual": true
         },
         "profit": {
-          "value": -20000000.0,
+          "value": -20000000,
           "unit": "USD",
           "manual": true,
           "src": "vst-pr-q3-2026",

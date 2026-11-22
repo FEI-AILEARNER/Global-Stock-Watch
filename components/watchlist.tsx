@@ -212,8 +212,8 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
           <div className="card hidden overflow-x-auto md:block">
             <table className="w-full min-w-[69rem] table-fixed border-collapse text-sm">
               <colgroup>
-                <col className="w-[5.5rem]" /><col className="w-[10.5rem]" /><col className="w-[7rem]" /><col className="w-[5.5rem]" /><col className="w-[5.5rem]" />
-                <col className="w-[5.5rem]" /><col className="w-[8.5rem]" /><col className="w-[5.5rem]" /><col className="w-[12rem]" /><col />
+                <col className="w-[5.5rem]" /><col className="w-[9rem]" /><col className="w-[7rem]" /><col className="w-[5.5rem]" /><col className="w-[5.5rem]" />
+                <col className="w-[5.5rem]" /><col className="w-[5.5rem]" /><col className="w-[7.5rem]" /><col className="w-[5.5rem]" /><col className="w-[11rem]" /><col />
               </colgroup>
               <thead>
                 <tr className="border-b border-rule text-left text-xs text-ink-soft">

@@ -3,7 +3,7 @@
 import { useMemo } from 'react';
 
 import { useQuotes } from '@/components/use-quotes';
-import { money, valuation } from '@/lib/fundamentals';
+import { money, ttm, valuation } from '@/lib/fundamentals';
 import type { Calc, Fundamentals, ValuationRow } from '@/lib/fundamentals';
 import { shortDate, usd } from '@/lib/format';
 import type { LastPrice } from '@/lib/schema';
@@ -28,6 +28,9 @@ export function ValuationPanel({ f, ticker, strikePrice, lastPrice }: { f: Funda
   const results = cols.map((c) => ({ ...c, v: valuation(f, c.price, c.label.replace('按', '')) }));
   const blocked = results[0]?.v.blocked;
   const p = f.periods;
+  const ni = ttm(f, 'netIncome').value;
+  const op = ttm(f, 'operatingIncome').value;
+  const nonOp = ni !== null && op !== null && ni > 0 && ni > op * 1.2 ? `近四季净利润 ${money(ni)} 比营业利润 ${money(op)} 高出 ${money(ni - op)}，差额来自营业外项目（如投资收益），所以按净利润算的市盈率偏低；可对照 EV/EBITDA 和自由现金流收益率。` : null;
 
   return (
     <section aria-labelledby="val-h" className="card px-4 py-4 sm:px-6 sm:py-5">
@@ -63,6 +66,7 @@ export function ValuationPanel({ f, ticker, strikePrice, lastPrice }: { f: Funda
               </tbody>
             </table>
           </div>
+          {nonOp && <p className="mt-2 text-xs text-amber">注意：{nonOp}</p>}
           <details className="mt-3 text-xs text-ink-soft">
             <summary className="text-navy">公式和输入（按{results.at(-1)!.label.replace('按', '')}）</summary>
             <ul className="mt-1 list-disc space-y-1 pl-5">

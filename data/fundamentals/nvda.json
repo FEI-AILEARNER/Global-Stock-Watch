@@ -669,7 +669,7 @@
       {
         "name": "数据中心",
         "revenue": {
-          "value": 107600000000.0,
+          "value": 107600000000,
           "unit": "USD",
           "manual": true,
           "src": "nvda-pr-q3fy27",
@@ -679,7 +679,7 @@
       {
         "name": "边缘计算（Edge Computing）",
         "revenue": {
-          "value": 8200000000.0,
+          "value": 8200000000,
           "unit": "USD",
           "manual": true,
           "src": "nvda-pr-q3fy27",
@@ -723,7 +723,7 @@
       "text": "截至 2026-01-25，制造、供应和产能承诺 $952亿，基本都在 FY2027 内支付。这是公司对供应商的承诺，不是客户订单；需求放缓时它会变成负担（FY2026 Q1 曾因 H20 出口限制计提 $45亿）。",
       "src": "nvda-10k-fy2026",
       "figure": {
-        "value": 95200000000.0,
+        "value": 95200000000,
         "unit": "USD",
         "manual": true,
         "src": "nvda-10k-fy2026",

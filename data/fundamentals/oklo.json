@@ -1,7 +1,10 @@
 {
   "ticker": "OKLO",
   "xbrl": {
-    "cik": 1849056
+    "cik": 1849056,
+    "manualPeriods": [
+      "balanceDate"
+    ]
   },
   "checkedOn": "2026-11-22",
   "currency": "USD",
@@ -517,36 +520,62 @@
   "balance": {
     "date": "2026-09-30",
     "cash": {
-      "value": 1550061000,
+      "value": 3130785000,
       "unit": "USD",
-      "src": "0001628280-26-071319",
+      "manual": true,
+      "src": "oklo-10q-q3-2026",
       "parts": [
         {
           "label": "现金及现金等价物",
-          "value": 1550061000,
-          "tag": "CashAndCashEquivalentsAtCarryingValue"
+          "value": 1550061000
+        },
+        {
+          "label": "有价债券（流动）",
+          "value": 951768000
+        },
+        {
+          "label": "有价债券（非流动）",
+          "value": 628956000
         }
-      ]
+      ],
+      "note": "含非流动的有价债券"
     },
     "debt": {
-      "value": null,
+      "value": 0,
       "unit": "USD",
-      "note": "本轮未检索到（XBRL 里没有债务标签；可能没有有息负债，须对照原文）"
+      "manual": true,
+      "src": "oklo-10q-q3-2026",
+      "note": "资产负债表没有借款科目；6 月收购时承接的 $224万 债务已偿还；另有融资租赁负债未单列。负债合计 $1.20亿"
     }
   },
   "shares": {
     "outstanding": {
       "value": 195289593,
       "unit": "股",
-      "src": "0001628280-26-071319",
-      "note": "封面披露的已发行普通股，截至 2026-11-04"
+      "manual": true,
+      "src": "oklo-10q-q3-2026",
+      "note": "10-Q 封面，截至 2026-11-04"
     },
     "outstandingYearAgo": {
       "value": 156247075,
       "unit": "股",
       "src": "0001628280-25-051349",
       "note": "一年前封面披露的已发行普通股，截至 2025-11-07"
-    }
+    },
+    "dilutive": [
+      {
+        "label": "ATM 增发",
+        "text": "2026 前三季通过 ATM 卖出约 3,261 万股，净得约 $22.54亿（上半年 2,309 万股、第三季 952 万股）。另有期权 546万份、限制性股票 370万股等。",
+        "src": "oklo-10q-q3-2026",
+        "figure": {
+          "value": 2253705000,
+          "unit": "USD",
+          "manual": true,
+          "src": "oklo-10q-q3-2026",
+          "period": "2026 前三季，净得"
+        }
+      }
+    ]
   },
   "sources": [
     {
@@ -578,9 +607,33 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828025051349/oklo-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001849056.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "oklo-10q-q3-2026",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2026 Q3（截至 2026-09-30）；封面股数截至 2026-11-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026071319/oklo-20260930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Oklo 2026 年第三季度 10-Q",
+      "filed": "2026-11-06"
     }
   ],
   "gaps": [
     "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）"
+  ],
+  "checkpoints": [
+    {
+      "metric": "每股现金",
+      "condition": "击球区 $14-18 以每股现金及有价证券约 $16.0 为锚；现金被消耗或增发都会改变它。",
+      "basis": "11/21 击球区说明",
+      "latest": "现金及有价证券 $31.31亿 ÷ 1.953 亿股 ≈ 每股 $16.03",
+      "src": "oklo-10q-q3-2026"
+    },
+    {
+      "metric": "Aurora-INL 和并网",
+      "condition": "Aurora-INL 在 2028-2029 年启动；俄亥俄项目拿到并网。",
+      "basis": "11/21 定价依据的“关键条件”"
+    }
   ]
 }

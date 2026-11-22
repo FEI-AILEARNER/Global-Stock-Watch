@@ -1,0 +1,455 @@
+{
+  "ticker": "CCJ",
+  "checkedOn": "2026-11-22",
+  "currency": "CAD",
+  "sources": [
+    {
+      "id": "0001193125-26-116229",
+      "origin": "xbrl",
+      "form": "40-F",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1009001/000119312526116229/d34605d40f.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Cameco 2025 年度报告（40-F）",
+      "filed": "2026-03-19",
+      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001009001.json"
+    },
+    {
+      "id": "ccj-suppl-2026-11",
+      "origin": "document",
+      "form": "招股说明书补充（SUPPL）",
+      "period": "2026-11-05 提交",
+      "url": "https://www.sec.gov/Archives/edgar/data/1009001/000119312526450176/d817484dsuppl.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Cameco 市价增发（ATM）招股说明书补充",
+      "filed": "2026-11-05"
+    }
+  ],
+  "gaps": [
+    "2026 年第三季度和前三季的所有数字（6-K 的财报附件本轮没有打开到；之前关键事项里用的是媒体转载的新闻稿）",
+    "长期合同组合（合同磅数、年均交付量）",
+    "Westinghouse 权益收益",
+    "风险因素和治理",
+    "因为财报是加元，估值倍数不计算"
+  ],
+  "periods": {
+    "fy": {
+      "label": "FY2025",
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "fyPrior": {
+      "label": "FY2024",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "q": {
+      "label": "2026 Q3",
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "qPrior": {
+      "label": "2025 Q3",
+      "start": "2025-07-01",
+      "end": "2025-09-30"
+    },
+    "ytd": {
+      "label": "2026 前三季",
+      "start": "2026-01-01",
+      "end": "2026-09-30"
+    },
+    "ytdPrior": {
+      "label": "2025 前三季",
+      "start": "2025-01-01",
+      "end": "2025-09-30"
+    },
+    "balanceDate": "2025-12-31"
+  },
+  "flows": {
+    "revenue": {
+      "fy": {
+        "value": 3481933000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "fyPrior": {
+        "value": 3135772000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "q": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytd": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      }
+    },
+    "grossProfit": {
+      "fy": {
+        "value": 970273000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "fyPrior": {
+        "value": 782582000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "q": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytd": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      }
+    },
+    "operatingIncome": {
+      "fy": {
+        "value": 618142000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "fyPrior": {
+        "value": 510114000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "q": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytd": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      }
+    },
+    "netIncome": {
+      "fy": {
+        "value": 589577000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "fyPrior": {
+        "value": 171853000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "q": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytd": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      }
+    },
+    "ocf": {
+      "fy": {
+        "value": 1408432000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "fyPrior": {
+        "value": 905288000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "q": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytd": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      }
+    },
+    "capex": {
+      "fy": {
+        "value": 333025000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "fyPrior": {
+        "value": 211635000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "q": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytd": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      }
+    },
+    "sbc": {
+      "fy": {
+        "value": 9656000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "fyPrior": {
+        "value": 6775000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "q": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytd": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      }
+    },
+    "da": {
+      "fy": {
+        "value": 293094000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "fyPrior": {
+        "value": 280702000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "q": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytd": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      }
+    },
+    "dividends": {
+      "fy": {
+        "value": 104480000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "fyPrior": {
+        "value": 69641000.0,
+        "unit": "CAD",
+        "src": "0001193125-26-116229"
+      },
+      "q": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytd": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "CAD",
+        "note": "本轮未检索到（第三季度的财报在 6-K 附件里，本轮没有打开到附件）",
+        "manual": true
+      }
+    }
+  },
+  "balance": {
+    "date": "2025-12-31",
+    "cash": {
+      "value": 1114860000.0,
+      "unit": "CAD",
+      "manual": true,
+      "src": "0001193125-26-116229",
+      "parts": [
+        {
+          "label": "现金及现金等价物",
+          "value": 1114860000.0
+        }
+      ]
+    },
+    "debt": {
+      "value": 996348000.0,
+      "unit": "CAD",
+      "manual": true,
+      "src": "0001193125-26-116229",
+      "parts": [
+        {
+          "label": "长期借款",
+          "value": 996348000.0
+        },
+        {
+          "label": "一年内到期的长期借款",
+          "value": 0
+        }
+      ],
+      "note": "截至 2025-12-31（40-F）；ATM 补充文件写明 2026-09-30 循环信贷额度没有提用"
+    }
+  },
+  "shares": {
+    "outstanding": {
+      "value": 435457978,
+      "unit": "股",
+      "manual": true,
+      "src": "0001193125-26-116229",
+      "note": "40-F 封面，截至 2025-12-31"
+    },
+    "dilutive": [
+      {
+        "label": "市价增发（ATM）",
+        "text": "2026-11-05 提交招股说明书补充：可以按市价增发普通股，合计最多 US$10亿，没有最低额；用途是开发机会、未来收购、偿还债务和一般用途。按 11/20 收盘价 $58，用满约相当于 1,700 万股、约为年初股本的 4%（算术，实际取决于成交价和是否使用）。",
+        "src": "ccj-suppl-2026-11"
+      }
+    ]
+  },
+  "valuationNote": "财报币种是加元，股价是美元；本平台不做汇率换算，需要股价的倍数不计算。",
+  "checkpoints": [
+    {
+      "metric": "2027E EPS（击球价口径）",
+      "condition": "2027E EPS $2.25 × 25-30 倍 = $56-68，加西屋权益放宽到 $75（2027E EPS 本轮未重新核实）。",
+      "basis": "11/21 定价依据"
+    },
+    {
+      "metric": "长约价和西屋订单",
+      "condition": "长约价继续上行；西屋的 AP1000 框架协议变成确定订单。",
+      "basis": "11/21 定价依据的“关键条件”"
+    }
+  ]
+}

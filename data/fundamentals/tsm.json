@@ -1,0 +1,359 @@
+{
+  "ticker": "TSM",
+  "checkedOn": "2026-11-22",
+  "currency": "TWD",
+  "sources": [
+    {
+      "id": "tsm-20f-2025",
+      "origin": "document",
+      "form": "20-F",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm",
+      "checkedOn": "2026-11-22",
+      "title": "台积电 2025 年度报告（20-F）",
+      "filed": "2026-04-16"
+    },
+    {
+      "id": "tsm-pr-q3-2026",
+      "origin": "document",
+      "form": "6-K（财报新闻稿）",
+      "period": "2026 Q3（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+      "checkedOn": "2026-11-22",
+      "title": "台积电 2026 年第三季度财报新闻稿",
+      "filed": "2026-10-15"
+    }
+  ],
+  "gaps": [
+    "2025 全年的毛利、营业利润、净利润、经营现金流和资产负债表（20-F 读到的部分只有营收和资本开支，XBRL 接口里没有 2025 年的数字）",
+    "2026 前三季累计和季度现金流（所以近四季算不出）",
+    "现金和有息负债",
+    "ADR 与普通股的比例",
+    "因为财报是新台币，估值倍数不计算"
+  ],
+  "periods": {
+    "fy": {
+      "label": "FY2025",
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "fyPrior": {
+      "label": "FY2024",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "q": {
+      "label": "2026 Q3",
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "qPrior": {
+      "label": "2025 Q3",
+      "start": "2025-07-01",
+      "end": "2025-09-30"
+    },
+    "ytd": {
+      "label": "2026 前三季",
+      "start": "2026-01-01",
+      "end": "2026-09-30"
+    },
+    "ytdPrior": {
+      "label": "2025 前三季",
+      "start": "2025-01-01",
+      "end": "2025-09-30"
+    },
+    "balanceDate": "2026-09-30"
+  },
+  "flows": {
+    "revenue": {
+      "fy": {
+        "value": 3809054000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-20f-2025"
+      },
+      "fyPrior": {
+        "value": 2894308000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-20f-2025"
+      },
+      "q": {
+        "value": 1494243000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-pr-q3-2026"
+      },
+      "qPrior": {
+        "value": 989918000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-pr-q3-2026"
+      },
+      "ytd": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      }
+    },
+    "grossProfit": {
+      "fy": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到（20-F 读到的部分没有）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "q": {
+        "value": 992379000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-pr-q3-2026"
+      },
+      "qPrior": {
+        "value": 588543000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-pr-q3-2026"
+      }
+    },
+    "operatingIncome": {
+      "fy": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "q": {
+        "value": 876445000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-pr-q3-2026"
+      },
+      "qPrior": {
+        "value": 500685000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-pr-q3-2026"
+      }
+    },
+    "netIncome": {
+      "fy": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "q": {
+        "value": 763064000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-pr-q3-2026",
+        "note": "新闻稿写“净利润”，没有注明是否为归属母公司"
+      },
+      "qPrior": {
+        "value": 452302000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-pr-q3-2026"
+      }
+    },
+    "epsDiluted": {
+      "q": {
+        "value": 29.43,
+        "unit": "TWD/股",
+        "manual": true,
+        "src": "tsm-pr-q3-2026"
+      },
+      "qPrior": {
+        "value": 17.44,
+        "unit": "TWD/股",
+        "manual": true,
+        "src": "tsm-pr-q3-2026"
+      }
+    },
+    "capex": {
+      "fy": {
+        "value": 1272411000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-20f-2025"
+      },
+      "fyPrior": {
+        "value": 956007000000.0,
+        "unit": "TWD",
+        "manual": true,
+        "src": "tsm-20f-2025"
+      },
+      "q": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到（新闻稿没有）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      }
+    },
+    "ocf": {
+      "fy": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到（新闻稿没有）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "TWD",
+        "note": "本轮未检索到",
+        "manual": true
+      }
+    }
+  },
+  "shares": {
+    "outstanding": {
+      "value": 25932524521,
+      "unit": "股",
+      "manual": true,
+      "src": "tsm-20f-2025",
+      "note": "20-F：截至 2025-12-31 的普通股"
+    }
+  },
+  "valuationNote": "财报币种是新台币，ADR 以美元报价；本平台不做汇率换算，需要股价的倍数不计算。公司自己给出的美元口径：2026 Q3 稀释每股收益 US$4.60（每单位 ADR）；第三季营收 US$467.2亿。ADR 与普通股的比例本轮读到的部分没有写。",
+  "segments": {
+    "period": "2026 Q3 晶圆收入",
+    "src": "tsm-pr-q3-2026",
+    "rows": [
+      {
+        "name": "2 纳米",
+        "revenue": {
+          "value": 8,
+          "unit": "%",
+          "manual": true,
+          "src": "tsm-pr-q3-2026"
+        }
+      },
+      {
+        "name": "3 纳米",
+        "revenue": {
+          "value": 33,
+          "unit": "%",
+          "manual": true,
+          "src": "tsm-pr-q3-2026"
+        }
+      },
+      {
+        "name": "5 纳米",
+        "revenue": {
+          "value": 28,
+          "unit": "%",
+          "manual": true,
+          "src": "tsm-pr-q3-2026"
+        }
+      },
+      {
+        "name": "7 纳米",
+        "revenue": {
+          "value": 10,
+          "unit": "%",
+          "manual": true,
+          "src": "tsm-pr-q3-2026"
+        }
+      },
+      {
+        "name": "更成熟的制程",
+        "revenue": {
+          "value": 21,
+          "unit": "%",
+          "manual": true,
+          "src": "tsm-pr-q3-2026",
+          "calc": "100% − 先进制程 79%"
+        }
+      }
+    ],
+    "note": "按制程分的晶圆收入占比（新闻稿只给百分比，“收入”一栏是占比）；7 纳米及更先进合计 79%。各制程的利润不披露。"
+  },
+  "guidance": [
+    {
+      "period": "2026 Q4",
+      "text": "营收 US$523亿 至 US$543亿；毛利率 65% 至 67%；营业利润率 56.5% 至 58.5%；汇率假设 1 美元兑 31.8 新台币。",
+      "direction": "unclear",
+      "vsText": "新一季的指引，不与上一季指引比方向；对比 Q3 实际：营收 US$467.2亿、毛利率 66.4%、营业利润率 58.7%。",
+      "src": "tsm-pr-q3-2026"
+    }
+  ],
+  "customers": [
+    {
+      "label": "最大客户",
+      "text": "2023、2024、2025 年最大客户分别占净营收 25%、22%、19%（未具名）；前十大客户 2025 年合计约 78%。",
+      "src": "tsm-20f-2025",
+      "figure": {
+        "value": 19,
+        "unit": "%",
+        "manual": true,
+        "src": "tsm-20f-2025",
+        "period": "FY2025"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "metric": "每 ADR 盈利（击球价口径）",
+      "condition": "击球价 $330 ≈ 年化 Q3 每 ADR 盈利 $18.4 的 18 倍；季度每 ADR 盈利下降，同一价格的倍数就变高。",
+      "basis": "11/21 击球区说明",
+      "latest": "2026 Q3 每 ADR 稀释收益 US$4.60（公司口径）",
+      "src": "tsm-pr-q3-2026"
+    },
+    {
+      "metric": "毛利率和先进制程定价",
+      "condition": "先进制程的定价权和 2 纳米放量延续。",
+      "basis": "11/21 定价依据的“关键条件”",
+      "latest": "Q3 毛利率 66.4%；Q4 指引 65% 至 67%；2 纳米占晶圆收入 8%",
+      "src": "tsm-pr-q3-2026"
+    },
+    {
+      "metric": "出口管制",
+      "condition": "对华限制（含经第三地转售）收紧时重估。",
+      "basis": "11/21 击球区说明"
+    }
+  ]
+}

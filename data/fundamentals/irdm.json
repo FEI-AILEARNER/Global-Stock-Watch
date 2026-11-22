@@ -546,14 +546,14 @@
       ]
     },
     "debt": {
-      "value": 2109500000.0,
+      "value": 2109500000,
       "unit": "USD",
       "manual": true,
       "src": "irdm-10q-q3-2026",
       "parts": [
         {
           "label": "定期贷款和 Aireon 两笔贷款（面值合计）",
-          "value": 2109500000.0
+          "value": 2109500000
         }
       ],
       "note": "10-Q：扣除未摊销融资费用后账面 $20.893亿。循环贷款另有 $5,000万 未偿还，原文没说是否已含在内，这里没有加"
@@ -650,7 +650,7 @@
       {
         "name": "商业语音和数据",
         "revenue": {
-          "value": 58002000.0,
+          "value": 58002000,
           "unit": "USD",
           "manual": true,
           "src": "irdm-10q-q3-2026"
@@ -659,7 +659,7 @@
       {
         "name": "物联网数据",
         "revenue": {
-          "value": 48669000.0,
+          "value": 48669000,
           "unit": "USD",
           "manual": true,
           "src": "irdm-10q-q3-2026"
@@ -668,7 +668,7 @@
       {
         "name": "宽带",
         "revenue": {
-          "value": 11822000.0,
+          "value": 11822000,
           "unit": "USD",
           "manual": true,
           "src": "irdm-10q-q3-2026"
@@ -677,7 +677,7 @@
       {
         "name": "托管载荷及其他数据",
         "revenue": {
-          "value": 41432000.0,
+          "value": 41432000,
           "unit": "USD",
           "manual": true,
           "src": "irdm-10q-q3-2026"
@@ -686,7 +686,7 @@
       {
         "name": "政府服务",
         "revenue": {
-          "value": 27573000.0,
+          "value": 27573000,
           "unit": "USD",
           "manual": true,
           "src": "irdm-10q-q3-2026"
@@ -695,7 +695,7 @@
       {
         "name": "工程和支持服务",
         "revenue": {
-          "value": 39190000.0,
+          "value": 39190000,
           "unit": "USD",
           "manual": true,
           "src": "irdm-10q-q3-2026"
@@ -704,7 +704,7 @@
       {
         "name": "终端设备",
         "revenue": {
-          "value": 19045000.0,
+          "value": 19045000,
           "unit": "USD",
           "manual": true,
           "src": "irdm-10q-q3-2026"
@@ -719,7 +719,7 @@
       "text": "2019 年 9 月签订，服务费固定为每年 $1.105亿；美国太空军 2026-09-11 行使选择权延到 2027 年 3 月，费率不变，公司预计 2027 年续签。",
       "src": "irdm-10q-q3-2026",
       "figure": {
-        "value": 110500000.0,
+        "value": 110500000,
         "unit": "USD",
         "manual": true,
         "src": "irdm-10q-q3-2026",
