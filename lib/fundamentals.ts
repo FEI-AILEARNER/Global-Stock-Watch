@@ -100,6 +100,8 @@ export type Fundamentals = {
   valuationNote?: string;
   /** 非美元公司的美元口径：每股（或每 ADR）数字由公司自己给出时才写 */
   adr?: { ratio: number; note: string; src: string };
+  /** 公司自己公布的美元口径（非美元财报时）。只收公司在财报、20-F／40-F、6-K 里自己写的美元数字，不自己换算 */
+  usdReported?: { quarterEpsPerAdr?: Fig; items?: FItem[] };
   segments?: { period: string; src: string; rows: { name: string; revenue: Fig; profit?: Fig; note?: string }[]; note?: string };
   orders?: FItem[];
   customers?: FItem[];
@@ -178,6 +180,15 @@ export function valuation(f: Fundamentals, price: number, priceLabel: string): {
       { id: 'fcf-sbc-yield', label: '扣除股权激励后的自由现金流收益率', calc: ratio(fcfSbc, mcap, '', 'pct', '市值', '自由现金流 − 股权激励'), kind: 'pct' },
     ],
   };
+}
+
+/** 非美元公司：用公司自报的单季每 ADR 美元收益，按 × 4 年化算市盈率（算术假设，页面写明）。 */
+export function usdReportedPe(f: Fundamentals, price: number): Calc | null {
+  const eps = f.usdReported?.quarterEpsPerAdr;
+  if (!eps || typeof eps.value !== 'number') return null;
+  const annual = eps.value * 4;
+  if (annual <= 0) return { value: null, formula: '股价 ÷ (单季每 ADR 收益 × 4)', note: '收益为负，不适用' };
+  return { value: price / annual, formula: `股价 $${price} ÷ (单季每 ADR 收益 US$${eps.value} × 4 = US$${annual.toFixed(2)})` };
 }
 
 /** 首页用：近四季自由现金流、净利润和股数（只有美元公司）。 */

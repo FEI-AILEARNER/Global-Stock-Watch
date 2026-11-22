@@ -38,6 +38,7 @@
 | `flows` | `flows.<项目>.<期间>` 是 Fig。项目：`revenue grossProfit operatingIncome netIncome ocf capex sbc da epsDiluted dilutedShares buybacks issuance dividends`；期间：`fy fyPrior q qPrior ytd ytdPrior` |
 | `balance` | `{ date, cash, debt, maturities? }`：现金及短期投资、有息负债（都是 Fig，用 `parts` 列组成）；`maturities` 是文字事实 |
 | `shares` | `{ outstanding?, outstandingYearAgo?, dilutive? }`：封面股数、一年前的股数、潜在稀释（文字事实） |
+| `usdReported` | 非美元公司自己公布的美元口径：`{ quarterEpsPerAdr?, items? }`。`quarterEpsPerAdr` 是 Fig，`unit` 必须是 `USD/ADR`、要写 `period`；页面据此算“单季 × 4”的市盈率并注明是算术假设。只收公司自己写的美元数字，不自己换算 |
 | `valuationNote`、`adr` | 估值口径的补充说明；非美元公司的 ADR 比例（公司自己写明的才填） |
 | `segments` | `{ period, src, rows: [{ name, revenue, profit?, note? }], note? }` |
 | `orders`、`customers`、`governance` | 文字事实数组 `{ label, text, src, figure? }`；带数字的 `figure` 要写 `period` |

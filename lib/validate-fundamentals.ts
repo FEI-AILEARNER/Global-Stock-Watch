@@ -113,6 +113,16 @@ export function validateFundamentals(files: { file: string; data: unknown }[], t
       }
     }
     if (f.adr !== undefined && (!obj(f.adr) || typeof f.adr.ratio !== 'number' || !text(f.adr.note) || !ids.has(f.adr.src))) err('adr 要有 ratio、note 和来源');
+    if (f.usdReported !== undefined) {
+      if (!obj(f.usdReported)) err('usdReported 不是对象');
+      else {
+        if (f.usdReported.quarterEpsPerAdr !== undefined) {
+          fig(f.usdReported.quarterEpsPerAdr, 'usdReported.quarterEpsPerAdr', true);
+          if (f.usdReported.quarterEpsPerAdr.unit !== 'USD/ADR') err('usdReported.quarterEpsPerAdr 的 unit 必须是 USD/ADR');
+        }
+        list(f.usdReported.items, 'usdReported.items', item);
+      }
+    }
     if (f.segments !== undefined) {
       const s = f.segments;
       if (!obj(s) || !text(s.period) || !ids.has(s.src) || !Array.isArray(s.rows)) err('segments 要有 period、来源和 rows');

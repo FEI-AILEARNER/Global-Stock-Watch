@@ -617,6 +617,16 @@
       "checkedOn": "2026-11-22",
       "title": "Oklo 2026 年第三季度 10-Q",
       "filed": "2026-11-06"
+    },
+    {
+      "id": "oklo-def14a-2026",
+      "origin": "document",
+      "form": "委托书（DEF 14A）",
+      "period": "委托书记录日",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000184905626000023/a2025proxy.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Oklo 2026 年委托书",
+      "filed": "2026-04-21"
     }
   ],
   "gaps": [
@@ -634,6 +644,20 @@
       "metric": "Aurora-INL 和并网",
       "condition": "Aurora-INL 在 2028-2029 年启动；俄亥俄项目拿到并网。",
       "basis": "11/21 定价依据的“关键条件”"
+    }
+  ],
+  "governance": [
+    {
+      "label": "创始人持股",
+      "text": "联合创始人 Jacob DeWitte 和 Caroline DeWitte（Cochran）夫妇各列 2,116 万股、12.16%（同一批股份在两人名下各列一次）；全体董事和高管合计 12.70%；BlackRock 8.29%。之后 ATM 增发使股本增加约 2,000 万股以上，比例会摊薄。",
+      "src": "oklo-def14a-2026",
+      "figure": {
+        "value": 12.7,
+        "unit": "%",
+        "manual": true,
+        "src": "oklo-def14a-2026",
+        "period": "委托书记录日"
+      }
     }
   ]
 }

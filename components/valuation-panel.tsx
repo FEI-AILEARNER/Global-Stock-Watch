@@ -3,7 +3,7 @@
 import { useMemo } from 'react';
 
 import { useQuotes } from '@/components/use-quotes';
-import { money, ttm, valuation } from '@/lib/fundamentals';
+import { money, ttm, usdReportedPe, valuation } from '@/lib/fundamentals';
 import type { Calc, Fundamentals, ValuationRow } from '@/lib/fundamentals';
 import { shortDate, usd } from '@/lib/format';
 import type { LastPrice } from '@/lib/schema';
@@ -38,7 +38,43 @@ export function ValuationPanel({ f, ticker, strikePrice, lastPrice }: { f: Funda
         估值口径 <span className="ml-1 font-sans text-xs font-normal text-ink-soft">只是算术，不是判断；用的是近四季（TTM）的数字和最近一期的股本、现金、负债</span>
       </h2>
       {blocked ? (
-        <p className="mt-2 text-sm text-ink-soft">{blocked}</p>
+        <>
+          <p className="mt-2 text-sm text-ink-soft">{blocked}</p>
+          {f.usdReported?.quarterEpsPerAdr && (
+            <div className="-mx-4 mt-3 overflow-x-auto px-4 sm:mx-0 sm:px-0" data-testid="usd-reported">
+              <p className="text-xs font-semibold text-navy">公司自报美元口径</p>
+              <table className="mt-1 w-full min-w-[20rem] border-collapse text-[0.88rem]">
+                <thead>
+                  <tr className="border-b border-rule text-left text-xs text-ink-soft">
+                    <th scope="col" className="py-1.5 pr-2 font-medium">口径</th>
+                    {results.map((c) => (
+                      <th key={c.key} scope="col" className="px-2 py-1.5 text-right font-medium">{c.label}<span className="num block font-normal">{c.sub}</span></th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-rule-soft">
+                    <th scope="row" className="py-1.5 pr-2 text-left font-normal">市盈率（单季每 ADR 收益 × 4）</th>
+                    {results.map((c) => {
+                      const pe = usdReportedPe(f, c.price);
+                      return <td key={c.key} className="whitespace-nowrap px-2 py-1.5 text-right">{pe?.value == null ? <span className="text-xs text-ink-soft">{pe?.note ?? '—'}</span> : <span className="num">{pe.value.toFixed(1)}倍</span>}</td>;
+                    })}
+                  </tr>
+                </tbody>
+              </table>
+              <p className="mt-1 text-xs text-ink-soft">
+                用的是公司自己公布的 {f.usdReported.quarterEpsPerAdr.period} 每 ADR 稀释收益 US${f.usdReported.quarterEpsPerAdr.value}；“× 4”把一个季度当成全年，是算术假设，不是公司的数字。{usdReportedPe(f, strikePrice)?.formula}
+              </p>
+            </div>
+          )}
+          {f.usdReported?.items && f.usdReported.items.length > 0 && (
+            <ul className="mt-2 space-y-1 text-[0.88rem]">
+              {f.usdReported.items.map((it, i) => (
+                <li key={i}><span className="font-semibold">{it.label}</span>（公司自报美元口径）：{it.text}</li>
+              ))}
+            </ul>
+          )}
+        </>
       ) : (
         <>
           <div className="-mx-4 mt-3 overflow-x-auto px-4 sm:mx-0 sm:px-0">

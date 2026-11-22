@@ -646,6 +646,16 @@
       "checkedOn": "2026-11-22",
       "title": "Intuitive Machines 2026 年第三季度 10-Q",
       "filed": "2026-11-13"
+    },
+    {
+      "id": "lunr-def14a-2026",
+      "origin": "document",
+      "form": "委托书（DEF 14A）",
+      "period": "持股截至 2026-04-10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1844452/000162828026027022/lunr-20260424.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Intuitive Machines 2026 年委托书",
+      "filed": "2026-04-24"
     }
   ],
   "gaps": [
@@ -665,6 +675,20 @@
       "metric": "单季现金流",
       "condition": "单季经营现金流转正能持续；固定价格合同不再计提亏损。",
       "basis": "11/21 定价依据的“关键条件”"
+    }
+  ],
+  "governance": [
+    {
+      "label": "三位创始人控制表决权",
+      "text": "C 类每股 3 票。Kam Ghaffarian 表决权 33.5%、CEO Stephen Altemus 11.6%、Tim Crain 8.2%；全体董事和高管合计 54.1%。A 类大股东：Advent 14.4%（表决权 7.0%）、BlackRock 5.9%。",
+      "src": "lunr-def14a-2026",
+      "figure": {
+        "value": 54.1,
+        "unit": "%",
+        "manual": true,
+        "src": "lunr-def14a-2026",
+        "period": "持股截至 2026-04-10"
+      }
     }
   ]
 }

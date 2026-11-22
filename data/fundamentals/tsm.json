@@ -25,11 +25,10 @@
     }
   ],
   "gaps": [
-    "2025 全年的毛利、营业利润、净利润、经营现金流和资产负债表（20-F 读到的部分只有营收和资本开支，XBRL 接口里没有 2025 年的数字）",
     "2026 前三季累计和季度现金流（所以近四季算不出）",
-    "现金和有息负债",
-    "ADR 与普通股的比例",
-    "因为财报是新台币，估值倍数不计算"
+    "有息负债余额和有价证券（20-F 读到的部分没有）",
+    "2026 前三季累计和季度现金流（所以近四季算不出）",
+    "ADR 比例的原文表述（按每股和每 ADS 收益推算约 1 比 5）"
   ],
   "periods": {
     "fy": {
@@ -62,7 +61,7 @@
       "start": "2025-01-01",
       "end": "2025-09-30"
     },
-    "balanceDate": "2026-09-30"
+    "balanceDate": "2025-12-31"
   },
   "flows": {
     "revenue": {
@@ -105,16 +104,16 @@
     },
     "grossProfit": {
       "fy": {
-        "value": null,
+        "value": 2281294000000.0,
         "unit": "TWD",
-        "note": "本轮未检索到（20-F 读到的部分没有）",
-        "manual": true
+        "manual": true,
+        "src": "tsm-20f-2025"
       },
       "fyPrior": {
-        "value": null,
+        "value": 1624353600000.0,
         "unit": "TWD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "tsm-20f-2025"
       },
       "q": {
         "value": 992379000000.0,
@@ -131,16 +130,16 @@
     },
     "operatingIncome": {
       "fy": {
-        "value": null,
+        "value": 1936091700000.0,
         "unit": "TWD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "tsm-20f-2025"
       },
       "fyPrior": {
-        "value": null,
+        "value": 1322053000000.0,
         "unit": "TWD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "tsm-20f-2025"
       },
       "q": {
         "value": 876445000000.0,
@@ -157,16 +156,17 @@
     },
     "netIncome": {
       "fy": {
-        "value": null,
+        "value": 1697604000000.0,
         "unit": "TWD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "tsm-20f-2025",
+        "note": "归属母公司"
       },
       "fyPrior": {
-        "value": null,
+        "value": 1158380200000.0,
         "unit": "TWD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "tsm-20f-2025"
       },
       "q": {
         "value": 763064000000.0,
@@ -194,6 +194,18 @@
         "unit": "TWD/股",
         "manual": true,
         "src": "tsm-pr-q3-2026"
+      },
+      "fy": {
+        "value": 65.47,
+        "unit": "TWD/股",
+        "manual": true,
+        "src": "tsm-20f-2025"
+      },
+      "fyPrior": {
+        "value": 44.67,
+        "unit": "TWD/股",
+        "manual": true,
+        "src": "tsm-20f-2025"
       }
     },
     "capex": {
@@ -224,16 +236,16 @@
     },
     "ocf": {
       "fy": {
-        "value": null,
+        "value": 2274975600000.0,
         "unit": "TWD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "tsm-20f-2025"
       },
       "fyPrior": {
-        "value": null,
+        "value": 1826177100000.0,
         "unit": "TWD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "tsm-20f-2025"
       },
       "q": {
         "value": null,
@@ -258,7 +270,7 @@
       "note": "20-F：截至 2025-12-31 的普通股"
     }
   },
-  "valuationNote": "财报币种是新台币，ADR 以美元报价；本平台不做汇率换算，需要股价的倍数不计算。公司自己给出的美元口径：2026 Q3 稀释每股收益 US$4.60（每单位 ADR）；第三季营收 US$467.2亿。ADR 与普通股的比例本轮读到的部分没有写。",
+  "valuationNote": "财报币种是新台币；本平台不自己选汇率换算。下面只用公司自己公布的美元数字。",
   "segments": {
     "period": "2026 Q3 晶圆收入",
     "src": "tsm-pr-q3-2026",
@@ -340,7 +352,7 @@
       "metric": "每 ADR 盈利（击球价口径）",
       "condition": "击球价 $330 ≈ 年化 Q3 每 ADR 盈利 $18.4 的 18 倍；季度每 ADR 盈利下降，同一价格的倍数就变高。",
       "basis": "11/21 击球区说明",
-      "latest": "2026 Q3 每 ADR 稀释收益 US$4.60（公司口径）",
+      "latest": "2026 Q3 每 ADR 稀释收益 US$4.60（公司自报），× 4 = US$18.40；2025 全年 US$10.43",
       "src": "tsm-pr-q3-2026"
     },
     {
@@ -355,5 +367,54 @@
       "condition": "对华限制（含经第三地转售）收紧时重估。",
       "basis": "11/21 击球区说明"
     }
-  ]
+  ],
+  "balance": {
+    "date": "2025-12-31",
+    "cash": {
+      "value": 2767856400000.0,
+      "unit": "TWD",
+      "manual": true,
+      "src": "tsm-20f-2025",
+      "note": "20-F：截至 2025-12-31 的现金及现金等价物；有价证券本轮未检索到"
+    },
+    "debt": {
+      "value": null,
+      "unit": "TWD",
+      "note": "本轮未检索到（20-F 读到的部分只有债券和借款的现金流，没有余额）",
+      "manual": true
+    }
+  },
+  "usdReported": {
+    "quarterEpsPerAdr": {
+      "value": 4.6,
+      "unit": "USD/ADR",
+      "manual": true,
+      "src": "tsm-pr-q3-2026",
+      "period": "2026 Q3"
+    },
+    "items": [
+      {
+        "label": "2025 年每 ADS 稀释收益",
+        "text": "US$10.43（新台币 327.34 元），20-F 按年报附注的便利换算汇率给出；推算 1 股 ADS 约等于 5 股普通股（每股 NT$65.47），比例本轮没有读到原文表述。",
+        "src": "tsm-20f-2025",
+        "figure": {
+          "value": 10.43,
+          "unit": "USD/ADR",
+          "manual": true,
+          "src": "tsm-20f-2025",
+          "period": "FY2025"
+        }
+      },
+      {
+        "label": "2025 年归属母公司净利润",
+        "text": "US$541.2亿（20-F 便利换算）；营业利润 US$617.2亿，经营现金流 US$725.2亿，年底现金 US$882.3亿。",
+        "src": "tsm-20f-2025"
+      },
+      {
+        "label": "2026 Q3 营收",
+        "text": "US$467.2亿（新闻稿）。",
+        "src": "tsm-pr-q3-2026"
+      }
+    ]
+  }
 }

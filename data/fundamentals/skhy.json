@@ -22,15 +22,35 @@
       "checkedOn": "2026-11-22",
       "title": "SK hynix 2026 年第三季度经营业绩",
       "filed": "2026-10-28"
+    },
+    {
+      "id": "skhy-6k-q3-prelim",
+      "origin": "document",
+      "form": "6-K（初步业绩，未经审计）",
+      "period": "2026 前三季（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526434994/d162547d6k.htm",
+      "checkedOn": "2026-11-22",
+      "title": "SK hynix 2026 年第三季度初步合并业绩（6-K）",
+      "filed": "2026-10-28"
+    },
+    {
+      "id": "skhy-6k-buyback",
+      "origin": "document",
+      "form": "6-K",
+      "period": "2026-10-28 董事会决议",
+      "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526435019/d165312d6k.htm",
+      "checkedOn": "2026-11-22",
+      "title": "SK hynix 回购计划（6-K）",
+      "filed": "2026-10-28"
     }
   ],
   "gaps": [
-    "2025 前三季的累计数字（所以近四季的营收、利润算不出）",
     "现金流量表：经营现金流、资本开支、折旧摊销",
     "2025 年的营业利润（招股书摘要读到的部分没有）",
     "回购注销后的最新股本",
     "风险因素（招股书的风险因素一节本轮没有读）",
-    "因为财报是韩元，估值倍数不计算（不做汇率换算）"
+    "因为财报是韩元，估值倍数不计算（不做汇率换算）",
+    "2025 年的营业利润（所以近四季的营业利润算不出）"
   ],
   "periods": {
     "fy": {
@@ -92,17 +112,16 @@
         "src": "skhy-ir-q3-2026"
       },
       "ytd": {
-        "value": 236510200000000.0,
+        "value": 236510516000000.0,
         "unit": "KRW",
         "manual": true,
-        "src": "skhy-ir-q3-2026",
-        "calc": "Q1 ₩52.576万亿（招股书）+ Q2 ₩79.3187万亿 + Q3 ₩104.6155万亿（新闻稿）"
+        "src": "skhy-6k-q3-prelim"
       },
       "ytdPrior": {
-        "value": null,
+        "value": 64320022000000.0,
         "unit": "KRW",
-        "note": "本轮未检索到（2025 前三季的累计数字没有读到，所以近四季算不出）",
-        "manual": true
+        "manual": true,
+        "src": "skhy-6k-q3-prelim"
       }
     },
     "grossProfit": {
@@ -169,16 +188,16 @@
         "src": "skhy-ir-q3-2026"
       },
       "ytd": {
-        "value": null,
+        "value": 181486709000000.0,
         "unit": "KRW",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "skhy-6k-q3-prelim"
       },
       "ytdPrior": {
-        "value": null,
+        "value": 28036745000000.0,
         "unit": "KRW",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "skhy-6k-q3-prelim"
       }
     },
     "netIncome": {
@@ -208,17 +227,17 @@
         "src": "skhy-ir-q3-2026"
       },
       "ytd": {
-        "value": 174044200000000.0,
+        "value": 173684804000000.0,
         "unit": "KRW",
         "manual": true,
-        "src": "skhy-ir-q3-2026",
-        "calc": "Q1 ₩40.346万亿（招股书）+ Q2 ₩93.9226万亿 + Q3 ₩39.7756万亿（新闻稿）"
+        "src": "skhy-6k-q3-prelim",
+        "note": "归属控股股东；含少数股东为 ₩174.04万亿"
       },
       "ytdPrior": {
-        "value": null,
+        "value": 27699504000000.0,
         "unit": "KRW",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "skhy-6k-q3-prelim"
       }
     },
     "ocf": {
@@ -356,6 +375,11 @@
         "label": "回购和注销",
         "text": "2026 财年股东回报约 ₩100万亿：现金股息 ₩30万亿 以上，回购并注销 ₩60万亿 以上（含 8 月宣布、上周完成的 ₩40万亿）。第三季董事会又决定回购 ₩20万亿，其中 ₩10万亿 注销、约 ₩10万亿 用于员工业绩奖金（不算股东回报）。政策：把自由现金流的 50% 以上返还股东。",
         "src": "skhy-ir-q3-2026"
+      },
+      {
+        "label": "新的回购计划",
+        "text": "董事会批准 2026-10-29 至 2027-01-28 在公开市场回购最多 1,492万股普通股（约 ₩20万亿）。",
+        "src": "skhy-6k-buyback"
       }
     ]
   },

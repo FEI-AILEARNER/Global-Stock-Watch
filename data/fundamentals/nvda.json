@@ -655,12 +655,22 @@
       "checkedOn": "2026-11-22",
       "title": "NVIDIA 2026 财年 10-K",
       "filed": "2026-02-25"
+    },
+    {
+      "id": "nvda-def14a-2026",
+      "origin": "document",
+      "form": "委托书（DEF 14A）",
+      "period": "委托书记录日",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+      "checkedOn": "2026-11-22",
+      "title": "NVIDIA 2026 年委托书",
+      "filed": "2026-05-12"
     }
   ],
   "gaps": [
     "按营收计的 10% 以上客户比例（10-K 读到的部分只有应收账款口径）",
-    "管理层和大股东持股、独立委员会和 CEO 人选的进展（本轮没有读委托书和最新 8-K）",
-    "新发债券的到期安排"
+    "新发债券的到期安排",
+    "独立委员会调查和正式 CEO 人选的进展（本轮没有读最新 8-K）"
   ],
   "segments": {
     "period": "FY2027 Q3",
@@ -770,6 +780,20 @@
       "metric": "市盈率（击球价口径）",
       "condition": "击球价 $145 ≈ 年化 Q3 非 GAAP EPS 的 13.5 倍；按 GAAP 近四季净利润算见上方估值口径。",
       "basis": "11/21 定价依据"
+    }
+  ],
+  "governance": [
+    {
+      "label": "管理层持股",
+      "text": "单一类别普通股。黄仁勋持 8.706 亿股、3.58%（委托书发布于他 11 月卸任之前）；全体董事和高管合计 3.94%；BlackRock 7.43%、Vanguard 7.31%。",
+      "src": "nvda-def14a-2026",
+      "figure": {
+        "value": 3.94,
+        "unit": "%",
+        "manual": true,
+        "src": "nvda-def14a-2026",
+        "period": "委托书记录日"
+      }
     }
   ]
 }

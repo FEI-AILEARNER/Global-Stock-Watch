@@ -40,9 +40,8 @@
   ],
   "gaps": [
     "击球区说明里“能源部对 Long Mott 的分摊约 $21.5亿”在招股书里没有对上：招股书写的是最多报销 $12亿（$24亿 合格成本的 50%）。$21.5亿 的出处本轮没有找到，可能是后来追加或不同口径，需要核对",
-    "2025 年全年的经营现金流、资本开支、股权激励（招股书摘要没有，所以近四季的自由现金流算不出）",
-    "关联交易一节、锁定期的具体到期日和例外",
-    "管理层和大股东上市后的持股比例"
+    "管理层和大股东上市后的持股比例",
+    "2025 年前三季的资本开支、股权激励和折旧（所以近四季的自由现金流仍算不出）"
   ],
   "periods": {
     "fy": {
@@ -315,16 +314,16 @@
     },
     "ocf": {
       "fy": {
-        "value": null,
+        "value": -149860000.0,
         "unit": "USD",
-        "note": "本轮未检索到（招股书摘要没有现金流量表数字）",
-        "manual": true
+        "manual": true,
+        "src": "xe-424b4"
       },
       "fyPrior": {
-        "value": null,
+        "value": -96159000.0,
         "unit": "USD",
-        "note": "本轮未检索到（招股书摘要没有现金流量表数字）",
-        "manual": true
+        "manual": true,
+        "src": "xe-424b4"
       },
       "q": {
         "value": null,
@@ -353,16 +352,16 @@
     },
     "capex": {
       "fy": {
-        "value": null,
+        "value": 117236000.0,
         "unit": "USD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "xe-424b4"
       },
       "fyPrior": {
-        "value": null,
+        "value": 4162000.0,
         "unit": "USD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "xe-424b4"
       },
       "q": {
         "value": null,
@@ -391,16 +390,17 @@
     },
     "sbc": {
       "fy": {
-        "value": null,
+        "value": 14137000.0,
         "unit": "USD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "xe-424b4",
+        "note": "运营公司的单位激励费用"
       },
       "fyPrior": {
-        "value": null,
+        "value": 1150000.0,
         "unit": "USD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "xe-424b4"
       },
       "q": {
         "value": null,
@@ -429,16 +429,16 @@
     },
     "da": {
       "fy": {
-        "value": null,
+        "value": 1390000.0,
         "unit": "USD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "xe-424b4"
       },
       "fyPrior": {
-        "value": null,
+        "value": 913000.0,
         "unit": "USD",
-        "note": "本轮未检索到",
-        "manual": true
+        "manual": true,
+        "src": "xe-424b4"
       },
       "q": {
         "value": null,
@@ -571,6 +571,11 @@
       {
         "topic": "上市前的财务",
         "text": "2025 年营收和补助 $1.091亿（2024 年 $1.202亿），营业亏损 $1.703亿，净亏损 $3.898亿；2025 年底现金 $4.589亿。收入主要是工程服务和政府补助。",
+        "src": "xe-424b4"
+      },
+      {
+        "topic": "关联交易",
+        "text": "上市前运营公司的关联方收入 2025 年 $694万（2024 年 $2,756万），关联方应收 $458万、应付 $423万（2025 年底）。锁定期 180 天，由 J.P. Morgan 决定是否同意提前出售；若满 120 天且锁定期在静默期前后结束，可提前到静默期开始前 10 个交易日解禁。",
         "src": "xe-424b4"
       }
     ]

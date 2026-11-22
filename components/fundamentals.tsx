@@ -38,6 +38,7 @@ export function formatFig(x: Fig, currency: string): string {
   if (x.value === null) return '—';
   if (x.unit === '股') return `${(x.value / 1e6).toLocaleString('en-US', { maximumFractionDigits: 1 })}百万股`;
   if (x.unit === '%') return `${x.value}%`;
+  if (x.unit === 'USD/ADR') return `US$${x.value.toFixed(2)}/ADR`;
   if (x.unit.endsWith('/股')) return `${x.value < 0 ? '−' : ''}${x.unit.startsWith('USD') ? '$' : `${x.unit.replace('/股', '')} `}${Math.abs(x.value).toFixed(2)}`;
   if (['USD', 'TWD', 'KRW', 'CAD'].includes(x.unit)) return money(x.value, x.unit);
   return `${x.value.toLocaleString('en-US')} ${x.unit}`;
