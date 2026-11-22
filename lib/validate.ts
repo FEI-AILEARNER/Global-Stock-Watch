@@ -1,5 +1,6 @@
 import { EXIT_LOGIC_IDS, REQUIRED_NOTE_IDS, STANCE_GROUPS } from './schema.ts';
 import type { Dataset } from './schema.ts';
+import { validateFundamentals } from './validate-fundamentals.ts';
 
 // 校验整份数据，返回错误列表（空 = 通过）。prebuild 的脚本和 lib/load.ts 读取时用的是同一个函数。
 
@@ -25,6 +26,7 @@ export function validateDataset(raw: {
   calendar: unknown;
   site: unknown;
   updates: { file: string; data: unknown }[];
+  fundamentals?: { file: string; data: unknown }[];
 }): string[] {
   const errors: string[] = [];
   const err = (where: string, message: string) => errors.push(`${where}：${message}`);
@@ -203,6 +205,8 @@ export function validateDataset(raw: {
     for (const c of data.priceChanges)
       if (obj(c) && realDate(c.date) && !updateDates.has(c.date)) err(`tickers/${file}`, `${c.date} 有调价，但 data/updates/ 里没有这一天的更新记录`);
   }
+
+  errors.push(...validateFundamentals(raw.fundamentals ?? [], seen));
 
   return errors;
 }

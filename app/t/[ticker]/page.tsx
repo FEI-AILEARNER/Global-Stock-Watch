@@ -4,7 +4,19 @@ import { notFound } from 'next/navigation';
 
 import { StanceBadge } from '@/components/badges';
 import { KeyItems } from '@/components/key-items';
+import {
+  BusinessSection,
+  CapitalSection,
+  CheckpointSection,
+  GovernanceSection,
+  GuidanceSection,
+  ProspectusSection,
+  RiskSection,
+  SnapshotSection,
+  SourcesSection,
+} from '@/components/fundamentals';
 import { QuotePanel } from '@/components/quote-panel';
+import { ValuationPanel } from '@/components/valuation-panel';
 import { RichText } from '@/components/rich-text';
 import { getData, getTicker } from '@/lib/data';
 import { usd, zhDate } from '@/lib/format';
@@ -54,7 +66,25 @@ export default async function TickerPage({ params }: Params) {
         <KeyItems items={t.keyItems} />
       </section>
 
-      <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_22rem]">
+      {t.fundamentals ? (
+        <div className="mt-6 space-y-6" data-testid="fundamentals">
+          <ValuationPanel f={t.fundamentals} ticker={t.ticker} strikePrice={t.strikePrice} lastPrice={t.lastPrice} />
+          <SnapshotSection f={t.fundamentals} />
+          <GuidanceSection f={t.fundamentals} />
+          <BusinessSection f={t.fundamentals} />
+          <CapitalSection f={t.fundamentals} />
+          <GovernanceSection f={t.fundamentals} />
+          <RiskSection f={t.fundamentals} />
+          <ProspectusSection f={t.fundamentals} />
+          <CheckpointSection f={t.fundamentals} />
+          <SourcesSection f={t.fundamentals} />
+        </div>
+      ) : (
+        <p className="card mt-6 px-4 py-3 text-sm text-ink-soft">估值口径、财务快照等结构化信息：本轮未检索到。</p>
+      )}
+
+      <h2 className="mt-8 font-serif text-2xl font-semibold">投资逻辑和旧记录</h2>
+      <div className="mt-3 grid gap-6 lg:grid-cols-[minmax(0,1fr)_22rem]">
         <div className="min-w-0 space-y-6">
           <section aria-labelledby="rationale-h" className="card px-4 py-4 sm:px-6 sm:py-5">
             <h2 id="rationale-h" className="font-serif text-xl font-semibold">定价依据／要点</h2>

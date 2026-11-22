@@ -24,6 +24,8 @@ export type Row = {
   lastPrice: LastPrice | null;
   latestKey: { date: string; title: string; url: string; sourceType: 'official' | 'media' } | null;
   keyCount: number;
+  /** 算市值和自由现金流收益率用：股本、近四季自由现金流（只有美元财报的公司） */
+  fund: { shares: number; fcf: number | null; netIncome: number | null; asOf: string } | null;
 };
 
 type Sort = 'sheet' | 'distance';
@@ -51,6 +53,21 @@ function LatestKey({ row }: { row: Row }) {
       {row.keyCount > 1 && <Link href={`/t/${row.ticker}`} className="text-xs text-ink-soft underline underline-offset-2">共 {row.keyCount} 条</Link>}
     </p>
   );
+}
+
+/** 市值：报价来源给了就用它的；没有就用 现价 × 已发行股数（财报数字）。 */
+function capOf(r: Row, v: PriceView): number | null {
+  if (v.marketCap !== null) return v.marketCap;
+  if (!r.fund || v.price === null) return null;
+  return v.price * r.fund.shares;
+}
+
+function FcfYield({ r, v }: { r: Row; v: PriceView }) {
+  const cap = capOf(r, v);
+  if (!r.fund) return <span className="text-xs text-ink-soft" title="非美元财报或股本未检索到，不计算">—</span>;
+  if (cap === null || r.fund.fcf === null) return <span className="text-ink-soft">—</span>;
+  const y = r.fund.fcf / cap;
+  return <span className={`num ${y < 0 ? 'text-down' : ''}`} title={`近四季自由现金流 ÷ 市值（财报截至 ${r.fund.asOf}）`}>{(y * 100).toFixed(1)}%</span>;
 }
 
 function Change({ value }: { value: number | null }) {
@@ -82,7 +99,7 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
   const below = rows.filter((r) => view(r).zone === 'below');
   const near = rows.filter((r) => view(r).zone === 'near');
   const latestAsOf = rows.map((r) => (view(r).live ? view(r).asOf : null)).filter((x): x is string => Boolean(x)).sort().at(-1) ?? null;
-  const hasCap = rows.some((r) => view(r).marketCap !== null);
+  const hasCap = rows.some((r) => view(r).marketCap !== null || r.fund !== null);
 
   const filtered = rows.filter((r) => (stance === 'all' || r.stance.group === stance) && (zone === 'all' || view(r).zone === zone));
   const sorted = sort === 'distance' ? [...filtered].sort((a, b) => (view(a).distance ?? Infinity) - (view(b).distance ?? Infinity)) : filtered;
@@ -115,6 +132,7 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
           </button>
         </div>
         {status === 'ready' && liveCount > 0 && !hasCap && <p className="mt-1 text-ink-soft">当前报价来源不提供市值，“市值”一列暂为“—”。</p>}
+        <p className="mt-1 text-ink-soft">市值 = 现价 × 财报里的已发行股数；FCF 收益率 = 近四季自由现金流 ÷ 市值。非美元财报的公司（台积电、SK 海力士、Cameco）不算，显示“—”。口径见各标的详情页的“估值口径”。</p>
       </section>
 
       <section aria-labelledby="below-h" className="mb-6 grid gap-3 md:grid-cols-2">
@@ -192,7 +210,7 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
 
           {/* 768 像素以上：表格 */}
           <div className="card hidden overflow-x-auto md:block">
-            <table className="w-full min-w-[64rem] table-fixed border-collapse text-sm">
+            <table className="w-full min-w-[69rem] table-fixed border-collapse text-sm">
               <colgroup>
                 <col className="w-[5.5rem]" /><col className="w-[10.5rem]" /><col className="w-[7rem]" /><col className="w-[5.5rem]" /><col className="w-[5.5rem]" />
                 <col className="w-[5.5rem]" /><col className="w-[8.5rem]" /><col className="w-[5.5rem]" /><col className="w-[12rem]" /><col />
@@ -204,6 +222,7 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
                   <th scope="col" className="px-2 py-2 text-right font-medium">现价</th>
                   <th scope="col" className="px-2 py-2 text-right font-medium">日内</th>
                   <th scope="col" className="px-2 py-2 text-right font-medium">市值</th>
+                  <th scope="col" className="px-2 py-2 text-right font-medium" title="近四季自由现金流 ÷ 市值">FCF收益率</th>
                   <th scope="col" className="px-2 py-2 text-right font-medium">击球价</th>
                   <th scope="col" className="px-2 py-2 text-right font-medium">距击球区</th>
                   <th scope="col" className="px-2 py-2 text-right font-medium">退出价</th>
@@ -229,7 +248,8 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
                         <PriceNote row={r} view={v} />
                       </td>
                       <td className="px-2 py-2.5 text-right"><Change value={v.changePct} /></td>
-                      <td className="num px-2 py-2.5 text-right">{marketCap(v.marketCap)}</td>
+                      <td className="num px-2 py-2.5 text-right">{marketCap(capOf(r, v))}</td>
+                      <td className="px-2 py-2.5 text-right"><FcfYield r={r} v={v} /></td>
                       <td className="num px-2 py-2.5 text-right font-semibold">{usd(r.strikePrice)}</td>
                       <td className="px-2 py-2.5 text-right"><ZoneValue zone={v.zone} value={v.distance} /></td>
                       <td className="num px-2 py-2.5 text-right">{usd(r.exitPrice)}</td>
@@ -239,7 +259,7 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
                     {r.latestKey && (
                       <tr className="border-b border-rule-soft">
                         <td />
-                        <td colSpan={9} className="pb-2.5 pl-2 pr-3"><LatestKey row={r} /></td>
+                        <td colSpan={10} className="pb-2.5 pl-2 pr-3"><LatestKey row={r} /></td>
                       </tr>
                     )}
                     </Fragment>
@@ -272,7 +292,8 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
                   </dl>
                   <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
                     <StanceBadge label={r.stance.label} group={r.stance.group} />
-                    {v.marketCap !== null && <span className="text-ink-soft">市值 <span className="num">{marketCap(v.marketCap)}</span></span>}
+                    {capOf(r, v) !== null && <span className="text-ink-soft">市值 <span className="num">{marketCap(capOf(r, v))}</span></span>}
+                    {r.fund && <span className="text-ink-soft">FCF收益率 <FcfYield r={r} v={v} /></span>}
                   </div>
                   {r.events !== '—' && <p className="mt-1.5 text-sm"><span className="text-xs text-ink-soft">下一个事件　</span>{r.events}</p>}
                   {r.latestKey && <div className="mt-2 border-t border-rule-soft pt-2"><LatestKey row={r} /></div>}

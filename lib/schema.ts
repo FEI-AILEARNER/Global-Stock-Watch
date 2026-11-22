@@ -1,6 +1,8 @@
 // 数据类型。lib/、scripts/、tests/ 里的文件要能被 Node 直接运行：只用可擦除的 TypeScript 语法，
 // 互相引用写相对路径并带 .ts 后缀。
 
+import type { Fundamentals } from './fundamentals.ts';
+
 export const SITE_NAME = 'Global Stock Watch';
 
 export const EXIT_LOGIC_IDS = ['compounder', 'cyclical', 'option', 'other'] as const;
@@ -70,6 +72,8 @@ export type Ticker = {
   keyItems: KeyItem[];
   rationale: RationaleEntry[];
   news: NewsItem[];
+  /** 估值相关的结构化信息（data/fundamentals/），没有补到的标的没有这一项 */
+  fundamentals?: Fundamentals;
 };
 
 export type Sector = { id: string; name: string; logic?: string };

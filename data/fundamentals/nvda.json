@@ -1,0 +1,637 @@
+{
+  "ticker": "NVDA",
+  "xbrl": {
+    "cik": 1045810,
+    "manualPeriods": [
+      "q",
+      "qPrior",
+      "ytd",
+      "ytdPrior",
+      "balanceDate"
+    ]
+  },
+  "checkedOn": "2026-11-22",
+  "currency": "USD",
+  "periods": {
+    "fy": {
+      "label": "FY2026",
+      "start": "2025-01-27",
+      "end": "2026-01-25"
+    },
+    "fyPrior": {
+      "label": "FY2025",
+      "start": "2024-01-29",
+      "end": "2025-01-26"
+    },
+    "q": {
+      "label": "FY2027 Q3",
+      "start": "2026-07-27",
+      "end": "2026-10-25"
+    },
+    "qPrior": {
+      "label": "FY2026 Q3",
+      "start": "2025-07-28",
+      "end": "2025-10-26"
+    },
+    "ytd": {
+      "label": "FY2027 前三季",
+      "start": "2026-01-26",
+      "end": "2026-10-25"
+    },
+    "ytdPrior": {
+      "label": "FY2026 前三季",
+      "start": "2025-01-27",
+      "end": "2025-10-26"
+    },
+    "balanceDate": "2026-10-25"
+  },
+  "flows": {
+    "revenue": {
+      "fy": {
+        "value": 215938000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "Revenues"
+      },
+      "fyPrior": {
+        "value": 130497000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "Revenues"
+      },
+      "ytd": {
+        "value": 293681000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 147811000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 115844000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 57006000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "grossProfit": {
+      "fy": {
+        "value": 153463000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "GrossProfit"
+      },
+      "fyPrior": {
+        "value": 97858000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "GrossProfit"
+      },
+      "ytd": {
+        "value": 219976000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 102370000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 86676000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 41849000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "operatingIncome": {
+      "fy": {
+        "value": 130387000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "OperatingIncomeLoss"
+      },
+      "fyPrior": {
+        "value": 81453000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "OperatingIncomeLoss"
+      },
+      "ytd": {
+        "value": 194791000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 86088000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 77520000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 36010000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "netIncome": {
+      "fy": {
+        "value": 120067000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "NetIncomeLoss"
+      },
+      "fyPrior": {
+        "value": 72880000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "NetIncomeLoss"
+      },
+      "ytd": {
+        "value": 183297000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 77107000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 65287000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 31910000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "ocf": {
+      "fy": {
+        "value": 102718000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "fyPrior": {
+        "value": 64089000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "ytd": {
+        "value": 122675000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 66530000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 48253000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 23750000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "capex": {
+      "fy": {
+        "value": 6042000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "PaymentsToAcquireProductiveAssets"
+      },
+      "fyPrior": {
+        "value": 3236000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "PaymentsToAcquireProductiveAssets"
+      },
+      "ytd": {
+        "value": 8856000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 4758000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 4422000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27",
+        "note": "新闻稿口径：购置物业设备和无形资产"
+      },
+      "qPrior": {
+        "value": 1637000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "sbc": {
+      "fy": {
+        "value": 6386000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "ShareBasedCompensation"
+      },
+      "fyPrior": {
+        "value": 4737000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "ShareBasedCompensation"
+      },
+      "ytd": {
+        "value": 6042000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 4753000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 2088000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 1655000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "da": {
+      "fy": {
+        "value": 2843000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "DepreciationDepletionAndAmortization"
+      },
+      "fyPrior": {
+        "value": 1864000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "DepreciationDepletionAndAmortization"
+      },
+      "ytd": {
+        "value": 3378000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 2031000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 1254000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 752000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "epsDiluted": {
+      "fy": {
+        "value": 4.9,
+        "unit": "USD/股",
+        "src": "0001045810-26-000021",
+        "tag": "EarningsPerShareDiluted"
+      },
+      "fyPrior": {
+        "value": 2.94,
+        "unit": "USD/股",
+        "src": "0001045810-26-000021",
+        "tag": "EarningsPerShareDiluted"
+      },
+      "ytd": {
+        "value": 7.55,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 3.14,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 2.7,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 1.3,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "dilutedShares": {
+      "fy": {
+        "value": 24514000000,
+        "unit": "股",
+        "src": "0001045810-26-000021",
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+      },
+      "fyPrior": {
+        "value": 24804000000,
+        "unit": "股",
+        "src": "0001045810-26-000021",
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+      },
+      "ytd": {
+        "value": 24287000000,
+        "unit": "股",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 24542000000,
+        "unit": "股",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 24186000000,
+        "unit": "股",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 24483000000,
+        "unit": "股",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "buybacks": {
+      "fy": {
+        "value": 40086000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "PaymentsForRepurchaseOfCommonStock"
+      },
+      "fyPrior": {
+        "value": 33706000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "PaymentsForRepurchaseOfCommonStock"
+      },
+      "ytd": {
+        "value": 61166000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 36271000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 22122000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 12456000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    },
+    "issuance": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "ytd": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（原文没有这一项）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（原文没有这一项）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（原文没有这一项）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（原文没有这一项）",
+        "manual": true
+      }
+    },
+    "dividends": {
+      "fy": {
+        "value": 974000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "PaymentsOfDividends"
+      },
+      "fyPrior": {
+        "value": 834000000,
+        "unit": "USD",
+        "src": "0001045810-26-000021",
+        "tag": "PaymentsOfDividends"
+      },
+      "ytd": {
+        "value": 12316000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "ytdPrior": {
+        "value": 732000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "q": {
+        "value": 6026000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      },
+      "qPrior": {
+        "value": 243000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "nvda-pr-q3fy27"
+      }
+    }
+  },
+  "balance": {
+    "date": "2026-10-25",
+    "cash": {
+      "value": 53512000000,
+      "unit": "USD",
+      "manual": true,
+      "src": "nvda-pr-q3fy27",
+      "parts": [
+        {
+          "label": "现金及现金等价物",
+          "value": 29089000000
+        },
+        {
+          "label": "有价债券",
+          "value": 24423000000
+        }
+      ],
+      "note": "不含有价权益证券 $442亿（对其他公司的股权投资，不当作现金）"
+    },
+    "debt": {
+      "value": 32371000000,
+      "unit": "USD",
+      "manual": true,
+      "src": "nvda-pr-q3fy27",
+      "parts": [
+        {
+          "label": "长期债务",
+          "value": 32371000000
+        },
+        {
+          "label": "短期债务",
+          "value": 0
+        }
+      ],
+      "note": "新闻稿资产负债表：短期债务为“-”"
+    }
+  },
+  "shares": {
+    "outstanding": {
+      "value": 24100000000,
+      "unit": "股",
+      "src": "0001045810-26-000075",
+      "note": "封面披露的已发行普通股，截至 2026-08-21"
+    },
+    "outstandingYearAgo": {
+      "value": 24300000000,
+      "unit": "股",
+      "src": "0001045810-25-000209",
+      "note": "一年前封面披露的已发行普通股，截至 2025-08-22"
+    }
+  },
+  "sources": [
+    {
+      "id": "0001045810-26-000021",
+      "origin": "xbrl",
+      "form": "10-K",
+      "filed": "2026-02-25",
+      "period": "FY2026（截至 2026-01-25）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "0001045810-26-000075",
+      "origin": "xbrl",
+      "form": "10-Q",
+      "filed": "2026-08-26",
+      "period": "FY2027 Q2（截至 2026-07-26）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "0001045810-25-000209",
+      "origin": "xbrl",
+      "form": "10-Q",
+      "filed": "2025-08-27",
+      "period": "截至 2025-07-27 的季度",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/nvda-20250727.htm",
+      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "nvda-pr-q3fy27",
+      "origin": "document",
+      "form": "新闻稿（8-K 附件 99.1）",
+      "period": "FY2027 Q3（截至 2026-10-25）",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+      "checkedOn": "2026-11-22",
+      "title": "NVIDIA Q3 FY2027 财报新闻稿",
+      "filed": "2026-11-17"
+    }
+  ],
+  "gaps": []
+}

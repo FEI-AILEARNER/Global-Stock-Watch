@@ -1,0 +1,540 @@
+{
+  "ticker": "AMAT",
+  "xbrl": {
+    "cik": 6951,
+    "manualPeriods": [
+      "fy",
+      "fyPrior",
+      "q",
+      "qPrior",
+      "ytd",
+      "ytdPrior",
+      "balanceDate"
+    ]
+  },
+  "checkedOn": "2026-11-22",
+  "currency": "USD",
+  "periods": {
+    "fy": {
+      "label": "FY2026",
+      "start": "2025-10-27",
+      "end": "2026-10-25"
+    },
+    "fyPrior": {
+      "label": "FY2025",
+      "start": "2024-10-28",
+      "end": "2025-10-26"
+    },
+    "q": {
+      "label": "FY2026 Q4",
+      "start": "2026-07-27",
+      "end": "2026-10-25"
+    },
+    "qPrior": {
+      "label": "FY2025 Q4",
+      "start": "2025-07-28",
+      "end": "2025-10-26"
+    },
+    "ytd": null,
+    "ytdPrior": null,
+    "balanceDate": "2026-10-25"
+  },
+  "flows": {
+    "revenue": {
+      "fy": {
+        "value": 34446000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 28368000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 10409000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 6800000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "grossProfit": {
+      "fy": {
+        "value": 17219000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 13808000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 5251000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 3265000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "operatingIncome": {
+      "fy": {
+        "value": 11087000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 8289000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 3658000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 1712000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "netIncome": {
+      "fy": {
+        "value": 10088000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 6998000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 2718000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 1897000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "ocf": {
+      "fy": {
+        "value": 8868000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 7958000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 3300000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 2828000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "capex": {
+      "fy": {
+        "value": 2672000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 2260000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 684000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 785000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "sbc": {
+      "fy": {
+        "value": 719000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 668000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 174000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 156000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "da": {
+      "fy": {
+        "value": 571000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 435000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 158000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 114000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "epsDiluted": {
+      "fy": {
+        "value": 12.62,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 8.66,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 3.4,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 2.38,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "dilutedShares": {
+      "fy": {
+        "value": 799000000,
+        "unit": "股",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 808000000,
+        "unit": "股",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 798000000,
+        "unit": "股",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 798000000,
+        "unit": "股",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "buybacks": {
+      "fy": {
+        "value": 3177000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 4895000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 2000000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 851000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "issuance": {
+      "fy": {
+        "value": 266000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 261000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 135000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 132000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    },
+    "dividends": {
+      "fy": {
+        "value": 1571000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "fyPrior": {
+        "value": 1384000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "q": {
+        "value": 421000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      },
+      "qPrior": {
+        "value": 365000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "amat-pr-q4fy26"
+      }
+    }
+  },
+  "balance": {
+    "date": "2026-10-25",
+    "cash": {
+      "value": 9339000000,
+      "unit": "USD",
+      "manual": true,
+      "src": "amat-pr-q4fy26",
+      "parts": [
+        {
+          "label": "现金及现金等价物",
+          "value": 7239000000
+        },
+        {
+          "label": "短期投资",
+          "value": 2100000000
+        }
+      ]
+    },
+    "debt": {
+      "value": 6532000000,
+      "unit": "USD",
+      "manual": true,
+      "src": "amat-pr-q4fy26",
+      "parts": [
+        {
+          "label": "短期债务",
+          "value": 1299000000
+        },
+        {
+          "label": "长期债务",
+          "value": 5233000000
+        }
+      ],
+      "note": "新闻稿资产负债表只列“短期债务”和“长期债务”两行"
+    }
+  },
+  "shares": {
+    "outstanding": {
+      "value": 793597443,
+      "unit": "股",
+      "src": "0001628280-26-058235",
+      "note": "封面披露的已发行普通股，截至 2026-07-26"
+    },
+    "outstandingYearAgo": {
+      "value": 796642427,
+      "unit": "股",
+      "src": "0000006951-25-000037",
+      "note": "一年前封面披露的已发行普通股，截至 2025-07-27"
+    }
+  },
+  "sources": [
+    {
+      "id": "0001628280-26-058235",
+      "origin": "xbrl",
+      "form": "10-Q",
+      "filed": "2026-08-20",
+      "period": "FY2026 Q3（截至 2026-07-26）",
+      "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026058235/amat-20260726.htm",
+      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000006951.json",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "0000006951-25-000037",
+      "origin": "xbrl",
+      "form": "10-Q",
+      "filed": "2025-08-21",
+      "period": "截至 2025-07-27 的季度",
+      "url": "https://www.sec.gov/Archives/edgar/data/6951/000000695125000037/amat-20250727.htm",
+      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000006951.json",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "amat-pr-q4fy26",
+      "origin": "document",
+      "form": "新闻稿（8-K 附件）",
+      "period": "FY2026 Q4 及全年（截至 2026-10-25）",
+      "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2026",
+      "checkedOn": "2026-11-22",
+      "title": "Applied Materials FY2026 第四季度及全年财报新闻稿",
+      "filed": "2026-11-12"
+    }
+  ],
+  "gaps": [],
+  "segments": {
+    "period": "FY2026 Q4",
+    "src": "amat-pr-q4fy26",
+    "rows": [
+      {
+        "name": "半导体设备（Semiconductor Systems）",
+        "revenue": {
+          "value": 7996000000,
+          "unit": "USD",
+          "manual": true,
+          "src": "amat-pr-q4fy26"
+        },
+        "profit": {
+          "value": 3101000000,
+          "unit": "USD",
+          "manual": true,
+          "src": "amat-pr-q4fy26"
+        }
+      },
+      {
+        "name": "全球服务（Applied Global Services）",
+        "revenue": {
+          "value": 1896000000,
+          "unit": "USD",
+          "manual": true,
+          "src": "amat-pr-q4fy26"
+        },
+        "profit": {
+          "value": 578000000,
+          "unit": "USD",
+          "manual": true,
+          "src": "amat-pr-q4fy26"
+        }
+      },
+      {
+        "name": "其他（含显示面板）",
+        "revenue": {
+          "value": 517000000,
+          "unit": "USD",
+          "manual": true,
+          "src": "amat-pr-q4fy26"
+        },
+        "profit": {
+          "value": -21000000,
+          "unit": "USD",
+          "manual": true,
+          "src": "amat-pr-q4fy26"
+        }
+      }
+    ],
+    "note": "利润是各分部的营业利润，未分摊的公司费用不在分部里，所以三项相加不等于公司营业利润。"
+  },
+  "customers": [
+    {
+      "label": "中国大陆收入占比",
+      "text": "FY2026 Q4 来自中国的收入 $26.42亿，占 25%（去年同期 29%）。出口管制的松紧直接影响这一块。",
+      "src": "amat-pr-q4fy26",
+      "figure": {
+        "value": 25,
+        "unit": "%",
+        "manual": true,
+        "src": "amat-pr-q4fy26",
+        "period": "FY2026 Q4"
+      }
+    }
+  ],
+  "guidance": [
+    {
+      "period": "FY2027 Q1",
+      "text": "营收 $111亿 ± $5亿；非 GAAP 稀释每股收益 $4.35 ± $0.20。",
+      "direction": "unclear",
+      "vsText": "新一季的指引，和上一季的指引不是同一期，不比较方向；对比 FY2026 Q4 实际营收 $104.1亿。",
+      "src": "amat-pr-q4fy26"
+    }
+  ]
+}

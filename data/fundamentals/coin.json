@@ -1,0 +1,581 @@
+{
+  "ticker": "COIN",
+  "xbrl": {
+    "cik": 1679788
+  },
+  "checkedOn": "2026-11-22",
+  "currency": "USD",
+  "periods": {
+    "fy": {
+      "label": "FY2025",
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "fyPrior": {
+      "label": "FY2024",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "q": {
+      "label": "FY2026 Q3",
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "qPrior": {
+      "label": "FY2025 Q3",
+      "start": "2025-07-01",
+      "end": "2025-09-30"
+    },
+    "ytd": {
+      "label": "FY2026 前三季",
+      "start": "2026-01-01",
+      "end": "2026-09-30"
+    },
+    "ytdPrior": {
+      "label": "FY2025 前三季",
+      "start": "2025-01-01",
+      "end": "2025-09-30"
+    },
+    "balanceDate": "2026-09-30"
+  },
+  "flows": {
+    "revenue": {
+      "fy": {
+        "value": 7181325000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "Revenues"
+      },
+      "fyPrior": {
+        "value": 6564028000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "Revenues"
+      },
+      "ytd": {
+        "value": 3848632000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "Revenues"
+      },
+      "ytdPrior": {
+        "value": 5400196000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "Revenues"
+      },
+      "q": {
+        "value": 1215582000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "Revenues"
+      },
+      "qPrior": {
+        "value": 1868693000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "Revenues"
+      }
+    },
+    "grossProfit": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（公司没有单列毛利或营业成本）"
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（公司没有单列毛利或营业成本）"
+      },
+      "ytd": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（公司没有单列毛利或营业成本）"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（公司没有单列毛利或营业成本）"
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（公司没有单列毛利或营业成本）"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（公司没有单列毛利或营业成本）"
+      }
+    },
+    "operatingIncome": {
+      "fy": {
+        "value": 1435441000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "OperatingIncomeLoss"
+      },
+      "fyPrior": {
+        "value": 2307160000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "OperatingIncomeLoss"
+      },
+      "ytd": {
+        "value": -73240000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "OperatingIncomeLoss"
+      },
+      "ytdPrior": {
+        "value": 1161688000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "OperatingIncomeLoss"
+      },
+      "q": {
+        "value": 61669000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "OperatingIncomeLoss"
+      },
+      "qPrior": {
+        "value": 480532000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "OperatingIncomeLoss"
+      }
+    },
+    "netIncome": {
+      "fy": {
+        "value": 1260327000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "NetIncomeLoss"
+      },
+      "fyPrior": {
+        "value": 2579066000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "NetIncomeLoss"
+      },
+      "ytd": {
+        "value": -34888000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "NetIncomeLoss"
+      },
+      "ytdPrior": {
+        "value": 1927060000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "NetIncomeLoss"
+      },
+      "q": {
+        "value": 718697000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "NetIncomeLoss"
+      },
+      "qPrior": {
+        "value": 432552000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "NetIncomeLoss"
+      }
+    },
+    "ocf": {
+      "fy": {
+        "value": 2426383000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "fyPrior": {
+        "value": 3103935000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "ytd": {
+        "value": 785515000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "ytdPrior": {
+        "value": 1802687000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "q": {
+        "value": 405461000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "calc": "年初至今 − 截至 2026-06-30 的年初至今（后者见 10-Q，2026-07-30 提交）",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（需要去年同期两份季报相减）"
+      }
+    },
+    "capex": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "ytd": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（现金流量表只有年初至今的数字）"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（需要去年同期两份季报相减）"
+      }
+    },
+    "sbc": {
+      "fy": {
+        "value": 839440000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "ShareBasedCompensation"
+      },
+      "fyPrior": {
+        "value": 912838000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "ShareBasedCompensation"
+      },
+      "ytd": {
+        "value": 719441000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "ShareBasedCompensation"
+      },
+      "ytdPrior": {
+        "value": 608958000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "ShareBasedCompensation"
+      },
+      "q": {
+        "value": 233045000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "AllocatedShareBasedCompensationExpense"
+      },
+      "qPrior": {
+        "value": 222069000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "AllocatedShareBasedCompensationExpense"
+      }
+    },
+    "da": {
+      "fy": {
+        "value": 188428000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "DepreciationDepletionAndAmortization"
+      },
+      "fyPrior": {
+        "value": 127518000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "DepreciationDepletionAndAmortization"
+      },
+      "ytd": {
+        "value": 193623000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "DepreciationDepletionAndAmortization"
+      },
+      "ytdPrior": {
+        "value": 117312000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "DepreciationDepletionAndAmortization"
+      },
+      "q": {
+        "value": 61214000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "calc": "年初至今 − 截至 2026-06-30 的年初至今（后者见 10-Q，2026-07-30 提交）",
+        "tag": "DepreciationDepletionAndAmortization"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（需要去年同期两份季报相减）"
+      }
+    },
+    "epsDiluted": {
+      "fy": {
+        "value": 4.45,
+        "unit": "USD/股",
+        "src": "0001679788-26-000015",
+        "tag": "EarningsPerShareDiluted"
+      },
+      "fyPrior": {
+        "value": 9.48,
+        "unit": "USD/股",
+        "src": "0001679788-26-000015",
+        "tag": "EarningsPerShareDiluted"
+      },
+      "ytd": {
+        "value": -0.13,
+        "unit": "USD/股",
+        "src": "0001679788-26-000122",
+        "tag": "EarningsPerShareDiluted"
+      },
+      "ytdPrior": {
+        "value": 6.85,
+        "unit": "USD/股",
+        "src": "0001679788-26-000122",
+        "tag": "EarningsPerShareDiluted"
+      },
+      "q": {
+        "value": 2.51,
+        "unit": "USD/股",
+        "src": "0001679788-26-000122",
+        "tag": "EarningsPerShareDiluted"
+      },
+      "qPrior": {
+        "value": 1.5,
+        "unit": "USD/股",
+        "src": "0001679788-26-000122",
+        "tag": "EarningsPerShareDiluted"
+      }
+    },
+    "dilutedShares": {
+      "fy": {
+        "value": 287209000,
+        "unit": "股",
+        "src": "0001679788-26-000015",
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+      },
+      "fyPrior": {
+        "value": 273377000,
+        "unit": "股",
+        "src": "0001679788-26-000015",
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+      },
+      "ytd": {
+        "value": 263962000,
+        "unit": "股",
+        "src": "0001679788-26-000122",
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+      },
+      "ytdPrior": {
+        "value": 283165000,
+        "unit": "股",
+        "src": "0001679788-26-000122",
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+      },
+      "q": {
+        "value": 287979000,
+        "unit": "股",
+        "src": "0001679788-26-000122",
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+      },
+      "qPrior": {
+        "value": 291958000,
+        "unit": "股",
+        "src": "0001679788-26-000122",
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+      }
+    },
+    "buybacks": {
+      "fy": {
+        "value": 790195000,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "PaymentsForRepurchaseOfCommonStock"
+      },
+      "fyPrior": {
+        "value": 0,
+        "unit": "USD",
+        "src": "0001679788-26-000015",
+        "tag": "PaymentsForRepurchaseOfCommonStock"
+      },
+      "ytd": {
+        "value": 1248804000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "PaymentsForRepurchaseOfCommonStock"
+      },
+      "ytdPrior": {
+        "value": 0,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "tag": "PaymentsForRepurchaseOfCommonStock"
+      },
+      "q": {
+        "value": 5316000,
+        "unit": "USD",
+        "src": "0001679788-26-000122",
+        "calc": "年初至今 − 截至 2026-06-30 的年初至今（后者见 10-Q，2026-07-30 提交）",
+        "tag": "PaymentsForRepurchaseOfCommonStock"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（需要去年同期两份季报相减）"
+      }
+    },
+    "issuance": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "ytd": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（现金流量表只有年初至今的数字）"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（需要去年同期两份季报相减）"
+      }
+    },
+    "dividends": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "ytd": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（现金流量表只有年初至今的数字）"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（需要去年同期两份季报相减）"
+      }
+    }
+  },
+  "balance": {
+    "date": "2026-09-30",
+    "cash": {
+      "value": 8820883000,
+      "unit": "USD",
+      "src": "0001679788-26-000122",
+      "parts": [
+        {
+          "label": "现金及现金等价物",
+          "value": 8603791000,
+          "tag": "CashAndCashEquivalentsAtCarryingValue"
+        },
+        {
+          "label": "流动有价证券",
+          "value": 217092000,
+          "tag": "MarketableSecuritiesCurrent"
+        }
+      ]
+    },
+    "debt": {
+      "value": 6648778000,
+      "unit": "USD",
+      "src": "0001679788-26-000122",
+      "parts": [
+        {
+          "label": "长期债务（含一年内到期）",
+          "value": 5900000000,
+          "tag": "LongTermDebt"
+        },
+        {
+          "label": "短期借款",
+          "value": 748778000,
+          "tag": "ShortTermBorrowings"
+        }
+      ]
+    }
+  },
+  "shares": {
+    "outstanding": {
+      "value": 264756000,
+      "unit": "股",
+      "src": "0001679788-26-000122",
+      "note": "资产负债表日（2026-09-30）的已发行普通股，XBRL 不带类别的数字；多类股份时须对照原文确认是各类合计"
+    }
+  },
+  "sources": [
+    {
+      "id": "0001679788-26-000015",
+      "origin": "xbrl",
+      "form": "10-K",
+      "filed": "2026-02-12",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm",
+      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001679788.json",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "0001679788-26-000122",
+      "origin": "xbrl",
+      "form": "10-Q",
+      "filed": "2026-10-29",
+      "period": "FY2026 Q3（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm",
+      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001679788.json",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "gaps": []
+}

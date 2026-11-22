@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 
+import type { Fundamentals } from './fundamentals.ts';
 import type { Dataset } from './schema.ts';
 import { validateDataset } from './validate.ts';
 
@@ -40,6 +41,7 @@ export function readRaw(dir: string = dataDir()) {
     calendar: meta('calendar.json'),
     site: meta('site.json'),
     updates: readDir(path.join(dir, 'updates')),
+    fundamentals: readDir(path.join(dir, 'fundamentals')),
   };
 }
 
@@ -50,13 +52,17 @@ export function loadDataset(dir: string = dataDir()): Dataset {
   const data = raw as unknown as {
     tickers: { data: Dataset['tickers'][number] }[];
     updates: { data: Dataset['updates'][number] }[];
+    fundamentals: { data: Fundamentals }[];
   } & Omit<Dataset, 'tickers' | 'updates'>;
+  const fundamentals = new Map(data.fundamentals.map((f) => [f.data.ticker, f.data]));
   const sectorOrder = new Map(data.sectors.map((s, i) => [s.id, i]));
+  const { fundamentals: _f, ...rest } = data;
+  void _f;
   return {
-    ...data,
+    ...rest,
     // 板块按 sectors.json 的顺序；板块内按文件读取顺序会是字母序，所以这里保持原表顺序靠 order 文件。
     tickers: orderTickers(
-      data.tickers.map((t) => t.data),
+      data.tickers.map((t) => ({ ...t.data, fundamentals: fundamentals.get(t.data.ticker) })),
       sectorOrder,
       readOrder(dir),
     ),

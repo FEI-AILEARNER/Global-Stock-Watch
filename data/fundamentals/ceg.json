@@ -1,0 +1,670 @@
+{
+  "ticker": "CEG",
+  "xbrl": {
+    "cik": 1868275,
+    "note": "最近一份 10-Q（2026-11-09 提交）的数字还没有进 XBRL 接口，这里用的是 10-Q（2026-08-06）",
+    "manualPeriods": [
+      "q",
+      "qPrior",
+      "ytd",
+      "ytdPrior",
+      "balanceDate"
+    ]
+  },
+  "checkedOn": "2026-11-22",
+  "currency": "USD",
+  "periods": {
+    "fy": {
+      "label": "FY2025",
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "fyPrior": {
+      "label": "FY2024",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "q": {
+      "label": "FY2026 Q3",
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "qPrior": {
+      "label": "FY2025 Q3",
+      "start": "2025-07-01",
+      "end": "2025-09-30"
+    },
+    "ytd": {
+      "label": "FY2026 前三季",
+      "start": "2026-01-01",
+      "end": "2026-09-30"
+    },
+    "ytdPrior": {
+      "label": "FY2025 前三季",
+      "start": "2025-01-01",
+      "end": "2025-09-30"
+    },
+    "balanceDate": "2026-09-30"
+  },
+  "flows": {
+    "revenue": {
+      "fy": {
+        "value": 25533000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "Revenues"
+      },
+      "fyPrior": {
+        "value": 23568000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "Revenues"
+      },
+      "ytd": {
+        "value": 28176000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 19459000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "q": {
+        "value": 9550000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "qPrior": {
+        "value": 6570000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      }
+    },
+    "grossProfit": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（公司没有单列毛利或营业成本）"
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（公司没有单列毛利或营业成本）"
+      },
+      "ytd": {
+        "value": null,
+        "unit": "USD",
+        "note": "公司不报告毛利（电力公司的利润表不分毛利）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "公司不报告毛利（电力公司的利润表不分毛利）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "公司不报告毛利（电力公司的利润表不分毛利）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "公司不报告毛利（电力公司的利润表不分毛利）",
+        "manual": true
+      }
+    },
+    "operatingIncome": {
+      "fy": {
+        "value": 3086000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "OperatingIncomeLoss"
+      },
+      "fyPrior": {
+        "value": 4352000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "OperatingIncomeLoss"
+      },
+      "ytd": {
+        "value": 5404000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 2488000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "q": {
+        "value": 2492000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "qPrior": {
+        "value": 1086000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      }
+    },
+    "netIncome": {
+      "fy": {
+        "value": 2319000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "NetIncomeLoss"
+      },
+      "fyPrior": {
+        "value": 3749000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "NetIncomeLoss"
+      },
+      "ytd": {
+        "value": 3938000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 1887000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "q": {
+        "value": 1835000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "qPrior": {
+        "value": 930000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      }
+    },
+    "ocf": {
+      "fy": {
+        "value": 4237000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "fyPrior": {
+        "value": -2464000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "ytd": {
+        "value": 4979000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 3432000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "q": {
+        "value": 3426000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026",
+        "calc": "前三季 4,979 − 上半年 1,553（上半年取自 2026-08-06 提交的 10-Q 的 XBRL 数字）"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（新闻稿只给前三季的现金流量表）",
+        "manual": true
+      }
+    },
+    "capex": {
+      "fy": {
+        "value": 2949000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+      },
+      "fyPrior": {
+        "value": 2565000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+      },
+      "ytd": {
+        "value": 3461000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 1963000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "q": {
+        "value": 940000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026",
+        "calc": "前三季 3,461 − 上半年 2,521（上半年取自 2026-08-06 提交的 10-Q 的 XBRL 数字）"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（新闻稿只给前三季的现金流量表）",
+        "manual": true
+      }
+    },
+    "sbc": {
+      "fy": {
+        "value": 385000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "AllocatedShareBasedCompensationExpense"
+      },
+      "fyPrior": {
+        "value": 332000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "AllocatedShareBasedCompensationExpense"
+      },
+      "ytd": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（新闻稿没有列股权激励费用）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（新闻稿没有列股权激励费用）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（新闻稿没有列股权激励费用）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（新闻稿没有列股权激励费用）",
+        "manual": true
+      }
+    },
+    "da": {
+      "fy": {
+        "value": 2601000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "DepreciationAmortizationAndAccretionNet"
+      },
+      "fyPrior": {
+        "value": 2700000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "DepreciationAmortizationAndAccretionNet"
+      },
+      "ytd": {
+        "value": 2898000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026",
+        "note": "现金流量表口径：折旧、摊销和增值（含核燃料摊销），与年度数字的口径一致"
+      },
+      "ytdPrior": {
+        "value": 1945000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "q": {
+        "value": 530000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026",
+        "calc": "前三季 2,898 − 上半年 2,368（上半年取自 2026-08-06 提交的 10-Q 的 XBRL 数字）"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（新闻稿只给前三季的现金流量表）",
+        "manual": true
+      }
+    },
+    "epsDiluted": {
+      "fy": {
+        "value": 7.4,
+        "unit": "USD/股",
+        "src": "0001868275-26-000032",
+        "tag": "EarningsPerShareDiluted"
+      },
+      "fyPrior": {
+        "value": 11.89,
+        "unit": "USD/股",
+        "src": "0001868275-26-000032",
+        "tag": "EarningsPerShareDiluted"
+      },
+      "ytd": {
+        "value": 11.06,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 6.02,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "q": {
+        "value": 5.19,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "qPrior": {
+        "value": 2.97,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      }
+    },
+    "dilutedShares": {
+      "fy": {
+        "value": 314000000,
+        "unit": "股",
+        "src": "0001868275-26-000032",
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+      },
+      "fyPrior": {
+        "value": 315000000,
+        "unit": "股",
+        "src": "0001868275-26-000032",
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+      },
+      "ytd": {
+        "value": 356000000,
+        "unit": "股",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 314000000,
+        "unit": "股",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "q": {
+        "value": 354000000,
+        "unit": "股",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "qPrior": {
+        "value": 313000000,
+        "unit": "股",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      }
+    },
+    "buybacks": {
+      "fy": {
+        "value": 400000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "PaymentsForRepurchaseOfCommonStock"
+      },
+      "fyPrior": {
+        "value": 999000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "PaymentsForRepurchaseOfCommonStock"
+      },
+      "ytd": {
+        "value": 3001000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 400000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "q": {
+        "value": 1030000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026",
+        "calc": "前三季 3,001 − 上半年 1,971（上半年取自 2026-08-06 提交的 10-Q 的 XBRL 数字）"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（新闻稿只给前三季的现金流量表）",
+        "manual": true
+      }
+    },
+    "issuance": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（XBRL 里没有这一期的这项数字）"
+      },
+      "ytd": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（新闻稿没有这一项）",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（新闻稿没有这一项）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（新闻稿没有这一项）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（新闻稿没有这一项）",
+        "manual": true
+      }
+    },
+    "dividends": {
+      "fy": {
+        "value": 486000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "PaymentsOfDividendsCommonStock"
+      },
+      "fyPrior": {
+        "value": 444000000,
+        "unit": "USD",
+        "src": "0001868275-26-000032",
+        "tag": "PaymentsOfDividendsCommonStock"
+      },
+      "ytd": {
+        "value": 459000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 365000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026"
+      },
+      "q": {
+        "value": 150000000,
+        "unit": "USD",
+        "manual": true,
+        "src": "ceg-pr-q3-2026",
+        "calc": "前三季 459 − 上半年 309（上半年取自 2026-08-06 提交的 10-Q 的 XBRL 数字）"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（新闻稿只给前三季的现金流量表）",
+        "manual": true
+      }
+    }
+  },
+  "balance": {
+    "date": "2026-09-30",
+    "cash": {
+      "value": 603000000,
+      "unit": "USD",
+      "manual": true,
+      "src": "ceg-pr-q3-2026",
+      "parts": [
+        {
+          "label": "现金及现金等价物",
+          "value": 603000000
+        }
+      ]
+    },
+    "debt": {
+      "value": 23387000000,
+      "unit": "USD",
+      "manual": true,
+      "src": "ceg-pr-q3-2026",
+      "parts": [
+        {
+          "label": "短期借款",
+          "value": 3989000000
+        },
+        {
+          "label": "一年内到期的长期债务",
+          "value": 359000000
+        },
+        {
+          "label": "长期债务",
+          "value": 19039000000
+        }
+      ]
+    }
+  },
+  "shares": {
+    "outstanding": {
+      "value": 351608504,
+      "unit": "股",
+      "manual": true,
+      "src": "ceg-10q-q3-2026",
+      "note": "10-Q 封面披露的已发行普通股，截至 2026-10-31"
+    },
+    "outstandingYearAgo": {
+      "value": 312405579,
+      "unit": "股",
+      "src": "0001868275-25-000073",
+      "note": "一年前封面披露的已发行普通股，截至 2025-07-31"
+    }
+  },
+  "sources": [
+    {
+      "id": "0001868275-26-000032",
+      "origin": "xbrl",
+      "form": "10-K",
+      "filed": "2026-02-24",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000032/ceg-20251231.htm",
+      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001868275.json",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "0001868275-25-000073",
+      "origin": "xbrl",
+      "form": "10-Q",
+      "filed": "2025-08-07",
+      "period": "截至 2025-06-30 的季度",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827525000073/ceg-20250630.htm",
+      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001868275.json",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "ceg-pr-q3-2026",
+      "origin": "document",
+      "form": "新闻稿（8-K 附件 99.1）",
+      "period": "2026 Q3（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001868275/000186827526000116/ceg-20261109991.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Constellation 2026 年第三季度财报新闻稿",
+      "filed": "2026-11-09"
+    },
+    {
+      "id": "ceg-10q-q3-2026",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2026 Q3（截至 2026-09-30）；封面股数截至 2026-10-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000119/ceg-20260930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Constellation 2026 年第三季度 10-Q",
+      "filed": "2026-11-09"
+    }
+  ],
+  "gaps": [
+    "债务到期时间表（10-Q 的债务附注，本轮没有读到）",
+    "2026 Q3 单季股权激励费用",
+    "整体的合同电量或长约覆盖比例（新闻稿只列了本季新签的几份）"
+  ],
+  "guidance": [
+    {
+      "period": "2026 全年",
+      "text": "调整后（非 GAAP）营业每股收益 $12.50 至 $12.80；公司称上调了区间中点并收窄区间。",
+      "direction": "raised",
+      "vsText": "新闻稿说这是今年第二次上调中点；上一次的区间新闻稿没有写，本轮未检索到。",
+      "src": "ceg-pr-q3-2026"
+    }
+  ],
+  "orders": [
+    {
+      "label": "Amazon 购电协议",
+      "text": "20 年、690MW，另有配套的零售供电协议（PJM 区域）。",
+      "src": "ceg-pr-q3-2026"
+    },
+    {
+      "label": "Google 购电协议",
+      "text": "20 年，新增约 890MW 发电容量（PJM 区域）；另有一份 15 年、2,700MW 的财务性负荷跟随协议。",
+      "src": "ceg-pr-q3-2026"
+    },
+    {
+      "label": "Peak+ 客户协议",
+      "text": "20 年、270MW，按机组供应电能、容量和环境属性，2028 年开始。",
+      "src": "ceg-pr-q3-2026"
+    }
+  ]
+}

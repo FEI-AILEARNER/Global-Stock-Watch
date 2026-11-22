@@ -3,6 +3,7 @@ import { Watchlist } from '@/components/watchlist';
 import type { Row } from '@/components/watchlist';
 import { getData, getNote } from '@/lib/data';
 import { zhDate } from '@/lib/format';
+import { homeInputs } from '@/lib/fundamentals';
 
 export default function HomePage() {
   const { tickers, sectors, site } = getData();
@@ -21,6 +22,7 @@ export default function HomePage() {
     lastPrice: t.lastPrice,
     latestKey: t.keyItems[0] ? { date: t.keyItems[0].date, title: t.keyItems[0].title, url: t.keyItems[0].url, sourceType: t.keyItems[0].sourceType } : null,
     keyCount: t.keyItems.length,
+    fund: homeInputs(t.fundamentals),
   }));
 
   return (
