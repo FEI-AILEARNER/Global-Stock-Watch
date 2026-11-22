@@ -1,0 +1,650 @@
+{
+  "ticker": "SPCX",
+  "checkedOn": "2026-11-22",
+  "currency": "USD",
+  "xbrl": {
+    "cik": 1181412,
+    "note": "上市不满一年、还没有 10-K；全部人工录入"
+  },
+  "sources": [
+    {
+      "id": "spcx-424b4",
+      "origin": "document",
+      "form": "招股书（424B4）",
+      "period": "2026-06 首次公开发行；财务数字截至 2025-12-31 和 2026-03-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+      "checkedOn": "2026-11-22",
+      "title": "SpaceX 首次公开发行招股书",
+      "filed": "2026-06-12"
+    },
+    {
+      "id": "spcx-10q-q3-2026",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2026 Q3（截至 2026-09-30）；封面股数截至 2026-10-15",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "SpaceX 2026 年第三季度 10-Q",
+      "filed": "2026-10-22"
+    }
+  ],
+  "gaps": [
+    "2025 全年的经营现金流、折旧摊销、股权激励（所以近四季的自由现金流和 EBITDA 算不出）",
+    "锁定期条款，包括定价依据里提到的 $175.50 触发条款（招股书读到的部分没有，本轮未核实）",
+    "关联交易一节、xAI 的收购对价",
+    "本季分部营业利润"
+  ],
+  "periods": {
+    "fy": {
+      "label": "FY2025",
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "fyPrior": {
+      "label": "FY2024",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "q": {
+      "label": "FY2026 Q3",
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "qPrior": {
+      "label": "FY2025 Q3",
+      "start": "2025-07-01",
+      "end": "2025-09-30"
+    },
+    "ytd": {
+      "label": "FY2026 前三季",
+      "start": "2026-01-01",
+      "end": "2026-09-30"
+    },
+    "ytdPrior": {
+      "label": "FY2025 前三季",
+      "start": "2025-01-01",
+      "end": "2025-09-30"
+    },
+    "balanceDate": "2026-09-30"
+  },
+  "flows": {
+    "revenue": {
+      "fy": {
+        "value": 18674000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-424b4"
+      },
+      "fyPrior": {
+        "value": 14015000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-424b4"
+      },
+      "q": {
+        "value": 14575000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "qPrior": {
+        "value": 5576000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytd": {
+        "value": 27083000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 13714000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      }
+    },
+    "grossProfit": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "q": {
+        "value": 9097000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026",
+        "calc": "营收 − 营业成本"
+      },
+      "qPrior": {
+        "value": 2871000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026",
+        "calc": "营收 − 营业成本"
+      },
+      "ytd": {
+        "value": 15722000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026",
+        "calc": "营收 − 营业成本"
+      },
+      "ytdPrior": {
+        "value": 6765000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026",
+        "calc": "营收 − 营业成本"
+      }
+    },
+    "operatingIncome": {
+      "fy": {
+        "value": -2589000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-424b4"
+      },
+      "fyPrior": {
+        "value": 466000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-424b4"
+      },
+      "q": {
+        "value": 2791000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "qPrior": {
+        "value": -273000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytd": {
+        "value": 705000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": -1216000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      }
+    },
+    "netIncome": {
+      "fy": {
+        "value": -4937000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-424b4",
+        "note": "招股书“净利润（亏损）”；与季度的“归属股东”口径可能不完全一致"
+      },
+      "fyPrior": {
+        "value": 791000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-424b4"
+      },
+      "q": {
+        "value": 4404000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "qPrior": {
+        "value": -1054000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytd": {
+        "value": -1084000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026",
+        "note": "10-Q：归属股东 −$10.84亿；合并净亏损 −$4.13亿"
+      },
+      "ytdPrior": {
+        "value": -2590000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      }
+    },
+    "epsDiluted": {
+      "fy": {
+        "value": null,
+        "unit": "USD/股",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD/股",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "q": {
+        "value": 0.35,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "qPrior": {
+        "value": -0.36,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytd": {
+        "value": -0.15,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": -0.89,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      }
+    },
+    "dilutedShares": {
+      "fy": {
+        "value": null,
+        "unit": "股",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "股",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "q": {
+        "value": 12475000000.0,
+        "unit": "股",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "qPrior": {
+        "value": 2941000000.0,
+        "unit": "股",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytd": {
+        "value": 7274000000.0,
+        "unit": "股",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 2915000000.0,
+        "unit": "股",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      }
+    },
+    "ocf": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "ytd": {
+        "value": 13097000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      }
+    },
+    "capex": {
+      "fy": {
+        "value": 20737000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-424b4"
+      },
+      "fyPrior": {
+        "value": 11163000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-424b4"
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "ytd": {
+        "value": 48069000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      }
+    },
+    "sbc": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "ytd": {
+        "value": 3833000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      }
+    },
+    "da": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书读到的部分没有）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "ytd": {
+        "value": 8934000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（只读到前三季的现金流量表）",
+        "manual": true
+      }
+    }
+  },
+  "balance": {
+    "date": "2026-09-30",
+    "cash": {
+      "value": 89855000000.0,
+      "unit": "USD",
+      "manual": true,
+      "src": "spcx-10q-q3-2026",
+      "parts": [
+        {
+          "label": "现金及现金等价物",
+          "value": 51294000000.0
+        },
+        {
+          "label": "有价证券",
+          "value": 38561000000.0
+        }
+      ]
+    },
+    "debt": {
+      "value": 38844000000.0,
+      "unit": "USD",
+      "manual": true,
+      "src": "spcx-10q-q3-2026",
+      "parts": [
+        {
+          "label": "一年内到期的债务及融资租赁",
+          "value": 2698000000.0
+        },
+        {
+          "label": "长期债务及融资租赁（非流动）",
+          "value": 36146000000.0
+        }
+      ],
+      "note": "含融资租赁"
+    }
+  },
+  "shares": {
+    "outstanding": {
+      "value": 13581063709,
+      "unit": "股",
+      "manual": true,
+      "src": "spcx-10q-q3-2026",
+      "parts": [
+        {
+          "label": "A 类（每股 1 票）",
+          "value": 8246541218
+        },
+        {
+          "label": "B 类（每股 10 票）",
+          "value": 5334522491
+        }
+      ],
+      "note": "10-Q 封面，截至 2026-10-15"
+    }
+  },
+  "segments": {
+    "period": "2026 Q3",
+    "src": "spcx-10q-q3-2026",
+    "rows": [
+      {
+        "name": "超级智能（SI，即 AI 算力）",
+        "revenue": {
+          "value": 7560000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "spcx-10q-q3-2026"
+        }
+      },
+      {
+        "name": "连接（Starlink）",
+        "revenue": {
+          "value": 5248000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "spcx-10q-q3-2026"
+        }
+      },
+      {
+        "name": "航天（发射等）",
+        "revenue": {
+          "value": 1767000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "spcx-10q-q3-2026"
+        }
+      }
+    ],
+    "note": "本季分部营业利润本轮未检索到。2025 全年分部营业利润（招股书）：连接 +$44.23亿，航天 −$6.57亿，AI −$63.55亿。"
+  },
+  "orders": [
+    {
+      "label": "积压订单",
+      "text": "截至 2026-09-30 积压 $629.59亿，约 67% 预计一年内确认，27% 在一到三年，6% 更晚。",
+      "src": "spcx-10q-q3-2026",
+      "figure": {
+        "value": 62959000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "spcx-10q-q3-2026",
+        "period": "截至 2026-09-30"
+      }
+    }
+  ],
+  "customers": [
+    {
+      "label": "最大客户",
+      "text": "“客户 B”（属于超级智能分部）占本季营收的 34.5%、前三季的 24.2%；“客户 A”占本季 16.6%、前三季 17.3%。一位未具名客户占应收账款的 27.7%。10-Q 没有写客户名称。",
+      "src": "spcx-10q-q3-2026",
+      "figure": {
+        "value": 34.5,
+        "unit": "%",
+        "manual": true,
+        "src": "spcx-10q-q3-2026",
+        "period": "2026 Q3"
+      }
+    }
+  ],
+  "governance": [
+    {
+      "label": "马斯克的控制权",
+      "text": "上市后马斯克持有约 8.5 亿股 A 类和 55.69 亿股 B 类（每股 10 票），表决权约 82.4%；公司是纳斯达克规则下的“受控公司”，会使用部分治理豁免；公司没有为他买关键人保险。",
+      "src": "spcx-424b4",
+      "figure": {
+        "value": 82.4,
+        "unit": "%",
+        "manual": true,
+        "src": "spcx-424b4",
+        "period": "上市后"
+      }
+    }
+  ],
+  "prospectus": {
+    "src": "spcx-424b4",
+    "items": [
+      {
+        "topic": "发行",
+        "text": "发行价 $135，公司发行 5.556 亿股 A 类，募资总额约 $750亿，承销折扣每股 $0.90（合计 $5亿）；承销商另有 8,333万股超额配售权。最多 5% 的股份留给员工和高管指定的人。",
+        "src": "spcx-424b4"
+      },
+      {
+        "topic": "募资用途",
+        "text": "净得约 $744亿（超额配售全部行使则约 $857亿），用于扩建 AI 算力基础设施、发射设施和火箭、卫星星座，其余作一般用途。不打算派现金股息。",
+        "src": "spcx-424b4"
+      },
+      {
+        "topic": "股权结构和稀释",
+        "text": "双层股权：A 类每股 1 票，B 类每股 10 票，B 类选出董事会多数。上市后（备考）A 类 73.8 亿股、B 类 56.96 亿股。新投资者每股被稀释 $127.15（发行价 $135 对备考每股有形净资产 $7.85）。",
+        "src": "spcx-424b4"
+      },
+      {
+        "topic": "上市前的财务",
+        "text": "2025 年营收 $186.74亿（2024 年 $140.15亿），营业亏损 $25.89亿（2024 年盈利 $4.66亿），净亏损 $49.37亿。分部营业利润：连接 +$44.23亿、航天 −$6.57亿、AI −$63.55亿。资本开支 $207.37亿（AI 占 $127.27亿）。2026 Q1 AI 分部资本开支 $77.23亿、营业亏损 $24.69亿。",
+        "src": "spcx-424b4"
+      },
+      {
+        "topic": "单位经济（Starlink）",
+        "text": "截至 2026-03-31 约 1,030 万用户（一年前 500 万）；每用户月收入 2026 Q1 $66、2025 Q1 $86、2025 全年 $81、2024 全年 $91——用户翻倍、单价下降。在轨约 9,600 颗宽带和手机直连卫星。",
+        "src": "spcx-424b4"
+      },
+      {
+        "topic": "与特斯拉和 xAI 的关系",
+        "text": "2026 年 2 月收购了 xAI；与特斯拉合作的 Terafab（芯片制造）和 Macrohard（智能体 AI 平台）还在很早期，财务条款、知识产权和期限都没有定。具体的关联交易一节本轮没有读到。",
+        "src": "spcx-424b4"
+      }
+    ]
+  },
+  "risks": [
+    {
+      "title": "AI 算力的资本开支",
+      "text": "AI 分部 2025 年资本开支 $127亿、2026 Q1 $77亿，同期营业亏损 $64亿 和 $25亿；未来的算力资本开支承诺招股书没有量化。",
+      "src": "spcx-424b4"
+    },
+    {
+      "title": "依赖马斯克，且存在利益冲突",
+      "text": "他控制过半表决权，同时是特斯拉 CEO；与特斯拉的合作条款未定。",
+      "src": "spcx-424b4"
+    }
+  ],
+  "checkpoints": [
+    {
+      "metric": "资本开支和经营现金流",
+      "condition": "“资本开支有回报的证据”：前三季资本开支 $480.69亿，经营现金流 $130.97亿；差额靠募资和负债填。",
+      "basis": "11/21 定价依据：“资本开支有回报的证据”",
+      "latest": "2026 前三季：经营现金流 $130.97亿，资本开支 $480.69亿",
+      "src": "spcx-10q-q3-2026"
+    },
+    {
+      "metric": "分部估值区间",
+      "condition": "价格回到分部估值的中性区间 $60 至 $85。",
+      "basis": "11/21 定价依据"
+    }
+  ]
+}

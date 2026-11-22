@@ -251,7 +251,7 @@ export function Watchlist({ rows, sectors }: { rows: Row[]; sectors: Sector[] })
                       <td className="num px-2 py-2.5 text-right">{marketCap(capOf(r, v))}</td>
                       <td className="px-2 py-2.5 text-right"><FcfYield r={r} v={v} /></td>
                       <td className="num px-2 py-2.5 text-right font-semibold">{usd(r.strikePrice)}</td>
-                      <td className="px-2 py-2.5 text-right"><ZoneValue zone={v.zone} value={v.distance} /></td>
+                      <td className="px-2 py-2.5 text-right" data-col="distance"><ZoneValue zone={v.zone} value={v.distance} /></td>
                       <td className="num px-2 py-2.5 text-right">{usd(r.exitPrice)}</td>
                       <td className="px-2 py-2.5"><StanceBadge label={r.stance.label} group={r.stance.group} /></td>
                       <td className="py-2.5 pl-2 pr-3 text-[0.85rem]">{r.events}</td>

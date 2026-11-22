@@ -1,0 +1,610 @@
+{
+  "ticker": "XE",
+  "checkedOn": "2026-11-22",
+  "currency": "USD",
+  "xbrl": {
+    "cik": 2088896,
+    "note": "上市不满一年、还没有 10-K，XBRL 接口里没有完整的财务数字；全部人工录入"
+  },
+  "sources": [
+    {
+      "id": "xe-424b4",
+      "origin": "document",
+      "form": "招股书（424B4）",
+      "period": "2026-04 首次公开发行；财务数字截至 2025-12-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/2088896/000110465926049515/tm2527015-22_424b4.htm",
+      "checkedOn": "2026-11-22",
+      "title": "X-Energy 首次公开发行招股书",
+      "filed": "2026-04-27"
+    },
+    {
+      "id": "xe-10q-q3-2026",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2026 Q3（截至 2026-09-30）；封面股数截至 2026-11-09",
+      "url": "https://www.sec.gov/Archives/edgar/data/2088896/000119312526456659/xe-20260930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "X-Energy 2026 年第三季度 10-Q",
+      "filed": "2026-11-12"
+    },
+    {
+      "id": "xe-pr-q3-2026",
+      "origin": "document",
+      "form": "新闻稿（8-K 附件 99.1）",
+      "period": "2026 Q3（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002088896/000119312526456633/xe-ex99_1.htm",
+      "checkedOn": "2026-11-22",
+      "title": "X-Energy 2026 年第三季度财报新闻稿",
+      "filed": "2026-11-12"
+    }
+  ],
+  "gaps": [
+    "击球区说明里“能源部对 Long Mott 的分摊约 $21.5亿”在招股书里没有对上：招股书写的是最多报销 $12亿（$24亿 合格成本的 50%）。$21.5亿 的出处本轮没有找到，可能是后来追加或不同口径，需要核对",
+    "2025 年全年的经营现金流、资本开支、股权激励（招股书摘要没有，所以近四季的自由现金流算不出）",
+    "关联交易一节、锁定期的具体到期日和例外",
+    "管理层和大股东上市后的持股比例"
+  ],
+  "periods": {
+    "fy": {
+      "label": "FY2025",
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "fyPrior": {
+      "label": "FY2024",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "q": {
+      "label": "FY2026 Q3",
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "qPrior": {
+      "label": "FY2025 Q3",
+      "start": "2025-07-01",
+      "end": "2025-09-30"
+    },
+    "ytd": {
+      "label": "FY2026 前三季",
+      "start": "2026-01-01",
+      "end": "2026-09-30"
+    },
+    "ytdPrior": {
+      "label": "FY2025 前三季",
+      "start": "2025-01-01",
+      "end": "2025-09-30"
+    },
+    "balanceDate": "2026-09-30"
+  },
+  "flows": {
+    "revenue": {
+      "fy": {
+        "value": 109098000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-424b4",
+        "note": "含政府补助收入（公司口径“营收和补助”）"
+      },
+      "fyPrior": {
+        "value": 120152000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-424b4"
+      },
+      "q": {
+        "value": 66340000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "qPrior": {
+        "value": 30427000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytd": {
+        "value": 164364000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": 72735000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      }
+    },
+    "grossProfit": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书摘要没有直接成本）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书摘要没有直接成本）",
+        "manual": true
+      },
+      "q": {
+        "value": -27213000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026",
+        "calc": "营收和补助 − 直接成本"
+      },
+      "qPrior": {
+        "value": -8399000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026",
+        "calc": "营收和补助 − 直接成本"
+      },
+      "ytd": {
+        "value": -81206000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026",
+        "calc": "营收和补助 − 直接成本"
+      },
+      "ytdPrior": {
+        "value": -30944000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026",
+        "calc": "营收和补助 − 直接成本"
+      }
+    },
+    "operatingIncome": {
+      "fy": {
+        "value": -170295000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-424b4"
+      },
+      "fyPrior": {
+        "value": -123512000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-424b4"
+      },
+      "q": {
+        "value": -103600000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "qPrior": {
+        "value": -40689000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytd": {
+        "value": -279742000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": -109771000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      }
+    },
+    "netIncome": {
+      "fy": {
+        "value": -389778000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-424b4"
+      },
+      "fyPrior": {
+        "value": -125960000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-424b4"
+      },
+      "q": {
+        "value": -83680000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026",
+        "note": "这里是合并净亏损（含少数股东部分）；归属公司的部分：本季 −$5,944万，前三季 −$1.185亿"
+      },
+      "qPrior": {
+        "value": -219018000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytd": {
+        "value": -355230000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026",
+        "note": "这里是合并净亏损（含少数股东部分）；归属公司的部分：本季 −$5,944万，前三季 −$1.185亿"
+      },
+      "ytdPrior": {
+        "value": -318078000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      }
+    },
+    "epsDiluted": {
+      "fy": {
+        "value": null,
+        "unit": "USD/股",
+        "note": "上市前没有每股数字",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD/股",
+        "note": "上市前没有每股数字",
+        "manual": true
+      },
+      "q": {
+        "value": -0.21,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD/股",
+        "note": "本轮未检索到（10-Q 没有这一项或这一期）",
+        "manual": true
+      },
+      "ytd": {
+        "value": -0.42,
+        "unit": "USD/股",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD/股",
+        "note": "本轮未检索到（10-Q 没有这一项或这一期）",
+        "manual": true
+      }
+    },
+    "dilutedShares": {
+      "fy": {
+        "value": null,
+        "unit": "股",
+        "note": "上市前没有",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "股",
+        "note": "上市前没有",
+        "manual": true
+      },
+      "q": {
+        "value": 283534719.0,
+        "unit": "股",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "股",
+        "note": "本轮未检索到（10-Q 没有这一项或这一期）",
+        "manual": true
+      },
+      "ytd": {
+        "value": 282095711.0,
+        "unit": "股",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "股",
+        "note": "本轮未检索到（10-Q 没有这一项或这一期）",
+        "manual": true
+      }
+    },
+    "ocf": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书摘要没有现金流量表数字）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（招股书摘要没有现金流量表数字）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "ytd": {
+        "value": -215778000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": -92678000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      }
+    },
+    "capex": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "ytd": {
+        "value": 178112000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（10-Q 没有这一项或这一期）",
+        "manual": true
+      }
+    },
+    "sbc": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "ytd": {
+        "value": 70806000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（10-Q 没有这一项或这一期）",
+        "manual": true
+      }
+    },
+    "da": {
+      "fy": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "没有计算（只读到前三季的现金流量表）",
+        "manual": true
+      },
+      "ytd": {
+        "value": 1897000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "xe-10q-q3-2026"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "USD",
+        "note": "本轮未检索到（10-Q 没有这一项或这一期）",
+        "manual": true
+      }
+    }
+  },
+  "balance": {
+    "date": "2026-09-30",
+    "cash": {
+      "value": 1805515000.0,
+      "unit": "USD",
+      "manual": true,
+      "src": "xe-10q-q3-2026",
+      "parts": [
+        {
+          "label": "现金及现金等价物",
+          "value": 1044054000.0
+        },
+        {
+          "label": "短期投资",
+          "value": 514348000.0
+        },
+        {
+          "label": "长期投资",
+          "value": 247113000.0
+        }
+      ],
+      "note": "含长期投资"
+    },
+    "debt": {
+      "value": 0.0,
+      "unit": "USD",
+      "manual": true,
+      "src": "xe-pr-q3-2026",
+      "note": "新闻稿：截至 2026-09-30 和 2025 年底都没有债务"
+    }
+  },
+  "shares": {
+    "outstanding": {
+      "value": 406206066,
+      "unit": "股",
+      "manual": true,
+      "src": "xe-10q-q3-2026",
+      "parts": [
+        {
+          "label": "A 类普通股",
+          "value": 297495177
+        },
+        {
+          "label": "B 类普通股（对应运营公司的普通单位，可换成 A 类）",
+          "value": 108710889
+        }
+      ],
+      "note": "10-Q 封面，截至 2026-11-09；按 A 类 + B 类合计（B 类没有经济权益，但可连同运营公司单位换成 A 类）"
+    }
+  },
+  "customers": [
+    {
+      "label": "美国政府",
+      "text": "2026 Q3 美国政府占营收和补助的 84.5%，前三季 88.3%；公司写明这是集中风险、但信用风险低。",
+      "src": "xe-10q-q3-2026",
+      "figure": {
+        "value": 88.3,
+        "unit": "%",
+        "manual": true,
+        "src": "xe-10q-q3-2026",
+        "period": "2026 前三季"
+      }
+    }
+  ],
+  "prospectus": {
+    "src": "xe-424b4",
+    "items": [
+      {
+        "topic": "发行",
+        "text": "发行价 $23，发行 4,425.5万股 A 类，募资总额 $10.18亿，扣除承销费后约 $9.59亿；承销商另有 663.8万股的超额配售权（10-Q 显示上市净得 $11.03亿，即超额配售权已行使）。预留最多 221.3万股定向配售给董事、高管和员工；ARK 表示有意认购最多 $1.05亿（不具约束力）。",
+        "src": "xe-424b4"
+      },
+      {
+        "topic": "募资用途",
+        "text": "全部用来认购运营公司 XERC 新发行的普通单位，由 XERC 用于营运资金和一般用途：研发、销售、资本开支、供应链和采购，部分可能用于未来的增长项目。没有指定到某个项目。",
+        "src": "xe-424b4"
+      },
+      {
+        "topic": "股权结构（Up-C）",
+        "text": "上市公司只持有运营公司约 69.7% 的普通单位；其余约 30.3% 由上市前的股东（Ares、ACIP、GM Enterprises、Jane Street 等）通过 B 类股持有。B 类股每股一票、没有经济权益，与 A 类一起投票。",
+        "src": "xe-424b4"
+      },
+      {
+        "topic": "应收税款协议（TRA）",
+        "text": "上市公司要把实际省下的现金税款的 85% 付给上市前的股东。招股书估计 15 年内省税约 $9.06亿、要付出约 $7.70亿；提前终止要付约 $5.32亿。这是一笔不显示在“有息负债”里的长期现金流出。",
+        "src": "xe-424b4"
+      },
+      {
+        "topic": "锁定期",
+        "text": "180 天。按招股书 424B4 的提交日 2026-04-27 粗算，约在 2026 年 10 月下旬到期（算术推算，具体日期和例外条款本轮没有核对）。",
+        "src": "xe-424b4"
+      },
+      {
+        "topic": "能源部的分摊（ARDP）",
+        "text": "先进反应堆示范计划按 $24亿 合格成本的 50% 报销，即最多 $12亿；到 2025 年底已收到约 $4.38亿，划给 X-energy 的至少 $11亿。招股书说项目估算成本已经上升，但没有给新数字。",
+        "src": "xe-424b4"
+      },
+      {
+        "topic": "主要客户合同",
+        "text": "Dow（Gulf Coast 项目）可以“随时为方便而终止”；Amazon 拿到 2031 至 2039 年 Xe-100 制造排期的优先分配、部分交付的优先购买权和最惠条款，对 Amazon 的付款从其首个项目商运满五年开始；Centrica 只是不具约束力的联合开发协议。",
+        "src": "xe-424b4"
+      },
+      {
+        "topic": "上市前的财务",
+        "text": "2025 年营收和补助 $1.091亿（2024 年 $1.202亿），营业亏损 $1.703亿，净亏损 $3.898亿；2025 年底现金 $4.589亿。收入主要是工程服务和政府补助。",
+        "src": "xe-424b4"
+      }
+    ]
+  },
+  "risks": [
+    {
+      "title": "政府拨款",
+      "text": "示范项目依赖国会继续拨款；招股书提示可能拿不到追加资金，项目估算成本已上升。",
+      "src": "xe-424b4"
+    },
+    {
+      "title": "HALEU 燃料",
+      "text": "高丰度低浓铀供不应求，是招股书点名的供应风险。",
+      "src": "xe-424b4"
+    },
+    {
+      "title": "客户可随时退出",
+      "text": "Dow 的项目协议允许 Dow 随时为方便而终止。",
+      "src": "xe-424b4"
+    }
+  ],
+  "checkpoints": [
+    {
+      "metric": "“白送区”算术",
+      "condition": "（现金及投资 + 能源部对项目的分摊）÷ 完全摊薄股数 ≈ 击球价 $10；现金每季被消耗，这个锚就下移。",
+      "basis": "11/21 击球区说明",
+      "latest": "现金及投资 $18.06亿、无债务；股数 4.062亿（A+B）。招股书写的能源部报销上限是 $12亿（已收约 $4.38亿），与击球区说明里的 $21.5亿 不一致，见“本轮未检索到”",
+      "src": "xe-10q-q3-2026"
+    },
+    {
+      "metric": "Dow 的投资决定",
+      "condition": "Dow 2027 年做出投资决定；Dow 可以随时终止协议。",
+      "basis": "11/21 定价依据的“关键条件”",
+      "src": "xe-424b4"
+    }
+  ]
+}

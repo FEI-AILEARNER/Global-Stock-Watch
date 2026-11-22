@@ -282,6 +282,7 @@ export function CapitalSection({ f }: { f: Fundamentals }) {
               x={now === null || ago === null ? <span className="text-xs text-ink-soft">算不出</span> : <span className="num">{pct(now / ago - 1, 1)}</span>}
               detail={ago !== null ? `对比：${sh.outstandingYearAgo?.note ?? ''}` : undefined}
             />
+            {f.flows?.buybacks && (
             <Fact
               label="近四季回购／发行股票"
               x={
@@ -289,8 +290,9 @@ export function CapitalSection({ f }: { f: Fundamentals }) {
                   {bb.value === null ? '回购 —' : `回购 ${money(bb.value, f.currency)}`}　{iss.value === null ? '发行 —' : `发行 ${money(iss.value, f.currency)}`}
                 </span>
               }
-              detail="现金流量表口径；“—”是 XBRL 里没有这一项（多半是没有发生，未逐一核对原文）"
+              detail="现金流量表口径；“—”是财报数字里没有这一项（多半是没有发生，未逐一核对原文）"
             />
+            )}
           </>
         )}
       </dl>

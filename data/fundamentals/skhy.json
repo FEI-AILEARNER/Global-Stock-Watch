@@ -1,0 +1,459 @@
+{
+  "ticker": "SKHY",
+  "checkedOn": "2026-11-22",
+  "currency": "KRW",
+  "sources": [
+    {
+      "id": "skhy-424b4",
+      "origin": "document",
+      "form": "招股书（424B4）",
+      "period": "2026-07 美国存托股上市；财务数字截至 2025-12-31 和 2026-03-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm",
+      "checkedOn": "2026-11-22",
+      "title": "SK hynix 美国存托股发行招股书",
+      "filed": "2026-07-10"
+    },
+    {
+      "id": "skhy-ir-q3-2026",
+      "origin": "document",
+      "form": "公司新闻稿（投资者关系网站）",
+      "period": "2026 Q3（截至 2026-09-30，K-IFRS，未经审计）",
+      "url": "https://news.skhynix.com/cn/q3-2026-business-results/",
+      "checkedOn": "2026-11-22",
+      "title": "SK hynix 2026 年第三季度经营业绩",
+      "filed": "2026-10-28"
+    }
+  ],
+  "gaps": [
+    "2025 前三季的累计数字（所以近四季的营收、利润算不出）",
+    "现金流量表：经营现金流、资本开支、折旧摊销",
+    "2025 年的营业利润（招股书摘要读到的部分没有）",
+    "回购注销后的最新股本",
+    "风险因素（招股书的风险因素一节本轮没有读）",
+    "因为财报是韩元，估值倍数不计算（不做汇率换算）"
+  ],
+  "periods": {
+    "fy": {
+      "label": "FY2025",
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "fyPrior": {
+      "label": "FY2024",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "q": {
+      "label": "2026 Q3",
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "qPrior": {
+      "label": "2025 Q3",
+      "start": "2025-07-01",
+      "end": "2025-09-30"
+    },
+    "ytd": {
+      "label": "2026 前三季",
+      "start": "2026-01-01",
+      "end": "2026-09-30"
+    },
+    "ytdPrior": {
+      "label": "2025 前三季",
+      "start": "2025-01-01",
+      "end": "2025-09-30"
+    },
+    "balanceDate": "2026-09-30"
+  },
+  "flows": {
+    "revenue": {
+      "fy": {
+        "value": 97147000000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-424b4"
+      },
+      "fyPrior": {
+        "value": 66193000000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-424b4"
+      },
+      "q": {
+        "value": 104615500000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-ir-q3-2026"
+      },
+      "qPrior": {
+        "value": 24448900000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-ir-q3-2026"
+      },
+      "ytd": {
+        "value": 236510200000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-ir-q3-2026",
+        "calc": "Q1 ₩52.576万亿（招股书）+ Q2 ₩79.3187万亿 + Q3 ₩104.6155万亿（新闻稿）"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（2025 前三季的累计数字没有读到，所以近四季算不出）",
+        "manual": true
+      }
+    },
+    "grossProfit": {
+      "fy": {
+        "value": 58691000000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-424b4"
+      },
+      "fyPrior": {
+        "value": 31828000000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-424b4"
+      },
+      "q": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（新闻稿只给营业利润）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "ytd": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到",
+        "manual": true
+      }
+    },
+    "operatingIncome": {
+      "fy": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（招股书读到的摘要没有营业利润一行）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "q": {
+        "value": 83333800000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-ir-q3-2026"
+      },
+      "qPrior": {
+        "value": 11383400000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-ir-q3-2026"
+      },
+      "ytd": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到",
+        "manual": true
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到",
+        "manual": true
+      }
+    },
+    "netIncome": {
+      "fy": {
+        "value": 42948000000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-424b4",
+        "note": "招股书“年度利润”"
+      },
+      "fyPrior": {
+        "value": 19797000000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-424b4"
+      },
+      "q": {
+        "value": 39775600000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-ir-q3-2026"
+      },
+      "qPrior": {
+        "value": 12597500000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-ir-q3-2026"
+      },
+      "ytd": {
+        "value": 174044200000000.0,
+        "unit": "KRW",
+        "manual": true,
+        "src": "skhy-ir-q3-2026",
+        "calc": "Q1 ₩40.346万亿（招股书）+ Q2 ₩93.9226万亿 + Q3 ₩39.7756万亿（新闻稿）"
+      },
+      "ytdPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到",
+        "manual": true
+      }
+    },
+    "ocf": {
+      "fy": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      }
+    },
+    "capex": {
+      "fy": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      }
+    },
+    "sbc": {
+      "fy": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      }
+    },
+    "da": {
+      "fy": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "fyPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "q": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      },
+      "qPrior": {
+        "value": null,
+        "unit": "KRW",
+        "note": "本轮未检索到（本轮没有读现金流量表）",
+        "manual": true
+      }
+    }
+  },
+  "balance": {
+    "date": "2026-09-30",
+    "cash": {
+      "value": 114500000000000.0,
+      "unit": "KRW",
+      "manual": true,
+      "src": "skhy-ir-q3-2026",
+      "note": "新闻稿“现金及现金等价物”；短期金融产品是否含在内没有写"
+    },
+    "debt": {
+      "value": 15800000000000.0,
+      "unit": "KRW",
+      "manual": true,
+      "src": "skhy-ir-q3-2026",
+      "note": "新闻稿“借款”"
+    }
+  },
+  "shares": {
+    "outstanding": {
+      "value": 728865500,
+      "unit": "股",
+      "manual": true,
+      "src": "skhy-424b4",
+      "note": "招股书：发行后 7.289 亿股普通股（不含 162.7万股库存股）。之后公司完成了 ₩40万亿 回购、待注销，所以现在的流通股数比这个少，本轮未检索到最新数字"
+    },
+    "dilutive": [
+      {
+        "label": "回购和注销",
+        "text": "2026 财年股东回报约 ₩100万亿：现金股息 ₩30万亿 以上，回购并注销 ₩60万亿 以上（含 8 月宣布、上周完成的 ₩40万亿）。第三季董事会又决定回购 ₩20万亿，其中 ₩10万亿 注销、约 ₩10万亿 用于员工业绩奖金（不算股东回报）。政策：把自由现金流的 50% 以上返还股东。",
+        "src": "skhy-ir-q3-2026"
+      }
+    ]
+  },
+  "adr": {
+    "ratio": 0.1,
+    "note": "1 股美国存托股（ADS）= 0.1 股普通股",
+    "src": "skhy-424b4"
+  },
+  "valuationNote": "财报币种是韩元，ADS 以美元报价；本平台不做汇率换算，所以需要股价的倍数不计算。1 股 ADS = 0.1 股普通股。净现金：现金 ₩114.5万亿 − 借款 ₩15.8万亿 ≈ ₩98.7万亿（新闻稿）。",
+  "orders": [
+    {
+      "label": "长期协议（LTA）",
+      "text": "已与 14 家主要客户（含全球大型云服务商）签长约，锁定 2027 和 2028 年总产能的一半以上；价格在与客户约定的区间内、反映市场行情；期限一般 5 年，部分客户在谈延长。",
+      "src": "skhy-ir-q3-2026"
+    }
+  ],
+  "customers": [
+    {
+      "label": "最大客户",
+      "text": "2025 年最大客户占营收 23.9%；2026 Q1 前两大客户分别占 14.8% 和 12.4%（招股书未写客户名称）。",
+      "src": "skhy-424b4",
+      "figure": {
+        "value": 23.9,
+        "unit": "%",
+        "manual": true,
+        "src": "skhy-424b4",
+        "period": "FY2025"
+      }
+    },
+    {
+      "label": "产品结构",
+      "text": "2026 Q1 DRAM 占销售额 77.3%、NAND 占 22.0%。HBM 占营收的比例招股书没有披露（招股书引用的 56.4% 是 IDC 的市场份额）。",
+      "src": "skhy-424b4"
+    }
+  ],
+  "governance": [
+    {
+      "label": "最大股东",
+      "text": "SK Square 是最大股东；招股书说发行规模考虑了 SK Square 须持有已发行普通股至少 20% 的要求（具体持股比例读到的部分没有写）。",
+      "src": "skhy-424b4"
+    }
+  ],
+  "prospectus": {
+    "src": "skhy-424b4",
+    "items": [
+      {
+        "topic": "发行",
+        "text": "发行 1.779 亿股美国存托股（ADS），每股 $149，1 股 ADS = 0.1 股普通股，对应新发 1,779万股普通股；募资总额约 $265.1亿，扣除承销折扣后约 $262.5亿。纳斯达克代码 SKHY；普通股继续在韩国交易所交易（000660），7 月 9 日韩国收盘价 ₩2,186,000。",
+        "src": "skhy-424b4"
+      },
+      {
+        "topic": "募资用途",
+        "text": "一般公司用途，包括资本开支；没有指定项目。",
+        "src": "skhy-424b4"
+      },
+      {
+        "topic": "股本和大股东",
+        "text": "发行前 7.111 亿股、发行后 7.289 亿股普通股（不含库存股）。发行规模受 SK Square 须持股至少 20% 的约束。",
+        "src": "skhy-424b4"
+      },
+      {
+        "topic": "锁定期",
+        "text": "90 天，而且不是强制的，取决于公司和部分关联方与承销商的约定。",
+        "src": "skhy-424b4"
+      },
+      {
+        "topic": "上市前的财务",
+        "text": "2025 年营收 ₩97.1万亿（2024 年 ₩66.2万亿），毛利 ₩58.7万亿，年度利润 ₩42.9万亿；2026 Q1 营收 ₩52.6万亿、毛利 ₩41.7万亿、利润 ₩40.3万亿。",
+        "src": "skhy-424b4"
+      },
+      {
+        "topic": "客户和产品集中",
+        "text": "2025 年最大客户占 23.9%；2026 Q1 前两大客户占 14.8% 和 12.4%。DRAM 占 77.3%。",
+        "src": "skhy-424b4"
+      }
+    ]
+  },
+  "checkpoints": [
+    {
+      "metric": "HBM4 成为主力",
+      "condition": "HBM4 按期成为主力产品。",
+      "basis": "11/21 定价依据的“关键条件”",
+      "latest": "新闻稿：预计从第四季度起 HBM4 的出货量和营收超过 HBM3E",
+      "src": "skhy-ir-q3-2026"
+    },
+    {
+      "metric": "长约守住区间下限",
+      "condition": "下行期长约价格守得住约定区间的下限；长约锁的是量，价格随行情在区间内浮动。",
+      "basis": "11/21 定价依据",
+      "latest": "14 家客户、锁定 2027-28 年过半产能；价格“在约定区间内反映市况”",
+      "src": "skhy-ir-q3-2026"
+    },
+    {
+      "metric": "2027 年资本开支",
+      "condition": "资本开支大幅增加、供给在需求放缓时释放，是定价依据写的最大风险。",
+      "basis": "11/21 定价依据",
+      "latest": "新闻稿：明年投资将比今年“大幅增加”（龙仁一厂启动），未给数字",
+      "src": "skhy-ir-q3-2026"
+    }
+  ]
+}

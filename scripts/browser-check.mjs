@@ -93,7 +93,7 @@ const avoided = await evaluate(visibleRows);
 check(avoided.length > 0 && avoided.length < 30, `筛选“回避”后剩 ${avoided.length} 个：${avoided.join('、')}`);
 await click('全部'); await sleep(100);
 await click('按距击球区（近的在前）'); await sleep(200);
-const distances = await evaluate(`[...document.querySelectorAll('tr[data-ticker]')].filter((r) => r.offsetParent).map((r) => parseFloat(r.children[6].textContent.replace('−','-').replace(/[^0-9.+-]/g,''))).map((d) => (Number.isNaN(d) ? null : d))`);
+const distances = await evaluate(`[...document.querySelectorAll('tr[data-ticker]')].filter((r) => r.offsetParent).map((r) => parseFloat(r.querySelector('[data-col="distance"]').textContent.replace('−','-').replace(/[^0-9.+-]/g,''))).map((d) => (Number.isNaN(d) ? null : d))`);
 check(distances.every((d, i) => i === 0 || d === null || (distances[i - 1] !== null && d >= distances[i - 1])), '按距击球区排序后是从小到大');
 await shot('desktop-home-sorted');
 await open('/', 390, 844);
