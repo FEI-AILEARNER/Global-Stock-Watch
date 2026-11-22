@@ -11,7 +11,7 @@
   },
   "strikeNote": "$230-260；<$200击球。11/20收$345.82，仍比$260高约33%",
   "events": "特别委员会对与SpaceX合并的结论（公司未给时间）／1月初 Q4交付量／1月下旬 Q4财报",
-  "contentUpdatedOn": "2026-11-21",
+  "contentUpdatedOn": "2026-11-22",
   "lastPrice": {
     "value": 345.82,
     "asOf": "2026-11-20",
@@ -32,7 +32,7 @@
     {
       "date": "2026-10-22",
       "title": "特斯拉和SpaceX在季报里确认成立特别委员会探讨合并；特斯拉持有约$29亿SpaceX股票",
-      "summary": "Stocktwits据两家公司的季度报告：委员会由独立董事组成，没有谈定任何条款，马斯克不参与。特斯拉3月投了约$20亿买SpaceX普通股（持股不到1%），9月底公允价值$29亿。Q3特斯拉对SpaceX的销售收入$2.21亿，应收SpaceX $7.29亿。合建的Terafab芯片项目初始投资约$168亿；Roadster推到2028年投产。",
+      "summary": "Stocktwits据两家公司的季度报告：委员会由独立董事组成，没有谈定任何条款，马斯克不参与。特斯拉3月投了约$20亿买SpaceX普通股（持股不到1%），9月底公允价值$29亿。Q3特斯拉对SpaceX的销售收入$2.21亿，应收SpaceX $7.29亿。合建的Terafab芯片项目初始投资约$168亿；Roadster推到2028年投产。（11/22独立审核：投资$20亿、对SpaceX销售$2.21亿、应收$7.29亿、公允价值已在10-Q里核对到；“马斯克不参与”“Terafab初始投资约$168亿”没有找到，以媒体说法看待。）",
       "url": "https://stocktwits.com/news-articles/markets/equity/tsla-spcx-boards-confirm-special-committees-on-potential-combination-as-megapack-deals-and-terafab-plans-deepen-ties/cZxwF7cRBDj",
       "sourceType": "media",
       "source": "Stocktwits（据公司季度报告）"
