@@ -566,7 +566,14 @@
       "unit": "股",
       "src": "0001692819-25-000094",
       "note": "一年前封面披露的已发行普通股，截至 2025-10-31"
-    }
+    },
+    "dilutive": [
+      {
+        "label": "回购",
+        "text": "2021 年 11 月以来累计回购约 $67亿，股数约 3.39 亿股、减少约 30%；剩余授权约 $25亿（含新批的 $15亿），预计 2028 年底前完成。",
+        "src": "vst-pr-q3-2026"
+      }
+    ]
   },
   "sources": [
     {
@@ -598,7 +605,153 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281925000094/vistra-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001692819.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "vst-pr-q3-2026",
+      "origin": "document",
+      "form": "新闻稿（8-K 附件）",
+      "period": "2026 Q3（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001692819/000169281926000023/vistra-20260930xearningsre.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Vistra 2026 年第三季度财报新闻稿",
+      "filed": "2026-11-06"
     }
   ],
-  "gaps": []
+  "gaps": [
+    "2026 年 10 月、11 月交易后的备考净债务（新闻稿没有写，本轮未检索到）",
+    "债务到期时间表",
+    "管理层和大股东持股（委托书本轮没有读）"
+  ],
+  "segments": {
+    "period": "2026 Q3",
+    "src": "vst-pr-q3-2026",
+    "rows": [
+      {
+        "name": "德州（Texas）",
+        "revenue": {
+          "value": null,
+          "unit": "USD",
+          "note": "这里不列分部收入",
+          "manual": true
+        },
+        "profit": {
+          "value": 1227000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "vst-pr-q3-2026"
+        }
+      },
+      {
+        "name": "东部（East，含核电）",
+        "revenue": {
+          "value": null,
+          "unit": "USD",
+          "note": "这里不列分部收入",
+          "manual": true
+        },
+        "profit": {
+          "value": 979000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "vst-pr-q3-2026"
+        }
+      },
+      {
+        "name": "零售（Retail）",
+        "revenue": {
+          "value": null,
+          "unit": "USD",
+          "note": "这里不列分部收入",
+          "manual": true
+        },
+        "profit": {
+          "value": 98000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "vst-pr-q3-2026"
+        }
+      },
+      {
+        "name": "西部（West）",
+        "revenue": {
+          "value": null,
+          "unit": "USD",
+          "note": "这里不列分部收入",
+          "manual": true
+        },
+        "profit": {
+          "value": 76000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "vst-pr-q3-2026"
+        }
+      },
+      {
+        "name": "公司及其他、资产关闭",
+        "revenue": {
+          "value": null,
+          "unit": "USD",
+          "note": "这里不列分部收入",
+          "manual": true
+        },
+        "profit": {
+          "value": -20000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "vst-pr-q3-2026",
+          "calc": "公司及其他 −$200万 + 资产关闭 −$1,800万"
+        }
+      }
+    ],
+    "note": "利润一栏是公司口径的“持续经营调整后 EBITDA”（非 GAAP），合计 $23.78亿。新闻稿的分部表不列收入，占比一栏因此为空。"
+  },
+  "guidance": [
+    {
+      "period": "2026 全年",
+      "text": "持续经营调整后 EBITDA $71亿 至 $75亿（中值 $73亿）；增长前调整后自由现金流 $43亿 至 $47亿（中值 $45亿）。",
+      "direction": "raised",
+      "vsText": "新闻稿：上调中值、收窄区间；之前的区间本轮未检索到。",
+      "src": "vst-pr-q3-2026"
+    },
+    {
+      "period": "2027 全年",
+      "text": "调整后 EBITDA $77亿 至 $85亿（中值 $81亿）；增长前调整后自由现金流 $43亿 至 $51亿（中值 $47亿）。",
+      "direction": "initiated",
+      "src": "vst-pr-q3-2026"
+    }
+  ],
+  "orders": [
+    {
+      "label": "对冲比例",
+      "text": "截至 2026-10-30，2027 年预计发电量约 98% 已对冲，2028 年约 78%。",
+      "src": "vst-pr-q3-2026"
+    },
+    {
+      "label": "新签长约",
+      "text": "微软：405MW Pulaski 光伏电站购电协议（期限未写）；New Era Energy and Digital：Odessa 燃气联合循环电厂 20 年、207MW。定价依据里提到的 Meta、AWS 核电长约不在这份新闻稿里，本轮没有重新打开原文。",
+      "src": "vst-pr-q3-2026"
+    }
+  ],
+  "checkpoints": [
+    {
+      "metric": "EV/EBITDA（击球价口径）",
+      "condition": "击球价 $150 ≈ 8.8 倍 2027 调整后 EBITDA 中值 $81亿（净债务按备考估算）；2027 指引下调，同一价格的倍数就变高。",
+      "basis": "11/21 定价依据",
+      "latest": "2027 指引中值 $81亿（首次给出）",
+      "src": "vst-pr-q3-2026"
+    },
+    {
+      "metric": "2028 年对冲比例",
+      "condition": "定价依据写德州政策先影响对冲最少的 2028 年；对冲比例上升说明价格风险在被锁定。",
+      "basis": "11/21 定价依据的“最大的风险”",
+      "latest": "2028 年约 78%",
+      "src": "vst-pr-q3-2026"
+    },
+    {
+      "metric": "德州数据中心政策",
+      "condition": "德州出台实质性的数据中心暂停措施，判断的前提就不成立。",
+      "basis": "11/21 定价依据的“关键条件”"
+    }
+  ],
+  "valuationNote": "公司口径的 EBITDA 是“调整后”数字；这里的 EV/EBITDA 用 GAAP 营业利润 + 折旧摊销，和定价依据里按公司指引算的倍数口径不同。新闻稿提到 10 月和 11 月的交易使备考流动性降到约 $54亿，这些交易对负债的影响没有计入 9-30 的数字。"
 }

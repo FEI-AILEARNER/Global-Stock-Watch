@@ -546,23 +546,35 @@
       ]
     },
     "debt": {
-      "value": 2097771000,
+      "value": 2109500000.0,
       "unit": "USD",
-      "src": "0001418819-26-000052",
+      "manual": true,
+      "src": "irdm-10q-q3-2026",
       "parts": [
         {
-          "label": "长期信贷额度借款",
-          "value": 1924982000,
-          "tag": "LongTermLineOfCredit"
-        },
-        {
-          "label": "NotesPayableCurrent",
-          "value": 172789000,
-          "tag": "NotesPayableCurrent"
+          "label": "定期贷款和 Aireon 两笔贷款（面值合计）",
+          "value": 2109500000.0
         }
       ],
-      "note": "按 XBRL 标签取：定期贷款（LongTermLineOfCredit）加一年内到期部分（NotesPayableCurrent），须对照原文"
-    }
+      "note": "10-Q：扣除未摊销融资费用后账面 $20.893亿。循环贷款另有 $5,000万 未偿还，原文没说是否已含在内，这里没有加"
+    },
+    "maturities": [
+      {
+        "label": "定期贷款",
+        "text": "2030 年 9 月到期，SOFR + 2.25%（SOFR 下限 0.75%），每年还本 $1,830万。",
+        "src": "irdm-10q-q3-2026"
+      },
+      {
+        "label": "Aireon 两笔贷款",
+        "text": "定期贷款 $1.75亿（2028-10-10 到期，SOFR + 6.25%）；卖方贷款面值 $1.834亿、不计息，2027 年 7 月（交割后一年）到期，账面 $1.728亿。",
+        "src": "irdm-10q-q3-2026"
+      },
+      {
+        "label": "循环贷款",
+        "text": "额度 $1亿，已用 $5,000万，2028 年 9 月到期。",
+        "src": "irdm-10q-q3-2026"
+      }
+    ]
   },
   "shares": {
     "outstanding": {
@@ -576,7 +588,14 @@
       "unit": "股",
       "src": "0001418819-25-000009",
       "note": "一年前封面披露的已发行普通股，截至 2025-10-16"
-    }
+    },
+    "dilutive": [
+      {
+        "label": "回购",
+        "text": "2026 年前三季没有回购，董事会 2026-06-28 终止了回购计划（合并协议签署后）。",
+        "src": "irdm-10q-q3-2026"
+      }
+    ]
   },
   "sources": [
     {
@@ -608,7 +627,127 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1418819/000141881925000009/irdm-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001418819.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "irdm-10q-q3-2026",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2026 Q3（截至 2026-09-30）；封面股数截至 2026-10-13",
+      "url": "https://www.sec.gov/Archives/edgar/data/1418819/000141881926000052/irdm-20260930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Iridium 2026 年第三季度 10-Q",
+      "filed": "2026-10-20"
     }
   ],
-  "gaps": []
+  "gaps": [
+    "分手费里 Rocket Lab 一方要付的金额（读到的部分没有写）",
+    "管理层和大股东持股（委托书本轮没有读）"
+  ],
+  "segments": {
+    "period": "2026 Q3",
+    "src": "irdm-10q-q3-2026",
+    "rows": [
+      {
+        "name": "商业语音和数据",
+        "revenue": {
+          "value": 58002000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "irdm-10q-q3-2026"
+        }
+      },
+      {
+        "name": "物联网数据",
+        "revenue": {
+          "value": 48669000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "irdm-10q-q3-2026"
+        }
+      },
+      {
+        "name": "宽带",
+        "revenue": {
+          "value": 11822000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "irdm-10q-q3-2026"
+        }
+      },
+      {
+        "name": "托管载荷及其他数据",
+        "revenue": {
+          "value": 41432000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "irdm-10q-q3-2026"
+        }
+      },
+      {
+        "name": "政府服务",
+        "revenue": {
+          "value": 27573000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "irdm-10q-q3-2026"
+        }
+      },
+      {
+        "name": "工程和支持服务",
+        "revenue": {
+          "value": 39190000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "irdm-10q-q3-2026"
+        }
+      },
+      {
+        "name": "终端设备",
+        "revenue": {
+          "value": 19045000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "irdm-10q-q3-2026"
+        }
+      }
+    ],
+    "note": "按收入类型分，公司不披露各类型的利润。合计 $2.457亿。"
+  },
+  "customers": [
+    {
+      "label": "美国政府 EMSS 合同",
+      "text": "2019 年 9 月签订，服务费固定为每年 $1.105亿；美国太空军 2026-09-11 行使选择权延到 2027 年 3 月，费率不变，公司预计 2027 年续签。",
+      "src": "irdm-10q-q3-2026",
+      "figure": {
+        "value": 110500000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "irdm-10q-q3-2026",
+        "period": "每年"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "label": "与 Rocket Lab 的合并协议",
+      "text": "每股换 $27.00 现金加 Rocket Lab 股票：RKLB 股价 ≤ $67.50 时换 0.4000 股，≥ $112.50 时换 0.2400 股，中间按 $27 ÷ RKLB 股价。反垄断等待期 2026-08-12 届满，股东 9-24 批准；FCC 和其他外国投资、卫星电信审批仍待完成，预计 2027 年年中前交割。某些情况下 Iridium 要付 $2.236亿 分手费。",
+      "src": "irdm-10q-q3-2026"
+    }
+  ],
+  "checkpoints": [
+    {
+      "metric": "隐含对价和价差",
+      "condition": "隐含对价 = $27 + 0.40 × RKLB 股价（RKLB ≤ $67.50 时）；击球价 $40 对应约 13% 的毛价差，价差变小就继续等。",
+      "basis": "11/21 定价依据（套利重算）",
+      "latest": "10-Q 确认交换比例和区间",
+      "src": "irdm-10q-q3-2026"
+    },
+    {
+      "metric": "FCC 审批",
+      "condition": "FCC 批准、2027 年年中前交割；交易告吹时手里是一家净负债约 $20亿 的卫星运营商。",
+      "basis": "11/21 定价依据的“关键条件”和“最大的风险”",
+      "latest": "10-Q：FCC 同意仍是待完成的交割条件",
+      "src": "irdm-10q-q3-2026"
+    }
+  ]
 }
