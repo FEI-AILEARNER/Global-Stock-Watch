@@ -11,7 +11,7 @@
   },
   "strikeNote": "$8-10：（现金及投资$18.1亿＋DOE对Long Mott的分摊约$21.5亿）÷约4.07亿股≈$9.7。11/20收$8.79",
   "events": "2027：Dow对Long Mott的初步投资决定／TX-1燃料厂设备安装",
-  "contentUpdatedOn": "2026-11-21",
+  "contentUpdatedOn": "2026-11-22",
   "lastPrice": {
     "value": 8.79,
     "asOf": "2026-11-20",
@@ -40,7 +40,7 @@
     {
       "date": "2026-11-10",
       "title": "NRC向Dow的Long Mott项目发出建造许可（四台Xe-100，共320MWe）",
-      "summary": "美国核学会：许可比计划提前一个多月，是先进堆里程碑。但文章同时写明，许可不等于开工——Dow的初步投资决定要到2027年，商运预计在2030年代初；能源部在先进堆示范计划下分摊约$21.5亿。按“里程碑兑现即减持”的纪律，许可落地本身是兑现日而不是买入理由。",
+      "summary": "美国核学会：许可来得“比预期早”（X-energy CEO的说法），在NRC 18个月的审查目标之内，没有说提前了多少；是先进堆里程碑。文章同时写明，许可不等于开工——Dow的初步投资决定预计在2027年，商运预计在2030年代初；文章说项目已获能源部约$21.5亿的成本分摊（这个数字与招股书写的“最多报销$12亿”不一致，见估值区块的说明）。按“里程碑兑现即减持”的纪律，许可落地本身是兑现日而不是买入理由。",
       "url": "https://www.ans.org/news/article-8573/nrc-issues-construction-permit-for-dowxenergy-long-mott-project/",
       "sourceType": "media",
       "source": "美国核学会 Nuclear Newswire"

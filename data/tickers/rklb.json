@@ -11,7 +11,7 @@
   },
   "strikeNote": "$35-40（Neutron前）；$40≈24倍年化Q4指引营收的市销率。11/20收$45.42，高约14%",
   "events": "★1月 Neutron贮箱水压／低温鉴定；FCC对收购Iridium的裁定；2月 Q4财报",
-  "contentUpdatedOn": "2026-11-21",
+  "contentUpdatedOn": "2026-11-22",
   "lastPrice": {
     "value": 45.42,
     "asOf": "2026-11-20",
@@ -40,7 +40,7 @@
     {
       "date": "2026-09-15",
       "title": "FCC就Rocket Lab收购Iridium的牌照转让征求意见，答辩期11/9结束",
-      "summary": "FCC公告（GN Docket 26-257）：意见10/15截止、答复10/30、再答复11/9。Team Telecom没有被正式转介，因为Iridium现有的网络安全协议在交割后继续适用。答辩期已经走完，接下来等FCC裁定，没有法定期限。",
+      "summary": "FCC公告（GN Docket 26-257）：意见10/15截止、答复10/30、再答复11/9。Team Telecom没有被正式转介，因为Iridium现有的网络安全协议在交割后继续适用。答辩期已经走完，接下来等FCC裁定；公告本身没有写裁定期限。",
       "url": "https://docs.fcc.gov/public/attachments/DA-26-985A1.txt",
       "sourceType": "official",
       "source": "FCC 公告 DA 26-985"

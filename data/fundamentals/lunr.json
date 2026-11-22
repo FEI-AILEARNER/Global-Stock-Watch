@@ -573,10 +573,21 @@
       "note": "10-Q 封面，截至 2026-11-05；B 类为 0。按 A 类 + C 类合计"
     },
     "outstandingYearAgo": {
-      "value": 84172557,
+      "value": 180219048,
       "unit": "股",
-      "src": "0001213900-23-024857",
-      "note": "一年前封面披露的已发行普通股，截至 2023-03-29"
+      "manual": true,
+      "src": "lunr-10q-q3-2025",
+      "parts": [
+        {
+          "label": "A 类",
+          "value": 119319784
+        },
+        {
+          "label": "C 类",
+          "value": 60899264
+        }
+      ],
+      "note": "约一年前 10-Q 封面披露的已发行普通股，截至 2025-11-10（与 2026-11-05 相隔 360 天）；B 类为 0"
     },
     "dilutive": [
       {
@@ -628,16 +639,6 @@
       "checkedOn": "2026-11-22"
     },
     {
-      "id": "0001213900-23-024857",
-      "origin": "xbrl",
-      "form": "10-K",
-      "filed": "2023-03-31",
-      "period": "截至 2022-12-31 的财年",
-      "url": "https://www.sec.gov/Archives/edgar/data/1844452/000121390023024857/f10k2022_intuitivemac.htm",
-      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001844452.json",
-      "checkedOn": "2026-11-22"
-    },
-    {
       "id": "lunr-10q-q3-2026",
       "origin": "document",
       "form": "10-Q",
@@ -656,6 +657,16 @@
       "checkedOn": "2026-11-22",
       "title": "Intuitive Machines 2026 年委托书",
       "filed": "2026-04-24"
+    },
+    {
+      "id": "lunr-10q-q3-2025",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2025 Q3；封面股数截至 2025-11-10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1844452/000162828025052039/lunr-20250930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Intuitive Machines 2025 年第三季度 10-Q",
+      "filed": "2025-11-13"
     }
   ],
   "gaps": [

@@ -11,7 +11,7 @@
   },
   "strikeNote": "$14-18（期权费合理区）：每股现金及有价证券约$16.0；$18≈现金的1.12倍。11/20收$19.85",
   "events": "未来12个月：Aurora-INL主设备安装／2027：首批同位素交付",
-  "contentUpdatedOn": "2026-11-21",
+  "contentUpdatedOn": "2026-11-22",
   "lastPrice": {
     "value": 19.85,
     "asOf": "2026-11-20",
@@ -39,11 +39,11 @@
     },
     {
       "date": "2026-11-06",
-      "title": "Q3电话会：Aurora-INL启动时间从“2028年”改口为“2028-2029年”，PJM并网申请被撤回",
-      "summary": "Earnings Whispers（Finviz刊载）：此前三个季度管理层一直说2028年。PJM撤回了它在弗吉尼亚的并网申请，FERC驳回了公司的申诉；与Meta在俄亥俄的协议对建堆不具约束力，当地PJM流程约需24个月。首批同位素交付推到2027年。全年经营现金支出指引$1.2-1.5亿、资本开支$4-5亿。",
-      "url": "https://finviz.com/news/418461/oklo-narrows-its-loss-against-expectations-but-an-aurora-slip-and-pjm-setback-overshadow-construction-progress",
-      "sourceType": "media",
-      "source": "Earnings Whispers（Finviz 刊载）"
+      "title": "10-Q：首座Aurora目标“2028-2029年”，全年资本开支$4-5亿",
+      "summary": "公司10-Q：首座Aurora电站的目标是“2028-2029年”部署（定价依据记录此前说的是2028年）。与Meta的预付协议是Meta为电力预付款并资助电站部署的“框架”，用于推进俄亥俄州Pike County 1.2GW的电力园区，是否具约束力10-Q没有写。2026年经营现金支出预计$1.2亿至$1.5亿，资本开支$4亿至$5亿。Earnings Whispers文章说PJM撤回了它在弗吉尼亚的并网申请，这一点在10-Q读到的部分没有找到。",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026071319/oklo-20260930.htm",
+      "sourceType": "official",
+      "source": "SEC 文件：10-Q"
     }
   ],
   "rationale": [

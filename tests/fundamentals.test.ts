@@ -5,6 +5,7 @@ import test from 'node:test';
 import { homeInputs, money, ttm, usdReportedPe, valuation } from '../lib/fundamentals.ts';
 import type { Fundamentals } from '../lib/fundamentals.ts';
 import { readRaw } from '../lib/load.ts';
+import { pickYearAgo } from '../scripts/fundamentals/pick.ts';
 import { validateDataset } from '../lib/validate.ts';
 
 const dir = path.resolve(import.meta.dirname, '..', 'data');
@@ -104,4 +105,19 @@ test('非美元公司：只用公司自报的单季每 ADR 美元收益，× 4 �
   const twd: Fundamentals = { ...sample, currency: 'TWD', usdReported: { quarterEpsPerAdr: { value: 4.6, unit: 'USD/ADR', src: 's', period: 'Q3' } } };
   assert.equal(usdReportedPe(twd, 330)!.value, 330 / 18.4);
   assert.equal(usdReportedPe(sample, 330), null);
+});
+
+test('“一年前”的股数只在 300 到 400 天前的窗口里找（审核发现的 LEU、LUNR 错误）', () => {
+  const facts = [
+    { end: '2022-03-01', val: 13_673_933, accn: 'old' },
+    { end: '2025-11-01', val: 17_492_832, accn: 'a' },
+    { end: '2025-11-01', val: 719_200, accn: 'a' },
+    { end: '2026-08-01', val: 20_000_000, accn: 'b' },
+  ];
+  const got = pickYearAgo(facts, '2026-11-01');
+  assert.deepEqual(got.map((f) => f.val), [17_492_832, 719_200]);
+  // 中间断档时不能退回到几年前的数字。
+  assert.deepEqual(pickYearAgo([facts[0]!], '2026-11-01'), []);
+  // 窗口里有两期时取离 365 天最近的一期。
+  assert.equal(pickYearAgo([{ end: '2025-07-31', val: 1, accn: 'x' }, { end: '2025-10-31', val: 2, accn: 'y' }], '2026-10-31')[0]!.val, 2);
 });

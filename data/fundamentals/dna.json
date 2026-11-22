@@ -532,24 +532,24 @@
   "balance": {
     "date": "2026-09-30",
     "cash": {
-      "value": 285361000.0,
+      "value": 285361000,
       "unit": "USD",
       "manual": true,
       "src": "dna-10q-q3-2026",
       "parts": [
         {
           "label": "现金及现金等价物",
-          "value": 84504000.0
+          "value": 84504000
         },
         {
           "label": "有价证券（流动）",
-          "value": 200857000.0
+          "value": 200857000
         }
       ],
       "note": "不含非流动的受限现金和有价证券 $8,424万"
     },
     "debt": {
-      "value": 0.0,
+      "value": 0,
       "unit": "USD",
       "manual": true,
       "src": "dna-10q-q3-2026",
@@ -577,6 +577,11 @@
         }
       ],
       "note": "10-Q 封面，截至 2026-10-30"
+    },
+    "outstandingYearAgo": {
+      "value": null,
+      "unit": "股",
+      "note": "本轮未检索到（XBRL 封面股数在 2026-10-30 之前 300 到 400 天内没有数据，多类股份公司常见；须从一年前的 10-Q 封面人工录入）"
     }
   },
   "sources": [

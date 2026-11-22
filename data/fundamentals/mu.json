@@ -447,7 +447,7 @@
       "value": 1122466035,
       "unit": "股",
       "src": "0000723125-25-000028",
-      "note": "一年前封面披露的已发行普通股，截至 2025-09-26"
+      "note": "约一年前封面披露的已发行普通股（与 2026-10-02 相隔 371 天），截至 2025-09-26"
     },
     "dilutive": [
       {
@@ -524,7 +524,7 @@
       {
         "name": "云存储（Cloud Memory）",
         "revenue": {
-          "value": 16283000000.0,
+          "value": 16283000000,
           "unit": "USD",
           "manual": true,
           "src": "mu-pr-fq4-2026"
@@ -534,7 +534,7 @@
       {
         "name": "核心数据中心",
         "revenue": {
-          "value": 18002000000.0,
+          "value": 18002000000,
           "unit": "USD",
           "manual": true,
           "src": "mu-pr-fq4-2026"
@@ -544,7 +544,7 @@
       {
         "name": "手机和个人电脑",
         "revenue": {
-          "value": 13114000000.0,
+          "value": 13114000000,
           "unit": "USD",
           "manual": true,
           "src": "mu-pr-fq4-2026"
@@ -554,7 +554,7 @@
       {
         "name": "汽车和嵌入式",
         "revenue": {
-          "value": 6824000000.0,
+          "value": 6824000000,
           "unit": "USD",
           "manual": true,
           "src": "mu-pr-fq4-2026"

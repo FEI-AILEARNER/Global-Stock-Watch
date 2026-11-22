@@ -11,7 +11,7 @@
   },
   "strikeNote": "$120-125（约24倍2027E EPS）；11/20收$108.54，约21倍2027E、23倍2026指引EPS",
   "events": "2月 Q4财报／首张美国新建核电设备订单（最迟2027上半年）",
-  "contentUpdatedOn": "2026-11-21",
+  "contentUpdatedOn": "2026-11-22",
   "lastPrice": {
     "value": 108.54,
     "asOf": "2026-11-20",
@@ -49,18 +49,18 @@
     {
       "date": "2026-10-27",
       "title": "与Antares签多年期TRISO核燃料生产合同",
-      "summary": "公司新闻列表：BWXT Advanced Fuels与微堆公司Antares签订多年期商业协议，为其生产TRISO燃料。金额未在列表中披露。意义在于商业客户开始为先进堆燃料付钱，而不只是政府项目。",
-      "url": "https://www.bwxt.com/category/investors",
+      "summary": "公司新闻稿：子公司BWXT Advanced Fuels与微堆公司Antares签订多年期商业协议，为其生产TRISO燃料，初始分配1吨铀（MTU），可随Antares的需要增加；在弗吉尼亚州Lynchburg的TRISO产线生产，具体数量和交付由以后的任务单确定。金额没有披露。意义在于商业客户开始为先进堆燃料付钱，而不只是政府项目。",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/bwxt-announces-contract-antares-triso-nuclear-fuel-production",
       "sourceType": "official",
-      "source": "BWXT 官网新闻列表"
+      "source": "BWXT 投资者关系：新闻稿"
     },
     {
       "date": "2026-10-01",
       "title": "获约$1.89亿海军核反应堆燃料合同",
-      "summary": "公司新闻列表：合同金额约$1.89亿，内容是制造海军核反应堆燃料。这是它的基本盘——海军核动力的独家供应商——的例行续单。",
-      "url": "https://www.bwxt.com/category/investors",
+      "summary": "公司新闻稿：子公司Nuclear Fuel Services（田纳西州Erwin）获约$1.89亿合同，为美国海军核动力计划制造和交付反应堆燃料，预计2027年8月完成。新闻稿说Erwin工厂加工高浓铀、为美国全部海军核反应堆制造燃料。这是它基本盘的例行续单。",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/bwxt-awarded-189-million-naval-nuclear-fuel-contract",
       "sourceType": "official",
-      "source": "BWXT 官网新闻列表"
+      "source": "BWXT 投资者关系：新闻稿"
     }
   ],
   "rationale": [

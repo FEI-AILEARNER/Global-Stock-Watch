@@ -571,10 +571,21 @@
       "note": "10-Q 封面，截至 2026-11-01"
     },
     "outstandingYearAgo": {
-      "value": 13673933,
+      "value": 18212032,
       "unit": "股",
-      "src": "0001065059-22-000012",
-      "note": "一年前封面披露的已发行普通股，截至 2022-03-01"
+      "manual": true,
+      "src": "leu-10q-q3-2025",
+      "parts": [
+        {
+          "label": "A 类",
+          "value": 17492832
+        },
+        {
+          "label": "B 类",
+          "value": 719200
+        }
+      ],
+      "note": "约一年前 10-Q 封面披露的已发行普通股，截至 2025-11-01（与 2026-11-01 相隔 365 天）"
     },
     "dilutive": [
       {
@@ -582,7 +593,7 @@
         "text": "本金 $4.025亿，年利率 2.25%；转换比例每 $1,000 本金 10.2564 股，即转股价约 $97.50，全部转换约 413万股（算术）。2025 年底的公允价值约 $11亿，远高于本金。",
         "src": "leu-10k-2025",
         "figure": {
-          "value": 402500000.0,
+          "value": 402500000,
           "unit": "USD",
           "manual": true,
           "src": "leu-10q-q3-2026",
@@ -594,7 +605,7 @@
         "text": "本金 $8.05亿，零息；转换比例每 $1,000 本金 4.3551 股，即转股价约 $229.62，全部转换约 351万股（算术）。两笔合计约 764万股，约为现有 2,062万股的 37%。上限期权（capped call）在 10-K 读到的部分没有。",
         "src": "leu-10k-2025",
         "figure": {
-          "value": 805000000.0,
+          "value": 805000000,
           "unit": "USD",
           "manual": true,
           "src": "leu-10q-q3-2026",
@@ -621,16 +632,6 @@
       "filed": "2026-11-05",
       "period": "FY2026 Q3（截至 2026-09-30）",
       "url": "https://www.sec.gov/Archives/edgar/data/1065059/000162828026070557/leu-20260930.htm",
-      "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001065059.json",
-      "checkedOn": "2026-11-22"
-    },
-    {
-      "id": "0001065059-22-000012",
-      "origin": "xbrl",
-      "form": "10-K",
-      "filed": "2022-03-11",
-      "period": "截至 2021-12-31 的财年",
-      "url": "https://www.sec.gov/Archives/edgar/data/1065059/000106505922000012/leu-20211231.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001065059.json",
       "checkedOn": "2026-11-22"
     },
@@ -663,6 +664,16 @@
       "checkedOn": "2026-11-22",
       "title": "Centrus 2026 年委托书",
       "filed": "2026-04-24"
+    },
+    {
+      "id": "leu-10q-q3-2025",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2025 Q3；封面股数截至 2025-11-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065059/000162828025049844/leu-20250930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Centrus 2025 年第三季度 10-Q",
+      "filed": "2025-11-06"
     }
   ],
   "gaps": [

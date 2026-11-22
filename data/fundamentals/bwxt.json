@@ -572,7 +572,7 @@
       "value": 91426744,
       "unit": "股",
       "src": "0001486957-25-000059",
-      "note": "一年前封面披露的已发行普通股，截至 2025-10-30"
+      "note": "约一年前封面披露的已发行普通股（与 2026-10-30 相隔 365 天），截至 2025-10-30"
     },
     "dilutive": [
       {
@@ -658,13 +658,13 @@
       {
         "name": "政府业务（海军核反应堆等）",
         "revenue": {
-          "value": 639100000.0,
+          "value": 639100000,
           "unit": "USD",
           "manual": true,
           "src": "bwxt-pr-q3-2026"
         },
         "profit": {
-          "value": 122600000.0,
+          "value": 122600000,
           "unit": "USD",
           "manual": true,
           "src": "bwxt-pr-q3-2026"
@@ -673,13 +673,13 @@
       {
         "name": "商业业务（民用核电）",
         "revenue": {
-          "value": 314200000.0,
+          "value": 314200000,
           "unit": "USD",
           "manual": true,
           "src": "bwxt-pr-q3-2026"
         },
         "profit": {
-          "value": 26300000.0,
+          "value": 26300000,
           "unit": "USD",
           "manual": true,
           "src": "bwxt-pr-q3-2026"
@@ -694,7 +694,7 @@
       "text": "截至 2026-09-30 积压 $85.6亿：政府 $64.8亿、商业 $20.7亿。Q3 新订单 $5.38亿（政府 $3.23亿、商业 $2.15亿）。",
       "src": "bwxt-pr-q3-2026",
       "figure": {
-        "value": 8556190000.0,
+        "value": 8556190000,
         "unit": "USD",
         "manual": true,
         "src": "bwxt-pr-q3-2026",

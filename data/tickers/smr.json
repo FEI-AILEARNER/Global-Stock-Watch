@@ -11,7 +11,7 @@
   },
   "strikeNote": "≤$4.5（约等于每股现金及投资$4.33），且须先有事实催化（TVA购电协议或设备订单签约、集体诉讼有结论）",
   "events": "ENTRA1–TVA购电协议是否签署／集体诉讼驳回动议的裁定",
-  "contentUpdatedOn": "2026-11-21",
+  "contentUpdatedOn": "2026-11-22",
   "lastPrice": {
     "value": 3.36,
     "asOf": "2026-11-20",
@@ -40,19 +40,19 @@
     },
     {
       "date": "2026-11-05",
-      "title": "Q3财报：营收$28万，净亏损$4,570万，现金及投资约$18.6亿",
-      "summary": "公司新闻稿：营收从去年同期的$824万降到$28万。与斗山签约制造反应堆模块的上部冷却剂系统。公司称“继续支持”ENTRA1与TVA的对话，没有报告已签署的协议。期末A类4.105亿股、B类0.193亿股。",
-      "url": "https://greenstocknews.com/news/nyse/smr/nuscale-power-reports-third-quarter-2026-results",
+      "title": "Q3财报：营收同比减少$800万，现金及投资约$19亿",
+      "summary": "公司新闻稿：营收和销售成本同比分别减少$800万和$540万；期末现金、现金等价物和短期、长期投资合计约$19亿。与斗山签约制造反应堆模块最复杂的基础部件（上部冷却剂系统）。公司“继续支持”商业伙伴ENTRA1与TVA的讨论，没有报告已签署的协议。（营收$28万和股数A类4.106亿、B类0.193亿见10-Q。）",
+      "url": "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-third-quarter-2026-results",
       "sourceType": "official",
-      "source": "NuScale 新闻稿（Green Stock News 转载全文）"
+      "source": "NuScale 官网：财报新闻稿"
     },
     {
       "date": "2026-11-05",
-      "title": "电话会：TVA购电协议公布14个月仍未签，管理层不再给时间表",
-      "summary": "Earnings Whispers（Finviz刊载）：管理层原先的目标是2025年底前签约，后来说2026年“很有可能”，这次只说过程“漫长”。CFO还说明购电协议不等于模块销售，之后还需要单独的设备协议。公司不再预期2026年底前经营现金流转正。",
-      "url": "https://finviz.com/news/418162/nuscale-matches-loss-estimate-as-doosan-build-begins-but-the-unsigned-tva-deal-leaves-revenue-near-zero",
-      "sourceType": "media",
-      "source": "Earnings Whispers（Finviz 刊载）"
+      "title": "电话会：TVA购电协议没有给时间表，CFO说购电协议不等于卖模块",
+      "summary": "公司公布的电话会文字稿：CEO Hopkins说过程“很漫长，我们知道”，对机会保持乐观，有进展再更新，没有给时间表。CFO Hamady说购电协议本身不是模块销售，之后还要做前期工程、建造和运营许可申请等，模块销售要另签NuScale与ENTRA1之间的OEM协议。管理层没有给经营现金流转正的展望，只说资本投放会“审慎”，存货投入会通过模块销售收回。",
+      "url": "https://www.nuscalepower.com/hubfs/Website/Investors/2026/SMR-3Q26-Transcript.pdf?hsLang=en",
+      "sourceType": "official",
+      "source": "NuScale 官网：Q3 电话会文字稿"
     }
   ],
   "rationale": [

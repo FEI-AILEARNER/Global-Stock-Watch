@@ -579,22 +579,22 @@
   },
   "shares": {
     "outstanding": {
-      "value": 12294000000.0,
+      "value": 12294000000,
       "unit": "股",
       "manual": true,
       "src": "googl-10q-q3-2026",
       "parts": [
         {
           "label": "A 类（每股 1 票）",
-          "value": 5888000000.0
+          "value": 5888000000
         },
         {
           "label": "B 类（每股 10 票）",
-          "value": 827000000.0
+          "value": 827000000
         },
         {
           "label": "C 类（无表决权）",
-          "value": 5579000000.0
+          "value": 5579000000
         }
       ],
       "note": "10-Q 封面，截至 2026-10-21（以百万股为单位）"
@@ -605,7 +605,12 @@
         "text": "2026 年前三季没有回购；同期发债净得 $852.2亿，长期债务从 2025 年底 $465.5亿 升到 $1,251亿。",
         "src": "googl-10q-q3-2026"
       }
-    ]
+    ],
+    "outstandingYearAgo": {
+      "value": null,
+      "unit": "股",
+      "note": "本轮未检索到（XBRL 封面股数在 2026-10-21 之前 300 到 400 天内没有数据，多类股份公司常见；须从一年前的 10-Q 封面人工录入）"
+    }
   },
   "sources": [
     {
@@ -700,7 +705,7 @@
       {
         "name": "Google 服务",
         "revenue": {
-          "value": 96302000000.0,
+          "value": 96302000000,
           "unit": "USD",
           "manual": true,
           "src": "googl-10q-q3-2026"
@@ -709,7 +714,7 @@
       {
         "name": "Google 云",
         "revenue": {
-          "value": 30709000000.0,
+          "value": 30709000000,
           "unit": "USD",
           "manual": true,
           "src": "googl-10q-q3-2026"
@@ -718,7 +723,7 @@
       {
         "name": "其他业务（Other Bets）",
         "revenue": {
-          "value": 372000000.0,
+          "value": 372000000,
           "unit": "USD",
           "manual": true,
           "src": "googl-10q-q3-2026"
@@ -733,7 +738,7 @@
       "text": "截至 2026-09-30 总积压 $5,677亿，其中 Google 云 $5,608亿；公司预计其中略多于 55% 在未来 24 个月确认。",
       "src": "googl-10q-q3-2026",
       "figure": {
-        "value": 567700000000.0,
+        "value": 567700000000,
         "unit": "USD",
         "manual": true,
         "src": "googl-10q-q3-2026",

@@ -574,7 +574,7 @@
       "value": 3325819167,
       "unit": "股",
       "src": "0001628280-25-045968",
-      "note": "一年前封面披露的已发行普通股，截至 2025-10-16"
+      "note": "约一年前封面披露的已发行普通股（与 2026-10-15 相隔 364 天），截至 2025-10-16"
     },
     "dilutive": [
       {
@@ -670,13 +670,13 @@
       {
         "name": "汽车（其中监管积分 $1.13亿）",
         "revenue": {
-          "value": 20560000000.0,
+          "value": 20560000000,
           "unit": "USD",
           "manual": true,
           "src": "tsla-10q-q3-2026"
         },
         "profit": {
-          "value": 3806000000.0,
+          "value": 3806000000,
           "unit": "USD",
           "manual": true,
           "src": "tsla-10q-q3-2026",
@@ -686,13 +686,13 @@
       {
         "name": "能源发电和储能",
         "revenue": {
-          "value": 2881000000.0,
+          "value": 2881000000,
           "unit": "USD",
           "manual": true,
           "src": "tsla-10q-q3-2026"
         },
         "profit": {
-          "value": 954000000.0,
+          "value": 954000000,
           "unit": "USD",
           "manual": true,
           "src": "tsla-10q-q3-2026",
@@ -702,13 +702,13 @@
       {
         "name": "服务和其他",
         "revenue": {
-          "value": 4605000000.0,
+          "value": 4605000000,
           "unit": "USD",
           "manual": true,
           "src": "tsla-10q-q3-2026"
         },
         "profit": {
-          "value": 734000000.0,
+          "value": 734000000,
           "unit": "USD",
           "manual": true,
           "src": "tsla-10q-q3-2026",
@@ -724,7 +724,7 @@
       "text": "汽车销售相关的递延收入（联网、FSD 监督版、免费超充、远程升级）$40.8亿，2025 年底 $38.7亿。",
       "src": "tsla-10q-q3-2026",
       "figure": {
-        "value": 4080000000.0,
+        "value": 4080000000,
         "unit": "USD",
         "manual": true,
         "src": "tsla-10q-q3-2026",

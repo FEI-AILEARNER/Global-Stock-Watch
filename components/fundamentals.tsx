@@ -281,7 +281,7 @@ export function CapitalSection({ f }: { f: Fundamentals }) {
             <Fact
               label="一年来股数变化"
               x={now === null || ago === null ? <span className="text-xs text-ink-soft">算不出</span> : <span className="num">{pct(now / ago - 1, 1)}</span>}
-              detail={ago !== null ? `对比：${sh.outstandingYearAgo?.note ?? ''}` : undefined}
+              detail={sh.outstandingYearAgo ? (ago !== null ? `对比：${sh.outstandingYearAgo.note ?? ''}` : sh.outstandingYearAgo.note) : undefined}
             />
             {f.flows?.buybacks && (
             <Fact

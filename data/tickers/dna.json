@@ -11,7 +11,7 @@
   },
   "strikeNote": "$5-6现金价值区：不受限现金及有价证券每股约$4.4，加上受限部分约$5.7。11/20收$7.46",
   "events": "3月初 Q4财报（全年现金消耗指引$1.25-1.5亿）",
-  "contentUpdatedOn": "2026-11-21",
+  "contentUpdatedOn": "2026-11-22",
   "lastPrice": {
     "value": 7.46,
     "asOf": "2026-11-20",
@@ -23,19 +23,19 @@
   "keyItems": [
     {
       "date": "2026-11-05",
-      "title": "Q3：营收$2,770万（同比约-6%），调整后EBITDA -$2,200万，重申全年现金消耗$1.25-1.5亿",
-      "summary": "Earnings Whispers（Finviz刊载）：营收高于预期部分来自一份合同修改的一次性追补。前九个月现金消耗约$1.2亿，Q3为$2,700万。公司没有给营收指引，也没有2027展望。财报前股价$11.65——11/20已到$7.46。",
-      "url": "https://finviz.com/news/418032/ginkgo-bioworks-misses-on-eps-but-a-revenue-beat-narrowing-losses-and-a-novo-lab-sale-advance-its-autonomous-lab-pivot",
-      "sourceType": "media",
-      "source": "Earnings Whispers（Finviz 刊载）"
+      "title": "Q3：营收$2,800万（去年$2,900万），调整后EBITDA -$2,200万，重申全年现金消耗$1.25-1.5亿",
+      "summary": "公司新闻稿：现金、现金等价物和有价证券$2.85亿；调整后EBITDA从去年同期的-$5,300万收窄到-$2,200万；重申2026年总现金消耗$1.25亿至$1.5亿。新闻稿没有给营收指引。",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026071022/ex991earningspr.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件 99.1）：财报新闻稿"
     },
     {
       "date": "2026-11-05",
-      "title": "转向卖“自动化实验室”：首套卖给诺和诺德",
-      "summary": "同一篇报道：首套自动化实验室卖给Novo Nordisk的Waltham研发中心，硬件收入要到安装时才确认（通常下单后6至12个月）；另有ARPA-H分包合同（最高$1,750万）和NSF项目下的高校订单。商业模式从“细胞编程平台”改成卖设备和服务，原来的平台经济学仍未被验证。",
-      "url": "https://finviz.com/news/418032/ginkgo-bioworks-misses-on-eps-but-a-revenue-beat-narrowing-losses-and-a-novo-lab-sale-advance-its-autonomous-lab-pivot",
-      "sourceType": "media",
-      "source": "Earnings Whispers（Finviz 刊载）"
+      "title": "转向卖“自动化实验室”：首套卖到Novo的Waltham研发中心",
+      "summary": "同一份新闻稿：向一家顶级药企在Novo新的马萨诸塞州Waltham研发中心出售自主实验室（新闻稿只写“Novo”，没有给价格和条款）；另有ARPA-H最高$1,750万的分包合同，把其自动化设备用于RNA药物生产。硬件收入何时确认新闻稿没有写。商业模式从“细胞编程平台”改成卖设备和服务，原来的平台经济学仍未被验证。",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026071022/ex991earningspr.htm",
+      "sourceType": "official",
+      "source": "SEC 文件（8-K 附件 99.1）：财报新闻稿"
     },
     {
       "date": "2026-11",

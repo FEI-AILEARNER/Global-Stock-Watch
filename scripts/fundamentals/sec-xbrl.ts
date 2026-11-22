@@ -11,6 +11,8 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 
+import { pickYearAgo } from './pick.ts';
+
 const ROOT = path.resolve(import.meta.dirname, '..', '..');
 const DIR = path.join(ROOT, 'data', 'fundamentals');
 // SEC 要求自动化工具在 User-Agent 里声明名称和联系方式。联系方式不进仓库：由 Fei 在项目根目录的 .env.local
@@ -295,7 +297,10 @@ async function run(code: string) {
   // 股本：封面上的已发行股数（多类股份时 XBRL 接口不给合计，退回到人工录入）。
   const so = dei.EntityCommonStockSharesOutstanding?.units?.shares ?? [];
   const latestShares = so.filter((x: any) => x.accn === latest.accn);
-  const yearAgo = so.filter((x: any) => x.end <= addDays(latestShares[0]?.end ?? balDate, -330)).sort((a: any, b: any) => b.end.localeCompare(a.end));
+  // “一年前”以现在用的封面股数的日期为准（人工录入的从 note 里的“截至 YYYY-MM-DD”读），只在 300 到 400 天前的窗口里找。
+  const manualDate = doc.shares?.outstanding?.manual ? /截至 (\d{4}-\d{2}-\d{2})/.exec(String(doc.shares.outstanding.note ?? ''))?.[1] : undefined;
+  const refDate: string = manualDate ?? latestShares[0]?.end ?? balDate;
+  const yearAgo = pickYearAgo(so, refDate);
   const shareFig = (list: Fact[], src: string | null, label: string): Fig | null => {
     if (list.length === 0) return null;
     const date = list[0]!.end;
@@ -310,10 +315,13 @@ async function run(code: string) {
   }
   let ago: Fig | null = null;
   if (yearAgo.length) {
-    const f = yearAgo[0];
+    const f = yearAgo[0]!;
     const fil = filings.find((x: any) => x.accn === f.accn);
     const s = fil ? addSource(fil, `截至 ${fil.report} 的${fil.form === '10-K' ? '财年' : '季度'}`) : null;
-    ago = shareFig(yearAgo.filter((x: any) => x.accn === f.accn), s, '一年前封面披露的已发行普通股');
+    const gap = Math.round((Date.parse(refDate) - Date.parse(f.end)) / 86400000);
+    ago = shareFig(yearAgo as Fact[], s, `约一年前封面披露的已发行普通股（与 ${refDate} 相隔 ${gap} 天）`);
+  } else {
+    ago = { value: null, unit: '股', note: `本轮未检索到（XBRL 封面股数在 ${refDate} 之前 300 到 400 天内没有数据，多类股份公司常见；须从一年前的 10-Q 封面人工录入）` };
   }
 
   // 人工录入（manual: true）的数字不覆盖。
@@ -339,7 +347,7 @@ async function run(code: string) {
     /* 人工录入的封面股数保留 */
   } else if (out) doc.shares.outstanding = out;
   else if (!doc.shares.outstanding?.manual) doc.shares.outstanding = { value: null, unit: '股', note: '本轮未检索到（XBRL 接口没有封面股数，多类股份或新上市公司常见；须从原文封面录入）' };
-  if (ago) doc.shares.outstandingYearAgo = ago;
+  if (!doc.shares.outstandingYearAgo?.manual) doc.shares.outstandingYearAgo = ago;
   // 只留被引用到的来源。
   const used = new Set<string>();
   const walk = (x: any) => { if (x && typeof x === 'object') { if (typeof x.src === 'string') used.add(x.src); Object.values(x).forEach(walk); } };
@@ -354,9 +362,6 @@ function revTagsAll(cfg: Config): string[] {
   return cfg.revenueTags ?? TAGS.revenue!;
 }
 
-function addDays(date: string, n: number) {
-  return new Date(Date.parse(date) + n * 86400000).toISOString().slice(0, 10);
-}
 
 const args = process.argv.slice(2);
 const codes = args.length ? args : readdirSync(DIR).filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', '').toUpperCase()).filter((c) => JSON.parse(readFileSync(path.join(DIR, `${c.toLowerCase()}.json`), 'utf8')).xbrl?.cik);

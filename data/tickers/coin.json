@@ -11,7 +11,7 @@
   },
   "strikeNote": "加密寒冬<$100；11/20收$101.97，只差2%。出手前先回答：是否相信订阅与服务收入（占净营收约49%）能穿越寒冬",
   "events": "高管减持窗口（11/16起、12/7起、1/4起）／2月 Q4财报",
-  "contentUpdatedOn": "2026-11-21",
+  "contentUpdatedOn": "2026-11-22",
   "lastPrice": {
     "value": 101.97,
     "asOf": "2026-11-20",
@@ -31,8 +31,8 @@
     },
     {
       "date": "2026-10-30",
-      "title": "CEO等三名高管的10b5-1减持计划：合计约1,359万股，CEO的窗口11/16已开启",
-      "summary": "CoinGape据公司向SEC提交的季度报告：Armstrong最多817万股（行权所得），可在2026/11/16至2027/10/22之间按预设价格卖出；Ehrsam 387万股，窗口2026/12/7至2027/6/7；Choi约156万股，窗口2027/1/4起。按10/29收盘价$160.59计约$22亿。预设的卖出价没有披露，现价比当时低36%，是否触发未知。",
+      "title": "CEO、一名董事和总裁的10b5-1减持计划：合计约1,359万股，CEO的窗口11/16开启",
+      "summary": "CoinGape据公司10-Q第五项的整理，已与10-Q原文核对：CEO Armstrong最多817万股（行使已归属期权所得），预计窗口2026/11/16至2027/10/22；董事Ehrsam最多387万股（由其信托持有的B类股转换而来），窗口2026/12/7至2027/6/7；总裁兼COO Choi最多156万股，窗口2027/1/4至2027/12/31。每份计划都设有卖出价门槛，价格没有披露，是否触发未知。按10/29收盘价$160.59计约$22亿（CoinGape的算法）。",
       "url": "https://coingape.com/coinbase-executives-file-plans-to-sell-up-to-13-6-million-coin-shares-worth-2-2b/",
       "sourceType": "media",
       "source": "CoinGape（据公司 10-Q）"
@@ -40,10 +40,10 @@
     {
       "date": "2026-10-29",
       "title": "Q3财报：净利$7.19亿，但调整后净利只有$7,800万；订阅与服务占净营收49%",
-      "summary": "公司新闻稿：调整后EBITDA $3.33亿（环比+60%，连续15个季度为正）。Coinbase产品内的USDC平均余额创纪录的$220亿（同比+49%）；预测市场业务年化营收超过$2亿。净利和调整后净利之间约$6.4亿的差额主要是持有加密资产的重估——这部分在比特币跌破$6万后会反过来。",
-      "url": "https://greenstocknews.com/news/nasdaq/coin/coinbase-q3-2026-earnings-show-all-time-high-coinbase-one-subscribers-and-prediction-markets-surpassing-200-million-in-annualized-revenue",
+      "summary": "公司新闻稿：净利$7.19亿，调整后净利$7,800万，调整后EBITDA $3.33亿（环比+60%，连续第15个季度为正）。Coinbase产品内的USDC平均余额创纪录的$220亿（同比+49%）；预测市场年化营收超过$2亿；订阅与服务占净营收49%。净利和调整后净利相差约$6.4亿（算术），新闻稿读到的部分没有拆开说明来源；10-Q显示作为投资持有的加密资产公允价值$22.25亿，币价下跌会直接进利润表。",
+      "url": "https://investor.coinbase.com/news/news-details/2026/Coinbase-Q3-2026-Earnings-Show-All-time-high-Coinbase-One-Subscribers-and-Prediction-Markets-Surpassing-200-Million-in-Annualized-Revenue/default.aspx",
       "sourceType": "official",
-      "source": "Coinbase 新闻稿（Green Stock News 转载全文）"
+      "source": "Coinbase 投资者关系：财报新闻稿"
     }
   ],
   "rationale": [

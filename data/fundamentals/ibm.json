@@ -582,7 +582,7 @@
       "value": 934735206,
       "unit": "股",
       "src": "0000051143-25-000064",
-      "note": "一年前封面披露的已发行普通股，截至 2025-09-30"
+      "note": "约一年前封面披露的已发行普通股（与 2026-09-30 相隔 365 天），截至 2025-09-30"
     },
     "dilutive": [
       {
@@ -684,13 +684,13 @@
       {
         "name": "软件（同比 +8%）",
         "revenue": {
-          "value": 7804000000.0,
+          "value": 7804000000,
           "unit": "USD",
           "manual": true,
           "src": "ibm-pr-q3-2026"
         },
         "profit": {
-          "value": 2734000000.0,
+          "value": 2734000000,
           "unit": "USD",
           "manual": true,
           "src": "ibm-pr-q3-2026",
@@ -700,13 +700,13 @@
       {
         "name": "咨询（同比持平）",
         "revenue": {
-          "value": 5335000000.0,
+          "value": 5335000000,
           "unit": "USD",
           "manual": true,
           "src": "ibm-pr-q3-2026"
         },
         "profit": {
-          "value": 653000000.0,
+          "value": 653000000,
           "unit": "USD",
           "manual": true,
           "src": "ibm-pr-q3-2026",
@@ -716,13 +716,13 @@
       {
         "name": "基础设施（同比 +4%）",
         "revenue": {
-          "value": 3707000000.0,
+          "value": 3707000000,
           "unit": "USD",
           "manual": true,
           "src": "ibm-pr-q3-2026"
         },
         "profit": {
-          "value": 715000000.0,
+          "value": 715000000,
           "unit": "USD",
           "manual": true,
           "src": "ibm-pr-q3-2026",
@@ -732,13 +732,13 @@
       {
         "name": "融资（同比 −4%）",
         "revenue": {
-          "value": 192000000.0,
+          "value": 192000000,
           "unit": "USD",
           "manual": true,
           "src": "ibm-pr-q3-2026"
         },
         "profit": {
-          "value": 108000000.0,
+          "value": 108000000,
           "unit": "USD",
           "manual": true,
           "src": "ibm-pr-q3-2026",

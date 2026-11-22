@@ -574,7 +574,7 @@
       "value": 271320459,
       "unit": "股",
       "src": "0001996810-25-000160",
-      "note": "一年前封面披露的已发行普通股，截至 2025-09-30"
+      "note": "约一年前封面披露的已发行普通股（与 2026-09-30 相隔 365 天），截至 2025-09-30"
     },
     "dilutive": [
       {
@@ -684,7 +684,7 @@
           "manual": true
         },
         "profit": {
-          "value": 1297000000.0,
+          "value": 1297000000,
           "unit": "USD",
           "manual": true,
           "src": "gev-pr-q3-2026",
@@ -700,7 +700,7 @@
           "manual": true
         },
         "profit": {
-          "value": 739000000.0,
+          "value": 739000000,
           "unit": "USD",
           "manual": true,
           "src": "gev-pr-q3-2026",
@@ -716,7 +716,7 @@
           "manual": true
         },
         "profit": {
-          "value": 72000000.0,
+          "value": 72000000,
           "unit": "USD",
           "manual": true,
           "src": "gev-pr-q3-2026",
@@ -732,7 +732,7 @@
       "text": "总积压 $1,970亿；电气化设备积压 $422亿；燃机设备积压从 53GW 增到 64GW。本季订单 $293亿（有机 +96%）。",
       "src": "gev-pr-q3-2026",
       "figure": {
-        "value": 197000000000.0,
+        "value": 197000000000,
         "unit": "USD",
         "manual": true,
         "src": "gev-pr-q3-2026",

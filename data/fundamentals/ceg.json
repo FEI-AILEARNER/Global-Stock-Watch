@@ -588,10 +588,10 @@
       "note": "10-Q 封面披露的已发行普通股，截至 2026-10-31"
     },
     "outstandingYearAgo": {
-      "value": 312405579,
+      "value": 312290080,
       "unit": "股",
-      "src": "0001868275-25-000073",
-      "note": "一年前封面披露的已发行普通股，截至 2025-07-31"
+      "src": "0001868275-25-000092",
+      "note": "约一年前封面披露的已发行普通股（与 2026-10-31 相隔 365 天），截至 2025-10-31"
     }
   },
   "sources": [
@@ -606,12 +606,12 @@
       "checkedOn": "2026-11-22"
     },
     {
-      "id": "0001868275-25-000073",
+      "id": "0001868275-25-000092",
       "origin": "xbrl",
       "form": "10-Q",
-      "filed": "2025-08-07",
-      "period": "截至 2025-06-30 的季度",
-      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827525000073/ceg-20250630.htm",
+      "filed": "2025-11-07",
+      "period": "截至 2025-09-30 的季度",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827525000092/ceg-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001868275.json",
       "checkedOn": "2026-11-22"
     },
