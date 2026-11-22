@@ -573,7 +573,14 @@
       "unit": "股",
       "src": "0001730168-25-000098",
       "note": "一年前封面披露的已发行普通股，截至 2025-08-29"
-    }
+    },
+    "dilutive": [
+      {
+        "label": "回购和股息",
+        "text": "Q3 没有回购（上一季回购 $6亿）；季度股息每股 $0.65。",
+        "src": "avgo-pr-q3fy26"
+      }
+    ]
   },
   "sources": [
     {
@@ -615,10 +622,42 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000098/avgo-20250803.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "avgo-pr-q3fy26",
+      "origin": "document",
+      "form": "新闻稿（投资者关系网站）",
+      "period": "FY2026 Q3（截至 2026-08-02）",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "checkedOn": "2026-11-22",
+      "title": "Broadcom FY2026 第三季度财报新闻稿",
+      "filed": "2026-09-02"
+    },
+    {
+      "id": "avgo-10k-fy2025",
+      "origin": "document",
+      "form": "10-K",
+      "period": "FY2025（截至 2025-11-02）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Broadcom FY2025 10-K",
+      "filed": "2025-12-18"
+    },
+    {
+      "id": "avgo-def14a-2026",
+      "origin": "document",
+      "form": "委托书（DEF 14A）",
+      "period": "持股截至 2026-02-24",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526085691/d49254ddef14a.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Broadcom 2026 年委托书",
+      "filed": "2026-03-02"
     }
   ],
   "gaps": [
-    "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）"
+    "分部营业利润",
+    "债务到期时间表；定价依据里提到的对 Anthropic 的租约担保和放贷额度，本轮没有在 10-K、10-Q 原文里核对（披露：Anthropic 是我的开发方）",
+    "12/9 的 FY2026 Q4 财报（尚未发布）"
   ],
   "checkpoints": [
     {
@@ -630,6 +669,90 @@
       "metric": "对两家大客户的信用敞口",
       "condition": "Anthropic 和 OpenAI 付得起钱；定价依据记录的对 Anthropic 约 $290亿 租约担保和最高 $420亿 放贷额度是否变化。",
       "basis": "11/21 定价依据的“关键条件”（披露：Anthropic 是我的开发方）"
+    }
+  ],
+  "segments": {
+    "period": "FY2026 Q3",
+    "src": "avgo-pr-q3fy26",
+    "rows": [
+      {
+        "name": "半导体（其中 AI 半导体 $167亿，同比 +221%）",
+        "revenue": {
+          "value": 20839000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "avgo-pr-q3fy26"
+        }
+      },
+      {
+        "name": "基础设施软件（含 VMware）",
+        "revenue": {
+          "value": 8752000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "avgo-pr-q3fy26"
+        }
+      }
+    ],
+    "note": "新闻稿没有列分部营业利润。"
+  },
+  "guidance": [
+    {
+      "period": "FY2026 Q4",
+      "text": "营收约 $348亿（同比 +93%）；AI 半导体营收 $217亿（同比 +236%）；非 GAAP 营业利润率约 66%。",
+      "direction": "unclear",
+      "vsText": "新一季的指引，不比较方向；Q3 实际营收 $295.9亿、AI 半导体 $167亿。12/9 公布 Q4 和全年财报。",
+      "src": "avgo-pr-q3fy26"
+    }
+  ],
+  "customers": [
+    {
+      "label": "前五大终端客户",
+      "text": "FY2025 和 FY2024 前五大终端客户各占营收约 40%；经分销商的销售占 48%。",
+      "src": "avgo-10k-fy2025",
+      "figure": {
+        "value": 40,
+        "unit": "%",
+        "manual": true,
+        "src": "avgo-10k-fy2025",
+        "period": "FY2025"
+      }
+    },
+    {
+      "label": "依赖台积电",
+      "text": "FY2025 代工厂生产的晶圆约 95% 来自台积电。",
+      "src": "avgo-10k-fy2025"
+    }
+  ],
+  "governance": [
+    {
+      "label": "管理层持股",
+      "text": "单一类别普通股。截至 2026-02-24，CEO 陈福阳持 90.8 万股（不到 1%），联合创始人 Henry Samueli 8,556 万股（1.8%），全体 13 名董事和高管合计 1.9%；Vanguard 9.9%、BlackRock 7.3%。Samueli 曾质押 1,617.5 万股（2024-11-15 时约占其持股 18%）。",
+      "src": "avgo-def14a-2026",
+      "figure": {
+        "value": 1.9,
+        "unit": "%",
+        "manual": true,
+        "src": "avgo-def14a-2026",
+        "period": "截至 2026-02-24"
+      }
+    }
+  ],
+  "risks": [
+    {
+      "title": "客户集中",
+      "text": "前五大终端客户约占营收 40%，失去或减少其中任何一家都会明显影响业绩。",
+      "src": "avgo-10k-fy2025"
+    },
+    {
+      "title": "晶圆依赖台积电",
+      "text": "约 95% 的晶圆由台积电生产。",
+      "src": "avgo-10k-fy2025"
+    },
+    {
+      "title": "VMware 之后更依赖渠道",
+      "text": "收购 VMware 后对渠道伙伴的依赖增加。",
+      "src": "avgo-10k-fy2025"
     }
   ]
 }

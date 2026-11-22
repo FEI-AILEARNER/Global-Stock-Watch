@@ -575,7 +575,14 @@
       "unit": "股",
       "src": "0001628280-25-045968",
       "note": "一年前封面披露的已发行普通股，截至 2025-10-16"
-    }
+    },
+    "dilutive": [
+      {
+        "label": "2025 年 CEO 业绩奖励",
+        "text": "4.237 亿股限制性股票，按业绩条件解锁；约为现有 39.53 亿股的 11%（算术）。是否已计入封面股数本轮没有核对。",
+        "src": "tsla-def14a-2026"
+      }
+    ]
   },
   "sources": [
     {
@@ -607,10 +614,42 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "tsla-10q-q3-2026",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2026 Q3（截至 2026-09-30）；封面股数截至 2026-10-15",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Tesla 2026 年第三季度 10-Q",
+      "filed": "2026-10-22"
+    },
+    {
+      "id": "tsla-def14a-2026",
+      "origin": "document",
+      "form": "委托书（DEF 14A）",
+      "period": "2026 年年会（12 月 3 日）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Tesla 2026 年委托书",
+      "filed": "2026-10-19"
+    },
+    {
+      "id": "tsla-10k-2025",
+      "origin": "document",
+      "form": "10-K",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Tesla 2025 年 10-K",
+      "filed": "2026-01-29"
     }
   ],
   "gaps": [
-    "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）"
+    "交付量和储能部署量（10-Q 读到的部分没有）",
+    "2026 资本开支指引的原文",
+    "与 xAI 的关联交易金额"
   ],
   "checkpoints": [
     {
@@ -622,6 +661,116 @@
       "metric": "FSD 和 Cybercab",
       "condition": "无人监督 FSD 在 2027 年二季度如期放开、Cybercab 量产；或合并条款对特斯拉股东有利。",
       "basis": "11/21 定价依据的“关键条件”"
+    }
+  ],
+  "segments": {
+    "period": "2026 Q3",
+    "src": "tsla-10q-q3-2026",
+    "rows": [
+      {
+        "name": "汽车（其中监管积分 $1.13亿）",
+        "revenue": {
+          "value": 20560000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "tsla-10q-q3-2026"
+        },
+        "profit": {
+          "value": 3806000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "tsla-10q-q3-2026",
+          "calc": "营收 − 营业成本"
+        }
+      },
+      {
+        "name": "能源发电和储能",
+        "revenue": {
+          "value": 2881000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "tsla-10q-q3-2026"
+        },
+        "profit": {
+          "value": 954000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "tsla-10q-q3-2026",
+          "calc": "营收 − 营业成本"
+        }
+      },
+      {
+        "name": "服务和其他",
+        "revenue": {
+          "value": 4605000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "tsla-10q-q3-2026"
+        },
+        "profit": {
+          "value": 734000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "tsla-10q-q3-2026",
+          "calc": "营收 − 营业成本"
+        }
+      }
+    ],
+    "note": "利润一栏是毛利（营收减营业成本，10-Q 只给合计毛利 $54.94亿）。"
+  },
+  "orders": [
+    {
+      "label": "递延收入（含 FSD）",
+      "text": "汽车销售相关的递延收入（联网、FSD 监督版、免费超充、远程升级）$40.8亿，2025 年底 $38.7亿。",
+      "src": "tsla-10q-q3-2026",
+      "figure": {
+        "value": 4080000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "tsla-10q-q3-2026",
+        "period": "截至 2026-09-30"
+      }
+    }
+  ],
+  "governance": [
+    {
+      "label": "马斯克的持股",
+      "text": "实益持有 6.996 亿股、19.8%（含 2018 年业绩奖励行权得到、仍有服务期限制的 2.864 亿股）；不含 2025 年 CEO 业绩奖励授予的 4.237 亿股限制性股票（其表决权已委托给公司秘书）；2.075 亿股已质押。全体董事和高管合计 20.0%；Vanguard 5.3%。",
+      "src": "tsla-def14a-2026",
+      "figure": {
+        "value": 19.8,
+        "unit": "%",
+        "manual": true,
+        "src": "tsla-def14a-2026",
+        "period": "委托书记录日"
+      }
+    },
+    {
+      "label": "与 SpaceX 的关系",
+      "text": "前三季以 $20.02亿 买入 SpaceX 股权，按公允价值计量、前三季未实现收益 $8.63亿；公司被认为对 SpaceX 有重大影响。12 月 3 日年会的三项议案（选董事、薪酬咨询投票、续聘审计师）都不涉及与 SpaceX 合并。",
+      "src": "tsla-10q-q3-2026"
+    }
+  ],
+  "risks": [
+    {
+      "title": "依赖马斯克",
+      "text": "公司高度依赖马斯克，他同时领导 SpaceX、xAI、Neuralink 和 The Boring Company。",
+      "src": "tsla-10k-2025"
+    },
+    {
+      "title": "自动驾驶监管",
+      "text": "各地自动驾驶法规还在变化，可能限制 FSD 和 robotaxi 的功能或车型设计。",
+      "src": "tsla-10k-2025"
+    },
+    {
+      "title": "成本和价格",
+      "text": "原材料和电池成本上升而又不能提价时，利润率会下降。",
+      "src": "tsla-10k-2025"
+    },
+    {
+      "title": "资本开支",
+      "text": "扩产和新项目需要大量现金，不能保证带来销售。",
+      "src": "tsla-10k-2025"
     }
   ]
 }

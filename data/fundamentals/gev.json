@@ -554,7 +554,14 @@
           "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent"
         }
       ]
-    }
+    },
+    "maturities": [
+      {
+        "label": "收购 Trench",
+        "text": "以约 $90亿（按欧元兑美元 1.12）收购高压电网设备商 Trench，预计 2027 年底完成；融资方式新闻稿没有写。",
+        "src": "gev-pr-q3-2026"
+      }
+    ]
   },
   "shares": {
     "outstanding": {
@@ -568,7 +575,14 @@
       "unit": "股",
       "src": "0001996810-25-000160",
       "note": "一年前封面披露的已发行普通股，截至 2025-09-30"
-    }
+    },
+    "dilutive": [
+      {
+        "label": "回购和股息",
+        "text": "Q3 回购约 170万股、$16亿；10 月 1 日至 23 日又回购约 140万股、$13亿。2024 年 12 月以来累计 1,560万股、$99亿（均价约 $635）。授权从 $100亿 提到 $200亿，剩余 $101亿。季度股息每股 $0.50。",
+        "src": "gev-pr-q3-2026"
+      }
+    ]
   },
   "sources": [
     {
@@ -600,16 +614,49 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000160/gev-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001996810.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "gev-pr-q3-2026",
+      "origin": "document",
+      "form": "新闻稿（8-K 附件）",
+      "period": "2026 Q3（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000162/gevpressrelease3q26.htm",
+      "checkedOn": "2026-11-22",
+      "title": "GE Vernova 2026 年第三季度财报新闻稿",
+      "filed": "2026-10-28"
+    },
+    {
+      "id": "gev-def14a-2026",
+      "origin": "document",
+      "form": "委托书（DEF 14A）",
+      "period": "2026 年年会",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000049/gev-20260402.htm",
+      "checkedOn": "2026-11-22",
+      "title": "GE Vernova 2026 年委托书",
+      "filed": "2026-04-03"
+    },
+    {
+      "id": "gev-10k-2025",
+      "origin": "document",
+      "form": "10-K",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000015/gev-20251231.htm",
+      "checkedOn": "2026-11-22",
+      "title": "GE Vernova 2025 年 10-K",
+      "filed": "2026-01-29"
     }
   ],
   "gaps": [
-    "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）"
+    "分部收入（新闻稿读到的部分只给分部 EBITDA）",
+    "风电分部的亏损金额"
   ],
   "checkpoints": [
     {
       "metric": "积压转订单",
       "condition": "122GW 的积压加预订继续转成确定订单，燃机定价不松。",
-      "basis": "11/21 定价依据的“关键条件”"
+      "basis": "11/21 定价依据的“关键条件”",
+      "latest": "积压加预订 122GW（Q3 末），预订从 63GW 降到 58GW、燃机积压从 53GW 增到 64GW",
+      "src": "gev-pr-q3-2026"
     },
     {
       "metric": "经营现金流里的预付款",
@@ -623,5 +670,112 @@
       "condition": "定价依据写“股本本轮未检索到，没有换算自由现金流倍数”；本轮已补上，自由现金流收益率见估值口径。",
       "basis": "11/21 定价依据"
     }
-  ]
+  ],
+  "segments": {
+    "period": "2026 Q3",
+    "src": "gev-pr-q3-2026",
+    "rows": [
+      {
+        "name": "电力（燃机、核电等）",
+        "revenue": {
+          "value": null,
+          "unit": "USD",
+          "note": "本轮未检索到（新闻稿读到的部分只给分部 EBITDA）",
+          "manual": true
+        },
+        "profit": {
+          "value": 1297000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "gev-pr-q3-2026",
+          "note": "分部 EBITDA，利润率 21.4%"
+        }
+      },
+      {
+        "name": "电气化（电网设备）",
+        "revenue": {
+          "value": null,
+          "unit": "USD",
+          "note": "本轮未检索到",
+          "manual": true
+        },
+        "profit": {
+          "value": 739000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "gev-pr-q3-2026",
+          "note": "19.1%"
+        }
+      },
+      {
+        "name": "风电",
+        "revenue": {
+          "value": null,
+          "unit": "USD",
+          "note": "本轮未检索到",
+          "manual": true
+        },
+        "profit": {
+          "value": 72000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "gev-pr-q3-2026",
+          "note": "2.6%"
+        }
+      }
+    ],
+    "note": "利润一栏是公司口径的分部 EBITDA。"
+  },
+  "orders": [
+    {
+      "label": "积压",
+      "text": "总积压 $1,970亿；电气化设备积压 $422亿；燃机设备积压从 53GW 增到 64GW。本季订单 $293亿（有机 +96%）。",
+      "src": "gev-pr-q3-2026",
+      "figure": {
+        "value": 197000000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "gev-pr-q3-2026",
+        "period": "截至 2026-09-30"
+      }
+    },
+    {
+      "label": "燃机排期预订（SRA）",
+      "text": "从 63GW 降到 58GW（转成了正式订单）；积压加预订从 116GW 增到 122GW，公司预计年底至少 130GW。",
+      "src": "gev-pr-q3-2026"
+    }
+  ],
+  "guidance": [
+    {
+      "period": "2026 全年",
+      "text": "营收 $465亿 至 $475亿（原 $455亿 至 $465亿）；调整后 EBITDA 利润率 13.5% 至 14.5%（原 12% 至 14%）；自由现金流 $160亿 至 $170亿（原 $115亿 至 $125亿）。",
+      "direction": "raised",
+      "src": "gev-pr-q3-2026"
+    }
+  ],
+  "governance": [
+    {
+      "label": "持股",
+      "text": "单一类别普通股。CEO Scott Strazik 持 13.6 万股（含限制性股票和期权共 41.0 万股）；全体 18 名董事和高管合计不到 1%。FMR 8.7%、Vanguard 8.7%（2026-03-26 申报已降到 5% 以下）、BlackRock 6.5%。",
+      "src": "gev-def14a-2026"
+    }
+  ],
+  "risks": [
+    {
+      "title": "质保和质量成本",
+      "text": "公司写明质保和质量相关成本过去和将来都可能占费用的相当部分（风电问题是来源之一）。",
+      "src": "gev-10k-2025"
+    },
+    {
+      "title": "融资渠道",
+      "text": "有 $30亿 承诺信贷额度和 $30亿 贸易融资额度，公司提示可能不够，需要另外到资本市场融资。",
+      "src": "gev-10k-2025"
+    },
+    {
+      "title": "多国监管",
+      "text": "在约 100 个国家经营，合规复杂。",
+      "src": "gev-10k-2025"
+    }
+  ],
+  "valuationNote": "2026 前三季净利润含一次性收益：重新计量原持有的 Prolec GE 50% 股权获得税前收益 $39.92亿，出售 Proficy 收益 $3.66亿，合计买卖业务权益的收益 $44.81亿（新闻稿）。所以近四季净利润高于营业利润，市盈率偏低；可对照 EV/EBITDA 和自由现金流收益率。"
 }

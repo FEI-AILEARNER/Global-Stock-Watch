@@ -1,6 +1,6 @@
 // 从 SEC 的 XBRL 接口（data.sec.gov）取最近一份 10-K／10-Q 里的财务数字，写进 data/fundamentals/<代码>.json。
 //
-// 用法：node scripts/fundamentals/sec-xbrl.ts NVDA [VST ...]   （不写代码就是 data/fundamentals/ 里已有 xbrl.cik 的全部）
+// 用法：node --env-file-if-exists=.env.local scripts/fundamentals/sec-xbrl.ts NVDA [VST ...]   （不写代码就是 data/fundamentals/ 里已有 xbrl.cik 的全部）
 //   环境变量 SEC_CACHE_DIR：把下载的 JSON 存在这里，同一天再跑不重复下载（默认不缓存）。
 //
 // 只改文件里由本脚本生成的部分：periods、flows、balance.cash、balance.debt、shares.outstanding、shares.outstandingYearAgo，
@@ -13,7 +13,10 @@ import path from 'node:path';
 
 const ROOT = path.resolve(import.meta.dirname, '..', '..');
 const DIR = path.join(ROOT, 'data', 'fundamentals');
-const UA = 'GlobalStockWatch research-notes';
+// SEC 要求自动化工具在 User-Agent 里声明名称和联系方式。联系方式不进仓库：由 Fei 在项目根目录的 .env.local
+// （已被 .gitignore 排除）里设置 SEC_USER_AGENT，运行时用 node --env-file=.env.local 读入。没设置时用不含联系方式的名字，
+// 只能访问 data.sec.gov 的接口。
+const UA = process.env.SEC_USER_AGENT || 'GlobalStockWatch research-notes';
 const TODAY = new Date().toISOString().slice(0, 10);
 
 type Fact = { start?: string; end: string; val: number; accn: string; fy: number | null; fp: string | null; form: string; filed: string };

@@ -562,7 +562,14 @@
         }
       ],
       "note": "IBM 的“短期债务”已包含一年内到期的长期债务，所以只取长期债务（非流动）加短期债务"
-    }
+    },
+    "maturities": [
+      {
+        "label": "债务构成",
+        "text": "季末总债务 $638亿（年初以来增加 $26亿），其中 IBM 融资业务的债务 $127亿。",
+        "src": "ibm-pr-q3-2026"
+      }
+    ]
   },
   "shares": {
     "outstanding": {
@@ -576,7 +583,14 @@
       "unit": "股",
       "src": "0000051143-25-000064",
       "note": "一年前封面披露的已发行普通股，截至 2025-09-30"
-    }
+    },
+    "dilutive": [
+      {
+        "label": "回购和股息",
+        "text": "没有公开市场回购计划；Q3 为代扣税回购 $3.52亿，支付股息 $15.96亿，季度股息每股 $1.69。",
+        "src": "ibm-pr-q3-2026"
+      }
+    ]
   },
   "sources": [
     {
@@ -608,10 +622,41 @@
       "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114325000064/ibm-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000051143.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "ibm-pr-q3-2026",
+      "origin": "document",
+      "form": "新闻稿（8-K 附件 99.1）",
+      "period": "2026 Q3（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000051143/000005114326000093/ibm-20261021xex991.htm",
+      "checkedOn": "2026-11-22",
+      "title": "IBM 2026 年第三季度财报新闻稿",
+      "filed": "2026-10-21"
+    },
+    {
+      "id": "ibm-def14a-2026",
+      "origin": "document",
+      "form": "委托书（DEF 14A）",
+      "period": "2026 年年会",
+      "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000025/ibm-20260306.htm",
+      "checkedOn": "2026-11-22",
+      "title": "IBM 2026 年委托书",
+      "filed": "2026-03-10"
+    },
+    {
+      "id": "ibm-10k-2025",
+      "origin": "document",
+      "form": "10-K",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231.htm",
+      "checkedOn": "2026-11-22",
+      "title": "IBM 2025 年 10-K",
+      "filed": "2026-02-24"
     }
   ],
   "gaps": [
-    "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）"
+    "量子业务的收入（公司没有单列）",
+    "养老金负债（10-K 指向年报，本轮没有读）"
   ],
   "checkpoints": [
     {
@@ -630,6 +675,110 @@
       "metric": "价格",
       "condition": "回到 $200 以下再重新算。",
       "basis": "11/21 击球区说明"
+    }
+  ],
+  "segments": {
+    "period": "2026 Q3",
+    "src": "ibm-pr-q3-2026",
+    "rows": [
+      {
+        "name": "软件（同比 +8%）",
+        "revenue": {
+          "value": 7804000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "ibm-pr-q3-2026"
+        },
+        "profit": {
+          "value": 2734000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "ibm-pr-q3-2026",
+          "note": "分部利润率 35.0%"
+        }
+      },
+      {
+        "name": "咨询（同比持平）",
+        "revenue": {
+          "value": 5335000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "ibm-pr-q3-2026"
+        },
+        "profit": {
+          "value": 653000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "ibm-pr-q3-2026",
+          "note": "12.2%"
+        }
+      },
+      {
+        "name": "基础设施（同比 +4%）",
+        "revenue": {
+          "value": 3707000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "ibm-pr-q3-2026"
+        },
+        "profit": {
+          "value": 715000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "ibm-pr-q3-2026",
+          "note": "19.3%"
+        }
+      },
+      {
+        "name": "融资（同比 −4%）",
+        "revenue": {
+          "value": 192000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "ibm-pr-q3-2026"
+        },
+        "profit": {
+          "value": 108000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "ibm-pr-q3-2026",
+          "note": "56.1%"
+        }
+      }
+    ],
+    "note": "利润一栏是公司口径的分部利润。IBM 的利润表不单列营业利润，所以 EV/EBITDA 算不出。"
+  },
+  "guidance": [
+    {
+      "period": "2026 全年",
+      "text": "按固定汇率营收增长 4% 至 5%（维持）；自由现金流比上年增加超过 $10亿（上调）。",
+      "direction": "raised",
+      "vsText": "营收指引维持，自由现金流指引上调。",
+      "src": "ibm-pr-q3-2026"
+    }
+  ],
+  "governance": [
+    {
+      "label": "持股",
+      "text": "单一类别普通股。CEO Arvind Krishna 持 41.9 万股；全体董事和高管合计不超过 1%；Vanguard 10.03%、BlackRock 8.3%、State Street 6.03%。",
+      "src": "ibm-def14a-2026"
+    }
+  ],
+  "risks": [
+    {
+      "title": "海外收入和贸易限制",
+      "text": "在 175 个以上国家经营，约 60% 营收来自美国以外，汇率、关税、制裁和出口管制都会影响业绩。",
+      "src": "ibm-10k-2025"
+    },
+    {
+      "title": "供应商集中",
+      "text": "部分业务（包括某些服务器处理器技术）依赖单一或少数供应商。",
+      "src": "ibm-10k-2025"
+    },
+    {
+      "title": "融资业务的信用和利率风险",
+      "text": "IBM 融资面临客户信用集中、利率、汇率和残值风险，对冲还有交易对手风险。",
+      "src": "ibm-10k-2025"
     }
   ]
 }

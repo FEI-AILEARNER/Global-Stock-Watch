@@ -573,7 +573,14 @@
       "unit": "股",
       "src": "0001486957-25-000059",
       "note": "一年前封面披露的已发行普通股，截至 2025-10-30"
-    }
+    },
+    "dilutive": [
+      {
+        "label": "回购和股息",
+        "text": "2026 前三季没有回购（2025 年同期 $3,000万）；季度股息每股 $0.27。",
+        "src": "bwxt-pr-q3-2026"
+      }
+    ]
   },
   "sources": [
     {
@@ -605,10 +612,31 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1486957/000148695725000059/bwxt-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001486957.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "bwxt-pr-q3-2026",
+      "origin": "document",
+      "form": "新闻稿（8-K 附件 99.1）",
+      "period": "2026 Q3（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001486957/000148695726000053/bwxt_93026xerexhibit991.htm",
+      "checkedOn": "2026-11-22",
+      "title": "BWXT 2026 年第三季度财报新闻稿",
+      "filed": "2026-11-02"
+    },
+    {
+      "id": "bwxt-10k-2025",
+      "origin": "document",
+      "form": "10-K",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1486957/000148695726000007/bwxt-20251231.htm",
+      "checkedOn": "2026-11-22",
+      "title": "BWXT 2025 年 10-K",
+      "filed": "2026-02-23"
     }
   ],
   "gaps": [
-    "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）"
+    "管理层和大股东持股（委托书本轮没有读）",
+    "债务到期时间表"
   ],
   "checkpoints": [
     {
@@ -621,6 +649,92 @@
       "condition": "海军订单节奏稳定；首张美国新建核电设备订单在 2027 上半年前落地。",
       "basis": "11/21 定价依据的“关键条件”",
       "latest": "定价依据记录 Q3 新订单 $5.38亿，远低于去年同期"
+    }
+  ],
+  "segments": {
+    "period": "2026 Q3",
+    "src": "bwxt-pr-q3-2026",
+    "rows": [
+      {
+        "name": "政府业务（海军核反应堆等）",
+        "revenue": {
+          "value": 639100000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "bwxt-pr-q3-2026"
+        },
+        "profit": {
+          "value": 122600000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "bwxt-pr-q3-2026"
+        }
+      },
+      {
+        "name": "商业业务（民用核电）",
+        "revenue": {
+          "value": 314200000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "bwxt-pr-q3-2026"
+        },
+        "profit": {
+          "value": 26300000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "bwxt-pr-q3-2026"
+        }
+      }
+    ],
+    "note": "利润一栏是分部营业利润。"
+  },
+  "orders": [
+    {
+      "label": "积压",
+      "text": "截至 2026-09-30 积压 $85.6亿：政府 $64.8亿、商业 $20.7亿。Q3 新订单 $5.38亿（政府 $3.23亿、商业 $2.15亿）。",
+      "src": "bwxt-pr-q3-2026",
+      "figure": {
+        "value": 8556190000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "bwxt-pr-q3-2026",
+        "period": "截至 2026-09-30"
+      }
+    }
+  ],
+  "customers": [
+    {
+      "label": "美国政府",
+      "text": "2025 年约 68% 的营收来自美国政府合同；部分多年期大合同每年要等拨款。",
+      "src": "bwxt-10k-2025",
+      "figure": {
+        "value": 68,
+        "unit": "%",
+        "manual": true,
+        "src": "bwxt-10k-2025",
+        "period": "FY2025"
+      }
+    }
+  ],
+  "guidance": [
+    {
+      "period": "2026 全年",
+      "text": "营收约 $38亿（重申）；非 GAAP 每股收益 $4.72 至 $4.77（原 $4.70 至 $4.80，收窄）；自由现金流 $3.5亿 至 $3.6亿（原 $3.45亿 至 $3.6亿）。",
+      "direction": "maintained",
+      "vsText": "营收重申，每股收益和自由现金流区间收窄，中值基本不变。",
+      "src": "bwxt-pr-q3-2026"
+    }
+  ],
+  "risks": [
+    {
+      "title": "依赖政府拨款",
+      "text": "约 68% 营收来自美国政府，多年期合同每年要看拨款。",
+      "src": "bwxt-10k-2025"
+    },
+    {
+      "title": "固定价格合同",
+      "text": "不少合同是固定价格，实际成本超出估算就要自己承担。",
+      "src": "bwxt-10k-2025"
     }
   ]
 }

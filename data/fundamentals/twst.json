@@ -441,10 +441,31 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1581280/000158128025000025/twst-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001581280.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "twst-pr-fq4-2026",
+      "origin": "document",
+      "form": "新闻稿（8-K 附件 99.1）",
+      "period": "FY2026 Q4（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001581280/000158128026000053/twst-2026930xex991.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Twist Bioscience FY2026 第四季度财报新闻稿",
+      "filed": "2026-11-12"
+    },
+    {
+      "id": "twst-10k-fy2026",
+      "origin": "document",
+      "form": "10-K",
+      "period": "FY2026（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1581280/000158128026000061/twst-20260930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Twist Bioscience FY2026 10-K",
+      "filed": "2026-11-16"
     }
   ],
   "gaps": [
-    "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）"
+    "最大客户的营收占比（10-K 读到的部分没有给）",
+    "管理层和大股东持股（委托书本轮没有读）"
   ],
   "checkpoints": [
     {
@@ -456,6 +477,58 @@
       "metric": "毛利率",
       "condition": "折旧逆风下毛利率守住 52.5%（FY27 指引下沿）。",
       "basis": "11/21 定价依据的“关键条件”"
+    }
+  ],
+  "segments": {
+    "period": "FY2026 Q4",
+    "src": "twst-pr-fq4-2026",
+    "rows": [
+      {
+        "name": "DNA 合成和蛋白质（DSPS，同比 +33%）",
+        "revenue": {
+          "value": 61000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "twst-pr-fq4-2026"
+        }
+      },
+      {
+        "name": "NGS 应用（同比 +24%）",
+        "revenue": {
+          "value": 65700000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "twst-pr-fq4-2026"
+        }
+      }
+    ],
+    "note": "新闻稿不列分部利润。"
+  },
+  "guidance": [
+    {
+      "period": "FY2027",
+      "text": "营收约 $5.5亿 至 $5.6亿（中值同比约 +21%，FY2026 为 $4.594亿），其中假设 AI 药物发现贡献 $1亿；毛利率约 52.5% 至 53%（FY2026 为 52.4%）；调整后 EBITDA 为正（FY2026 为 −$3,590万）；资本开支约 $7,500万。FY2027 Q1 营收 $1.30亿 至 $1.32亿。",
+      "direction": "initiated",
+      "src": "twst-pr-fq4-2026"
+    }
+  ],
+  "customers": [
+    {
+      "label": "客户",
+      "text": "FY2026 发货客户约 4,100 家；10-K 写明相当部分营收来自少数大客户，AI 药物发现客户在 DSPS 收入里的占比在上升（没有给比例）。",
+      "src": "twst-10k-fy2026"
+    }
+  ],
+  "risks": [
+    {
+      "title": "持续亏损",
+      "text": "累计亏损 $14.498亿，FY2026 净亏损 $1.302亿。",
+      "src": "twst-10k-fy2026"
+    },
+    {
+      "title": "大客户集中",
+      "text": "相当部分营收来自少数大客户，AI 药物发现的 $1亿 假设依赖这类客户。",
+      "src": "twst-10k-fy2026"
     }
   ]
 }

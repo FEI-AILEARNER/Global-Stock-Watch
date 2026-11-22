@@ -579,11 +579,33 @@
   },
   "shares": {
     "outstanding": {
-      "value": 12294000000,
+      "value": 12294000000.0,
       "unit": "股",
-      "src": "0001652044-26-000084",
-      "note": "资产负债表日（2026-09-30）的已发行普通股，XBRL 不带类别的数字；多类股份时须对照原文确认是各类合计"
-    }
+      "manual": true,
+      "src": "googl-10q-q3-2026",
+      "parts": [
+        {
+          "label": "A 类（每股 1 票）",
+          "value": 5888000000.0
+        },
+        {
+          "label": "B 类（每股 10 票）",
+          "value": 827000000.0
+        },
+        {
+          "label": "C 类（无表决权）",
+          "value": 5579000000.0
+        }
+      ],
+      "note": "10-Q 封面，截至 2026-10-21（以百万股为单位）"
+    },
+    "dilutive": [
+      {
+        "label": "回购和发债",
+        "text": "2026 年前三季没有回购；同期发债净得 $852.2亿，长期债务从 2025 年底 $465.5亿 升到 $1,251亿。",
+        "src": "googl-10q-q3-2026"
+      }
+    ]
   },
   "sources": [
     {
@@ -615,11 +637,41 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "googl-10q-q3-2026",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2026 Q3（截至 2026-09-30）；封面股数截至 2026-10-21",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Alphabet 2026 年第三季度 10-Q",
+      "filed": "2026-10-29"
+    },
+    {
+      "id": "googl-def14a-2026",
+      "origin": "document",
+      "form": "委托书（DEF 14A）",
+      "period": "2026 年年会",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Alphabet 2026 年委托书",
+      "filed": "2026-04-24"
+    },
+    {
+      "id": "googl-10k-2025",
+      "origin": "document",
+      "form": "10-K",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Alphabet 2025 年 10-K",
+      "filed": "2026-02-05"
     }
   ],
   "gaps": [
-    "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）",
-    "封面的分类股数（A、B、C 三类）：用的是资产负债表日不带类别的已发行股数，没有对照原文"
+    "分部营业利润（本轮读到的 10-Q 部分没有）",
+    "2027 资本开支的具体数字（公司在电话会上只说“显著增加”）"
   ],
   "checkpoints": [
     {
@@ -640,5 +692,102 @@
       "condition": "击球价上沿 $300 ≈ 19-20 倍 2026E EPS $14.9（一致预期口径，未重新核实）；按 GAAP 近四季净利润的倍数见上方估值口径。",
       "basis": "11/21 击球区说明"
     }
-  ]
+  ],
+  "segments": {
+    "period": "2026 Q3",
+    "src": "googl-10q-q3-2026",
+    "rows": [
+      {
+        "name": "Google 服务",
+        "revenue": {
+          "value": 96302000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "googl-10q-q3-2026"
+        }
+      },
+      {
+        "name": "Google 云",
+        "revenue": {
+          "value": 30709000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "googl-10q-q3-2026"
+        }
+      },
+      {
+        "name": "其他业务（Other Bets）",
+        "revenue": {
+          "value": 372000000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "googl-10q-q3-2026"
+        }
+      }
+    ],
+    "note": "本轮读到的部分没有分部营业利润（公司合计营业利润 $405.76亿）。"
+  },
+  "orders": [
+    {
+      "label": "收入积压（RPO）",
+      "text": "截至 2026-09-30 总积压 $5,677亿，其中 Google 云 $5,608亿；公司预计其中略多于 55% 在未来 24 个月确认。",
+      "src": "googl-10q-q3-2026",
+      "figure": {
+        "value": 567700000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "googl-10q-q3-2026",
+        "period": "截至 2026-09-30"
+      }
+    }
+  ],
+  "customers": [
+    {
+      "label": "广告收入占比",
+      "text": "2025 年网络广告占总营收的 70% 以上，广告主可以随时终止合同。",
+      "src": "googl-10k-2025"
+    }
+  ],
+  "governance": [
+    {
+      "label": "双层股权",
+      "text": "A 类每股 1 票，B 类每股 10 票，C 类没有表决权。",
+      "src": "googl-def14a-2026"
+    },
+    {
+      "label": "创始人表决权",
+      "text": "Larry Page 持有 3.89 亿股 B 类，占总表决权 27.4%；Sergey Brin 3.59 亿股 B 类，占 25.3%；全体董事和高管合计 54.3%。BlackRock 持有 6.1% 的 A 类（表决权 2.5%）。",
+      "src": "googl-def14a-2026",
+      "figure": {
+        "value": 54.3,
+        "unit": "%",
+        "manual": true,
+        "src": "googl-def14a-2026",
+        "period": "委托书记录日"
+      }
+    }
+  ],
+  "risks": [
+    {
+      "title": "依赖广告",
+      "text": "2025 年网络广告占总营收 70% 以上。",
+      "src": "googl-10k-2025"
+    },
+    {
+      "title": "AI 基础设施的长期承诺",
+      "text": "为满足 AI 和云的算力需求，签了大量第三方租赁和长期商业协议；需求下降或履约失败会变成负债（10-K 读到的部分没有给金额）。",
+      "src": "googl-10k-2025"
+    },
+    {
+      "title": "反垄断补救",
+      "text": "搜索案 2025 年 12 月的最终判决限制分发方式、要求向竞争者分享部分搜索数据（公司已上诉）；广告技术案司法部提出的补救包括结构性拆分，判决未出。",
+      "src": "googl-10k-2025"
+    },
+    {
+      "title": "AI 竞争",
+      "text": "竞争对手的 AI 产品可能更好或更便宜，降低用户使用和变现能力。",
+      "src": "googl-10k-2025"
+    }
+  ],
+  "valuationNote": "2026 前三季“其他收益（净额）”$1,274.8亿，现金流量表里债券和股权投资的损益调整为 $1,267.6亿（10-Q），所以近四季净利润远高于营业利润，按净利润算的市盈率明显偏低，可对照 EV/EBITDA。这些投资收益具体来自哪些持股，10-Q 读到的部分没有分列；与 Anthropic 有关的披露见定价依据。"
 }

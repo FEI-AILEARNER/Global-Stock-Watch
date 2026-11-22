@@ -45,7 +45,8 @@ npm run build && npm start -- -p 3467    # 本地看正式构建
 
 为什么补、补什么：`docs/research/2026-11-22-valuation-info.md`。格式：`docs/DATA_MODEL.md` 的“估值相关信息”一节。
 
-1. 提交 10-K／10-Q 的公司：`data/fundamentals/<代码小写>.json` 里写 `{ "ticker", "xbrl": { "cik": … } }`，运行 `SEC_CACHE_DIR=/tmp/sec node scripts/fundamentals/sec-xbrl.ts <代码>`，脚本从 `data.sec.gov` 填财务快照、现金、负债、股本。看一眼输出：债务、现金的标签各公司不同，不对就在 `xbrl.debtTags`／`cashTags` 里指定再跑。
+0. 联系方式：SEC 要求自动化工具在 User-Agent 里声明名称和联系方式。需在项目根目录的 `.env.local`（不进仓库）里设置 `SEC_USER_AGENT`，由 Fei 自己填写；脚本用 `node --env-file-if-exists=.env.local …` 读入。没设置时 `sec-xbrl.ts` 只能用 `data.sec.gov` 接口，`sec-fetch.ts`（下载 www.sec.gov 原文并转成文本）不运行。请求顺序进行、间隔至少 150 毫秒。
+1. 提交 10-K／10-Q 的公司：`data/fundamentals/<代码小写>.json` 里写 `{ "ticker", "xbrl": { "cik": … } }`，运行 `SEC_CACHE_DIR=/tmp/sec node --env-file-if-exists=.env.local scripts/fundamentals/sec-xbrl.ts <代码>`，脚本从 `data.sec.gov` 填财务快照、现金、负债、股本。看一眼输出：债务、现金的标签各公司不同，不对就在 `xbrl.debtTags`／`cashTags` 里指定再跑。
 2. 最近一季只有新闻稿（10-Q 还没出）、外国公司（20-F、40-F、6-K）、新上市公司：打开原文，人工录入，数字带 `"manual": true`（脚本不会覆盖），期间写进 `xbrl.manualPeriods`。
 3. 业务结构、订单、指引、治理、风险、招股书、检查点都是人工从原文写，每条带来源；没读到的写进 `gaps`。
 4. `npm run check`。

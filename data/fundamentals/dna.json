@@ -532,35 +532,51 @@
   "balance": {
     "date": "2026-09-30",
     "cash": {
-      "value": 285361000,
+      "value": 285361000.0,
       "unit": "USD",
-      "src": "0001628280-26-072290",
+      "manual": true,
+      "src": "dna-10q-q3-2026",
       "parts": [
         {
           "label": "现金及现金等价物",
-          "value": 84504000,
-          "tag": "CashAndCashEquivalentsAtCarryingValue"
+          "value": 84504000.0
         },
         {
-          "label": "AvailableForSaleSecuritiesDebtSecurities",
-          "value": 200857000,
-          "tag": "AvailableForSaleSecuritiesDebtSecurities"
+          "label": "有价证券（流动）",
+          "value": 200857000.0
         }
       ],
-      "note": "现金加可供出售债券（含非流动部分）"
+      "note": "不含非流动的受限现金和有价证券 $8,424万"
     },
     "debt": {
-      "value": null,
+      "value": 0.0,
       "unit": "USD",
-      "note": "本轮未检索到（XBRL 里没有债务标签；可能没有有息负债，须对照原文）"
+      "manual": true,
+      "src": "dna-10q-q3-2026",
+      "note": "资产负债表没有借款科目（债务附注本轮没有读到，未完全确认）；非流动经营租赁负债 $3.97亿 不计入有息负债"
     }
   },
   "shares": {
     "outstanding": {
-      "value": 64497031,
+      "value": 64825013,
       "unit": "股",
-      "src": "0001628280-26-072290",
-      "note": "资产负债表日（2026-09-30）的已发行普通股，XBRL 不带类别的数字；多类股份时须对照原文确认是各类合计"
+      "manual": true,
+      "src": "dna-10q-q3-2026",
+      "parts": [
+        {
+          "label": "A 类",
+          "value": 53943682
+        },
+        {
+          "label": "B 类",
+          "value": 7881331
+        },
+        {
+          "label": "C 类（无表决权）",
+          "value": 3000000
+        }
+      ],
+      "note": "10-Q 封面，截至 2026-10-30"
     }
   },
   "sources": [
@@ -593,11 +609,22 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828025050193/dna-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001830214.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "dna-10q-q3-2026",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2026 Q3（截至 2026-09-30）；封面股数截至 2026-10-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026072290/dna-20260930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Ginkgo Bioworks 2026 年第三季度 10-Q",
+      "filed": "2026-11-09"
     }
   ],
   "gaps": [
-    "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）",
-    "有息负债（XBRL 里没有债务标签，本轮没有对照原文；所以企业价值算不出）"
+    "按业务类型的收入和最大客户占比",
+    "债务附注、B 类股的表决权倍数、管理层持股",
+    "公司指引"
   ],
   "checkpoints": [
     {
@@ -609,6 +636,20 @@
       "metric": "实验室订单",
       "condition": "自动化实验室的订单变成可重复的硬件和服务收入。",
       "basis": "11/21 定价依据的“关键条件”"
+    }
+  ],
+  "governance": [
+    {
+      "label": "多类股份",
+      "text": "A 类、B 类和无表决权的 C 类（B 类的表决权倍数 10-Q 封面没有写，本轮未检索到）。",
+      "src": "dna-10q-q3-2026"
+    }
+  ],
+  "risks": [
+    {
+      "title": "现金能否撑住",
+      "text": "公司在前瞻性声明里把“现有现金和有价证券是否足够支撑运营”列为不确定因素；生物安全业务已列为终止经营。",
+      "src": "dna-10q-q3-2026"
     }
   ]
 }

@@ -1,7 +1,8 @@
 {
   "ticker": "RKLB",
   "xbrl": {
-    "cik": 1819994
+    "cik": 1819994,
+    "manualPeriods": []
   },
   "checkedOn": "2026-11-22",
   "currency": "USD",
@@ -525,21 +526,25 @@
   "balance": {
     "date": "2026-09-30",
     "cash": {
-      "value": 4607955000,
+      "value": 4703900000.0,
       "unit": "USD",
-      "src": "0001819994-26-000074",
+      "manual": true,
+      "src": "rklb-pr-q3-2026",
       "parts": [
         {
           "label": "现金及现金等价物",
-          "value": 4447665000,
-          "tag": "CashAndCashEquivalentsAtCarryingValue"
+          "value": 4447700000.0
         },
         {
-          "label": "流动有价证券",
-          "value": 160290000,
-          "tag": "MarketableSecuritiesCurrent"
+          "label": "有价证券（流动）",
+          "value": 160300000.0
+        },
+        {
+          "label": "有价证券（非流动）",
+          "value": 95900000.0
         }
-      ]
+      ],
+      "note": "含非流动有价证券"
     },
     "debt": {
       "value": 1289000,
@@ -566,7 +571,14 @@
       "unit": "股",
       "src": "0001819994-25-000021",
       "note": "一年前封面披露的已发行普通股，截至 2025-11-05"
-    }
+    },
+    "dilutive": [
+      {
+        "label": "ATM 增发和可转债",
+        "text": "2026 前三季 ATM 增发募得 $39.12亿（发行费用 $3,670万），新闻稿说收购 Iridium 的资金已通过 ATM 备齐。可转债从 2025 年底的 $1.524亿 降到 $130万（大部分已转股或回购），Q3 有 $2,730万 债务清偿损失。",
+        "src": "rklb-pr-q3-2026"
+      }
+    ]
   },
   "sources": [
     {
@@ -598,10 +610,31 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999425000021/rklb-20250930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001819994.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "rklb-pr-q3-2026",
+      "origin": "document",
+      "form": "新闻稿（8-K 附件 99.1）",
+      "period": "2026 Q3（截至 2026-09-30）",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001819994/000181999426000073/rklb-11092026ex991.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Rocket Lab 2026 年第三季度财报新闻稿",
+      "filed": "2026-11-09"
+    },
+    {
+      "id": "rklb-10k-2025",
+      "origin": "document",
+      "form": "10-K",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Rocket Lab 2025 年 10-K",
+      "filed": "2026-02-26"
     }
   ],
   "gaps": [
-    "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）"
+    "管理层持股（委托书本轮没有读）",
+    "积压中一年内能确认的比例"
   ],
   "checkpoints": [
     {
@@ -613,6 +646,85 @@
       "metric": "Neutron",
       "condition": "1 月贮箱鉴定通过、2027 年首飞成功。",
       "basis": "11/21 定价依据的“关键条件”和“最大的风险”"
+    }
+  ],
+  "segments": {
+    "period": "2026 Q3",
+    "src": "rklb-pr-q3-2026",
+    "rows": [
+      {
+        "name": "产品收入",
+        "revenue": {
+          "value": 197500000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "rklb-pr-q3-2026"
+        }
+      },
+      {
+        "name": "服务收入",
+        "revenue": {
+          "value": 70300000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "rklb-pr-q3-2026"
+        }
+      }
+    ],
+    "note": "新闻稿按产品和服务分，不按发射和航天系统分；非 GAAP 毛利率 38.4%。"
+  },
+  "orders": [
+    {
+      "label": "积压",
+      "text": "约 $35.7亿，比第二季末增加 52%；Neutron 已有 16 次发射任务积压。一年内能确认多少新闻稿没有写。",
+      "src": "rklb-pr-q3-2026",
+      "figure": {
+        "value": 3570000000.0,
+        "unit": "USD",
+        "manual": true,
+        "src": "rklb-pr-q3-2026",
+        "period": "截至 2026-09-30"
+      }
+    }
+  ],
+  "customers": [
+    {
+      "label": "客户集中",
+      "text": "2025 年前五大客户约占营收 49%，前五大积压客户约占积压 77%；美国政府相关合同约占 2025 年营收 47%（2024 年 33%）。",
+      "src": "rklb-10k-2025",
+      "figure": {
+        "value": 49,
+        "unit": "%",
+        "manual": true,
+        "src": "rklb-10k-2025",
+        "period": "FY2025"
+      }
+    }
+  ],
+  "guidance": [
+    {
+      "period": "2026 Q4",
+      "text": "营收 $2.7亿 至 $2.9亿；GAAP 毛利率 34% 至 36%；调整后 EBITDA 亏损 $1,400万 至 $2,000万。",
+      "direction": "unclear",
+      "vsText": "新一季的指引，不比较方向。",
+      "src": "rklb-pr-q3-2026"
+    }
+  ],
+  "risks": [
+    {
+      "title": "Neutron",
+      "text": "一级贮箱鉴定试验 2026-01-21 失败，推迟了首飞；新闻稿现在写首飞“不早于 2027 年”。",
+      "src": "rklb-10k-2025"
+    },
+    {
+      "title": "固定价格的政府合同",
+      "text": "约 47% 营收与美国政府有关，多为固定价格，成本超支由公司承担。",
+      "src": "rklb-10k-2025"
+    },
+    {
+      "title": "依赖创始人",
+      "text": "高度依赖 CEO 兼董事长 Peter Beck。",
+      "src": "rklb-10k-2025"
     }
   ]
 }

@@ -19,7 +19,7 @@
 1. 读 `CLAUDE.md`、`docs/PROGRESS.md` 和上一次的 `data/updates/` 记录。
 2. 先取价格：用项目自带的适配器取最近收盘价（`node` 直接调用 `lib/quotes/yahoo-chart.ts` 的 `fetchQuote`，不改请求头），**每个标的都要有价格再谈判断**——2026-11-19 那轮有 3 个标的没取到股价就维持了原判断，结果击球价和现价脱节。
 2a. 逐个标的检索（财报、指引、重大新闻、股价），按上面的规则改 `data/tickers/<代码>.json`：加定价依据、加新闻、更新 `lastPrice`（写明日期和出处原文）、`events`、`contentUpdatedOn`，需要时调价。
-2b. **估值相关信息（`data/fundamentals/`，2026-11-22 起）**：财报出来后，美国公司跑 `node scripts/fundamentals/sec-xbrl.ts <代码>`（10-Q 还没进 XBRL 时从新闻稿人工录入，带 `manual: true`）；外国公司和新上市公司人工录入。同时检查：指引的方向（上调／下调／维持）、订单和长约、股本变化（增发、回购、ATM）、“什么情况下判断会变”里每一条的最新数字——如果有一条已经触发，在当天的定价依据里写明。新上市公司的招股书只读一次，之后只在锁定期、关联交易变化时补。改完把 `checkedOn` 和各来源的 `checkedOn` 改成当天；没补到的写进 `gaps`，不留旧的“本轮未检索到”。估值口径页面自动重算，不用手改。**估值数字只是算术，改击球价仍要按第 5 条写理由。**
+2b. **估值相关信息（`data/fundamentals/`，2026-11-22 起）**：财报出来后，美国公司跑 `node --env-file-if-exists=.env.local scripts/fundamentals/sec-xbrl.ts <代码>`（需设置 `SEC_USER_AGENT`，见 README；原文可用 `scripts/fundamentals/sec-fetch.ts` 下载）（10-Q 还没进 XBRL 时从新闻稿人工录入，带 `manual: true`）；外国公司和新上市公司人工录入。同时检查：指引的方向（上调／下调／维持）、订单和长约、股本变化（增发、回购、ATM）、“什么情况下判断会变”里每一条的最新数字——如果有一条已经触发，在当天的定价依据里写明。新上市公司的招股书只读一次，之后只在锁定期、关联交易变化时补。改完把 `checkedOn` 和各来源的 `checkedOn` 改成当天；没补到的写进 `gaps`，不留旧的“本轮未检索到”。估值口径页面自动重算，不用手改。**估值数字只是算术，改击球价仍要按第 5 条写理由。**
 3. 更新 `data/meta/`：`notes.json` 里的 `macro`、`status-change`、`strike-note` 换成本轮的文字——**被替换的旧文字移到 `macro-prev`、`status-change-prev`、`strike-note-prev`（再上一轮的留在 git 历史里），不要丢**；本轮的自我校正写进 `self-correction-latest`，原来的 `self-correction`（含 Anthropic 披露）不动；`calendar.json` 去掉已过去的事件、加新的；`site.json` 的 `contentUpdatedOn` 改成当天。
 4. 新建 `data/updates/<当天>.json`：`kind` 写 `content`，`text` 写这次改了什么、调了哪些价及原因、哪些标的“本轮未检索到”。
 5. 新增或移除标的：新增见 `README.md`；移除时删掉档案文件、在 `meta/removed.json` 加一条（名称、日期、原因），并从 `order.json`、`calendar.json` 里去掉。

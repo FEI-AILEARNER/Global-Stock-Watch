@@ -545,14 +545,32 @@
           "tag": "ShortTermBorrowings"
         }
       ]
-    }
+    },
+    "maturities": [
+      {
+        "label": "长期债务",
+        "text": "非流动长期债务 $59.48亿；前三季偿还 $12.73亿。可转债的条款本轮未检索到。",
+        "src": "coin-10q-q3-2026"
+      }
+    ]
   },
   "shares": {
     "outstanding": {
-      "value": 264756000,
+      "value": 264763418,
       "unit": "股",
-      "src": "0001679788-26-000122",
-      "note": "资产负债表日（2026-09-30）的已发行普通股，XBRL 不带类别的数字；多类股份时须对照原文确认是各类合计"
+      "manual": true,
+      "src": "coin-10q-q3-2026",
+      "parts": [
+        {
+          "label": "A 类",
+          "value": 223729527
+        },
+        {
+          "label": "B 类（每股 20 票）",
+          "value": 41033891
+        }
+      ],
+      "note": "10-Q 封面，截至 2026-10-22"
     }
   },
   "sources": [
@@ -575,11 +593,41 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm",
       "xbrlUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001679788.json",
       "checkedOn": "2026-11-22"
+    },
+    {
+      "id": "coin-10q-q3-2026",
+      "origin": "document",
+      "form": "10-Q",
+      "period": "2026 Q3（截至 2026-09-30）；封面股数截至 2026-10-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Coinbase 2026 年第三季度 10-Q",
+      "filed": "2026-10-29"
+    },
+    {
+      "id": "coin-def14a-2026",
+      "origin": "document",
+      "form": "委托书（DEF 14A）",
+      "period": "持股截至 2026-03-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000045/coin-20260424.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Coinbase 2026 年委托书",
+      "filed": "2026-04-24"
+    },
+    {
+      "id": "coin-10k-2025",
+      "origin": "document",
+      "form": "10-K",
+      "period": "FY2025（截至 2025-12-31）",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm",
+      "checkedOn": "2026-11-22",
+      "title": "Coinbase 2025 年 10-K",
+      "filed": "2026-02-12"
     }
   ],
   "gaps": [
-    "业务结构、订单、指引、治理、风险因素：本轮还没有读原文（只补了 XBRL 里的财务数字）",
-    "资本开支（Coinbase 的资本开支用的是公司自定义的 XBRL 标签，脚本没有取到；所以自由现金流算不出）"
+    "资本开支（Coinbase 的资本开支用的是公司自定义的 XBRL 标签，脚本没有取到；所以自由现金流算不出）",
+    "公司指引（Coinbase 只给部分费用和订阅收入的展望，本轮没有读）"
   ],
   "checkpoints": [
     {
@@ -591,6 +639,78 @@
       "metric": "比特币价格",
       "condition": "比特币在 $6万 下方企稳；否则 Q4 持币重估由正转负。",
       "basis": "11/21 定价依据"
+    }
+  ],
+  "segments": {
+    "period": "2026 Q3",
+    "src": "coin-10q-q3-2026",
+    "rows": [
+      {
+        "name": "交易收入（零售 $4.50亿、机构 $9,165万、其他 $4,846万）",
+        "revenue": {
+          "value": 590224000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "coin-10q-q3-2026"
+        }
+      },
+      {
+        "name": "订阅与服务（稳定币 $3.07亿、质押奖励 $8,574万、利息 $6,856万、其他 $1.09亿）",
+        "revenue": {
+          "value": 570238000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "coin-10q-q3-2026"
+        }
+      },
+      {
+        "name": "公司利息及其他",
+        "revenue": {
+          "value": 55120000.0,
+          "unit": "USD",
+          "manual": true,
+          "src": "coin-10q-q3-2026"
+        }
+      }
+    ],
+    "note": "订阅与服务占本季总收入约 47%（算术）。分部利润公司不披露。"
+  },
+  "governance": [
+    {
+      "label": "双层股权",
+      "text": "B 类每股 20 票。截至 2026-03-31，CEO Brian Armstrong 持有 62.5% 的 B 类，占总表决权 49.6%；联合创始人 Fred Ehrsam 10.6%；全体董事和高管合计 60.4%。",
+      "src": "coin-def14a-2026",
+      "figure": {
+        "value": 60.4,
+        "unit": "%",
+        "manual": true,
+        "src": "coin-def14a-2026",
+        "period": "截至 2026-03-31"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "label": "持有的加密资产",
+      "text": "截至 2026-09-30 作为投资持有的加密资产公允价值 $22.25亿（币价下跌会直接进利润表）；客户托管资金 $44.62亿。",
+      "src": "coin-10q-q3-2026"
+    }
+  ],
+  "risks": [
+    {
+      "title": "依赖比特币和以太坊",
+      "text": "2025 和 2024 年比特币和以太坊分别约占交易量的 45% 和 46%。",
+      "src": "coin-10k-2025"
+    },
+    {
+      "title": "依赖与 Circle 的 USDC 协议",
+      "text": "稳定币收入取决于与 Circle 的协议，初始期限三年，之后自动续期，除非双方修改。",
+      "src": "coin-10k-2025"
+    },
+    {
+      "title": "监管不确定",
+      "text": "监管环境广泛、变化快、不确定。",
+      "src": "coin-10k-2025"
     }
   ]
 }
